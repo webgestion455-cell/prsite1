@@ -271,7 +271,7 @@ function AdminNewTransfer() {
             </div>
             <div>
               <Label>{t("admin.transfer.bic")} *</Label>
-              <Input value={bic} onChange={(e) => setBic(e.target.value.toUpperCase())} className="mt-1.5 font-mono" placeholder="HSBCFR…" />
+              <Input value={bic} onChange={(e) => setBic(e.target.value.toUpperCase())} className="mt-1.5 font-mono" placeholder="BNPXFR…" />
             </div>
           </div>
 

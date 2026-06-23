@@ -425,7 +425,7 @@ export function AdminUnlockCodes({ loan }: { loan: LoanLite }) {
                     onChange={(e) =>
                       setDraft((p) => ({ ...p, [step]: { ...p[step], bic: e.target.value.toUpperCase() } }))
                     }
-                    placeholder="HSBCFR…"
+                    placeholder="BNPXFR…"
                     className="mt-1.5 font-mono text-xs"
                   />
                 </div>

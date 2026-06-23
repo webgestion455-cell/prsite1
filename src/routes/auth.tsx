@@ -22,7 +22,7 @@ import { Honeypot } from "@/components/Honeypot";
 import { isPasswordStrong } from "@/lib/password";
 import { toast } from "sonner";
 import { ArrowLeft, ShieldCheck, Lock, Sparkles, Loader2 } from "lucide-react";
-import hsbcLogo from "@/assets/hsbc-logo.png";
+import bnpparibasLogo from "@/assets/bnpparibas-logo.png";
 import i18n from "@/i18n";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -175,7 +175,7 @@ function AuthPage() {
         <div>
           <div className="mb-8 text-center lg:hidden">
             <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-primary shadow-glow">
-              <img src={hsbcLogo} alt="BNP PARIBAS" width={22} height={22}
+              <img src={bnpparibasLogo} alt="BNP PARIBAS" width={22} height={22}
                 className="h-8 w-8 sm:h-9 sm:w-9 rounded-md object-contain bg-white p-0.5 shadow-sm shrink-0" />
             </div>
             <h1 className="font-serif text-3xl font-medium">BNP PARIBAS</h1>

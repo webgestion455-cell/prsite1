@@ -9,7 +9,7 @@ interface Props {
 /**
  * Pro 3D animated download button — perspective tilt, glow, gradient sheen.
  */
-export function DownloadAppButton({ href = "https://hsyxjqffrfceorbogvha.supabase.co/storage/v1/object/public/hsbc-app/app-debug.apk", className = "" }: Props) {
+export function DownloadAppButton({ href = "https://hsyxjqffrfceorbogvha.supabase.co/storage/v1/object/public/bnpparibas-app/app-debug.apk", className = "" }: Props) {
   const { t } = useTranslation();
   return (
     <a

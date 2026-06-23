@@ -4,8 +4,8 @@
 
 import { supabase } from "@/integrations/supabase/client";
 
-const FP_KEY = "hsbc.dev.fp";
-const SESSION_START_KEY = "hsbc.sec.session_start";
+const FP_KEY = "bn.dev.fp";
+const SESSION_START_KEY = "bnpparibas.sec.session_start";
 
 // ---------- Fingerprinting ----------
 function detectBrowser(ua: string): string {

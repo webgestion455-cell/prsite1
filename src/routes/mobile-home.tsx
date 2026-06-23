@@ -20,7 +20,7 @@ function MobileHomePage() {
 
   function handleStart() {
     try {
-      localStorage.setItem("hsbc.mobileOnboarding.seen", "1");
+      localStorage.setItem("bnpparibas.mobileOnboarding.seen", "1");
     } catch {
       /* ignore */
     }

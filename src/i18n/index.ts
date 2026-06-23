@@ -97,7 +97,7 @@ if (!i18n.isInitialized) {
     const handleSystemChange = () => {
       // Only auto-follow system language if the user never explicitly picked one
       try {
-        const stored = window.localStorage.getItem("hsbc.lang");
+        const stored = window.localStorage.getItem("bnpparibas.lang");
         if (stored) return;
       } catch {
         /* ignore */

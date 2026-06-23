@@ -64,7 +64,7 @@ function ReceiptPage() {
       const url = URL.createObjectURL(new Blob([buffer], { type: "application/pdf" }));
       const a = document.createElement("a");
       a.href = url;
-      a.download = `justificatif-virement-hsbc-${current.reference ?? current.id.slice(0, 8).toUpperCase()}.pdf`;
+      a.download = `justificatif-virement-bnpparibas-${current.reference ?? current.id.slice(0, 8).toUpperCase()}.pdf`;
       a.click();
       URL.revokeObjectURL(url);
       toast.success(t("receipt.downloaded"), { id });

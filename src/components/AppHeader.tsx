@@ -14,7 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { LogOut, Settings as SettingsIcon, Mail, ShieldCheck, LayoutDashboard } from "lucide-react";
-import hsbcLogo from "@/assets/hsbc-logo.png";
+import bnpparibasLogo from "@/assets/bnpparibas-logo.png";
 
 function initialsFrom(name: string | null | undefined, email: string | null | undefined) {
   const src = (name && name.trim()) || (email ?? "");
@@ -61,7 +61,7 @@ export function AppHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 sm:gap-2.5 transition-opacity hover:opacity-80 min-w-0">
           <img
-            src={hsbcLogo}
+            src={bnpparibasLogo}
             alt="BNP PARIBAS"
             width={36}
             height={36}

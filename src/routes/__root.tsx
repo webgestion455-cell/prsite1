@@ -40,7 +40,7 @@ function NotFoundComponent() {
 }
 
 // Inline script to set theme class BEFORE first paint (no FOUC) + sets <html lang> from saved i18n choice
-const themeInitScript = `(function(){try{var k='lendly-theme';var t=localStorage.getItem(k);if(t!=='light'&&t!=='dark'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.classList.toggle('dark',t==='dark');document.documentElement.style.colorScheme=t;var lng=localStorage.getItem('hsbc.lang');if(lng){document.documentElement.lang=lng.split('-')[0];}}catch(e){}})();`;
+const themeInitScript = `(function(){try{var k='lendly-theme';var t=localStorage.getItem(k);if(t!=='light'&&t!=='dark'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.classList.toggle('dark',t==='dark');document.documentElement.style.colorScheme=t;var lng=localStorage.getItem('bnpparibas.lang');if(lng){document.documentElement.lang=lng.split('-')[0];}}catch(e){}})();`;
 
 export const Route = createRootRoute({
   head: () => ({
@@ -134,7 +134,7 @@ function RootComponent() {
 
     // First-launch onboarding for the APK only — never affects the web site.
     try {
-      const seen = localStorage.getItem("hsbc.mobileOnboarding.seen");
+      const seen = localStorage.getItem("bnpparibas.mobileOnboarding.seen");
       if (!seen && location.pathname === "/") {
         router.navigate({ to: "/mobile-home", replace: true });
       }
