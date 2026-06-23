@@ -95,7 +95,7 @@ function ReceiptPage() {
         </div>
 
         <article className="receipt-paper rounded-2xl border border-border bg-white p-8 text-slate-900 shadow-elevated md:p-12">
-          {/* En-tête HSBC */}
+          {/* En-tête BNP PARIBAS */}
           <header className="flex items-start justify-between border-b-2 border-[#db0011] pb-6">
             <div>
               <div className="flex items-center gap-3">
@@ -144,7 +144,7 @@ function ReceiptPage() {
             </div>
             <p className="mt-2">{t("receipt.footerLegal")}</p>
             <p className="mt-3 text-[10px] uppercase tracking-widest text-slate-400">
-              HSBC France · 38 av. Kléber, 75116 Paris · SIREN 775 670 284
+              BNP PARIBAS France · 38 av. Kléber, 75116 Paris · SIREN 775 670 284
             </p>
           </footer>
         </article>
@@ -200,7 +200,7 @@ async function buildReceiptPdf(w: Withdrawal) {
   draw("Document généré par les systèmes sécurisés BNP PARIBAS.", margin + 16, 166, 9, bold, ink);
   draw("Ce justificatif fait foi de l'opération bancaire et peut être présenté à toute autorité compétente.", margin + 16, 150, 8.5, regular, muted);
   page.drawLine({ start: { x: margin, y: 82 }, end: { x: width - margin, y: 82 }, thickness: 0.5, color: line });
-  draw("HSBC France · 38 av. Kléber, 75116 Paris · SIREN 775 670 284", margin, 64, 8, regular, muted);
+  draw("BNP PARIBAS France · 38 av. Kléber, 75116 Paris · SIREN 775 670 284", margin, 64, 8, regular, muted);
   draw(`Page 1 / 1 · ${ref}`, width - margin - 110, 64, 8, regular, muted);
   return pdf.save();
 }

@@ -314,7 +314,7 @@ export function TransferDialog({
                 value={bic}
                 onChange={(e) => setBic(e.target.value.toUpperCase())}
                 className="mt-1.5 font-mono"
-                placeholder="HSBCFR…"
+                placeholder="BNPXFR…"
               />
             </div>
           </div>

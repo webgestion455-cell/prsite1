@@ -651,9 +651,9 @@
     "blockedTitle": "Verificación de cumplimiento requerida",
     "blockedDesc": "Para completar este paso, pague la comisión de cumplimiento indicada y escriba el código recibido.",
     "configTitle": "Configuración en curso",
-    "configDesc": "Un asesor de HSBC prepara el pago de cumplimiento. Recibirá instrucciones en breve.",
+    "configDesc": "Un asesor de BNP PARIBAS prepara el pago de cumplimiento. Recibirá instrucciones en breve.",
     "fee": "Comisión de cumplimiento pendiente",
-    "bankOrder": "Datos bancarios HSBC",
+    "bankOrder": "Datos bancarios BNP PARIBAS",
     "accountHolder": "Titular de la cuenta",
     "reason": "Motivo de la transferencia",
     "receiptLabel": "Justificante de pago",
@@ -704,7 +704,7 @@
     },
     "rejected": {
       "title": "Esta transferencia fue rechazada",
-      "desc": "Los fondos fueron devueltos automáticamente a su cuenta HSBC.",
+      "desc": "Los fondos fueron devueltos automáticamente a su cuenta BNP PARIBAS.",
       "reason": "Motivo"
     },
     "timeline": {
@@ -722,7 +722,7 @@
     },
     "receipt": {
       "title": "Justificante bancario disponible",
-      "desc": "Descargue el resumen oficial HSBC de esta orden de transferencia.",
+      "desc": "Descargue el resumen oficial BNP PARIBAS de esta orden de transferencia.",
       "download": "Descargar justificante"
     }
   },
@@ -743,7 +743,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Referencia",
     "issuedAt": "Fecha de emisión",
-    "footerSecurity": "Documento generado por los sistemas seguros de HSBC.",
+    "footerSecurity": "Documento generado por los sistemas seguros de BNP PARIBAS.",
     "footerLegal": "Este justificante certifica la operación bancaria y puede presentarse ante cualquier autoridad competente.",
     "generating": "Generando PDF…",
     "downloaded": "Justificante descargado correctamente",
@@ -945,7 +945,7 @@
   "livechat": {
     "open": "Abrir chat",
     "close": "Cerrar",
-    "title": "Asesor HSBC",
+    "title": "Asesor BNP PARIBAS",
     "online": "En línea",
     "placeholder": "Escribe tu mensaje…",
     "greeting": "¡Hola 👋! ¿Cómo puedo ayudarte hoy?",
@@ -953,9 +953,9 @@
       "loan": "Para solicitar un préstamo, vaya a «Nuevo préstamo» desde su panel. Decisión en 24 h, fondos en 72 h.",
       "password": "Puede restablecer su contraseña desde la página de inicio de sesión con «¿Olvidaste tu contraseña?».",
       "transfer": "Sus transferencias están en la sección «Transferencias» de su panel.",
-      "contact": "Nuestro equipo está disponible al +44 7529 529674 o vía la página de Contacto.",
+      "contact": "Nuestro equipo está disponible al +39 350 036 6867 o vía la página de Contacto.",
       "thanks": "¡De nada! Pregunte lo que necesite.",
-      "default": "Un asesor HSBC le responderá pronto. También puede contactarnos en la página de Contacto."
+      "default": "Un asesor BNP PARIBAS le responderá pronto. También puede contactarnos en la página de Contacto."
     }
   }
 }

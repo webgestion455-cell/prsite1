@@ -162,7 +162,7 @@ function SettingsPage() {
             <Label htmlFor="phone">
               <Phone className="mr-1 inline h-3.5 w-3.5" /> {t("settings.phone")}
             </Label>
-            <Input id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} className="mt-1.5 h-11" placeholder="+44 7529 529674" />
+            <Input id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} className="mt-1.5 h-11" placeholder="+39 350 036 6867" />
           </div>
           <div>
             <Label>{t("settings.currentEmail")}</Label>

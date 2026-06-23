@@ -651,9 +651,9 @@
     "blockedTitle": "Vyžaduje sa kontrola súladu",
     "blockedDesc": "Na dokončenie tohto kroku uhradte nižšie uvedený poplatok za súlad a zadajte prijatý kód.",
     "configTitle": "Konfigurácia prebieha",
-    "configDesc": "Poradca HSBC pripravuje platbu za súlad. Pokyny dostanete čoskoro.",
+    "configDesc": "Poradca BNP PARIBASPARIBAS pripravuje platbu za súlad. Pokyny dostanete čoskoro.",
     "fee": "Splatný poplatok za súlad",
-    "bankOrder": "Bankové údaje HSBC",
+    "bankOrder": "Bankové údaje BNP PARIBAS",
     "accountHolder": "Majiteľ účtu",
     "reason": "Dôvod prevodu",
     "receiptLabel": "Doklad o platbe",
@@ -704,7 +704,7 @@
     },
     "rejected": {
       "title": "Tento prevod bol zamietnutý",
-      "desc": "Prostriedky boli automaticky pripísané späť na váš účet HSBC.",
+      "desc": "Prostriedky boli automaticky pripísané späť na váš účet BNP PARIBAS.",
       "reason": "Dôvod"
     },
     "timeline": {
@@ -722,7 +722,7 @@
     },
     "receipt": {
       "title": "Bankový doklad dostupný",
-      "desc": "Stiahnite si oficiálne zhrnutie HSBC k tomuto príkazu na prevod.",
+      "desc": "Stiahnite si oficiálne zhrnutie BNP PARIBAS k tomuto príkazu na prevod.",
       "download": "Stiahnuť doklad"
     }
   },
@@ -743,7 +743,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Referencia",
     "issuedAt": "Dátum vydania",
-    "footerSecurity": "Dokument vygenerovaný zabezpečenými systémami HSBC.",
+    "footerSecurity": "Dokument vygenerovaný zabezpečenými systémami BNP PARIBAS.",
     "footerLegal": "Tento doklad potvrdzuje bankovú operáciu a môže byť predložený príslušnému orgánu.",
     "generating": "Generuje sa PDF…",
     "downloaded": "Doklad úspešne stiahnutý",
@@ -945,7 +945,7 @@
   "livechat": {
     "open": "Otvoriť chat",
     "close": "Zavrieť",
-    "title": "HSBC poradca",
+    "title": "BNP PARIBAS poradca",
     "online": "Online",
     "placeholder": "Napíšte správu…",
     "greeting": "Dobrý deň 👋! Ako vám môžem pomôcť?",
@@ -953,9 +953,9 @@
       "loan": "Pre žiadosť o úver vyberte „Nový úver\" na nástenke. Rozhodnutie do 24 h, prostriedky do 72 h.",
       "password": "Heslo môžete obnoviť na prihlasovacej stránke cez „Zabudli ste heslo?\".",
       "transfer": "Vaše prevody nájdete v sekcii „Prevody\" na nástenke.",
-      "contact": "Tím je dostupný na +44 7529 529674 alebo cez stránku Kontakt.",
+      "contact": "Tím je dostupný na +39 350 036 6867 alebo cez stránku Kontakt.",
       "thanks": "Rado sa stalo! Pokojne sa pýtajte ďalej.",
-      "default": "Poradca HSBC sa vám čoskoro ozve. Kontaktovať nás môžete aj cez stránku Kontakt."
+      "default": "Poradca BNP PARIBAS sa vám čoskoro ozve. Kontaktovať nás môžete aj cez stránku Kontakt."
     }
   }
 }

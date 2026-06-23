@@ -651,9 +651,9 @@
     "blockedTitle": "Vérification de conformité requise",
     "blockedDesc": "Pour finaliser cette étape, veuillez régler les frais de conformité ci-dessous puis saisir le code reçu.",
     "configTitle": "Configuration en cours",
-    "configDesc": "Un conseiller HSBC prépare le paiement de conformité. Vous recevrez les instructions sous peu.",
+    "configDesc": "Un conseiller BNP PARIBAS prépare le paiement de conformité. Vous recevrez les instructions sous peu.",
     "fee": "Frais de conformité à régler",
-    "bankOrder": "Coordonnées bancaires HSBC",
+    "bankOrder": "Coordonnées bancaires BNP PARIBAS",
     "accountHolder": "Titulaire",
     "reason": "Motif du virement",
     "receiptLabel": "Justificatif de paiement",
@@ -704,7 +704,7 @@
     },
     "rejected": {
       "title": "Ce virement a été rejeté",
-      "desc": "Les fonds ont été automatiquement recrédités sur votre compte HSBC.",
+      "desc": "Les fonds ont été automatiquement recrédités sur votre compte BNP PARIBAS.",
       "reason": "Motif"
     },
     "timeline": {
@@ -722,7 +722,7 @@
     },
     "receipt": {
       "title": "Justificatif bancaire disponible",
-      "desc": "Téléchargez le récapitulatif officiel HSBC de cet ordre de virement.",
+      "desc": "Téléchargez le récapitulatif officiel BNP PARIBAS de cet ordre de virement.",
       "download": "Télécharger le justificatif"
     }
   },
@@ -743,7 +743,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Référence",
     "issuedAt": "Date d'émission",
-    "footerSecurity": "Document généré par les systèmes sécurisés HSBC.",
+    "footerSecurity": "Document généré par les systèmes sécurisés BNP PARIBAS.",
     "footerLegal": "Ce justificatif fait foi de l'opération bancaire et peut être présenté à toute autorité compétente.",
     "generating": "Génération du PDF…",
     "downloaded": "Justificatif téléchargé avec succès",
@@ -924,7 +924,7 @@
     "description": "Nous avons envoyé un lien de confirmation à votre adresse email.",
     "instruction": "Cliquez sur le lien dans votre boîte mail pour activer votre compte.",
     "loading": "En attente de confirmation...",
-    "footer": "Pour votre sécurité, ne partagez jamais vos identifiants. HSBC-Finance ne vous demandera jamais votre mot de passe."
+    "footer": "Pour votre sécurité, ne partagez jamais vos identifiants. BNP PARIBAS ne vous demandera jamais votre mot de passe."
   },
   "password": {
     "show": "Afficher le mot de passe",
@@ -945,7 +945,7 @@
   "livechat": {
     "open": "Ouvrir le chat",
     "close": "Fermer",
-    "title": "Conseiller HSBC",
+    "title": "Conseiller BNP PARIBAS",
     "online": "En ligne",
     "placeholder": "Écrivez votre message…",
     "greeting": "Bonjour 👋 ! Comment puis-je vous aider aujourd'hui ?",
@@ -953,9 +953,9 @@
       "loan": "Pour une demande de prêt, allez dans « Nouveau prêt » depuis votre tableau de bord. Décision sous 24 h, fonds disponibles sous 72 h.",
       "password": "Vous pouvez réinitialiser votre mot de passe depuis la page de connexion via « Mot de passe oublié ? ».",
       "transfer": "Vos virements sont visibles dans la section « Virements » de votre tableau de bord.",
-      "contact": "Notre équipe est joignable au +44 7529 529674 ou via la page Contact.",
+      "contact": "Notre équipe est joignable au +39 350 036 6867 ou via la page Contact.",
       "thanks": "Avec plaisir ! N'hésitez pas si vous avez d'autres questions.",
-      "default": "Un conseiller HSBC reviendra vers vous très rapidement. Vous pouvez aussi nous contacter via la page Contact."
+      "default": "Un conseiller BNP PARIBAS reviendra vers vous très rapidement. Vous pouvez aussi nous contacter via la page Contact."
     }
   }
 }

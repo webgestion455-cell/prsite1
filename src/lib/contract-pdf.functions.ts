@@ -59,7 +59,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Signature de l'emprunteur",
     signMention: 'Faire précéder la signature de la mention "Lu et approuvé"',
     signedElectronically: "Signé électroniquement", certificate: "Certificat",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Réf.", issuedOn: "Émis le", page: "Page 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · MVP de démonstration",
     sessionExpired: "Session expirée. Veuillez vous reconnecter.",
@@ -93,7 +93,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Borrower signature",
     signMention: 'Precede the signature with "Read and approved"',
     signedElectronically: "Electronically signed", certificate: "Certificate",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Ref.", issuedOn: "Issued on", page: "Page 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
     sessionExpired: "Session expired. Please sign in again.",
@@ -127,7 +127,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Unterschrift des Darlehensnehmers",
     signMention: 'Der Unterschrift "Gelesen und genehmigt" voranstellen',
     signedElectronically: "Elektronisch signiert", certificate: "Zertifikat",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Ref.", issuedOn: "Ausgestellt am", page: "Seite 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
     sessionExpired: "Sitzung abgelaufen. Bitte erneut anmelden.",
@@ -161,7 +161,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Firma del prestatario",
     signMention: 'Anteponga a la firma la mención "Leído y aprobado"',
     signedElectronically: "Firmado electrónicamente", certificate: "Certificado",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Ref.", issuedOn: "Emitido el", page: "Página 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · MVP demo",
     sessionExpired: "Sesión caducada. Por favor inicie sesión de nuevo.",
@@ -195,7 +195,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Firma del mutuatario",
     signMention: 'Anteporre alla firma la dicitura "Letto e approvato"',
     signedElectronically: "Firmato elettronicamente", certificate: "Certificato",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Rif.", issuedOn: "Emesso il", page: "Pagina 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
     sessionExpired: "Sessione scaduta. Effettuare nuovamente l'accesso.",
@@ -229,7 +229,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Handtekening kredietnemer",
     signMention: 'Laat de handtekening voorafgaan door "Gelezen en goedgekeurd"',
     signedElectronically: "Elektronisch ondertekend", certificate: "Certificaat",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Ref.", issuedOn: "Uitgegeven op", page: "Pagina 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
     sessionExpired: "Sessie verlopen. Log opnieuw in.",
@@ -262,7 +262,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Podpis posojilojemalca",
     signMention: 'Pred podpisom dodajte "Prebrano in odobreno"',
     signedElectronically: "Elektronsko podpisano", certificate: "Potrdilo",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Ref.", issuedOn: "Izdano dne", page: "Stran 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
     sessionExpired: "Seja je potekla. Prosimo, prijavite se znova.",
@@ -296,7 +296,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Подпис на заемополучателя",
     signMention: 'Преди подписа добавете „Прочетено и одобрено"',
     signedElectronically: "Електронно подписано", certificate: "Сертификат",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Реф.", issuedOn: "Издадено на", page: "Страница 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · Демо MVP",
     sessionExpired: "Сесията е изтекла. Моля, влезте отново.",
@@ -329,7 +329,7 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     borrowerSig: "Podpis dlžníka",
     signMention: 'Pred podpis uveďte „Prečítané a schválené"',
     signedElectronically: "Elektronicky podpísané", certificate: "Certifikát",
-    certificatePrefix: "HSBC-eSign-",
+    certificatePrefix: "BNP PARIBAS-eSign-",
     refPrefix: "Ref.", issuedOn: "Vydané dňa", page: "Strana 1 / 1",
     footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
     sessionExpired: "Relácia vypršala. Prihláste sa znova.",
@@ -430,13 +430,13 @@ export const generateContractPdf = createServerFn({ method: "POST" })
     const margin = 50;
     let y = height - margin;
 
-    const hsbcRed = rgb(0.85, 0.0, 0.0);
+    const bnpparibasRed = rgb(0.85, 0.0, 0.0);
     page.drawRectangle({ x: 0, y: height - 80, width, height: 80, color: rgb(0.98, 0.98, 0.97) });
     const lx = margin, ly = height - 60, ls = 32;
-    page.drawRectangle({ x: lx, y: ly, width: ls, height: ls, color: rgb(1, 1, 1), borderColor: hsbcRed, borderWidth: 1 });
-    page.drawRectangle({ x: lx, y: ly + ls / 2, width: ls / 2, height: ls / 2, color: hsbcRed });
-    page.drawRectangle({ x: lx + ls / 2, y: ly, width: ls / 2, height: ls / 2, color: hsbcRed });
-    page.drawText("BNP PARIBAS", { x: margin + 42, y: height - 47, size: 16, font: helvBold, color: hsbcRed });
+    page.drawRectangle({ x: lx, y: ly, width: ls, height: ls, color: rgb(1, 1, 1), borderColor: bnpparibasRed, borderWidth: 1 });
+    page.drawRectangle({ x: lx, y: ly + ls / 2, width: ls / 2, height: ls / 2, color: bnpparibasRed });
+    page.drawRectangle({ x: lx + ls / 2, y: ly, width: ls / 2, height: ls / 2, color: bnpparibasRed });
+    page.drawText("BNP PARIBAS", { x: margin + 42, y: height - 47, size: 16, font: helvBold, color: bnpparibasRed });
     page.drawText(T.subtitle, { x: margin + 42, y: height - 62, size: 8, font: helv, color: muted });
 
     const refText = sanitize(`${T.refPrefix} ${loan.id.slice(0, 8).toUpperCase()}`);
@@ -508,14 +508,14 @@ export const generateContractPdf = createServerFn({ method: "POST" })
     const stampCx = margin + sigW - 42;
     const stampCy = y - sigH / 2 - 4;
     const stampR = 32;
-    page.drawCircle({ x: stampCx, y: stampCy, size: stampR, borderColor: hsbcRed, borderWidth: 2, color: rgb(1, 1, 1) });
-    page.drawCircle({ x: stampCx, y: stampCy, size: stampR - 4, borderColor: hsbcRed, borderWidth: 0.6, color: rgb(1, 1, 1) });
+    page.drawCircle({ x: stampCx, y: stampCy, size: stampR, borderColor: bnpparibasRed, borderWidth: 2, color: rgb(1, 1, 1) });
+    page.drawCircle({ x: stampCx, y: stampCy, size: stampR - 4, borderColor: bnpparibasRed, borderWidth: 0.6, color: rgb(1, 1, 1) });
     const tw = 6;
-    page.drawRectangle({ x: stampCx - tw, y: stampCy + 4, width: tw, height: 6, color: hsbcRed });
-    page.drawRectangle({ x: stampCx, y: stampCy - 10, width: tw, height: 6, color: hsbcRed });
-    page.drawText("HSBC", { x: stampCx - 12, y: stampCy + 14, size: 8, font: helvBold, color: hsbcRed });
-    page.drawText("BANK", { x: stampCx - 11, y: stampCy - 22, size: 7, font: helvBold, color: hsbcRed });
-    page.drawText("PARIS", { x: stampCx - 11, y: stampCy - 30, size: 6, font: helv, color: hsbcRed });
+    page.drawRectangle({ x: stampCx - tw, y: stampCy + 4, width: tw, height: 6, color: bnpparibasRed });
+    page.drawRectangle({ x: stampCx, y: stampCy - 10, width: tw, height: 6, color: bnpparibasRed });
+    page.drawText("BNP PARIBAS", { x: stampCx - 12, y: stampCy + 14, size: 8, font: helvBold, color: bnpparibasRed });
+    page.drawText("BANK", { x: stampCx - 11, y: stampCy - 22, size: 7, font: helvBold, color: bnpparibasRed });
+    page.drawText("PARIS", { x: stampCx - 11, y: stampCy - 30, size: 6, font: helv, color: bnpparibasRed });
 
     page.drawText(T.lenderName, { x: margin + 14, y: y - sigH + 38, size: 14, font: helvBold, color: rgb(0.05, 0.18, 0.45) });
     page.drawLine({ start: { x: margin + 14, y: y - sigH + 34 }, end: { x: margin + 130, y: y - sigH + 34 }, thickness: 1, color: rgb(0.05, 0.18, 0.45) });

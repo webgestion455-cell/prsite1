@@ -79,7 +79,7 @@ if (!i18n.isInitialized) {
       detection: {
         order: ["localStorage", "navigator", "htmlTag", "path", "subdomain"],
         caches: ["localStorage", "cookie"],
-        lookupLocalStorage: "hsbc.lang",
+        lookupLocalStorage: "bnpparibas.lang",
       },
     });
 

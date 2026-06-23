@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 type Msg = { from: "bot" | "user"; text: string };
 
-const STORE_KEY = "hsbc.livechat.history";
+const STORE_KEY = "bnpparibas.livechat.history";
 
 export function LiveChat() {
   const { t } = useTranslation();
@@ -101,7 +101,7 @@ export function LiveChat() {
               <Phone className="h-4 w-4" />
             </a>
             <a
-              href="mailto:info@myinvest-capital.com"
+              href="mailto:support_bnpparibas@nowelio.com"
               className="grid h-9 w-9 place-items-center rounded-full bg-muted hover:bg-muted/70 transition"
               aria-label="Email"
             >

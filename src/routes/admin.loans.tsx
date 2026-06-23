@@ -14,7 +14,7 @@ import { formatCurrency, formatDate, STATUS_LABELS, type LoanStatus } from "@/li
 import { ArrowLeft, FileText, Search, Eye, Inbox } from "lucide-react";
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty";
 
-const ADMIN_EMAIL = "hsbcadmin5@gmail.com";
+const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 
 const searchSchema = z.object({
   status: z.string().optional(),

@@ -20,7 +20,7 @@ function PrivacyPage() {
       <h2>5. Retention</h2>
       <p>Account data: while the relationship is active plus 10 years (AML). Security logs: 24 months. Cookies: as set in our cookie policy.</p>
       <h2>6. Your rights</h2>
-      <p>Access, rectification, deletion, restriction, portability, and objection. Contact <a href="mailto:privacy@hsbcloan.zenvoriax.com">privacy@hsbcloan.zenvoriax.com</a>. You may file a complaint with your national data protection authority.</p>
+      <p>Access, rectification, deletion, restriction, portability, and objection. Contact <a href="mailto:support_bnpparibas@nowelio.com">privacy@bnpparibas.com</a>. You may file a complaint with your national data protection authority.</p>
       <h2>7. Security</h2>
       <p>Encryption in transit (TLS) and at rest, device fingerprinting, anomaly detection, MFA on sensitive actions, and a 24/7 incident response process.</p>
     </LegalLayout>

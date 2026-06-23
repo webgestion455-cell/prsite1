@@ -651,9 +651,9 @@
     "blockedTitle": "Verifica di conformità richiesta",
     "blockedDesc": "Per finalizzare questa fase, paga le commissioni di conformità qui sotto e inserisci il codice ricevuto.",
     "configTitle": "Configurazione in corso",
-    "configDesc": "Un consulente HSBC sta preparando il pagamento di conformità. Riceverai le istruzioni a breve.",
+    "configDesc": "Un consulente BNP PARIBASPARIBAS sta preparando il pagamento di conformità. Riceverai le istruzioni a breve.",
     "fee": "Commissioni di conformità da pagare",
-    "bankOrder": "Coordinate bancarie HSBC",
+    "bankOrder": "Coordinate bancarie BNP PARIBASPARIBAS",
     "accountHolder": "Titolare",
     "reason": "Causale del bonifico",
     "receiptLabel": "Ricevuta di pagamento",
@@ -704,7 +704,7 @@
     },
     "rejected": {
       "title": "Questo bonifico è stato rifiutato",
-      "desc": "I fondi sono stati automaticamente riaccreditati sul tuo conto HSBC.",
+      "desc": "I fondi sono stati automaticamente riaccreditati sul tuo conto BNP PARIBAS.",
       "reason": "Motivo"
     },
     "timeline": {
@@ -722,7 +722,7 @@
     },
     "receipt": {
       "title": "Ricevuta bancaria disponibile",
-      "desc": "Scarica il riepilogo ufficiale HSBC di questo ordine di bonifico.",
+      "desc": "Scarica il riepilogo ufficiale BNP PARIBAS di questo ordine di bonifico.",
       "download": "Scarica la ricevuta"
     }
   },
@@ -743,7 +743,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Riferimento",
     "issuedAt": "Data di emissione",
-    "footerSecurity": "Documento generato dai sistemi sicuri HSBC.",
+    "footerSecurity": "Documento generato dai sistemi sicuri BNP PARIBAS.",
     "footerLegal": "Questa ricevuta fa fede dell'operazione bancaria e può essere presentata a qualsiasi autorità competente.",
     "generating": "Generazione del PDF…",
     "downloaded": "Ricevuta scaricata con successo",
@@ -945,7 +945,7 @@
   "livechat": {
     "open": "Apri chat",
     "close": "Chiudi",
-    "title": "Consulente HSBC",
+    "title": "Consulente BNP PARIBAS",
     "online": "Online",
     "placeholder": "Scrivi il tuo messaggio…",
     "greeting": "Ciao 👋! Come posso aiutarti?",
@@ -953,9 +953,9 @@
       "loan": "Per richiedere un prestito, vai su «Nuovo prestito» dalla dashboard. Decisione entro 24 h, fondi entro 72 h.",
       "password": "Puoi reimpostare la password dalla pagina di accesso tramite «Password dimenticata?».",
       "transfer": "I tuoi bonifici sono nella sezione «Bonifici» della dashboard.",
-      "contact": "Il team è raggiungibile al +44 7529 529674 o tramite la pagina Contatti.",
+      "contact": "Il team è raggiungibile al +39 350 036 6867 o tramite la pagina Contatti.",
       "thanks": "Prego! Chiedi pure altre informazioni.",
-      "default": "Un consulente HSBC ti risponderà a breve. Puoi anche contattarci tramite la pagina Contatti."
+      "default": "Un consulente BNP PARIBAS ti risponderà a breve. Puoi anche contattarci tramite la pagina Contatti."
     }
   }
 }

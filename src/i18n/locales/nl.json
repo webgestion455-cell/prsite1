@@ -651,7 +651,7 @@
     "blockedTitle": "Compliance-verificatie vereist",
     "blockedDesc": "Om deze stap af te ronden, betaal de compliance-kosten hieronder en voer de ontvangen code in.",
     "configTitle": "Configuratie bezig",
-    "configDesc": "Een HSBC-adviseur bereidt de compliance-betaling voor. Je ontvangt binnenkort instructies.",
+    "configDesc": "Een BNP PARIBAS-adviseur bereidt de compliance-betaling voor. Je ontvangt binnenkort instructies.",
     "fee": "Te betalen compliance-kosten",
     "bankOrder": "BNP PARIBASgegevens",
     "accountHolder": "Houder",
@@ -704,7 +704,7 @@
     },
     "rejected": {
       "title": "Deze overboeking is geweigerd",
-      "desc": "De fondsen zijn automatisch teruggestort op je HSBC-rekening.",
+      "desc": "De fondsen zijn automatisch teruggestort op je BNP PARIBASPARIBAS-rekening.",
       "reason": "Reden"
     },
     "timeline": {
@@ -722,7 +722,7 @@
     },
     "receipt": {
       "title": "Bankbewijs beschikbaar",
-      "desc": "Download de officiële HSBC-samenvatting van deze overboekingsopdracht.",
+      "desc": "Download de officiële BNP PARIBAS-samenvatting van deze overboekingsopdracht.",
       "download": "Download het bewijs"
     }
   },
@@ -743,7 +743,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Referentie",
     "issuedAt": "Datum van uitgifte",
-    "footerSecurity": "Document gegenereerd door de beveiligde HSBC-systemen.",
+    "footerSecurity": "Document gegenereerd door de beveiligde BNP PARIBAS-systemen.",
     "footerLegal": "Dit bewijs geldt als bewijs van de banktransactie en kan worden voorgelegd aan elke bevoegde autoriteit.",
     "generating": "PDF genereren…",
     "downloaded": "Bewijs succesvol gedownload",
@@ -945,7 +945,7 @@
   "livechat": {
     "open": "Chat openen",
     "close": "Sluiten",
-    "title": "HSBC-adviseur",
+    "title": "BNP PARIBAS-adviseur",
     "online": "Online",
     "placeholder": "Typ uw bericht…",
     "greeting": "Hallo 👋! Hoe kan ik u helpen?",
@@ -953,9 +953,9 @@
       "loan": "Voor een lening klikt u op \"Nieuwe lening\" in uw dashboard. Beslissing binnen 24 u, geld binnen 72 u.",
       "password": "U kunt uw wachtwoord opnieuw instellen via \"Wachtwoord vergeten?\".",
       "transfer": "Uw overboekingen vindt u in de sectie \"Overboekingen\".",
-      "contact": "Ons team is bereikbaar op +44 7529 529674 of via de contactpagina.",
+      "contact": "Ons team is bereikbaar op +39 350 036 6867 of via de contactpagina.",
       "thanks": "Graag gedaan! Stel gerust andere vragen.",
-      "default": "Een HSBC-adviseur neemt spoedig contact op. U kunt ons ook bereiken via de contactpagina."
+      "default": "Een BNP PARIBAS-adviseur neemt spoedig contact op. U kunt ons ook bereiken via de contactpagina."
     }
   }
 }

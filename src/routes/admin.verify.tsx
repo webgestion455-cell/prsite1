@@ -8,7 +8,7 @@ import { ShieldCheck, Mail, LockKeyhole, Wallet } from "lucide-react";
 import { toast } from "sonner";
 import { requestAdminCode, verifyAdminCode } from "@/lib/admin-2fa.functions";
 
-const ADMIN_EMAIL = "hsbcadmin5@gmail.com";
+const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 export const ADMIN_2FA_KEY = "lendly-admin-2fa";
 
 export function getAdmin2FAExpiry(userId?: string | null) {

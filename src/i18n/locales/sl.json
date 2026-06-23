@@ -651,9 +651,9 @@
     "blockedTitle": "Zahtevano preverjanje skladnosti",
     "blockedDesc": "Za dokončanje tega koraka plačajte spodnjo pristojbino za skladnost in vnesite prejeto kodo.",
     "configTitle": "Konfiguracija v teku",
-    "configDesc": "Svetovalec HSBC pripravlja plačilo za skladnost. Navodila prejmete kmalu.",
+    "configDesc": "Svetovalec BNP PARIBASPARIBAS pripravlja plačilo za skladnost. Navodila prejmete kmalu.",
     "fee": "Zapadla pristojbina za skladnost",
-    "bankOrder": "Bančni podatki HSBC",
+    "bankOrder": "Bančni podatki BNP PARIBASPARIBAS",
     "accountHolder": "Imetnik računa",
     "reason": "Razlog nakazila",
     "receiptLabel": "Dokazilo o plačilu",
@@ -704,7 +704,7 @@
     },
     "rejected": {
       "title": "To nakazilo je bilo zavrnjeno",
-      "desc": "Sredstva so bila samodejno vrnjena na vaš račun HSBC.",
+      "desc": "Sredstva so bila samodejno vrnjena na vaš račun BNP PARIBAS.",
       "reason": "Razlog"
     },
     "timeline": {
@@ -722,7 +722,7 @@
     },
     "receipt": {
       "title": "Bančno potrdilo na voljo",
-      "desc": "Prenesite uradni povzetek HSBC tega naloga za nakazilo.",
+      "desc": "Prenesite uradni povzetek BNP PARIBAS tega naloga za nakazilo.",
       "download": "Prenesi potrdilo"
     }
   },
@@ -743,7 +743,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Sklic",
     "issuedAt": "Datum izdaje",
-    "footerSecurity": "Dokument ustvarjen z varnimi sistemi HSBC.",
+    "footerSecurity": "Dokument ustvarjen z varnimi sistemi BNP PARIBAS.",
     "footerLegal": "To potrdilo potrjuje bančno operacijo in se lahko predloži pristojnemu organu.",
     "generating": "Ustvarjanje PDF…",
     "downloaded": "Potrdilo uspešno preneseno",
@@ -945,7 +945,7 @@
   "livechat": {
     "open": "Odpri klepet",
     "close": "Zapri",
-    "title": "HSBC svetovalec",
+    "title": "BNP PARIBAS svetovalec",
     "online": "Na zvezi",
     "placeholder": "Napišite sporočilo…",
     "greeting": "Pozdravljeni 👋! Kako vam lahko pomagam?",
@@ -955,7 +955,7 @@
       "transfer": "Vaši prenosi so v razdelku »Prenosi« v nadzorni plošči.",
       "contact": "Ekipa je dosegljiva na +44 7529 529674 ali prek strani Kontakt.",
       "thanks": "Z veseljem! Vprašajte še, če potrebujete.",
-      "default": "Svetovalec HSBC se vam bo kmalu javil. Lahko nas tudi kontaktirate prek strani Kontakt."
+      "default": "Svetovalec BNP PARIBAS se vam bo kmalu javil. Lahko nas tudi kontaktirate prek strani Kontakt."
     }
   }
 }

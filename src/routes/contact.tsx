@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/select";
 import { ArrowLeft, Mail, Phone, MapPin, Send, Loader2, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
-import hsbcLogo from "@/assets/hsbc-logo.png";
+import bnpparibasLogo from "@/assets/bnpparibas-logo.png";
 import i18n from "@/i18n";
 
 export const Route = createFileRoute("/contact")({
@@ -108,7 +108,7 @@ function ContactPage() {
       </div>
 
       <div className="flex items-start gap-4 mb-8">
-        <img src={hsbcLogo} alt="BNP PARIBAS" width={56} height={56} className="h-11 w-11 sm:h-14 sm:w-14 rounded-md bg-white p-1 shadow-sm" />
+        <img src={bnpparibasLogo} alt="BNP PARIBAS" width={56} height={56} className="h-11 w-11 sm:h-14 sm:w-14 rounded-md bg-white p-1 shadow-sm" />
         <div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif text-primary">{t("contact.title")}</h1>
           <p className="text-muted-foreground mt-1">{t("contact.subtitle")}</p>
@@ -126,10 +126,10 @@ function ContactPage() {
               <div>
                 <p className="font-medium">{t("contact.phoneTitle")}</p>
                 <a
-                  href="https://wa.me/447529529674"
+                  href="https://wa.me/393500366867"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary hover:underline transition cursor-pointer">+44 7529 529674</a>
+                  className="text-muted-foreground hover:text-primary hover:underline transition cursor-pointer">+39 350 036 6867</a>
                 <p className="text-xs text-muted-foreground">{t("contact.phoneHours")}</p>
               </div>
             </div>
@@ -138,8 +138,8 @@ function ContactPage() {
               <div>
                 <p className="font-medium">{t("contact.emailLabel")}</p>
                 <a
-                 href="mailto:info@myinvest-capital.com"
-                 className="text-muted-foreground hover:text-primary hover:underline transition break-all cursor-pointer">info@hsbc-bank.fr</a>
+                 href="mailto:support_bnpparibas@nowelio.com"
+                 className="text-muted-foreground hover:text-primary hover:underline transition break-all cursor-pointer">support@bnpparibas.com</a>
               </div>
             </div>
             <div className="flex items-start gap-3">

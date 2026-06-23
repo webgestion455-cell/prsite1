@@ -364,8 +364,8 @@ function Landing() {
             <h3 className="font-serif text-2xl font-medium text-foreground">{t("contactSection.title", "Get in touch")}</h3>
             <p className="mt-2 text-sm text-muted-foreground">{t("contactSection.desc", "Our advisors answer within one business hour.")}</p>
             <ul className="mt-6 space-y-3 text-sm">
-              <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-accent" /><a href="mailto:info@myinvest-capital.com" className="hover:text-accent">infi@hsbc-bank.fr</a></li>
-              <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-accent" /><a href="tel:+447529529674" className="hover:text-accent">+44 7529 529674</a></li>
+              <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-accent" /><a href="mailto:support_bnpparibas@nowelio.com" className="hover:text-accent">support@bnpparibas.com</a></li>
+              <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-accent" /><a href="tel:++393500366867" className="hover:text-accent">+39 350 036 6867</a></li>
               <li className="flex items-center gap-3"><MapPin className="h-4 w-4 text-accent" />1 Centenary Square,Birmingham, B1 1HQ, Royaume-Uni</li>
             </ul>
             <Button asChild className="mt-6 w-full">
@@ -404,8 +404,8 @@ function Landing() {
               <p className="font-semibold text-foreground">{t("footer.contact", "Contact")}</p>
               <ul className="mt-3 space-y-2">
                 <li><a href="#contact" className="hover:text-accent">{t("contactSection.cta", "Contact us")}</a></li>
-                <li><a href="mailto:infi@hsbc-bank.fr" className="hover:text-accent">infi@hsbc-bank.fr</a></li>
-                <li><a href="tel:+447529529674" className="hover:text-accent">+44 7529 529674</a></li>
+                <li><a href="mailto:support_bnpparibas@nowelio.com" className="hover:text-accent">support@bnpparibas.com</a></li>
+                <li><a href="tel:+393500366867" className="hover:text-accent">+39 350 036 6867</a></li>
               </ul>
             </div>
           </div>

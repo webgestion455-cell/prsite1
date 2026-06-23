@@ -651,9 +651,9 @@
     "blockedTitle": "Compliance-Prüfung erforderlich",
     "blockedDesc": "Um diesen Schritt abzuschließen, zahlen Sie bitte die untenstehenden Compliance-Gebühren und geben Sie den erhaltenen Code ein.",
     "configTitle": "Konfiguration läuft",
-    "configDesc": "Ein HSBC-Berater bereitet die Compliance-Zahlung vor. Sie erhalten in Kürze Anweisungen.",
+    "configDesc": "Ein BNP PARIBAS-Berater bereitet die Compliance-Zahlung vor. Sie erhalten in Kürze Anweisungen.",
     "fee": "Fällige Compliance-Gebühr",
-    "bankOrder": "HSBC-Bankverbindung",
+    "bankOrder": "BNP PARIBAS-Bankverbindung",
     "accountHolder": "Kontoinhaber",
     "reason": "Überweisungsgrund",
     "receiptLabel": "Zahlungsnachweis",
@@ -704,7 +704,7 @@
     },
     "rejected": {
       "title": "Diese Überweisung wurde abgelehnt",
-      "desc": "Die Gelder wurden automatisch Ihrem HSBC-Konto wieder gutgeschrieben.",
+      "desc": "Die Gelder wurden automatisch Ihrem BNP PARIBAS-Konto wieder gutgeschrieben.",
       "reason": "Grund"
     },
     "timeline": {
@@ -722,7 +722,7 @@
     },
     "receipt": {
       "title": "Bankbeleg verfügbar",
-      "desc": "Laden Sie die offizielle HSBC-Zusammenfassung dieses Überweisungsauftrags herunter.",
+      "desc": "Laden Sie die offizielle BNP PARIBAS-Zusammenfassung dieses Überweisungsauftrags herunter.",
       "download": "Beleg herunterladen"
     }
   },
@@ -743,7 +743,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Referenz",
     "issuedAt": "Ausstellungsdatum",
-    "footerSecurity": "Dokument von sicheren HSBC-Systemen generiert.",
+    "footerSecurity": "Dokument von sicheren BNP PARIBAS-Systemen generiert.",
     "footerLegal": "Dieser Beleg bestätigt den Bankvorgang und kann jeder zuständigen Stelle vorgelegt werden.",
     "generating": "PDF wird erstellt…",
     "downloaded": "Beleg erfolgreich heruntergeladen",
@@ -945,7 +945,7 @@
   "livechat": {
     "open": "Chat öffnen",
     "close": "Schließen",
-    "title": "HSBC Berater",
+    "title": "BNP PARIBAS Berater",
     "online": "Online",
     "placeholder": "Nachricht schreiben…",
     "greeting": "Hallo 👋! Wie kann ich Ihnen heute helfen?",
@@ -953,9 +953,9 @@
       "loan": "Für einen Kreditantrag wählen Sie „Neuer Kredit\" im Dashboard. Entscheidung innerhalb von 24 Std., Auszahlung innerhalb von 72 Std.",
       "password": "Sie können Ihr Passwort über „Passwort vergessen?\" auf der Anmeldeseite zurücksetzen.",
       "transfer": "Ihre Überweisungen sehen Sie im Bereich „Überweisungen\" Ihres Dashboards.",
-      "contact": "Unser Team erreichen Sie unter +44 7529 529674 oder über die Kontaktseite.",
+      "contact": "Unser Team erreichen Sie unter +39 350 036 6867 oder über die Kontaktseite.",
       "thanks": "Gern geschehen! Stellen Sie gerne weitere Fragen.",
-      "default": "Ein HSBC-Berater meldet sich in Kürze. Sie können uns auch über die Kontaktseite erreichen."
+      "default": "Ein BNP PARIBAS-Berater meldet sich in Kürze. Sie können uns auch über die Kontaktseite erreichen."
     }
   }
 }

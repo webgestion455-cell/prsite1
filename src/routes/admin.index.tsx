@@ -19,7 +19,7 @@ import { notifyUser } from "@/lib/notifications";
 import { cn } from "@/lib/utils";
 import { AdminUnlockCodes } from "@/components/AdminUnlockCodes";
 
-const ADMIN_EMAIL = "hsbcadmin5@gmail.com";
+const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 
 export const Route = createFileRoute("/admin/")({
   component: AdminDashboard,
