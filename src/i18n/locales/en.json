@@ -838,7 +838,10 @@
     "passwordUpdated": "Password updated",
     "back": "Back",
     "accessAdmin": "Open admin dashboard",
-    "goBack": "Back"
+    "goBack": "Back",
+    "languageSection": "Language",
+    "languageDesc": "Choose the language for the interface. Your choice is saved and synced to your account.",
+    "languageSaved": "Language updated"
   },
   "loanDetail": {
     "metaTitle": "Loan details — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Our team is reachable at +39 350 036 6867 or via the Contact page.",
       "thanks": "You're welcome! Feel free to ask anything else.",
       "default": "An BNP PARIBAS adviser will get back to you shortly. You can also reach us via the Contact page."
+    }
+  },
+  "legal": {
+    "badge": "Legal",
+    "lastUpdated": "Last updated",
+    "home": "Home",
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "Your privacy is a core part of our banking trust commitment.",
+      "sections": [
+        {
+          "h": "1. Data we collect",
+          "p": "Identity (name, date of birth), contact (email, phone, address), financial data (income, IBAN, loan information), technical data (IP, browser, device fingerprint), and behavioural data (sessions, clicks, security events)."
+        },
+        {
+          "h": "2. Why we collect it",
+          "p": "Open and manage your account, evaluate loan applications, prevent fraud and money laundering, meet legal obligations, and improve our services."
+        },
+        {
+          "h": "3. Legal basis (GDPR)",
+          "p": "Performance of a contract, legitimate interest in fraud prevention, legal obligation (AML/KYC), and your explicit consent for marketing."
+        },
+        {
+          "h": "4. Data sharing",
+          "p": "Limited to vetted processors (cloud hosting, identity verification, payment networks), regulators and judicial authorities upon legal request."
+        },
+        {
+          "h": "5. Retention",
+          "p": "Account data: while the relationship is active plus 10 years (AML). Security logs: 24 months. Cookies: as set in our cookie policy."
+        },
+        {
+          "h": "6. Your rights",
+          "p": "Access, rectification, deletion, restriction, portability, and objection. Contact <a href=\"mailto:support_bnpparibas@nowelio.com\">privacy@bnpparibas.com</a>. You may file a complaint with your national data protection authority."
+        },
+        {
+          "h": "7. Security",
+          "p": "Encryption in transit (TLS) and at rest, device fingerprinting, anomaly detection, MFA on sensitive actions, and a 24/7 incident response process."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "subtitle": "By using BNP PARIBAS you accept the terms below.",
+      "sections": [
+        {
+          "h": "1. Eligibility",
+          "p": "You must be at least 18, a resident of an eligible country, and able to enter binding contracts."
+        },
+        {
+          "h": "2. Account",
+          "p": "Provide accurate information, keep credentials confidential, and notify us of any suspected compromise."
+        },
+        {
+          "h": "3. Acceptable use",
+          "p": "No fraud, money laundering, terrorism financing, market abuse, automated scraping, or any activity prohibited by applicable law."
+        },
+        {
+          "h": "4. Fees",
+          "p": "Disclosed in-app before each operation. We may update fees with 30 days' notice."
+        },
+        {
+          "h": "5. Liability",
+          "p": "We are liable for direct losses caused by our gross negligence. We do not cover indirect, consequential or speculative losses."
+        },
+        {
+          "h": "6. Suspension",
+          "p": "We may suspend access immediately if we suspect fraud, AML risk, or breach of these terms."
+        },
+        {
+          "h": "7. Governing law",
+          "p": "French law unless mandatory consumer law of your residence applies. Disputes go to the competent French courts subject to consumer protections."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookies Policy",
+      "sections": [
+        {
+          "h": "What we use",
+          "list": [
+            "<strong>Strictly necessary</strong> — authentication, session, security (no consent required).",
+            "<strong>Functional</strong> — language preference, theme.",
+            "<strong>Security</strong> — device fingerprinting for fraud detection (legitimate interest).",
+            "<strong>Analytics</strong> — aggregated usage, only with consent."
+          ]
+        },
+        {
+          "h": "Manage your cookies",
+          "p": "You can clear cookies in your browser settings at any time. Disabling strictly necessary cookies will prevent you from signing in."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Legal Notice",
+      "sections": [
+        {
+          "h": "Publisher",
+          "p": "BNP PARIBAS — SAS with capital of 1,000,000 EUR — registered office: 1 Centenary Square, Birmingham, B1 1HQ, United Kingdom. RCS Birmingham 000 000 000."
+        },
+        {
+          "h": "Publication director",
+          "p": "BNP PARIBAS Compliance Office."
+        },
+        {
+          "h": "Hosting",
+          "p": "Cloudflare Workers — 101 Townsend St, San Francisco, CA 94107, USA."
+        },
+        {
+          "h": "Contact",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Intellectual property",
+          "p": "All trademarks, logos and content remain the property of BNP PARIBAS or its licensors. Any reproduction without written authorisation is prohibited."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "Anti-Money Laundering & KYC Policy",
+      "sections": [
+        {
+          "h": "Commitment",
+          "p": "BNP PARIBAS applies a zero-tolerance approach to money laundering, terrorism financing and sanctions evasion, in line with EU directives (AMLD5/6), FATF recommendations, and applicable national laws."
+        },
+        {
+          "h": "Customer due diligence",
+          "p": "Identity verification (government ID + selfie liveness), proof of address, source-of-funds checks, and continuous monitoring of transactions."
+        },
+        {
+          "h": "Enhanced due diligence",
+          "p": "Applied to politically exposed persons (PEPs), high-risk jurisdictions, and complex or unusual transactions."
+        },
+        {
+          "h": "Sanctions screening",
+          "p": "Real-time screening against EU, UN, OFAC and UK consolidated lists."
+        },
+        {
+          "h": "Reporting",
+          "p": "Suspicious activity reports filed with the competent Financial Intelligence Unit. Tipping-off is strictly prohibited."
+        },
+        {
+          "h": "Training & governance",
+          "p": "All staff receive annual AML/KYC training. An independent MLRO supervises the program."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Financial Privacy & Security",
+      "sections": [
+        {
+          "h": "Protecting your money",
+          "p": "We apply bank-grade controls to every account: TLS 1.3 in transit, AES-256 at rest, hardware-backed key management, segregated client funds at top-tier custodian banks."
+        },
+        {
+          "h": "Authentication",
+          "p": "Strong customer authentication (SCA) compliant with PSD2: password + device fingerprint + one-time code on sensitive actions."
+        },
+        {
+          "h": "Fraud monitoring",
+          "p": "24/7 anomaly detection: new-device alerts, geo-velocity checks, unusual transfer patterns, behaviour scoring."
+        },
+        {
+          "h": "Confidentiality",
+          "p": "Bank secrecy applies. Financial data is shared only with you, regulators, or upon a valid court order."
+        },
+        {
+          "h": "Your role",
+          "p": "Keep your credentials private, register trusted devices, enable notifications, and report anything suspicious to support immediately."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Loan & Credit Terms",
+      "subtitle": "Borrowing engages you. Repay your loan and check your repayment capacity before committing.",
+      "sections": [
+        {
+          "h": "1. Eligibility",
+          "p": "Verified identity, stable income, no active default. We perform credit and AML/KYC checks before approval."
+        },
+        {
+          "h": "2. Amounts & duration",
+          "p": "From 1,000 EUR to 500,000 EUR, 12 to 120 months. Approved amounts depend on your file and applicable law."
+        },
+        {
+          "h": "3. Rate & APR",
+          "p": "Fixed rate disclosed in your offer. The APR includes interest and mandatory fees."
+        },
+        {
+          "h": "4. Disbursement",
+          "p": "Funds are released after contract signature and ID verification. Releases above 50,000 EUR follow a staged anti-fraud process (63% / 88% / 100%)."
+        },
+        {
+          "h": "5. Repayment",
+          "p": "Monthly direct debit on a fixed day. Early repayment is allowed with the legal cap on indemnities."
+        },
+        {
+          "h": "6. Default",
+          "p": "Late payments trigger interest, fees and may lead to acceleration, registration on payment incident databases and judicial recovery."
+        },
+        {
+          "h": "7. Right of withdrawal",
+          "p": "You have 14 calendar days from contract signature to withdraw without cause."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Repayment & Default Policy",
+      "sections": [
+        {
+          "h": "Repayment schedule",
+          "p": "Monthly installments are debited on the agreed date from your declared IBAN. The schedule is visible from your dashboard."
+        },
+        {
+          "h": "Early repayment",
+          "p": "Allowed at any time. Indemnity capped per consumer law (0.5% to 1% of capital repaid early depending on remaining duration)."
+        },
+        {
+          "h": "Late payment",
+          "list": [
+            "Day 1–7: friendly reminder, no extra fee.",
+            "Day 8–30: late fee + statutory default interest.",
+            "Day 31+: formal notice and possible acceleration of the loan."
+          ]
+        },
+        {
+          "h": "Recovery",
+          "p": "We always prefer an amicable solution. Persistent default may lead to registration with central payment-incident files and judicial recovery."
+        },
+        {
+          "h": "Hardship",
+          "p": "If you face genuine hardship, contact us immediately. We can offer payment holidays, rescheduling, or temporary reductions where eligible."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Security · Admin",
+    "unauthorized": "Unauthorized",
+    "adminLink": "Admin",
+    "center": "Security Center",
+    "ok": "ok",
+    "fail": "fail",
+    "user": "user",
+    "kpi": {
+      "totalEvents": "Total events",
+      "devicesTracked": "Devices tracked",
+      "openAlerts": "Open alerts",
+      "highRisk": "High-risk users"
+    },
+    "tab": {
+      "logs": "Logs",
+      "alerts": "Alerts",
+      "devices": "Devices",
+      "risk": "Risk"
+    },
+    "logs": {
+      "title": "Security logs",
+      "searchPh": "Search user, IP, country…",
+      "action": "Action",
+      "allActions": "All actions",
+      "when": "When",
+      "user": "User",
+      "ipCountry": "IP / Country",
+      "device": "Device",
+      "status": "Status",
+      "empty": "No logs."
+    },
+    "alerts": {
+      "title": "Security alerts",
+      "empty": "No alerts.",
+      "resolved": "resolved",
+      "resolve": "Resolve"
+    },
+    "devices": {
+      "title": "Trusted devices",
+      "label": "Label",
+      "country": "Country",
+      "lastSeen": "Last seen",
+      "trusted": "Trusted",
+      "trustedBadge": "trusted",
+      "pending": "pending",
+      "empty": "No devices."
+    },
+    "risk": {
+      "title": "Risk scores",
+      "risk": "Risk",
+      "sessions": "Sessions",
+      "sensitive": "Sensitive",
+      "empty": "No data."
     }
   }
 }

@@ -838,7 +838,10 @@
     "passwordUpdated": "Password aggiornata",
     "back": "Indietro",
     "accessAdmin": "Apri dashboard admin",
-    "goBack": "Indietro"
+    "goBack": "Indietro",
+    "languageSection": "Lingua",
+    "languageDesc": "Scegliete la lingua dell'interfaccia. La vostra scelta viene salvata e sincronizzata con il conto.",
+    "languageSaved": "Lingua aggiornata"
   },
   "loanDetail": {
     "metaTitle": "Dettagli del prestito — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Il team è raggiungibile al +39 350 036 6867 o tramite la pagina Contatti.",
       "thanks": "Prego! Chiedi pure altre informazioni.",
       "default": "Un consulente BNP PARIBAS ti risponderà a breve. Puoi anche contattarci tramite la pagina Contatti."
+    }
+  },
+  "legal": {
+    "badge": "Legale",
+    "lastUpdated": "Ultimo aggiornamento",
+    "home": "Home",
+    "privacy": {
+      "title": "Informativa sulla privacy",
+      "subtitle": "La vostra privacy è parte essenziale della fiducia bancaria.",
+      "sections": [
+        {
+          "h": "1. Dati raccolti",
+          "p": "Identità, contatti, dati finanziari, tecnici e comportamentali."
+        },
+        {
+          "h": "2. Finalità",
+          "p": "Gestione del conto, valutazione del prestito, prevenzione frodi e antiriciclaggio, obblighi di legge."
+        },
+        {
+          "h": "3. Base giuridica (GDPR)",
+          "p": "Esecuzione del contratto, legittimo interesse, obbligo di legge, consenso per il marketing."
+        },
+        {
+          "h": "4. Condivisione",
+          "p": "Solo con responsabili verificati, autorità di vigilanza e autorità giudiziarie."
+        },
+        {
+          "h": "5. Conservazione",
+          "p": "Dati conto: rapporto + 10 anni (AML). Log di sicurezza: 24 mesi."
+        },
+        {
+          "h": "6. I vostri diritti",
+          "p": "Accesso, rettifica, cancellazione, limitazione, portabilità, opposizione. <a href=\"mailto:support_bnpparibas@nowelio.com\">privacy@bnpparibas.com</a>."
+        },
+        {
+          "h": "7. Sicurezza",
+          "p": "Cifratura in transito e a riposo, fingerprint dispositivo, anomalie, MFA, risposta 24/7."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Condizioni di servizio",
+      "subtitle": "Utilizzando BNP PARIBAS accettate le presenti condizioni.",
+      "sections": [
+        {
+          "h": "1. Requisiti",
+          "p": "Maggiorenni, residenti in paesi ammessi, capaci di contrarre."
+        },
+        {
+          "h": "2. Account",
+          "p": "Informazioni veritiere, credenziali riservate, segnalazione compromissioni."
+        },
+        {
+          "h": "3. Uso accettabile",
+          "p": "Vietate frodi, riciclaggio, finanziamento del terrorismo, abuso di mercato, scraping."
+        },
+        {
+          "h": "4. Commissioni",
+          "p": "Indicate in app prima di ogni operazione, modificabili con 30 giorni di preavviso."
+        },
+        {
+          "h": "5. Responsabilità",
+          "p": "Danni diretti per colpa grave; esclusi danni indiretti."
+        },
+        {
+          "h": "6. Sospensione",
+          "p": "Sospensione immediata in caso di sospetto frode o AML."
+        },
+        {
+          "h": "7. Legge applicabile",
+          "p": "Legge francese, salva la legge consumeristica imperativa di residenza."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Politica dei cookie",
+      "sections": [
+        {
+          "h": "Cosa usiamo",
+          "list": [
+            "<strong>Strettamente necessari</strong> — autenticazione, sessione, sicurezza.",
+            "<strong>Funzionali</strong> — lingua, tema.",
+            "<strong>Sicurezza</strong> — fingerprint anti-frode.",
+            "<strong>Analitici</strong> — uso aggregato, solo con consenso."
+          ]
+        },
+        {
+          "h": "Gestione cookie",
+          "p": "Potete eliminare i cookie dal browser. Disabilitando i necessari, l'accesso non sarà possibile."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Note legali",
+      "sections": [
+        {
+          "h": "Editore",
+          "p": "BNP PARIBAS — SAS con capitale di 1.000.000 EUR — sede: 1 Centenary Square, Birmingham, B1 1HQ, Regno Unito."
+        },
+        {
+          "h": "Direttore",
+          "p": "Compliance BNP PARIBAS."
+        },
+        {
+          "h": "Hosting",
+          "p": "Cloudflare Workers — 101 Townsend St, San Francisco, CA 94107, USA."
+        },
+        {
+          "h": "Contatto",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Proprietà intellettuale",
+          "p": "Marchi, loghi e contenuti sono di BNP PARIBAS o dei licenzianti."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "Politica AML / KYC",
+      "sections": [
+        {
+          "h": "Impegno",
+          "p": "Tolleranza zero contro riciclaggio, finanziamento del terrorismo ed elusione delle sanzioni."
+        },
+        {
+          "h": "Adeguata verifica",
+          "p": "Identità, indirizzo, fonte dei fondi e monitoraggio continuo."
+        },
+        {
+          "h": "Verifica rafforzata",
+          "p": "PEP, giurisdizioni ad alto rischio, transazioni complesse."
+        },
+        {
+          "h": "Sanzioni",
+          "p": "Screening in tempo reale su liste UE, ONU, OFAC, UK."
+        },
+        {
+          "h": "Segnalazioni",
+          "p": "Segnalazioni alla UIF competente. Vietato il tipping-off."
+        },
+        {
+          "h": "Formazione",
+          "p": "Formazione annuale; MLRO indipendente."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Privacy e sicurezza finanziaria",
+      "sections": [
+        {
+          "h": "Protezione del denaro",
+          "p": "TLS 1.3, AES-256, HSM, fondi segregati presso custodi di primo piano."
+        },
+        {
+          "h": "Autenticazione",
+          "p": "SCA PSD2: password + dispositivo + OTP."
+        },
+        {
+          "h": "Antifrode",
+          "p": "Anomalie 24/7, geo-velocity, scoring comportamentale."
+        },
+        {
+          "h": "Riservatezza",
+          "p": "Segreto bancario. Dati condivisi solo con voi, autorità o per ordine valido."
+        },
+        {
+          "h": "Il vostro ruolo",
+          "p": "Custodite le credenziali, registrate dispositivi di fiducia, attivate le notifiche."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Condizioni del prestito",
+      "subtitle": "Un prestito vi impegna; verificate la capacità di rimborso.",
+      "sections": [
+        {
+          "h": "1. Requisiti",
+          "p": "Identità verificata, redditi stabili, niente insoluti."
+        },
+        {
+          "h": "2. Importi e durata",
+          "p": "Da 1.000 EUR a 500.000 EUR, da 12 a 120 mesi."
+        },
+        {
+          "h": "3. Tasso / TAEG",
+          "p": "Tasso fisso indicato in offerta."
+        },
+        {
+          "h": "4. Erogazione",
+          "p": "Dopo firma e verifica. > 50.000 EUR per fasi (63 % / 88 % / 100 %)."
+        },
+        {
+          "h": "5. Rimborso",
+          "p": "Addebito mensile. Rimborso anticipato consentito."
+        },
+        {
+          "h": "6. Inadempimento",
+          "p": "Interessi, spese e possibile decadenza dal beneficio del termine."
+        },
+        {
+          "h": "7. Recesso",
+          "p": "14 giorni di calendario dalla firma."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Politica di rimborso e inadempimento",
+      "sections": [
+        {
+          "h": "Piano di ammortamento",
+          "p": "Rate mensili nella data convenuta sull'IBAN. Visibile in dashboard."
+        },
+        {
+          "h": "Estinzione anticipata",
+          "p": "Sempre consentita; indennità entro i limiti di legge."
+        },
+        {
+          "h": "Ritardi",
+          "list": [
+            "Giorno 1–7: sollecito amichevole.",
+            "Giorno 8–30: more + interessi.",
+            "Dal giorno 31: messa in mora."
+          ]
+        },
+        {
+          "h": "Recupero",
+          "p": "Preferiamo soluzioni amichevoli; in alternativa iscrizione ai registri."
+        },
+        {
+          "h": "Difficoltà",
+          "p": "Contattateci subito: dilazione o rinegoziazione possibili."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Sicurezza · Admin",
+    "unauthorized": "Non autorizzato",
+    "adminLink": "Admin",
+    "center": "Centro di sicurezza",
+    "ok": "ok",
+    "fail": "errore",
+    "user": "utente",
+    "kpi": {
+      "totalEvents": "Eventi totali",
+      "devicesTracked": "Dispositivi tracciati",
+      "openAlerts": "Allerte aperte",
+      "highRisk": "Utenti a rischio"
+    },
+    "tab": {
+      "logs": "Registri",
+      "alerts": "Allerte",
+      "devices": "Dispositivi",
+      "risk": "Rischio"
+    },
+    "logs": {
+      "title": "Registri di sicurezza",
+      "searchPh": "Cerca utente, IP, paese…",
+      "action": "Azione",
+      "allActions": "Tutte le azioni",
+      "when": "Quando",
+      "user": "Utente",
+      "ipCountry": "IP / Paese",
+      "device": "Dispositivo",
+      "status": "Stato",
+      "empty": "Nessun registro."
+    },
+    "alerts": {
+      "title": "Allerte di sicurezza",
+      "empty": "Nessuna allerta.",
+      "resolved": "risolta",
+      "resolve": "Risolvi"
+    },
+    "devices": {
+      "title": "Dispositivi di fiducia",
+      "label": "Etichetta",
+      "country": "Paese",
+      "lastSeen": "Ultimo accesso",
+      "trusted": "Fiducia",
+      "trustedBadge": "di fiducia",
+      "pending": "in attesa",
+      "empty": "Nessun dispositivo."
+    },
+    "risk": {
+      "title": "Punteggi di rischio",
+      "risk": "Rischio",
+      "sessions": "Sessioni",
+      "sensitive": "Sensibili",
+      "empty": "Nessun dato."
     }
   }
 }

@@ -1,58 +1,58 @@
 {
   "common": {
-    "loading": "Loading…",
-    "save": "Save",
-    "cancel": "Cancel",
-    "close": "Close",
-    "back": "Back",
-    "open": "Open",
-    "search": "Search",
-    "actions": "Actions",
-    "yes": "Yes",
-    "no": "No",
-    "all": "All",
-    "none": "None",
-    "language": "Language",
-    "submit": "Submit",
-    "send": "Send",
-    "confirm": "Confirm",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "download": "Download",
-    "upload": "Upload",
-    "next": "Next",
-    "previous": "Previous",
-    "from": "From",
-    "to": "To",
-    "amount": "Amount",
-    "date": "Date",
-    "status": "Status",
-    "details": "Details",
-    "optional": "optional",
-    "required": "required",
-    "refresh": "Refresh",
-    "viewAll": "View all",
-    "new": "New",
-    "saving": "Saving…",
-    "sending": "Sending…",
-    "updating": "Updating…",
-    "loadError": "Loading error",
-    "sessionExpired": "Session expired due to inactivity",
-    "notFound": "Page not found",
-    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to home"
+    "loading": "Se încarcă…",
+    "save": "Salvare",
+    "cancel": "Anulare",
+    "close": "Închidere",
+    "back": "Înapoi",
+    "open": "Deschide",
+    "search": "Căutare",
+    "actions": "Acțiuni",
+    "yes": "Da",
+    "no": "Nu",
+    "all": "Toate",
+    "none": "Niciuna",
+    "language": "Limbă",
+    "submit": "Trimite",
+    "send": "Trimite",
+    "confirm": "Confirmă",
+    "delete": "Șterge",
+    "edit": "Editează",
+    "view": "Vezi",
+    "download": "Descarcă",
+    "upload": "Încarcă",
+    "next": "Următor",
+    "previous": "Anterior",
+    "from": "De la",
+    "to": "Către",
+    "amount": "Sumă",
+    "date": "Dată",
+    "status": "Stare",
+    "details": "Detalii",
+    "optional": "opțional",
+    "required": "obligatoriu",
+    "refresh": "Reîmprospătează",
+    "viewAll": "Vezi tot",
+    "new": "Nou",
+    "saving": "Se salvează…",
+    "sending": "Se trimite…",
+    "updating": "Se actualizează…",
+    "loadError": "Eroare la încărcare",
+    "sessionExpired": "Sesiunea a expirat",
+    "notFound": "Pagina nu a fost găsită",
+    "notFoundDesc": "Pagina căutată nu există.",
+    "backHome": "Înapoi la pagina principală"
   },
   "header": {
-    "myLoans": "My loans",
-    "newLoan": "Apply for a loan",
-    "dashboard": "Dashboard",
+    "myLoans": "Creditele mele",
+    "newLoan": "Solicită credit",
+    "dashboard": "Panou",
     "admin": "Admin",
-    "settings": "Settings",
-    "signOut": "Sign out",
-    "signIn": "Sign in",
+    "settings": "Setări",
+    "signOut": "Deconectare",
+    "signIn": "Conectare",
     "contact": "Contact",
-    "menu": "Menu"
+    "menu": "Meniu"
   },
   "notifications": {
     "title": "Notifications",
@@ -838,7 +838,10 @@
     "passwordUpdated": "Password updated",
     "back": "Back",
     "accessAdmin": "Open admin dashboard",
-    "goBack": "Back"
+    "goBack": "Back",
+    "languageSection": "Limbă",
+    "languageDesc": "Alegeți limba interfeței. Alegerea este salvată și sincronizată cu contul dvs.",
+    "languageSaved": "Limba a fost actualizată"
   },
   "loanDetail": {
     "metaTitle": "Loan details — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Our team is reachable at +39 350 036 6867 or via the Contact page.",
       "thanks": "You're welcome! Feel free to ask anything else.",
       "default": "An BNP PARIBAS adviser will get back to you shortly. You can also reach us via the Contact page."
+    }
+  },
+  "legal": {
+    "badge": "Legal",
+    "lastUpdated": "Ultima actualizare",
+    "home": "Acasă",
+    "privacy": {
+      "title": "Politica de confidențialitate",
+      "subtitle": "Confidențialitatea dvs. este esența încrederii bancare.",
+      "sections": [
+        {
+          "h": "1. Date colectate",
+          "p": "Identitate, contact, date financiare, tehnice și comportamentale."
+        },
+        {
+          "h": "2. Scopuri",
+          "p": "Gestionarea contului, evaluarea creditului, prevenirea fraudei și a spălării banilor."
+        },
+        {
+          "h": "3. Temei legal (GDPR)",
+          "p": "Contract, interes legitim, obligație legală, consimțământ."
+        },
+        {
+          "h": "4. Partajare",
+          "p": "Doar către procesatori verificați și autorități."
+        },
+        {
+          "h": "5. Păstrare",
+          "p": "Cont: relație + 10 ani. Jurnale: 24 luni."
+        },
+        {
+          "h": "6. Drepturile dvs.",
+          "p": "Acces, rectificare, ștergere, restricționare, portabilitate, opoziție."
+        },
+        {
+          "h": "7. Securitate",
+          "p": "Criptare, fingerprint, anomalii, MFA, răspuns 24/7."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Termenii serviciului",
+      "subtitle": "Folosind BNP PARIBAS acceptați termenii.",
+      "sections": [
+        {
+          "h": "1. Eligibilitate",
+          "p": "Minimum 18 ani, rezident al unei țări eligibile."
+        },
+        {
+          "h": "2. Cont",
+          "p": "Informații exacte și credențiale confidențiale."
+        },
+        {
+          "h": "3. Utilizare acceptabilă",
+          "p": "Fără fraudă, spălare, finanțarea terorismului."
+        },
+        {
+          "h": "4. Taxe",
+          "p": "Afișate înainte de operațiune; modificări cu 30 zile preaviz."
+        },
+        {
+          "h": "5. Răspundere",
+          "p": "Daune directe în caz de neglijență gravă."
+        },
+        {
+          "h": "6. Suspendare",
+          "p": "Imediată la suspiciune de fraudă sau AML."
+        },
+        {
+          "h": "7. Lege aplicabilă",
+          "p": "Lege franceză, cu protecția consumatorului."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Politica cookies",
+      "sections": [
+        {
+          "h": "Ce utilizăm",
+          "list": [
+            "<strong>Strict necesare</strong>",
+            "<strong>Funcționale</strong>",
+            "<strong>Securitate</strong>",
+            "<strong>Analitice</strong> — doar cu consimțământ."
+          ]
+        },
+        {
+          "h": "Gestionare",
+          "p": "Puteți șterge cookies din browser."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Mențiuni legale",
+      "sections": [
+        {
+          "h": "Editor",
+          "p": "BNP PARIBAS — SAS cu capital de 1.000.000 EUR — sediu: 1 Centenary Square, Birmingham, Regatul Unit."
+        },
+        {
+          "h": "Director publicare",
+          "p": "Compliance BNP PARIBAS."
+        },
+        {
+          "h": "Hosting",
+          "p": "Cloudflare Workers — San Francisco, SUA."
+        },
+        {
+          "h": "Contact",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Proprietate intelectuală",
+          "p": "Mărcile și conținutul aparțin BNP PARIBAS."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "Politica AML / KYC",
+      "sections": [
+        {
+          "h": "Angajament",
+          "p": "Toleranță zero față de spălare și finanțarea terorismului."
+        },
+        {
+          "h": "Diligență",
+          "p": "Verificare identitate, adresă, sursa fondurilor."
+        },
+        {
+          "h": "Sporită",
+          "p": "PEP, jurisdicții cu risc."
+        },
+        {
+          "h": "Sancțiuni",
+          "p": "Verificare împotriva UE, ONU, OFAC, UK."
+        },
+        {
+          "h": "Raportare",
+          "p": "FIU competentă; tipping-off interzis."
+        },
+        {
+          "h": "Instruire",
+          "p": "Anual; MLRO independent."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Confidențialitate și securitate financiară",
+      "sections": [
+        {
+          "h": "Protecție",
+          "p": "TLS 1.3, AES-256, HSM, segregarea fondurilor."
+        },
+        {
+          "h": "Autentificare",
+          "p": "SCA PSD2: parolă + dispozitiv + OTP."
+        },
+        {
+          "h": "Monitorizare",
+          "p": "Detectarea anomaliilor 24/7."
+        },
+        {
+          "h": "Confidențialitate",
+          "p": "Secret bancar."
+        },
+        {
+          "h": "Rolul dvs.",
+          "p": "Păstrați credențialele, înregistrați dispozitive de încredere."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Condiții împrumut",
+      "subtitle": "Un credit vă obligă; verificați capacitatea de rambursare.",
+      "sections": [
+        {
+          "h": "1. Eligibilitate",
+          "p": "Identitate verificată și venituri stabile."
+        },
+        {
+          "h": "2. Sume și durată",
+          "p": "De la 1.000 EUR la 500.000 EUR, 12 până la 120 luni."
+        },
+        {
+          "h": "3. Dobândă / DAE",
+          "p": "Dobândă fixă în ofertă."
+        },
+        {
+          "h": "4. Eliberare fonduri",
+          "p": "După semnare și verificare."
+        },
+        {
+          "h": "5. Rambursare",
+          "p": "Debit lunar."
+        },
+        {
+          "h": "6. Întârziere",
+          "p": "Dobânzi, costuri, posibilă scadență anticipată."
+        },
+        {
+          "h": "7. Drept de retragere",
+          "p": "14 zile calendaristice de la semnare."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Politica de rambursare",
+      "sections": [
+        {
+          "h": "Calendar",
+          "p": "Rate lunare la data convenită."
+        },
+        {
+          "h": "Rambursare anticipată",
+          "p": "Permisă oricând."
+        },
+        {
+          "h": "Întârziere",
+          "list": [
+            "Ziua 1–7: reamintire.",
+            "Ziua 8–30: taxe + dobândă.",
+            "Din ziua 31: notificare formală."
+          ]
+        },
+        {
+          "h": "Recuperare",
+          "p": "Soluție amiabilă preferată."
+        },
+        {
+          "h": "Dificultăți",
+          "p": "Contactați-ne pentru reeșalonare."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Securitate · Admin",
+    "unauthorized": "Neautorizat",
+    "adminLink": "Admin",
+    "center": "Centru de securitate",
+    "ok": "ok",
+    "fail": "eroare",
+    "user": "utilizator",
+    "kpi": {
+      "totalEvents": "Total evenimente",
+      "devicesTracked": "Dispozitive monitorizate",
+      "openAlerts": "Alerte deschise",
+      "highRisk": "Utilizatori cu risc"
+    },
+    "tab": {
+      "logs": "Jurnale",
+      "alerts": "Alerte",
+      "devices": "Dispozitive",
+      "risk": "Risc"
+    },
+    "logs": {
+      "title": "Jurnale de securitate",
+      "searchPh": "Căutare utilizator, IP, țară…",
+      "action": "Acțiune",
+      "allActions": "Toate",
+      "when": "Când",
+      "user": "Utilizator",
+      "ipCountry": "IP / Țară",
+      "device": "Dispozitiv",
+      "status": "Stare",
+      "empty": "Niciun jurnal."
+    },
+    "alerts": {
+      "title": "Alerte de securitate",
+      "empty": "Nicio alertă.",
+      "resolved": "rezolvată",
+      "resolve": "Rezolvă"
+    },
+    "devices": {
+      "title": "Dispozitive de încredere",
+      "label": "Etichetă",
+      "country": "Țară",
+      "lastSeen": "Văzut ultima dată",
+      "trusted": "Încredere",
+      "trustedBadge": "de încredere",
+      "pending": "în așteptare",
+      "empty": "Niciun dispozitiv."
+    },
+    "risk": {
+      "title": "Scor de risc",
+      "risk": "Risc",
+      "sessions": "Sesiuni",
+      "sensitive": "Sensibil",
+      "empty": "Fără date."
     }
   }
 }

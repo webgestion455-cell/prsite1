@@ -12,7 +12,9 @@ import { Honeypot } from "@/components/Honeypot";
 import { isPasswordStrong } from "@/lib/password";
 import { toast } from "sonner";
 import { ArrowLeft, KeyRound, User as UserIcon, Mail, Phone, ShieldCheck, Loader2 } from "lucide-react";
-import i18n from "@/i18n";
+import i18n, { SUPPORTED_LANGUAGES, LANG_STORAGE_KEY } from "@/i18n";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Globe } from "lucide-react";
 
 export const Route = createFileRoute("/settings")({
   component: SettingsPage,
@@ -252,6 +254,36 @@ function SettingsPage() {
             {savingPassword ? t("common.updating") : t("settings.changePassword")}
           </Button>
         </form>
+      </section>
+
+      <section className="mt-6 rounded-2xl border border-border bg-card p-4 sm:p-6 shadow-sm">
+        <div className="mb-4 flex items-center gap-2">
+          <Globe className="h-4 w-4 text-muted-foreground" />
+          <h2 className="text-base font-semibold">{t("settings.languageSection")}</h2>
+        </div>
+        <p className="mb-3 text-sm text-muted-foreground">{t("settings.languageDesc")}</p>
+        <Select
+          value={(i18n.resolvedLanguage || i18n.language || "en").split("-")[0]}
+          onValueChange={async (val) => {
+            try { window.localStorage.setItem(LANG_STORAGE_KEY, val); } catch { /* ignore */ }
+            await i18n.changeLanguage(val);
+            try {
+              if (user) {
+                await supabase.from("profiles").update({ language: val }).eq("user_id", user.id);
+              }
+            } catch { /* ignore */ }
+            toast.success(t("settings.languageSaved"));
+          }}
+        >
+          <SelectTrigger className="h-11 w-full sm:w-72"><SelectValue /></SelectTrigger>
+          <SelectContent>
+            {SUPPORTED_LANGUAGES.map((l) => (
+              <SelectItem key={l.code} value={l.code}>
+                <span className="mr-2">{l.flag}</span>{l.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
       </section>
 
       {role === "admin" && (

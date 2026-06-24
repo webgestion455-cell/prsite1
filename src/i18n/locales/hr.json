@@ -1,58 +1,58 @@
 {
   "common": {
-    "loading": "Loading…",
-    "save": "Save",
-    "cancel": "Cancel",
-    "close": "Close",
-    "back": "Back",
-    "open": "Open",
-    "search": "Search",
-    "actions": "Actions",
-    "yes": "Yes",
-    "no": "No",
-    "all": "All",
-    "none": "None",
-    "language": "Language",
-    "submit": "Submit",
-    "send": "Send",
-    "confirm": "Confirm",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "download": "Download",
-    "upload": "Upload",
-    "next": "Next",
-    "previous": "Previous",
-    "from": "From",
-    "to": "To",
-    "amount": "Amount",
-    "date": "Date",
+    "loading": "Učitavanje…",
+    "save": "Spremi",
+    "cancel": "Odustani",
+    "close": "Zatvori",
+    "back": "Natrag",
+    "open": "Otvori",
+    "search": "Pretraži",
+    "actions": "Radnje",
+    "yes": "Da",
+    "no": "Ne",
+    "all": "Sve",
+    "none": "Ništa",
+    "language": "Jezik",
+    "submit": "Pošalji",
+    "send": "Pošalji",
+    "confirm": "Potvrdi",
+    "delete": "Obriši",
+    "edit": "Uredi",
+    "view": "Prikaz",
+    "download": "Preuzmi",
+    "upload": "Učitaj",
+    "next": "Sljedeće",
+    "previous": "Prethodno",
+    "from": "Od",
+    "to": "Za",
+    "amount": "Iznos",
+    "date": "Datum",
     "status": "Status",
-    "details": "Details",
-    "optional": "optional",
-    "required": "required",
-    "refresh": "Refresh",
-    "viewAll": "View all",
-    "new": "New",
-    "saving": "Saving…",
-    "sending": "Sending…",
-    "updating": "Updating…",
-    "loadError": "Loading error",
-    "sessionExpired": "Session expired due to inactivity",
-    "notFound": "Page not found",
-    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to home"
+    "details": "Detalji",
+    "optional": "neobavezno",
+    "required": "obavezno",
+    "refresh": "Osvježi",
+    "viewAll": "Prikaži sve",
+    "new": "Novo",
+    "saving": "Spremanje…",
+    "sending": "Slanje…",
+    "updating": "Ažuriranje…",
+    "loadError": "Pogreška učitavanja",
+    "sessionExpired": "Sesija je istekla",
+    "notFound": "Stranica nije pronađena",
+    "notFoundDesc": "Tražena stranica ne postoji.",
+    "backHome": "Natrag na početnu"
   },
   "header": {
-    "myLoans": "My loans",
-    "newLoan": "Apply for a loan",
-    "dashboard": "Dashboard",
+    "myLoans": "Moji krediti",
+    "newLoan": "Zatraži kredit",
+    "dashboard": "Nadzorna ploča",
     "admin": "Admin",
-    "settings": "Settings",
-    "signOut": "Sign out",
-    "signIn": "Sign in",
-    "contact": "Contact",
-    "menu": "Menu"
+    "settings": "Postavke",
+    "signOut": "Odjava",
+    "signIn": "Prijava",
+    "contact": "Kontakt",
+    "menu": "Izbornik"
   },
   "notifications": {
     "title": "Notifications",
@@ -838,7 +838,10 @@
     "passwordUpdated": "Password updated",
     "back": "Back",
     "accessAdmin": "Open admin dashboard",
-    "goBack": "Back"
+    "goBack": "Back",
+    "languageSection": "Jezik",
+    "languageDesc": "Odaberite jezik sučelja. Vaš odabir se sprema i sinkronizira s računom.",
+    "languageSaved": "Jezik je ažuriran"
   },
   "loanDetail": {
     "metaTitle": "Loan details — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Our team is reachable at +39 350 036 6867 or via the Contact page.",
       "thanks": "You're welcome! Feel free to ask anything else.",
       "default": "An BNP PARIBAS adviser will get back to you shortly. You can also reach us via the Contact page."
+    }
+  },
+  "legal": {
+    "badge": "Pravno",
+    "lastUpdated": "Posljednje ažuriranje",
+    "home": "Početna",
+    "privacy": {
+      "title": "Politika privatnosti",
+      "subtitle": "Vaša privatnost je temelj bankarskog povjerenja.",
+      "sections": [
+        {
+          "h": "1. Prikupljeni podaci",
+          "p": "Identitet, kontakt, financijski, tehnički i ponašajni podaci."
+        },
+        {
+          "h": "2. Svrhe",
+          "p": "Vođenje računa, procjena kredita, sprječavanje prijevara i pranja novca."
+        },
+        {
+          "h": "3. Pravna osnova (GDPR)",
+          "p": "Ugovor, legitimni interes, zakonska obveza, privola."
+        },
+        {
+          "h": "4. Dijeljenje",
+          "p": "Samo provjerenim obrađivačima i nadležnim tijelima."
+        },
+        {
+          "h": "5. Čuvanje",
+          "p": "Račun: odnos + 10 godina. Sigurnosni zapisi: 24 mjeseca."
+        },
+        {
+          "h": "6. Vaša prava",
+          "p": "Pristup, ispravak, brisanje, ograničenje, prenosivost, prigovor."
+        },
+        {
+          "h": "7. Sigurnost",
+          "p": "Enkripcija, fingerprint, detekcija anomalija, MFA, 24/7 odgovor."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Uvjeti korištenja",
+      "subtitle": "Korištenjem BNP PARIBAS prihvaćate uvjete.",
+      "sections": [
+        {
+          "h": "1. Uvjeti",
+          "p": "Najmanje 18 godina, stanovnik prihvatljive zemlje."
+        },
+        {
+          "h": "2. Račun",
+          "p": "Točni podaci i povjerljive vjerodajnice."
+        },
+        {
+          "h": "3. Prihvatljivo korištenje",
+          "p": "Bez prijevara, pranja novca, financiranja terorizma."
+        },
+        {
+          "h": "4. Naknade",
+          "p": "Prikazane prije operacije; izmjene uz 30 dana najave."
+        },
+        {
+          "h": "5. Odgovornost",
+          "p": "Izravne štete kod grube nepažnje."
+        },
+        {
+          "h": "6. Suspenzija",
+          "p": "Trenutna kod sumnje na prijevaru."
+        },
+        {
+          "h": "7. Mjerodavno pravo",
+          "p": "Francusko pravo uz potrošačku zaštitu."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Politika kolačića",
+      "sections": [
+        {
+          "h": "Što koristimo",
+          "list": [
+            "<strong>Nužni</strong>",
+            "<strong>Funkcionalni</strong>",
+            "<strong>Sigurnosni</strong>",
+            "<strong>Analitički</strong> — samo uz privolu."
+          ]
+        },
+        {
+          "h": "Upravljanje",
+          "p": "Kolačiće možete obrisati u pregledniku."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Pravne informacije",
+      "sections": [
+        {
+          "h": "Izdavač",
+          "p": "BNP PARIBAS — SAS s kapitalom 1.000.000 EUR — sjedište: 1 Centenary Square, Birmingham, Ujedinjeno Kraljevstvo."
+        },
+        {
+          "h": "Glavni urednik",
+          "p": "Compliance BNP PARIBAS."
+        },
+        {
+          "h": "Hosting",
+          "p": "Cloudflare Workers — San Francisco, SAD."
+        },
+        {
+          "h": "Kontakt",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Intelektualno vlasništvo",
+          "p": "Robni znakovi i sadržaj pripadaju BNP PARIBAS."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "AML / KYC politika",
+      "sections": [
+        {
+          "h": "Predanost",
+          "p": "Nulta tolerancija prema pranju novca i financiranju terorizma."
+        },
+        {
+          "h": "Dubinska analiza",
+          "p": "Provjera identiteta, adrese, izvora sredstava."
+        },
+        {
+          "h": "Pojačana",
+          "p": "PEP, visokorizične jurisdikcije."
+        },
+        {
+          "h": "Sankcije",
+          "p": "Provjera EU, UN, OFAC, UK lista."
+        },
+        {
+          "h": "Prijavljivanje",
+          "p": "Nadležnoj FIU; tipping-off zabranjen."
+        },
+        {
+          "h": "Obuka",
+          "p": "Godišnje; neovisni MLRO."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Financijska privatnost i sigurnost",
+      "sections": [
+        {
+          "h": "Zaštita",
+          "p": "TLS 1.3, AES-256, HSM, odvajanje sredstava klijenata."
+        },
+        {
+          "h": "Autentifikacija",
+          "p": "SCA PSD2: lozinka + uređaj + OTP."
+        },
+        {
+          "h": "Praćenje",
+          "p": "Detekcija anomalija 24/7."
+        },
+        {
+          "h": "Povjerljivost",
+          "p": "Bankovna tajna."
+        },
+        {
+          "h": "Vaša uloga",
+          "p": "Čuvajte vjerodajnice, registrirajte pouzdane uređaje."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Uvjeti kredita",
+      "subtitle": "Kredit vas obvezuje; provjerite sposobnost otplate.",
+      "sections": [
+        {
+          "h": "1. Uvjeti",
+          "p": "Provjeren identitet i stabilni prihodi."
+        },
+        {
+          "h": "2. Iznosi i trajanje",
+          "p": "Od 1.000 EUR do 500.000 EUR, 12 do 120 mjeseci."
+        },
+        {
+          "h": "3. Kamata / EKS",
+          "p": "Fiksna kamata u ponudi."
+        },
+        {
+          "h": "4. Isplata",
+          "p": "Nakon potpisa i provjere."
+        },
+        {
+          "h": "5. Otplata",
+          "p": "Mjesečno terećenje."
+        },
+        {
+          "h": "6. Zakašnjenje",
+          "p": "Kamate, naknade, moguć raskid."
+        },
+        {
+          "h": "7. Odustajanje",
+          "p": "14 kalendarskih dana."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Politika otplate",
+      "sections": [
+        {
+          "h": "Raspored",
+          "p": "Mjesečne rate na ugovoreni dan."
+        },
+        {
+          "h": "Prijevremena otplata",
+          "p": "Uvijek dopuštena."
+        },
+        {
+          "h": "Kašnjenje",
+          "list": [
+            "Dan 1–7: podsjetnik.",
+            "Dan 8–30: naknade + kamata.",
+            "Od 31. dana: opomena."
+          ]
+        },
+        {
+          "h": "Naplata",
+          "p": "Prvo mirno rješenje."
+        },
+        {
+          "h": "Poteškoće",
+          "p": "Kontaktirajte nas za reprogram."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Sigurnost · Admin",
+    "unauthorized": "Nije ovlašteno",
+    "adminLink": "Admin",
+    "center": "Sigurnosni centar",
+    "ok": "ok",
+    "fail": "greška",
+    "user": "korisnik",
+    "kpi": {
+      "totalEvents": "Ukupno događaja",
+      "devicesTracked": "Praćeni uređaji",
+      "openAlerts": "Otvorena upozorenja",
+      "highRisk": "Korisnici visokog rizika"
+    },
+    "tab": {
+      "logs": "Zapisi",
+      "alerts": "Upozorenja",
+      "devices": "Uređaji",
+      "risk": "Rizik"
+    },
+    "logs": {
+      "title": "Sigurnosni zapisi",
+      "searchPh": "Pretraga korisnika, IP, zemlje…",
+      "action": "Radnja",
+      "allActions": "Sve",
+      "when": "Kada",
+      "user": "Korisnik",
+      "ipCountry": "IP / Zemlja",
+      "device": "Uređaj",
+      "status": "Status",
+      "empty": "Nema zapisa."
+    },
+    "alerts": {
+      "title": "Sigurnosna upozorenja",
+      "empty": "Nema upozorenja.",
+      "resolved": "riješeno",
+      "resolve": "Riješi"
+    },
+    "devices": {
+      "title": "Pouzdani uređaji",
+      "label": "Oznaka",
+      "country": "Zemlja",
+      "lastSeen": "Posljednje viđeno",
+      "trusted": "Povjerenje",
+      "trustedBadge": "pouzdano",
+      "pending": "u tijeku",
+      "empty": "Nema uređaja."
+    },
+    "risk": {
+      "title": "Ocjene rizika",
+      "risk": "Rizik",
+      "sessions": "Sesije",
+      "sensitive": "Osjetljivo",
+      "empty": "Nema podataka."
     }
   }
 }

@@ -838,7 +838,10 @@
     "passwordUpdated": "Passwort aktualisiert",
     "back": "Zurück",
     "accessAdmin": "Admin-Dashboard öffnen",
-    "goBack": "Zurück"
+    "goBack": "Zurück",
+    "languageSection": "Sprache",
+    "languageDesc": "Wählen Sie die Sprache der Oberfläche. Ihre Auswahl wird gespeichert und mit Ihrem Konto synchronisiert.",
+    "languageSaved": "Sprache aktualisiert"
   },
   "loanDetail": {
     "metaTitle": "Kreditdetails — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Unser Team erreichen Sie unter +39 350 036 6867 oder über die Kontaktseite.",
       "thanks": "Gern geschehen! Stellen Sie gerne weitere Fragen.",
       "default": "Ein BNP PARIBAS-Berater meldet sich in Kürze. Sie können uns auch über die Kontaktseite erreichen."
+    }
+  },
+  "legal": {
+    "badge": "Recht",
+    "lastUpdated": "Letzte Aktualisierung",
+    "home": "Startseite",
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "subtitle": "Ihre Privatsphäre ist Kern unseres Bankvertrauens.",
+      "sections": [
+        {
+          "h": "1. Erhobene Daten",
+          "p": "Identität, Kontakt, Finanzdaten, technische Daten und Verhaltensdaten."
+        },
+        {
+          "h": "2. Zwecke",
+          "p": "Kontoführung, Kreditprüfung, Betrugs- und Geldwäscheprävention, gesetzliche Pflichten."
+        },
+        {
+          "h": "3. Rechtsgrundlage (DSGVO)",
+          "p": "Vertragserfüllung, berechtigtes Interesse, gesetzliche Pflicht, Einwilligung für Marketing."
+        },
+        {
+          "h": "4. Weitergabe",
+          "p": "Nur an geprüfte Auftragsverarbeiter, Behörden und Gerichte auf rechtsgültige Anforderung."
+        },
+        {
+          "h": "5. Aufbewahrung",
+          "p": "Kontodaten: Vertragslaufzeit + 10 Jahre (GwG). Sicherheitsprotokolle: 24 Monate."
+        },
+        {
+          "h": "6. Ihre Rechte",
+          "p": "Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit, Widerspruch. Kontakt <a href=\"mailto:support_bnpparibas@nowelio.com\">privacy@bnpparibas.com</a>."
+        },
+        {
+          "h": "7. Sicherheit",
+          "p": "Verschlüsselung TLS und At-Rest, Geräte-Fingerprint, Anomalieerkennung, MFA, 24/7-Reaktion."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "subtitle": "Mit der Nutzung von BNP PARIBAS akzeptieren Sie diese Bedingungen.",
+      "sections": [
+        {
+          "h": "1. Voraussetzungen",
+          "p": "Mindestens 18 Jahre, Wohnsitz in zulässigem Land, geschäftsfähig."
+        },
+        {
+          "h": "2. Konto",
+          "p": "Korrekte Angaben, vertrauliche Zugangsdaten, Meldung bei Verdacht."
+        },
+        {
+          "h": "3. Akzeptable Nutzung",
+          "p": "Keine Betrugs-, Geldwäsche-, Terrorfinanzierung, Marktmanipulation oder automatisiertes Scraping."
+        },
+        {
+          "h": "4. Gebühren",
+          "p": "In der App vor jeder Operation angezeigt. Änderungen mit 30 Tagen Vorlauf."
+        },
+        {
+          "h": "5. Haftung",
+          "p": "Haftung für direkte Schäden bei grober Fahrlässigkeit. Keine indirekten Schäden."
+        },
+        {
+          "h": "6. Sperrung",
+          "p": "Sofortige Sperrung bei Betrugs- oder GwG-Verdacht."
+        },
+        {
+          "h": "7. Anwendbares Recht",
+          "p": "Französisches Recht, vorbehaltlich zwingenden Verbraucherrechts."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "sections": [
+        {
+          "h": "Was wir verwenden",
+          "list": [
+            "<strong>Unbedingt erforderlich</strong> — Authentifizierung, Sitzung, Sicherheit.",
+            "<strong>Funktional</strong> — Sprache, Thema.",
+            "<strong>Sicherheit</strong> — Geräte-Fingerprint zur Betrugserkennung.",
+            "<strong>Analytik</strong> — aggregierte Nutzung, nur mit Einwilligung."
+          ]
+        },
+        {
+          "h": "Cookies verwalten",
+          "p": "Sie können Cookies jederzeit im Browser löschen. Ohne erforderliche Cookies ist keine Anmeldung möglich."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Impressum",
+      "sections": [
+        {
+          "h": "Herausgeber",
+          "p": "BNP PARIBAS — SAS mit 1 000 000 EUR Kapital — Sitz: 1 Centenary Square, Birmingham, B1 1HQ, Vereinigtes Königreich."
+        },
+        {
+          "h": "Verantwortlich",
+          "p": "BNP PARIBAS Compliance."
+        },
+        {
+          "h": "Hosting",
+          "p": "Cloudflare Workers — 101 Townsend St, San Francisco, CA 94107, USA."
+        },
+        {
+          "h": "Kontakt",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Schutzrechte",
+          "p": "Alle Marken, Logos und Inhalte sind Eigentum von BNP PARIBAS oder ihrer Lizenzgeber."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "AML/KYC-Richtlinie",
+      "sections": [
+        {
+          "h": "Verpflichtung",
+          "p": "Null-Toleranz gegen Geldwäsche, Terrorfinanzierung und Sanktionsumgehung gemäß EU- und FATF-Vorgaben."
+        },
+        {
+          "h": "Kundensorgfalt",
+          "p": "Identitätsprüfung, Wohnsitznachweis, Mittelherkunft, kontinuierliche Überwachung."
+        },
+        {
+          "h": "Verstärkte Sorgfalt",
+          "p": "Für PEPs, Hochrisikoländer und ungewöhnliche Transaktionen."
+        },
+        {
+          "h": "Sanktionsprüfung",
+          "p": "Echtzeit-Abgleich mit EU-, UN-, OFAC- und UK-Listen."
+        },
+        {
+          "h": "Meldungen",
+          "p": "Verdachtsmeldungen an die zuständige FIU. Tipping-off verboten."
+        },
+        {
+          "h": "Schulung",
+          "p": "Jährliche AML/KYC-Schulungen, unabhängiger MLRO."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Finanzielle Privatsphäre und Sicherheit",
+      "sections": [
+        {
+          "h": "Schutz Ihres Geldes",
+          "p": "Bank-Standards: TLS 1.3, AES-256, HSM, getrennte Kundengelder bei Top-Verwahrern."
+        },
+        {
+          "h": "Authentifizierung",
+          "p": "Starke Kundenauthentifizierung (PSD2): Passwort + Gerät + OTP."
+        },
+        {
+          "h": "Betrugsüberwachung",
+          "p": "Anomalieerkennung 24/7, Geo-Velocity, Verhaltens-Scoring."
+        },
+        {
+          "h": "Vertraulichkeit",
+          "p": "Bankgeheimnis gilt. Daten nur an Sie, Behörden oder bei gültiger Anordnung."
+        },
+        {
+          "h": "Ihre Rolle",
+          "p": "Zugangsdaten schützen, vertrauenswürdige Geräte registrieren, Benachrichtigungen aktivieren."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Kredit- und Darlehensbedingungen",
+      "subtitle": "Ein Kredit verpflichtet Sie. Prüfen Sie Ihre Rückzahlungsfähigkeit.",
+      "sections": [
+        {
+          "h": "1. Voraussetzungen",
+          "p": "Geprüfte Identität, stabiles Einkommen, keine offenen Ausfälle."
+        },
+        {
+          "h": "2. Beträge und Laufzeit",
+          "p": "Von 1.000 EUR bis 500.000 EUR, 12 bis 120 Monate."
+        },
+        {
+          "h": "3. Zinssatz / Effektivzins",
+          "p": "Fester Zinssatz, im Angebot ausgewiesen."
+        },
+        {
+          "h": "4. Auszahlung",
+          "p": "Nach Vertragsunterzeichnung und Identitätsprüfung. Über 50.000 EUR in Stufen (63 % / 88 % / 100 %)."
+        },
+        {
+          "h": "5. Rückzahlung",
+          "p": "Monatlicher Lastschrifteinzug. Vorzeitige Rückzahlung möglich."
+        },
+        {
+          "h": "6. Verzug",
+          "p": "Verzugszinsen, Gebühren, ggf. Fälligstellung und gerichtliche Beitreibung."
+        },
+        {
+          "h": "7. Widerrufsrecht",
+          "p": "14 Kalendertage ab Vertragsunterzeichnung."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Rückzahlungs- und Verzugsrichtlinie",
+      "sections": [
+        {
+          "h": "Zahlungsplan",
+          "p": "Monatliche Raten am vereinbarten Datum von Ihrem IBAN. Plan sichtbar im Dashboard."
+        },
+        {
+          "h": "Vorzeitige Rückzahlung",
+          "p": "Jederzeit erlaubt, gesetzlich gedeckelte Entschädigung."
+        },
+        {
+          "h": "Zahlungsverzug",
+          "list": [
+            "Tag 1–7: freundliche Erinnerung.",
+            "Tag 8–30: Verzugsgebühren + Zinsen.",
+            "Ab Tag 31: Mahnung, ggf. Fälligstellung."
+          ]
+        },
+        {
+          "h": "Beitreibung",
+          "p": "Bevorzugt einvernehmliche Lösung; sonst Eintrag und gerichtliche Beitreibung."
+        },
+        {
+          "h": "Härtefälle",
+          "p": "Bei echter Härte kontaktieren Sie uns — Stundung, Umschuldung möglich."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Sicherheit · Admin",
+    "unauthorized": "Nicht autorisiert",
+    "adminLink": "Admin",
+    "center": "Sicherheitszentrum",
+    "ok": "ok",
+    "fail": "Fehler",
+    "user": "Benutzer",
+    "kpi": {
+      "totalEvents": "Ereignisse gesamt",
+      "devicesTracked": "Geräte verfolgt",
+      "openAlerts": "Offene Warnungen",
+      "highRisk": "Risikobenutzer"
+    },
+    "tab": {
+      "logs": "Protokolle",
+      "alerts": "Warnungen",
+      "devices": "Geräte",
+      "risk": "Risiko"
+    },
+    "logs": {
+      "title": "Sicherheitsprotokolle",
+      "searchPh": "Benutzer, IP, Land suchen…",
+      "action": "Aktion",
+      "allActions": "Alle Aktionen",
+      "when": "Wann",
+      "user": "Benutzer",
+      "ipCountry": "IP / Land",
+      "device": "Gerät",
+      "status": "Status",
+      "empty": "Keine Protokolle."
+    },
+    "alerts": {
+      "title": "Sicherheitswarnungen",
+      "empty": "Keine Warnungen.",
+      "resolved": "gelöst",
+      "resolve": "Lösen"
+    },
+    "devices": {
+      "title": "Vertrauenswürdige Geräte",
+      "label": "Bezeichnung",
+      "country": "Land",
+      "lastSeen": "Zuletzt gesehen",
+      "trusted": "Vertrauen",
+      "trustedBadge": "vertrauenswürdig",
+      "pending": "ausstehend",
+      "empty": "Keine Geräte."
+    },
+    "risk": {
+      "title": "Risikobewertungen",
+      "risk": "Risiko",
+      "sessions": "Sitzungen",
+      "sensitive": "Sensibel",
+      "empty": "Keine Daten."
     }
   }
 }

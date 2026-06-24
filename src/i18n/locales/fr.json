@@ -838,7 +838,10 @@
     "passwordUpdated": "Mot de passe mis à jour",
     "back": "Retour",
     "accessAdmin": "Accéder au tableau de bord admin",
-    "goBack": "Retour"
+    "goBack": "Retour",
+    "languageSection": "Langue",
+    "languageDesc": "Choisissez la langue de l'interface. Votre choix est enregistré et synchronisé à votre compte.",
+    "languageSaved": "Langue mise à jour"
   },
   "loanDetail": {
     "metaTitle": "Détails du prêt — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Notre équipe est joignable au +39 350 036 6867 ou via la page Contact.",
       "thanks": "Avec plaisir ! N'hésitez pas si vous avez d'autres questions.",
       "default": "Un conseiller BNP PARIBAS reviendra vers vous très rapidement. Vous pouvez aussi nous contacter via la page Contact."
+    }
+  },
+  "legal": {
+    "badge": "Légal",
+    "lastUpdated": "Dernière mise à jour",
+    "home": "Accueil",
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "subtitle": "Votre vie privée est au cœur de notre engagement de confiance bancaire.",
+      "sections": [
+        {
+          "h": "1. Données collectées",
+          "p": "Identité (nom, date de naissance), coordonnées (email, téléphone, adresse), données financières (revenus, IBAN, informations de prêt), données techniques (IP, navigateur, empreinte d'appareil) et données comportementales (sessions, clics, évènements de sécurité)."
+        },
+        {
+          "h": "2. Finalités",
+          "p": "Ouvrir et gérer votre compte, évaluer les demandes de prêt, prévenir la fraude et le blanchiment, respecter nos obligations légales et améliorer nos services."
+        },
+        {
+          "h": "3. Base légale (RGPD)",
+          "p": "Exécution du contrat, intérêt légitime à la prévention de la fraude, obligation légale (LCB-FT) et votre consentement explicite pour le marketing."
+        },
+        {
+          "h": "4. Partage",
+          "p": "Limité à des sous-traitants vérifiés (hébergement cloud, vérification d'identité, réseaux de paiement), aux régulateurs et autorités judiciaires sur réquisition légale."
+        },
+        {
+          "h": "5. Conservation",
+          "p": "Données de compte : durée de la relation + 10 ans (LCB-FT). Journaux de sécurité : 24 mois. Cookies : selon notre politique cookies."
+        },
+        {
+          "h": "6. Vos droits",
+          "p": "Accès, rectification, suppression, limitation, portabilité et opposition. Contact <a href=\"mailto:support_bnpparibas@nowelio.com\">privacy@bnpparibas.com</a>. Vous pouvez saisir l'autorité de protection des données de votre pays."
+        },
+        {
+          "h": "7. Sécurité",
+          "p": "Chiffrement en transit (TLS) et au repos, empreinte d'appareil, détection d'anomalies, MFA sur les actions sensibles et réponse aux incidents 24/7."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Conditions générales d'utilisation",
+      "subtitle": "En utilisant BNP PARIBAS, vous acceptez les conditions ci-dessous.",
+      "sections": [
+        {
+          "h": "1. Éligibilité",
+          "p": "Vous devez avoir au moins 18 ans, résider dans un pays éligible et pouvoir conclure des contrats."
+        },
+        {
+          "h": "2. Compte",
+          "p": "Fournissez des informations exactes, conservez vos identifiants confidentiels et signalez toute compromission."
+        },
+        {
+          "h": "3. Usage acceptable",
+          "p": "Pas de fraude, blanchiment, financement du terrorisme, abus de marché, scraping automatisé ou activité interdite par la loi."
+        },
+        {
+          "h": "4. Frais",
+          "p": "Indiqués dans l'application avant chaque opération. Modifiables avec préavis de 30 jours."
+        },
+        {
+          "h": "5. Responsabilité",
+          "p": "Nous sommes responsables des dommages directs causés par notre faute lourde. Les préjudices indirects ou spéculatifs sont exclus."
+        },
+        {
+          "h": "6. Suspension",
+          "p": "Nous pouvons suspendre l'accès immédiatement en cas de suspicion de fraude, risque LCB-FT ou violation des présentes."
+        },
+        {
+          "h": "7. Droit applicable",
+          "p": "Droit français sauf application impérative du droit de la consommation de votre résidence. Tribunaux français compétents sous réserve des protections consommateur."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Politique cookies",
+      "sections": [
+        {
+          "h": "Ce que nous utilisons",
+          "list": [
+            "<strong>Strictement nécessaires</strong> — authentification, session, sécurité (sans consentement).",
+            "<strong>Fonctionnels</strong> — préférence de langue, thème.",
+            "<strong>Sécurité</strong> — empreinte d'appareil pour la détection de fraude (intérêt légitime).",
+            "<strong>Analytiques</strong> — usage agrégé, uniquement avec consentement."
+          ]
+        },
+        {
+          "h": "Gérer vos cookies",
+          "p": "Vous pouvez effacer vos cookies dans votre navigateur à tout moment. Désactiver les cookies strictement nécessaires empêche la connexion."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Mentions légales",
+      "sections": [
+        {
+          "h": "Éditeur",
+          "p": "BNP PARIBAS — SAS au capital de 1 000 000 EUR — siège social : 1 Centenary Square, Birmingham, B1 1HQ, Royaume-Uni. RCS Birmingham 000 000 000."
+        },
+        {
+          "h": "Directeur de publication",
+          "p": "Service Conformité BNP PARIBAS."
+        },
+        {
+          "h": "Hébergement",
+          "p": "Cloudflare Workers — 101 Townsend St, San Francisco, CA 94107, USA."
+        },
+        {
+          "h": "Contact",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Propriété intellectuelle",
+          "p": "Toutes les marques, logos et contenus restent la propriété de BNP PARIBAS ou de ses concédants. Reproduction interdite sans autorisation écrite."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "Politique LCB-FT / KYC",
+      "sections": [
+        {
+          "h": "Engagement",
+          "p": "BNP PARIBAS applique une tolérance zéro contre le blanchiment, le financement du terrorisme et le contournement des sanctions, conformément aux directives UE (AMLD5/6), recommandations GAFI et lois nationales applicables."
+        },
+        {
+          "h": "Vigilance client",
+          "p": "Vérification d'identité (pièce officielle + selfie de vivacité), justificatif de domicile, origine des fonds et surveillance continue des transactions."
+        },
+        {
+          "h": "Vigilance renforcée",
+          "p": "Appliquée aux personnes politiquement exposées (PPE), juridictions à risque élevé et transactions complexes ou inhabituelles."
+        },
+        {
+          "h": "Filtrage sanctions",
+          "p": "Filtrage en temps réel contre les listes consolidées UE, ONU, OFAC et Royaume-Uni."
+        },
+        {
+          "h": "Déclarations",
+          "p": "Déclarations de soupçon adressées à la cellule de renseignement financier compétente. Toute divulgation est strictement interdite."
+        },
+        {
+          "h": "Formation et gouvernance",
+          "p": "Formation annuelle LCB-FT pour tout le personnel. Un MLRO indépendant supervise le dispositif."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Confidentialité et sécurité financières",
+      "sections": [
+        {
+          "h": "Protéger votre argent",
+          "p": "Contrôles de niveau bancaire : TLS 1.3 en transit, AES-256 au repos, gestion de clés matérielle, ségrégation des fonds clients chez des dépositaires de premier rang."
+        },
+        {
+          "h": "Authentification",
+          "p": "Authentification forte (SCA) PSD2 : mot de passe + empreinte d'appareil + code unique sur les opérations sensibles."
+        },
+        {
+          "h": "Surveillance anti-fraude",
+          "p": "Détection d'anomalies 24/7 : alertes nouveau dispositif, contrôles géo-vélocité, schémas de virement inhabituels, scoring comportemental."
+        },
+        {
+          "h": "Confidentialité",
+          "p": "Secret bancaire applicable. Vos données financières ne sont partagées qu'avec vous, les régulateurs, ou sur réquisition judiciaire valable."
+        },
+        {
+          "h": "Votre rôle",
+          "p": "Conservez vos identifiants privés, enregistrez vos appareils de confiance, activez les notifications et signalez immédiatement tout incident au support."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Conditions de prêt et de crédit",
+      "subtitle": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.",
+      "sections": [
+        {
+          "h": "1. Éligibilité",
+          "p": "Identité vérifiée, revenus stables, pas d'incident en cours. Contrôles crédit et LCB-FT avant accord."
+        },
+        {
+          "h": "2. Montants et durée",
+          "p": "De 1 000 EUR à 500 000 EUR, de 12 à 120 mois. Montants accordés selon dossier et loi applicable."
+        },
+        {
+          "h": "3. Taux et TAEG",
+          "p": "Taux fixe indiqué dans votre offre. Le TAEG inclut les intérêts et frais obligatoires."
+        },
+        {
+          "h": "4. Déblocage",
+          "p": "Fonds libérés après signature du contrat et vérification d'identité. Les déblocages > 50 000 EUR suivent un processus anti-fraude par étapes (63 % / 88 % / 100 %)."
+        },
+        {
+          "h": "5. Remboursement",
+          "p": "Prélèvement mensuel à date fixe. Remboursement anticipé autorisé avec plafond légal des indemnités."
+        },
+        {
+          "h": "6. Défaut",
+          "p": "Les retards entraînent intérêts, frais et peuvent aboutir à la déchéance du terme, inscription aux fichiers d'incidents et recouvrement judiciaire."
+        },
+        {
+          "h": "7. Droit de rétractation",
+          "p": "Vous disposez de 14 jours calendaires à compter de la signature pour vous rétracter sans motif."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Politique de remboursement et de défaut",
+      "sections": [
+        {
+          "h": "Échéancier",
+          "p": "Les mensualités sont prélevées à la date convenue sur l'IBAN déclaré. L'échéancier est visible depuis votre tableau de bord."
+        },
+        {
+          "h": "Remboursement anticipé",
+          "p": "Autorisé à tout moment. Indemnité plafonnée par la loi (0,5 % à 1 % du capital remboursé selon la durée restante)."
+        },
+        {
+          "h": "Retard de paiement",
+          "list": [
+            "Jour 1–7 : rappel amiable, sans frais.",
+            "Jour 8–30 : frais de retard + intérêts de défaut légaux.",
+            "Jour 31+ : mise en demeure et possible déchéance du terme."
+          ]
+        },
+        {
+          "h": "Recouvrement",
+          "p": "Nous privilégions toujours une solution amiable. Le défaut persistant peut entraîner inscription aux fichiers centraux et recouvrement judiciaire."
+        },
+        {
+          "h": "Difficulté financière",
+          "p": "Contactez-nous sans délai en cas de difficulté avérée. Nous pouvons proposer un report, un rééchelonnement ou une réduction temporaire si vous êtes éligible."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Sécurité · Admin",
+    "unauthorized": "Non autorisé",
+    "adminLink": "Admin",
+    "center": "Centre de sécurité",
+    "ok": "ok",
+    "fail": "échec",
+    "user": "utilisateur",
+    "kpi": {
+      "totalEvents": "Évènements totaux",
+      "devicesTracked": "Appareils suivis",
+      "openAlerts": "Alertes ouvertes",
+      "highRisk": "Utilisateurs à risque"
+    },
+    "tab": {
+      "logs": "Journaux",
+      "alerts": "Alertes",
+      "devices": "Appareils",
+      "risk": "Risque"
+    },
+    "logs": {
+      "title": "Journaux de sécurité",
+      "searchPh": "Rechercher utilisateur, IP, pays…",
+      "action": "Action",
+      "allActions": "Toutes les actions",
+      "when": "Quand",
+      "user": "Utilisateur",
+      "ipCountry": "IP / Pays",
+      "device": "Appareil",
+      "status": "Statut",
+      "empty": "Aucun journal."
+    },
+    "alerts": {
+      "title": "Alertes de sécurité",
+      "empty": "Aucune alerte.",
+      "resolved": "résolue",
+      "resolve": "Résoudre"
+    },
+    "devices": {
+      "title": "Appareils de confiance",
+      "label": "Libellé",
+      "country": "Pays",
+      "lastSeen": "Vu pour la dernière fois",
+      "trusted": "Confiance",
+      "trustedBadge": "de confiance",
+      "pending": "en attente",
+      "empty": "Aucun appareil."
+    },
+    "risk": {
+      "title": "Scores de risque",
+      "risk": "Risque",
+      "sessions": "Sessions",
+      "sensitive": "Sensibles",
+      "empty": "Aucune donnée."
     }
   }
 }

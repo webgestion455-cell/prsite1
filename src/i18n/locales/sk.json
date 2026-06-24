@@ -838,7 +838,10 @@
     "passwordUpdated": "Heslo aktualizované",
     "back": "Späť",
     "accessAdmin": "Otvoriť admin panel",
-    "goBack": "Späť"
+    "goBack": "Späť",
+    "languageSection": "Jazyk",
+    "languageDesc": "Vyberte jazyk rozhrania. Vaša voľba sa uloží a synchronizuje s vaším účtom.",
+    "languageSaved": "Jazyk aktualizovaný"
   },
   "loanDetail": {
     "metaTitle": "Detail pôžičky — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Tím je dostupný na +39 350 036 6867 alebo cez stránku Kontakt.",
       "thanks": "Rado sa stalo! Pokojne sa pýtajte ďalej.",
       "default": "Poradca BNP PARIBAS sa vám čoskoro ozve. Kontaktovať nás môžete aj cez stránku Kontakt."
+    }
+  },
+  "legal": {
+    "badge": "Právne",
+    "lastUpdated": "Posledná aktualizácia",
+    "home": "Domov",
+    "privacy": {
+      "title": "Zásady ochrany súkromia",
+      "subtitle": "Vaše súkromie je základom dôvery v banku.",
+      "sections": [
+        {
+          "h": "1. Zbierané údaje",
+          "p": "Identita, kontakt, finančné, technické a behaviorálne údaje."
+        },
+        {
+          "h": "2. Účely",
+          "p": "Vedenie účtu, posúdenie úveru, prevencia podvodov a prania."
+        },
+        {
+          "h": "3. Právny základ (GDPR)",
+          "p": "Zmluva, oprávnený záujem, zákonná povinnosť, súhlas."
+        },
+        {
+          "h": "4. Zdieľanie",
+          "p": "Iba s preverenými spracovateľmi a orgánmi."
+        },
+        {
+          "h": "5. Uchovávanie",
+          "p": "Účet: vzťah + 10 rokov. Logy: 24 mesiacov."
+        },
+        {
+          "h": "6. Vaše práva",
+          "p": "Prístup, oprava, výmaz, obmedzenie, prenosnosť, námietka."
+        },
+        {
+          "h": "7. Bezpečnosť",
+          "p": "TLS, fingerprint, detekcia anomálií, MFA, 24/7 reakcia."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Obchodné podmienky",
+      "subtitle": "Používaním BNP PARIBAS súhlasíte s týmito podmienkami.",
+      "sections": [
+        {
+          "h": "1. Podmienky",
+          "p": "Min. 18 rokov, rezident povolenej krajiny."
+        },
+        {
+          "h": "2. Účet",
+          "p": "Pravdivé údaje a dôverné prihlásenia."
+        },
+        {
+          "h": "3. Prijateľné použitie",
+          "p": "Bez podvodov, prania, financovania terorizmu."
+        },
+        {
+          "h": "4. Poplatky",
+          "p": "Zobrazené pred operáciou; zmeny s 30 dní vopred."
+        },
+        {
+          "h": "5. Zodpovednosť",
+          "p": "Priame škody pri hrubej nedbanlivosti."
+        },
+        {
+          "h": "6. Pozastavenie",
+          "p": "Okamžité pri podozrení."
+        },
+        {
+          "h": "7. Právny poriadok",
+          "p": "Francúzske právo s ochranou spotrebiteľa."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Politika cookies",
+      "sections": [
+        {
+          "h": "Čo používame",
+          "list": [
+            "<strong>Nevyhnutné</strong>",
+            "<strong>Funkčné</strong>",
+            "<strong>Bezpečnostné</strong>",
+            "<strong>Analytické</strong> — len so súhlasom."
+          ]
+        },
+        {
+          "h": "Správa",
+          "p": "Cookies môžete vymazať v prehliadači."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Právne oznámenia",
+      "sections": [
+        {
+          "h": "Vydavateľ",
+          "p": "BNP PARIBAS — SAS, kapitál 1 000 000 EUR — sídlo: 1 Centenary Square, Birmingham, Spojené kráľovstvo."
+        },
+        {
+          "h": "Riaditeľ",
+          "p": "Compliance BNP PARIBAS."
+        },
+        {
+          "h": "Hosting",
+          "p": "Cloudflare Workers — San Francisco, USA."
+        },
+        {
+          "h": "Kontakt",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Duševné vlastníctvo",
+          "p": "Značky a obsah patria BNP PARIBAS."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "AML / KYC politika",
+      "sections": [
+        {
+          "h": "Záväzok",
+          "p": "Nulová tolerancia voči praniu a financovaniu terorizmu."
+        },
+        {
+          "h": "Dôkladná identifikácia",
+          "p": "Identita, adresa, zdroj prostriedkov, sústavný monitoring."
+        },
+        {
+          "h": "Zvýšená",
+          "p": "PEP, vysokorizikové krajiny."
+        },
+        {
+          "h": "Sankcie",
+          "p": "Skríning voči zoznamom EÚ, OSN, OFAC, UK."
+        },
+        {
+          "h": "Hlásenia",
+          "p": "Hlásenia FIU; zákaz tipping-off."
+        },
+        {
+          "h": "Školenie",
+          "p": "Ročné školenie; nezávislý MLRO."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Finančné súkromie a bezpečnosť",
+      "sections": [
+        {
+          "h": "Ochrana peňazí",
+          "p": "TLS 1.3, AES-256, HSM, oddelené prostriedky klientov."
+        },
+        {
+          "h": "Autentifikácia",
+          "p": "SCA PSD2: heslo + zariadenie + OTP."
+        },
+        {
+          "h": "Monitorovanie",
+          "p": "24/7 detekcia anomálií."
+        },
+        {
+          "h": "Dôvernosť",
+          "p": "Bankové tajomstvo."
+        },
+        {
+          "h": "Vaša rola",
+          "p": "Chráňte prihlásenia, registrujte dôveryhodné zariadenia."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Podmienky úveru",
+      "subtitle": "Úver vás zaväzuje; overte si schopnosť splácať.",
+      "sections": [
+        {
+          "h": "1. Podmienky",
+          "p": "Overená identita, stabilný príjem."
+        },
+        {
+          "h": "2. Sumy a doba",
+          "p": "Od 1 000 EUR do 500 000 EUR, 12 až 120 mesiacov."
+        },
+        {
+          "h": "3. Úrok / RPMN",
+          "p": "Pevný úrok uvedený v ponuke."
+        },
+        {
+          "h": "4. Vyplatenie",
+          "p": "Po podpise a overení."
+        },
+        {
+          "h": "5. Splácanie",
+          "p": "Mesačné inkaso."
+        },
+        {
+          "h": "6. Omeškanie",
+          "p": "Úroky, poplatky a možná zosplatnenie."
+        },
+        {
+          "h": "7. Odstúpenie",
+          "p": "14 kalendárnych dní od podpisu."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Politika splácania",
+      "sections": [
+        {
+          "h": "Splátkový kalendár",
+          "p": "Mesačné splátky v dohodnutý deň."
+        },
+        {
+          "h": "Predčasné splatenie",
+          "p": "Vždy povolené."
+        },
+        {
+          "h": "Omeškanie",
+          "list": [
+            "Deň 1–7: upozornenie.",
+            "Deň 8–30: poplatky + úrok z omeškania.",
+            "Od dňa 31: výzva."
+          ]
+        },
+        {
+          "h": "Vymáhanie",
+          "p": "Najprv zmierne riešenie."
+        },
+        {
+          "h": "Ťažkosti",
+          "p": "Kontaktujte nás kvôli odkladu."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Bezpečnosť · Admin",
+    "unauthorized": "Neoprávnené",
+    "adminLink": "Admin",
+    "center": "Centrum bezpečnosti",
+    "ok": "ok",
+    "fail": "chyba",
+    "user": "používateľ",
+    "kpi": {
+      "totalEvents": "Celkom udalostí",
+      "devicesTracked": "Sledované zariadenia",
+      "openAlerts": "Otvorené upozornenia",
+      "highRisk": "Rizikoví používatelia"
+    },
+    "tab": {
+      "logs": "Záznamy",
+      "alerts": "Upozornenia",
+      "devices": "Zariadenia",
+      "risk": "Riziko"
+    },
+    "logs": {
+      "title": "Bezpečnostné záznamy",
+      "searchPh": "Hľadať používateľ, IP, krajina…",
+      "action": "Akcia",
+      "allActions": "Všetky akcie",
+      "when": "Kedy",
+      "user": "Používateľ",
+      "ipCountry": "IP / Krajina",
+      "device": "Zariadenie",
+      "status": "Stav",
+      "empty": "Žiadne záznamy."
+    },
+    "alerts": {
+      "title": "Bezpečnostné upozornenia",
+      "empty": "Žiadne upozornenia.",
+      "resolved": "vyriešené",
+      "resolve": "Vyriešiť"
+    },
+    "devices": {
+      "title": "Dôveryhodné zariadenia",
+      "label": "Štítok",
+      "country": "Krajina",
+      "lastSeen": "Naposledy videné",
+      "trusted": "Dôvera",
+      "trustedBadge": "dôveryhodné",
+      "pending": "čaká",
+      "empty": "Žiadne zariadenia."
+    },
+    "risk": {
+      "title": "Skóre rizika",
+      "risk": "Riziko",
+      "sessions": "Relácie",
+      "sensitive": "Citlivé",
+      "empty": "Žiadne údaje."
     }
   }
 }

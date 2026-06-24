@@ -19,8 +19,8 @@ import hr from "./locales/hr.json";
 import hu from "./locales/hu.json";
 
 export const SUPPORTED_LANGUAGES = [
-  { code: "fr", label: "Français", flag: "🇫🇷" },
   { code: "en", label: "English", flag: "🇬🇧" },
+  { code: "fr", label: "Français", flag: "🇫🇷" },
   { code: "de", label: "Deutsch", flag: "🇩🇪" },
   { code: "es", label: "Español", flag: "🇪🇸" },
   { code: "it", label: "Italiano", flag: "🇮🇹" },
@@ -38,12 +38,32 @@ export const SUPPORTED_LANGUAGES = [
 
 export type LanguageCode = (typeof SUPPORTED_LANGUAGES)[number]["code"];
 
+export const LANG_STORAGE_KEY = "bnpparibas.lang";
 const SUPPORTED_CODES = SUPPORTED_LANGUAGES.map((l) => l.code) as readonly string[];
 
 function pickSupported(raw: string | undefined | null): string | null {
   if (!raw) return null;
   const short = raw.toLowerCase().split(/[-_]/)[0];
   return SUPPORTED_CODES.includes(short) ? short : null;
+}
+
+// One-time migration from older localStorage keys
+if (typeof window !== "undefined") {
+  try {
+    const current = window.localStorage.getItem(LANG_STORAGE_KEY);
+    if (!current) {
+      for (const legacy of ["hsbcloan.lang", "i18nextLng"]) {
+        const v = window.localStorage.getItem(legacy);
+        const picked = pickSupported(v);
+        if (picked) {
+          window.localStorage.setItem(LANG_STORAGE_KEY, picked);
+          break;
+        }
+      }
+    }
+  } catch {
+    /* ignore */
+  }
 }
 
 if (!i18n.isInitialized) {
@@ -69,7 +89,7 @@ if (!i18n.isInitialized) {
         hu: { translation: hu },
       },
       lng: undefined,
-      fallbackLng: "fr",
+      fallbackLng: "en",
       supportedLngs: SUPPORTED_CODES as string[],
       nonExplicitSupportedLngs: true,
       load: "languageOnly",
@@ -77,27 +97,26 @@ if (!i18n.isInitialized) {
       interpolation: { escapeValue: false },
       react: { useSuspense: false },
       detection: {
-        order: ["localStorage", "navigator", "htmlTag", "path", "subdomain"],
-        caches: ["localStorage", "cookie"],
-        lookupLocalStorage: "bnpparibas.lang",
+        order: ["localStorage", "navigator", "htmlTag"],
+        caches: ["localStorage"],
+        lookupLocalStorage: LANG_STORAGE_KEY,
       },
     });
 
-  // Keep <html lang> in sync + react automatically when the OS/browser changes language
   if (typeof window !== "undefined") {
     i18n.on("languageChanged", (lng) => {
       const short = lng.split("-")[0];
       try {
         document.documentElement.lang = short;
+        window.localStorage.setItem(LANG_STORAGE_KEY, short);
       } catch {
         /* ignore */
       }
     });
 
     const handleSystemChange = () => {
-      // Only auto-follow system language if the user never explicitly picked one
       try {
-        const stored = window.localStorage.getItem("bnpparibas.lang");
+        const stored = window.localStorage.getItem(LANG_STORAGE_KEY);
         if (stored) return;
       } catch {
         /* ignore */

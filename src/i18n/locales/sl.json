@@ -838,7 +838,10 @@
     "passwordUpdated": "Geslo posodobljeno",
     "back": "Nazaj",
     "accessAdmin": "Odpri skrbniško ploščo",
-    "goBack": "Nazaj"
+    "goBack": "Nazaj",
+    "languageSection": "Jezik",
+    "languageDesc": "Izberite jezik vmesnika. Vaša izbira se shrani in sinhronizira z računom.",
+    "languageSaved": "Jezik posodobljen"
   },
   "loanDetail": {
     "metaTitle": "Podrobnosti posojila — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Ekipa je dosegljiva na +39 350 036 6867 ali prek strani Kontakt.",
       "thanks": "Z veseljem! Vprašajte še, če potrebujete.",
       "default": "Svetovalec BNP PARIBAS se vam bo kmalu javil. Lahko nas tudi kontaktirate prek strani Kontakt."
+    }
+  },
+  "legal": {
+    "badge": "Pravno",
+    "lastUpdated": "Zadnja posodobitev",
+    "home": "Domov",
+    "privacy": {
+      "title": "Politika zasebnosti",
+      "subtitle": "Vaša zasebnost je temelj bančnega zaupanja.",
+      "sections": [
+        {
+          "h": "1. Zbrani podatki",
+          "p": "Identiteta, stiki, finančni, tehnični in vedenjski podatki."
+        },
+        {
+          "h": "2. Nameni",
+          "p": "Vodenje računa, ocena posojila, preprečevanje goljufij in pranja denarja."
+        },
+        {
+          "h": "3. Pravna podlaga (GDPR)",
+          "p": "Pogodba, zakoniti interes, zakonska obveznost, soglasje."
+        },
+        {
+          "h": "4. Deljenje",
+          "p": "Le z preverjenimi obdelovalci in pristojnimi organi."
+        },
+        {
+          "h": "5. Hramba",
+          "p": "Podatki računa: razmerje + 10 let. Varnostni dnevniki: 24 mesecev."
+        },
+        {
+          "h": "6. Vaše pravice",
+          "p": "Dostop, popravek, izbris, omejitev, prenosljivost, ugovor."
+        },
+        {
+          "h": "7. Varnost",
+          "p": "Šifriranje, fingerprint, zaznavanje anomalij, MFA, 24/7 odziv."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Pogoji storitve",
+      "subtitle": "Z uporabo BNP PARIBAS sprejemate te pogoje.",
+      "sections": [
+        {
+          "h": "1. Pogoji",
+          "p": "18 let, prebivalec dovoljene države."
+        },
+        {
+          "h": "2. Račun",
+          "p": "Točni podatki in zaupne prijavne podatke."
+        },
+        {
+          "h": "3. Sprejemljiva uporaba",
+          "p": "Brez goljufij, pranja denarja, financiranja terorizma."
+        },
+        {
+          "h": "4. Tarife",
+          "p": "Pred vsako operacijo; spremembe s 30-dnevno odpovedjo."
+        },
+        {
+          "h": "5. Odgovornost",
+          "p": "Neposredna škoda pri hudi malomarnosti."
+        },
+        {
+          "h": "6. Začasna ustavitev",
+          "p": "Ob sumu goljufije ali AML."
+        },
+        {
+          "h": "7. Pravo",
+          "p": "Francosko pravo, ob potrošniški varnosti."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Politika piškotkov",
+      "sections": [
+        {
+          "h": "Kar uporabljamo",
+          "list": [
+            "<strong>Nujno potrebni</strong>",
+            "<strong>Funkcionalni</strong>",
+            "<strong>Varnostni</strong>",
+            "<strong>Analitični</strong> — le z dovoljenjem."
+          ]
+        },
+        {
+          "h": "Upravljanje",
+          "p": "Piškotke lahko izbrišete v brskalniku."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Pravna obvestila",
+      "sections": [
+        {
+          "h": "Izdajatelj",
+          "p": "BNP PARIBAS — SAS, kapital 1.000.000 EUR — sedež: 1 Centenary Square, Birmingham, Združeno kraljestvo."
+        },
+        {
+          "h": "Odgovorni",
+          "p": "Skladnost BNP PARIBAS."
+        },
+        {
+          "h": "Gostovanje",
+          "p": "Cloudflare Workers — San Francisco, ZDA."
+        },
+        {
+          "h": "Stik",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Intelektualna lastnina",
+          "p": "Vse znamke in vsebina pripadajo BNP PARIBAS."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "Politika AML / KYC",
+      "sections": [
+        {
+          "h": "Zavezanost",
+          "p": "Ničelna toleranca do pranja denarja in financiranja terorizma."
+        },
+        {
+          "h": "Skrbni pregled",
+          "p": "Identiteta, naslov, vir sredstev, stalni nadzor."
+        },
+        {
+          "h": "Razširjeni pregled",
+          "p": "PEP, tvegane jurisdikcije."
+        },
+        {
+          "h": "Sankcije",
+          "p": "Sproten pregled seznamov EU, ZN, OFAC, UK."
+        },
+        {
+          "h": "Poročanje",
+          "p": "Poročila pristojni FIU."
+        },
+        {
+          "h": "Usposabljanje",
+          "p": "Letno usposabljanje; neodvisni MLRO."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Finančna zasebnost in varnost",
+      "sections": [
+        {
+          "h": "Zaščita denarja",
+          "p": "TLS 1.3, AES-256, HSM, ločitev strankinih sredstev."
+        },
+        {
+          "h": "Avtentikacija",
+          "p": "SCA PSD2: geslo + naprava + OTP."
+        },
+        {
+          "h": "Spremljanje goljufij",
+          "p": "24/7 zaznavanje anomalij."
+        },
+        {
+          "h": "Zaupnost",
+          "p": "Bančna tajnost."
+        },
+        {
+          "h": "Vaša vloga",
+          "p": "Varujte poverilnice, registrirajte zaupanja vredne naprave."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Pogoji posojila",
+      "subtitle": "Posojilo vas zavezuje; preverite zmožnost odplačila.",
+      "sections": [
+        {
+          "h": "1. Pogoji",
+          "p": "Preverjena identiteta, stabilni prihodki."
+        },
+        {
+          "h": "2. Zneski in trajanje",
+          "p": "Od 1.000 EUR do 500.000 EUR, 12 do 120 mesecev."
+        },
+        {
+          "h": "3. Obrestna mera",
+          "p": "Fiksna mera v ponudbi."
+        },
+        {
+          "h": "4. Izplačilo",
+          "p": "Po podpisu in preverjanju. > 50.000 EUR stopenjsko."
+        },
+        {
+          "h": "5. Odplačilo",
+          "p": "Mesečno bremenjenje."
+        },
+        {
+          "h": "6. Zamuda",
+          "p": "Obresti, stroški in možna izterjava."
+        },
+        {
+          "h": "7. Odstop",
+          "p": "14 koledarskih dni od podpisa."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Politika odplačil in zamud",
+      "sections": [
+        {
+          "h": "Načrt",
+          "p": "Mesečni obroki na dogovorjeni dan."
+        },
+        {
+          "h": "Predčasno odplačilo",
+          "p": "Vedno dovoljeno."
+        },
+        {
+          "h": "Zamuda",
+          "list": [
+            "Dan 1–7: opomin.",
+            "Dan 8–30: stroški + obresti.",
+            "Od dneva 31: opomin pred izterjavo."
+          ]
+        },
+        {
+          "h": "Izterjava",
+          "p": "Najprej sporazumno."
+        },
+        {
+          "h": "Težave",
+          "p": "Kontaktirajte nas: odlog ali reprogramiranje."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Varnost · Admin",
+    "unauthorized": "Ni pooblastila",
+    "adminLink": "Admin",
+    "center": "Varnostni center",
+    "ok": "ok",
+    "fail": "napaka",
+    "user": "uporabnik",
+    "kpi": {
+      "totalEvents": "Skupno dogodkov",
+      "devicesTracked": "Spremljane naprave",
+      "openAlerts": "Odprta opozorila",
+      "highRisk": "Tvegani uporabniki"
+    },
+    "tab": {
+      "logs": "Dnevniki",
+      "alerts": "Opozorila",
+      "devices": "Naprave",
+      "risk": "Tveganje"
+    },
+    "logs": {
+      "title": "Varnostni dnevniki",
+      "searchPh": "Iskanje uporabnik, IP, država…",
+      "action": "Dejanje",
+      "allActions": "Vsa dejanja",
+      "when": "Kdaj",
+      "user": "Uporabnik",
+      "ipCountry": "IP / Država",
+      "device": "Naprava",
+      "status": "Stanje",
+      "empty": "Ni dnevnikov."
+    },
+    "alerts": {
+      "title": "Varnostna opozorila",
+      "empty": "Ni opozoril.",
+      "resolved": "rešeno",
+      "resolve": "Reši"
+    },
+    "devices": {
+      "title": "Zaupanja vredne naprave",
+      "label": "Oznaka",
+      "country": "Država",
+      "lastSeen": "Zadnji ogled",
+      "trusted": "Zaupanje",
+      "trustedBadge": "zaupanja vredno",
+      "pending": "v čakanju",
+      "empty": "Ni naprav."
+    },
+    "risk": {
+      "title": "Ocene tveganja",
+      "risk": "Tveganje",
+      "sessions": "Seje",
+      "sensitive": "Občutljivo",
+      "empty": "Ni podatkov."
     }
   }
 }

@@ -1,58 +1,58 @@
 {
   "common": {
-    "loading": "Loading…",
-    "save": "Save",
-    "cancel": "Cancel",
-    "close": "Close",
-    "back": "Back",
-    "open": "Open",
-    "search": "Search",
-    "actions": "Actions",
-    "yes": "Yes",
-    "no": "No",
-    "all": "All",
-    "none": "None",
-    "language": "Language",
-    "submit": "Submit",
-    "send": "Send",
-    "confirm": "Confirm",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "download": "Download",
-    "upload": "Upload",
-    "next": "Next",
-    "previous": "Previous",
-    "from": "From",
-    "to": "To",
-    "amount": "Amount",
-    "date": "Date",
-    "status": "Status",
-    "details": "Details",
-    "optional": "optional",
-    "required": "required",
-    "refresh": "Refresh",
-    "viewAll": "View all",
-    "new": "New",
-    "saving": "Saving…",
-    "sending": "Sending…",
-    "updating": "Updating…",
-    "loadError": "Loading error",
-    "sessionExpired": "Session expired due to inactivity",
-    "notFound": "Page not found",
-    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to home"
+    "loading": "Betöltés…",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "close": "Bezárás",
+    "back": "Vissza",
+    "open": "Megnyitás",
+    "search": "Keresés",
+    "actions": "Műveletek",
+    "yes": "Igen",
+    "no": "Nem",
+    "all": "Mind",
+    "none": "Nincs",
+    "language": "Nyelv",
+    "submit": "Küldés",
+    "send": "Küldés",
+    "confirm": "Megerősítés",
+    "delete": "Törlés",
+    "edit": "Szerkesztés",
+    "view": "Megtekintés",
+    "download": "Letöltés",
+    "upload": "Feltöltés",
+    "next": "Következő",
+    "previous": "Előző",
+    "from": "Feladó",
+    "to": "Címzett",
+    "amount": "Összeg",
+    "date": "Dátum",
+    "status": "Állapot",
+    "details": "Részletek",
+    "optional": "opcionális",
+    "required": "kötelező",
+    "refresh": "Frissítés",
+    "viewAll": "Összes megtekintése",
+    "new": "Új",
+    "saving": "Mentés…",
+    "sending": "Küldés…",
+    "updating": "Frissítés…",
+    "loadError": "Betöltési hiba",
+    "sessionExpired": "A munkamenet lejárt",
+    "notFound": "Az oldal nem található",
+    "notFoundDesc": "A keresett oldal nem létezik.",
+    "backHome": "Vissza a kezdőlapra"
   },
   "header": {
-    "myLoans": "My loans",
-    "newLoan": "Apply for a loan",
-    "dashboard": "Dashboard",
+    "myLoans": "Hiteleim",
+    "newLoan": "Hitelkérelem",
+    "dashboard": "Irányítópult",
     "admin": "Admin",
-    "settings": "Settings",
-    "signOut": "Sign out",
-    "signIn": "Sign in",
-    "contact": "Contact",
-    "menu": "Menu"
+    "settings": "Beállítások",
+    "signOut": "Kijelentkezés",
+    "signIn": "Bejelentkezés",
+    "contact": "Kapcsolat",
+    "menu": "Menü"
   },
   "notifications": {
     "title": "Notifications",
@@ -838,7 +838,10 @@
     "passwordUpdated": "Password updated",
     "back": "Back",
     "accessAdmin": "Open admin dashboard",
-    "goBack": "Back"
+    "goBack": "Back",
+    "languageSection": "Nyelv",
+    "languageDesc": "Válassza ki a felület nyelvét. Választása mentésre kerül és szinkronizálódik a fiókjával.",
+    "languageSaved": "Nyelv frissítve"
   },
   "loanDetail": {
     "metaTitle": "Loan details — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Our team is reachable at +39 350 036 6867 or via the Contact page.",
       "thanks": "You're welcome! Feel free to ask anything else.",
       "default": "An BNP PARIBAS adviser will get back to you shortly. You can also reach us via the Contact page."
+    }
+  },
+  "legal": {
+    "badge": "Jogi",
+    "lastUpdated": "Utolsó frissítés",
+    "home": "Kezdőlap",
+    "privacy": {
+      "title": "Adatvédelmi szabályzat",
+      "subtitle": "Az Ön adatvédelme banki bizalmunk alapja.",
+      "sections": [
+        {
+          "h": "1. Gyűjtött adatok",
+          "p": "Személyazonosság, kapcsolat, pénzügyi, technikai és viselkedési adatok."
+        },
+        {
+          "h": "2. Célok",
+          "p": "Számlakezelés, hitelértékelés, csalás és pénzmosás megelőzése."
+        },
+        {
+          "h": "3. Jogalap (GDPR)",
+          "p": "Szerződés, jogos érdek, jogi kötelezettség, hozzájárulás."
+        },
+        {
+          "h": "4. Megosztás",
+          "p": "Csak ellenőrzött adatfeldolgozóknak és hatóságoknak."
+        },
+        {
+          "h": "5. Megőrzés",
+          "p": "Számla: kapcsolat + 10 év. Biztonsági naplók: 24 hónap."
+        },
+        {
+          "h": "6. Az Ön jogai",
+          "p": "Hozzáférés, helyesbítés, törlés, korlátozás, hordozhatóság, tiltakozás."
+        },
+        {
+          "h": "7. Biztonság",
+          "p": "Titkosítás, fingerprint, anomáliafelismerés, MFA, 24/7 reagálás."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Felhasználási feltételek",
+      "subtitle": "A BNP PARIBAS használatával elfogadja a feltételeket.",
+      "sections": [
+        {
+          "h": "1. Feltételek",
+          "p": "Legalább 18 év, elfogadható ország lakosa."
+        },
+        {
+          "h": "2. Fiók",
+          "p": "Pontos adatok, bizalmas belépési adatok."
+        },
+        {
+          "h": "3. Elfogadható használat",
+          "p": "Csalás, pénzmosás, terrorizmus finanszírozása tilos."
+        },
+        {
+          "h": "4. Díjak",
+          "p": "Művelet előtt megjelennek; változás 30 nap előzetes értesítéssel."
+        },
+        {
+          "h": "5. Felelősség",
+          "p": "Közvetlen kár súlyos gondatlanság esetén."
+        },
+        {
+          "h": "6. Felfüggesztés",
+          "p": "Azonnali csalásgyanú esetén."
+        },
+        {
+          "h": "7. Alkalmazandó jog",
+          "p": "Francia jog fogyasztóvédelemmel."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Süti szabályzat",
+      "sections": [
+        {
+          "h": "Mit használunk",
+          "list": [
+            "<strong>Feltétlenül szükséges</strong>",
+            "<strong>Funkcionális</strong>",
+            "<strong>Biztonsági</strong>",
+            "<strong>Analitikai</strong> — csak hozzájárulással."
+          ]
+        },
+        {
+          "h": "Kezelés",
+          "p": "A sütiket törölheti a böngészőjében."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Jogi nyilatkozat",
+      "sections": [
+        {
+          "h": "Kiadó",
+          "p": "BNP PARIBAS — SAS, 1 000 000 EUR tőke — székhely: 1 Centenary Square, Birmingham, Egyesült Királyság."
+        },
+        {
+          "h": "Felelős kiadó",
+          "p": "Compliance BNP PARIBAS."
+        },
+        {
+          "h": "Tárhely",
+          "p": "Cloudflare Workers — San Francisco, USA."
+        },
+        {
+          "h": "Kapcsolat",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Szellemi tulajdon",
+          "p": "A védjegyek és tartalmak a BNP PARIBAS tulajdonát képezik."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "AML / KYC szabályzat",
+      "sections": [
+        {
+          "h": "Elköteleződés",
+          "p": "Zéró tolerancia a pénzmosás és terrorizmus finanszírozása ellen."
+        },
+        {
+          "h": "Átvilágítás",
+          "p": "Személyazonosság, lakcím, forrásigazolás."
+        },
+        {
+          "h": "Fokozott",
+          "p": "PEP, magas kockázatú joghatóságok."
+        },
+        {
+          "h": "Szankciók",
+          "p": "EU, ENSZ, OFAC, UK listákkal valós idejű szűrés."
+        },
+        {
+          "h": "Jelentések",
+          "p": "Illetékes FIU-nak; tipping-off tilos."
+        },
+        {
+          "h": "Képzés",
+          "p": "Éves képzés; független MLRO."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Pénzügyi adatvédelem és biztonság",
+      "sections": [
+        {
+          "h": "Védelem",
+          "p": "TLS 1.3, AES-256, HSM, ügyfélpénz elkülönítése."
+        },
+        {
+          "h": "Hitelesítés",
+          "p": "SCA PSD2: jelszó + eszköz + OTP."
+        },
+        {
+          "h": "Csalásfigyelés",
+          "p": "Anomáliafelismerés 24/7."
+        },
+        {
+          "h": "Titoktartás",
+          "p": "Banktitok."
+        },
+        {
+          "h": "Az Ön szerepe",
+          "p": "Védje a belépési adatokat, regisztrálja a megbízható eszközöket."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Hitelfeltételek",
+      "subtitle": "A hitel kötelezettség; ellenőrizze a visszafizetési képességét.",
+      "sections": [
+        {
+          "h": "1. Feltételek",
+          "p": "Ellenőrzött személyazonosság, stabil jövedelem."
+        },
+        {
+          "h": "2. Összegek és futamidő",
+          "p": "1 000 EUR-tól 500 000 EUR-ig, 12–120 hónap."
+        },
+        {
+          "h": "3. Kamat / THM",
+          "p": "Fix kamat az ajánlatban."
+        },
+        {
+          "h": "4. Folyósítás",
+          "p": "Aláírás és ellenőrzés után."
+        },
+        {
+          "h": "5. Visszafizetés",
+          "p": "Havi közvetlen beszedés."
+        },
+        {
+          "h": "6. Késedelem",
+          "p": "Kamat, díjak és esetleges felmondás."
+        },
+        {
+          "h": "7. Elállási jog",
+          "p": "14 naptári nap az aláírástól."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Visszafizetési szabályzat",
+      "sections": [
+        {
+          "h": "Ütemezés",
+          "p": "Havi részletek a megállapodott napon."
+        },
+        {
+          "h": "Előtörlesztés",
+          "p": "Bármikor engedélyezett."
+        },
+        {
+          "h": "Késedelem",
+          "list": [
+            "1–7. nap: emlékeztető.",
+            "8–30. nap: díjak + késedelmi kamat.",
+            "31. naptól: hivatalos felszólítás."
+          ]
+        },
+        {
+          "h": "Behajtás",
+          "p": "Elsősorban békés megoldás."
+        },
+        {
+          "h": "Nehézségek",
+          "p": "Vegye fel velünk a kapcsolatot átütemezésért."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Biztonság · Admin",
+    "unauthorized": "Nincs jogosultság",
+    "adminLink": "Admin",
+    "center": "Biztonsági központ",
+    "ok": "ok",
+    "fail": "hiba",
+    "user": "felhasználó",
+    "kpi": {
+      "totalEvents": "Összes esemény",
+      "devicesTracked": "Követett eszközök",
+      "openAlerts": "Nyitott riasztások",
+      "highRisk": "Magas kockázatú felhasználók"
+    },
+    "tab": {
+      "logs": "Naplók",
+      "alerts": "Riasztások",
+      "devices": "Eszközök",
+      "risk": "Kockázat"
+    },
+    "logs": {
+      "title": "Biztonsági naplók",
+      "searchPh": "Felhasználó, IP, ország keresése…",
+      "action": "Művelet",
+      "allActions": "Összes",
+      "when": "Mikor",
+      "user": "Felhasználó",
+      "ipCountry": "IP / Ország",
+      "device": "Eszköz",
+      "status": "Állapot",
+      "empty": "Nincsenek naplók."
+    },
+    "alerts": {
+      "title": "Biztonsági riasztások",
+      "empty": "Nincsenek riasztások.",
+      "resolved": "megoldva",
+      "resolve": "Megoldás"
+    },
+    "devices": {
+      "title": "Megbízható eszközök",
+      "label": "Címke",
+      "country": "Ország",
+      "lastSeen": "Utoljára látva",
+      "trusted": "Bizalom",
+      "trustedBadge": "megbízható",
+      "pending": "függőben",
+      "empty": "Nincsenek eszközök."
+    },
+    "risk": {
+      "title": "Kockázati pontszámok",
+      "risk": "Kockázat",
+      "sessions": "Munkamenetek",
+      "sensitive": "Érzékeny",
+      "empty": "Nincsenek adatok."
     }
   }
 }

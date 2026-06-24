@@ -1,58 +1,58 @@
 {
   "common": {
-    "loading": "Loading…",
-    "save": "Save",
-    "cancel": "Cancel",
-    "close": "Close",
-    "back": "Back",
-    "open": "Open",
-    "search": "Search",
-    "actions": "Actions",
-    "yes": "Yes",
-    "no": "No",
-    "all": "All",
-    "none": "None",
-    "language": "Language",
-    "submit": "Submit",
-    "send": "Send",
-    "confirm": "Confirm",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "download": "Download",
-    "upload": "Upload",
-    "next": "Next",
-    "previous": "Previous",
-    "from": "From",
-    "to": "To",
-    "amount": "Amount",
-    "date": "Date",
-    "status": "Status",
-    "details": "Details",
-    "optional": "optional",
-    "required": "required",
-    "refresh": "Refresh",
-    "viewAll": "View all",
-    "new": "New",
-    "saving": "Saving…",
-    "sending": "Sending…",
-    "updating": "Updating…",
-    "loadError": "Loading error",
-    "sessionExpired": "Session expired due to inactivity",
-    "notFound": "Page not found",
-    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to home"
+    "loading": "Ladataan…",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "close": "Sulje",
+    "back": "Takaisin",
+    "open": "Avaa",
+    "search": "Hae",
+    "actions": "Toiminnot",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "all": "Kaikki",
+    "none": "Ei mitään",
+    "language": "Kieli",
+    "submit": "Lähetä",
+    "send": "Lähetä",
+    "confirm": "Vahvista",
+    "delete": "Poista",
+    "edit": "Muokkaa",
+    "view": "Näytä",
+    "download": "Lataa",
+    "upload": "Lähetä",
+    "next": "Seuraava",
+    "previous": "Edellinen",
+    "from": "Lähettäjä",
+    "to": "Vastaanottaja",
+    "amount": "Summa",
+    "date": "Päivä",
+    "status": "Tila",
+    "details": "Tiedot",
+    "optional": "valinnainen",
+    "required": "vaaditaan",
+    "refresh": "Päivitä",
+    "viewAll": "Näytä kaikki",
+    "new": "Uusi",
+    "saving": "Tallennetaan…",
+    "sending": "Lähetetään…",
+    "updating": "Päivitetään…",
+    "loadError": "Latausvirhe",
+    "sessionExpired": "Istunto vanheni",
+    "notFound": "Sivua ei löydy",
+    "notFoundDesc": "Etsimääsi sivua ei ole olemassa.",
+    "backHome": "Takaisin etusivulle"
   },
   "header": {
-    "myLoans": "My loans",
-    "newLoan": "Apply for a loan",
-    "dashboard": "Dashboard",
+    "myLoans": "Lainani",
+    "newLoan": "Hae lainaa",
+    "dashboard": "Hallintapaneeli",
     "admin": "Admin",
-    "settings": "Settings",
-    "signOut": "Sign out",
-    "signIn": "Sign in",
-    "contact": "Contact",
-    "menu": "Menu"
+    "settings": "Asetukset",
+    "signOut": "Kirjaudu ulos",
+    "signIn": "Kirjaudu",
+    "contact": "Yhteystiedot",
+    "menu": "Valikko"
   },
   "notifications": {
     "title": "Notifications",
@@ -838,7 +838,10 @@
     "passwordUpdated": "Password updated",
     "back": "Back",
     "accessAdmin": "Open admin dashboard",
-    "goBack": "Back"
+    "goBack": "Back",
+    "languageSection": "Kieli",
+    "languageDesc": "Valitse käyttöliittymän kieli. Valintasi tallennetaan ja synkronoidaan tilillesi.",
+    "languageSaved": "Kieli päivitetty"
   },
   "loanDetail": {
     "metaTitle": "Loan details — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Our team is reachable at +39 350 036 6867 or via the Contact page.",
       "thanks": "You're welcome! Feel free to ask anything else.",
       "default": "An BNP PARIBAS adviser will get back to you shortly. You can also reach us via the Contact page."
+    }
+  },
+  "legal": {
+    "badge": "Lakitiedot",
+    "lastUpdated": "Viimeksi päivitetty",
+    "home": "Etusivu",
+    "privacy": {
+      "title": "Tietosuojakäytäntö",
+      "subtitle": "Yksityisyytenne on osa pankin luottamustamme.",
+      "sections": [
+        {
+          "h": "1. Kerättävät tiedot",
+          "p": "Henkilöllisyys, yhteystiedot, taloudelliset, tekniset ja käyttäytymistiedot."
+        },
+        {
+          "h": "2. Tarkoitukset",
+          "p": "Tilin hoito, lainan arviointi, petosten ja rahanpesun esto."
+        },
+        {
+          "h": "3. Oikeusperuste (GDPR)",
+          "p": "Sopimus, oikeutettu etu, lakisääteinen velvoite, suostumus."
+        },
+        {
+          "h": "4. Jakaminen",
+          "p": "Vain hyväksytyille käsittelijöille ja viranomaisille."
+        },
+        {
+          "h": "5. Säilytys",
+          "p": "Tilin tiedot: suhde + 10 vuotta. Tietoturvalokit: 24 kk."
+        },
+        {
+          "h": "6. Oikeutenne",
+          "p": "Tutustuminen, oikaisu, poisto, rajoitus, siirrettävyys, vastustaminen."
+        },
+        {
+          "h": "7. Tietoturva",
+          "p": "Salaus, fingerprint, anomaliantunnistus, MFA, 24/7-vastaus."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Käyttöehdot",
+      "subtitle": "Käyttämällä BNP PARIBAS -palvelua hyväksytte nämä ehdot.",
+      "sections": [
+        {
+          "h": "1. Ehdot",
+          "p": "Vähintään 18, asukas hyväksytyssä maassa."
+        },
+        {
+          "h": "2. Tili",
+          "p": "Totuudenmukaiset tiedot ja luottamukselliset tunnukset."
+        },
+        {
+          "h": "3. Hyväksyttävä käyttö",
+          "p": "Ei petoksia, rahanpesua, terrorismin rahoitusta."
+        },
+        {
+          "h": "4. Maksut",
+          "p": "Näytetään ennen jokaista toimea; muutokset 30 päivän etukäteen."
+        },
+        {
+          "h": "5. Vastuu",
+          "p": "Suorat vahingot törkeästä huolimattomuudesta."
+        },
+        {
+          "h": "6. Keskeytys",
+          "p": "Välitön keskeytys petosepäilyssä."
+        },
+        {
+          "h": "7. Sovellettava laki",
+          "p": "Ranskan laki kuluttajansuojan rajoissa."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Evästekäytäntö",
+      "sections": [
+        {
+          "h": "Mitä käytämme",
+          "list": [
+            "<strong>Välttämättömät</strong>",
+            "<strong>Toiminnalliset</strong>",
+            "<strong>Tietoturva</strong>",
+            "<strong>Analytiikka</strong> — vain suostumuksella."
+          ]
+        },
+        {
+          "h": "Hallinta",
+          "p": "Voitte poistaa evästeet selaimesta."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Lakitiedot",
+      "sections": [
+        {
+          "h": "Julkaisija",
+          "p": "BNP PARIBAS — SAS, pääoma 1 000 000 EUR — kotipaikka: 1 Centenary Square, Birmingham, Yhdistynyt kuningaskunta."
+        },
+        {
+          "h": "Vastaava julkaisija",
+          "p": "Compliance BNP PARIBAS."
+        },
+        {
+          "h": "Isännöinti",
+          "p": "Cloudflare Workers — San Francisco, USA."
+        },
+        {
+          "h": "Yhteys",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Immateriaalioikeudet",
+          "p": "Tavaramerkit ja sisältö kuuluvat BNP PARIBAS:ille."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "AML / KYC -käytäntö",
+      "sections": [
+        {
+          "h": "Sitoutuminen",
+          "p": "Nollatoleranssi rahanpesua ja terrorismin rahoitusta vastaan."
+        },
+        {
+          "h": "Asiakkaan tunteminen",
+          "p": "Henkilöllisyyden ja varojen alkuperän tarkistus."
+        },
+        {
+          "h": "Tehostettu",
+          "p": "PEP, korkean riskin maat."
+        },
+        {
+          "h": "Pakotteet",
+          "p": "Reaaliaikainen tarkistus EU, YK, OFAC, UK -listoja vastaan."
+        },
+        {
+          "h": "Ilmoitukset",
+          "p": "Toimivaltaiselle FIU:lle; tipping-off kielletty."
+        },
+        {
+          "h": "Koulutus",
+          "p": "Vuosittainen koulutus; riippumaton MLRO."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Taloudellinen yksityisyys ja turvallisuus",
+      "sections": [
+        {
+          "h": "Suojaus",
+          "p": "TLS 1.3, AES-256, HSM, asiakasvarojen erottaminen."
+        },
+        {
+          "h": "Tunnistautuminen",
+          "p": "SCA PSD2: salasana + laite + OTP."
+        },
+        {
+          "h": "Petostorjunta",
+          "p": "Anomaliantunnistus 24/7."
+        },
+        {
+          "h": "Salassapito",
+          "p": "Pankkisalaisuus."
+        },
+        {
+          "h": "Roolinne",
+          "p": "Pitäkää tunnukset salassa, rekisteröikää luotetut laitteet."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Lainaehdot",
+      "subtitle": "Laina sitouttaa; tarkistakaa takaisinmaksukykynne.",
+      "sections": [
+        {
+          "h": "1. Ehdot",
+          "p": "Vahvistettu henkilöllisyys ja vakaat tulot."
+        },
+        {
+          "h": "2. Summat ja kesto",
+          "p": "1 000 EUR – 500 000 EUR, 12–120 kuukautta."
+        },
+        {
+          "h": "3. Korko / TKK",
+          "p": "Kiinteä korko tarjouksessa."
+        },
+        {
+          "h": "4. Maksu",
+          "p": "Allekirjoituksen ja tarkistuksen jälkeen."
+        },
+        {
+          "h": "5. Takaisinmaksu",
+          "p": "Kuukausittainen suoraveloitus."
+        },
+        {
+          "h": "6. Maksuhäiriö",
+          "p": "Korot, palkkiot ja mahdollinen erääntyminen."
+        },
+        {
+          "h": "7. Peruutusoikeus",
+          "p": "14 päivää allekirjoituksesta."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Takaisinmaksu- ja häiriökäytäntö",
+      "sections": [
+        {
+          "h": "Aikataulu",
+          "p": "Kuukausittaiset erät sovittuna päivänä."
+        },
+        {
+          "h": "Ennenaikainen",
+          "p": "Aina sallittu."
+        },
+        {
+          "h": "Viivästys",
+          "list": [
+            "Päivät 1–7: muistutus.",
+            "Päivät 8–30: palkkiot + viivästyskorko.",
+            "Päivästä 31: virallinen vaatimus."
+          ]
+        },
+        {
+          "h": "Periminen",
+          "p": "Ensisijaisesti sovinnollisesti."
+        },
+        {
+          "h": "Vaikeudet",
+          "p": "Ottakaa yhteyttä; lykkäys mahdollinen."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Turvallisuus · Admin",
+    "unauthorized": "Ei valtuuksia",
+    "adminLink": "Admin",
+    "center": "Turvakeskus",
+    "ok": "ok",
+    "fail": "virhe",
+    "user": "käyttäjä",
+    "kpi": {
+      "totalEvents": "Tapahtumia yhteensä",
+      "devicesTracked": "Seuratut laitteet",
+      "openAlerts": "Avoimet hälytykset",
+      "highRisk": "Riskikäyttäjät"
+    },
+    "tab": {
+      "logs": "Lokit",
+      "alerts": "Hälytykset",
+      "devices": "Laitteet",
+      "risk": "Riski"
+    },
+    "logs": {
+      "title": "Turvallisuuslokit",
+      "searchPh": "Etsi käyttäjä, IP, maa…",
+      "action": "Toiminto",
+      "allActions": "Kaikki toiminnot",
+      "when": "Milloin",
+      "user": "Käyttäjä",
+      "ipCountry": "IP / Maa",
+      "device": "Laite",
+      "status": "Tila",
+      "empty": "Ei lokeja."
+    },
+    "alerts": {
+      "title": "Turvallisuushälytykset",
+      "empty": "Ei hälytyksiä.",
+      "resolved": "ratkaistu",
+      "resolve": "Ratkaise"
+    },
+    "devices": {
+      "title": "Luotetut laitteet",
+      "label": "Nimike",
+      "country": "Maa",
+      "lastSeen": "Viimeksi nähty",
+      "trusted": "Luottamus",
+      "trustedBadge": "luotettu",
+      "pending": "odottaa",
+      "empty": "Ei laitteita."
+    },
+    "risk": {
+      "title": "Riskipisteet",
+      "risk": "Riski",
+      "sessions": "Istunnot",
+      "sensitive": "Arkaluonteinen",
+      "empty": "Ei tietoja."
     }
   }
 }

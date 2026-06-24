@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useAuth } from "@/lib/auth-context";
 import { supabase } from "@/integrations/supabase/client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,10 +9,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ShieldCheck, AlertTriangle, Activity, Smartphone, ArrowLeft, RefreshCw, Globe2, Search } from "lucide-react";
+import i18n from "@/i18n";
 
 export const Route = createFileRoute("/admin/security")({
   component: AdminSecurity,
-  head: () => ({ meta: [{ title: "Security · Admin — BNP PARIBAS" }] }),
+  head: () => ({ meta: [{ title: `${i18n.t("adminSec.metaTitle")} — BNP PARIBAS` }] }),
 });
 
 interface SecurityLog {
@@ -34,6 +36,7 @@ interface BehaviorRow {
 
 function AdminSecurity() {
   const { user, role, loading: authLoading } = useAuth();
+  const { t } = useTranslation();
   const [tab, setTab] = useState<"logs" | "devices" | "alerts" | "risk">("logs");
   const [logs, setLogs] = useState<SecurityLog[]>([]);
   const [devices, setDevices] = useState<TrustedDevice[]>([]);
@@ -60,8 +63,8 @@ function AdminSecurity() {
 
   useEffect(() => { if (role === "admin") void load(); }, [role]);
 
-  if (authLoading) return <div className="p-10 text-center text-muted-foreground">Loading…</div>;
-  if (!user || role !== "admin") return <div className="p-10 text-center text-destructive">Unauthorized</div>;
+  if (authLoading) return <div className="p-10 text-center text-muted-foreground">{t("common.loading")}</div>;
+  if (!user || role !== "admin") return <div className="p-10 text-center text-destructive">{t("adminSec.unauthorized")}</div>;
 
   const filteredLogs = logs.filter((l) => {
     if (actionFilter !== "all" && l.action !== actionFilter) return false;
@@ -85,34 +88,34 @@ function AdminSecurity() {
         <div className="container mx-auto flex flex-wrap items-center justify-between gap-3 px-4 py-4">
           <div className="flex items-center gap-3">
             <Link to="/admin" className="inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-accent">
-              <ArrowLeft className="h-4 w-4" /> Admin
+              <ArrowLeft className="h-4 w-4" /> {t("adminSec.adminLink")}
             </Link>
             <span className="hidden text-sm text-muted-foreground sm:inline">/</span>
             <span className="inline-flex items-center gap-2 font-serif text-lg font-medium">
-              <ShieldCheck className="h-5 w-5 text-emerald-600" /> Security Center
+              <ShieldCheck className="h-5 w-5 text-emerald-600" /> {t("adminSec.center")}
             </span>
           </div>
           <Button variant="outline" size="sm" onClick={load} disabled={loading}>
-            <RefreshCw className={`mr-2 h-4 w-4 ${loading ? "animate-spin" : ""}`} /> Refresh
+            <RefreshCw className={`mr-2 h-4 w-4 ${loading ? "animate-spin" : ""}`} /> {t("common.refresh")}
           </Button>
         </div>
       </header>
 
       <main className="container mx-auto max-w-7xl space-y-6 px-4 py-8">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          <StatCard icon={Activity} label="Total events" value={logs.length} tone="default" />
-          <StatCard icon={Smartphone} label="Devices tracked" value={devices.length} tone="default" />
-          <StatCard icon={AlertTriangle} label="Open alerts" value={totalAlerts} tone={totalAlerts > 0 ? "warning" : "default"} />
-          <StatCard icon={ShieldCheck} label="High-risk users" value={highRisk} tone={highRisk > 0 ? "danger" : "default"} />
+          <StatCard icon={Activity} label={t("adminSec.kpi.totalEvents")} value={logs.length} tone="default" />
+          <StatCard icon={Smartphone} label={t("adminSec.kpi.devicesTracked")} value={devices.length} tone="default" />
+          <StatCard icon={AlertTriangle} label={t("adminSec.kpi.openAlerts")} value={totalAlerts} tone={totalAlerts > 0 ? "warning" : "default"} />
+          <StatCard icon={ShieldCheck} label={t("adminSec.kpi.highRisk")} value={highRisk} tone={highRisk > 0 ? "danger" : "default"} />
         </div>
 
         <div className="flex flex-wrap gap-2 border-b border-border">
-          {(["logs", "alerts", "devices", "risk"] as const).map((t) => (
-            <button key={t}
-              onClick={() => setTab(t)}
-              className={`relative px-4 py-2 text-sm font-medium capitalize transition-colors ${tab === t ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
-              {t}
-              {tab === t && <span className="absolute inset-x-2 -bottom-px h-0.5 rounded-full bg-emerald-600" />}
+          {(["logs", "alerts", "devices", "risk"] as const).map((tk) => (
+            <button key={tk}
+              onClick={() => setTab(tk)}
+              className={`relative px-4 py-2 text-sm font-medium capitalize transition-colors ${tab === tk ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
+              {t(`adminSec.tab.${tk}`)}
+              {tab === tk && <span className="absolute inset-x-2 -bottom-px h-0.5 rounded-full bg-emerald-600" />}
             </button>
           ))}
         </div>
@@ -120,16 +123,16 @@ function AdminSecurity() {
         {tab === "logs" && (
           <Card>
             <CardHeader className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <CardTitle>Security logs</CardTitle>
+              <CardTitle>{t("adminSec.logs.title")}</CardTitle>
               <div className="flex flex-wrap gap-2">
                 <div className="relative">
                   <Search className="pointer-events-none absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
-                  <Input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search user, IP, country…" className="h-9 w-56 pl-8" />
+                  <Input value={search} onChange={(e) => setSearch(e.target.value)} placeholder={t("adminSec.logs.searchPh")} className="h-9 w-56 pl-8" />
                 </div>
                 <Select value={actionFilter} onValueChange={setActionFilter}>
-                  <SelectTrigger className="h-9 w-44"><SelectValue placeholder="Action" /></SelectTrigger>
+                  <SelectTrigger className="h-9 w-44"><SelectValue placeholder={t("adminSec.logs.action")} /></SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="all">All actions</SelectItem>
+                    <SelectItem value="all">{t("adminSec.logs.allActions")}</SelectItem>
                     {uniqActions.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}
                   </SelectContent>
                 </Select>
@@ -139,7 +142,7 @@ function AdminSecurity() {
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead className="border-b border-border text-left text-xs uppercase text-muted-foreground">
-                    <tr><th className="py-2">When</th><th>Action</th><th>User</th><th>IP / Country</th><th>Device</th><th>Status</th></tr>
+                    <tr><th className="py-2">{t("adminSec.logs.when")}</th><th>{t("adminSec.logs.action")}</th><th>{t("adminSec.logs.user")}</th><th>{t("adminSec.logs.ipCountry")}</th><th>{t("adminSec.logs.device")}</th><th>{t("adminSec.logs.status")}</th></tr>
                   </thead>
                   <tbody className="divide-y divide-border">
                     {filteredLogs.map((l) => (
@@ -149,10 +152,10 @@ function AdminSecurity() {
                         <td className="font-mono text-xs">{(l.user_id || "—").slice(0, 8)}</td>
                         <td className="text-xs"><Globe2 className="mr-1 inline h-3 w-3" />{l.ip_address || "—"} {l.country && `· ${l.country}`}</td>
                         <td className="text-xs">{l.browser || "—"} · {l.os || "—"}</td>
-                        <td>{l.success ? <Badge variant="outline" className="border-emerald-500/40 text-emerald-700">ok</Badge> : <Badge variant="destructive">fail</Badge>}</td>
+                        <td>{l.success ? <Badge variant="outline" className="border-emerald-500/40 text-emerald-700">{t("adminSec.ok")}</Badge> : <Badge variant="destructive">{t("adminSec.fail")}</Badge>}</td>
                       </tr>
                     ))}
-                    {filteredLogs.length === 0 && <tr><td colSpan={6} className="py-8 text-center text-muted-foreground">No logs.</td></tr>}
+                    {filteredLogs.length === 0 && <tr><td colSpan={6} className="py-8 text-center text-muted-foreground">{t("adminSec.logs.empty")}</td></tr>}
                   </tbody>
                 </table>
               </div>
@@ -162,20 +165,20 @@ function AdminSecurity() {
 
         {tab === "alerts" && (
           <Card>
-            <CardHeader><CardTitle>Security alerts</CardTitle></CardHeader>
+            <CardHeader><CardTitle>{t("adminSec.alerts.title")}</CardTitle></CardHeader>
             <CardContent className="space-y-2">
-              {alerts.length === 0 && <p className="py-6 text-center text-sm text-muted-foreground">No alerts.</p>}
+              {alerts.length === 0 && <p className="py-6 text-center text-sm text-muted-foreground">{t("adminSec.alerts.empty")}</p>}
               {alerts.map((a) => (
                 <div key={a.id} className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-border p-3">
                   <div>
                     <div className="flex items-center gap-2">
                       <Badge variant={a.severity === "high" ? "destructive" : "outline"}>{a.severity}</Badge>
                       <span className="font-medium">{a.alert_type}</span>
-                      {a.resolved && <Badge variant="outline" className="border-emerald-500/40 text-emerald-700">resolved</Badge>}
+                      {a.resolved && <Badge variant="outline" className="border-emerald-500/40 text-emerald-700">{t("adminSec.alerts.resolved")}</Badge>}
                     </div>
-                    <p className="mt-1 text-xs text-muted-foreground">{a.description} · {new Date(a.created_at).toLocaleString()} · user {(a.user_id || "—").slice(0, 8)}</p>
+                    <p className="mt-1 text-xs text-muted-foreground">{a.description} · {new Date(a.created_at).toLocaleString()} · {t("adminSec.user")} {(a.user_id || "—").slice(0, 8)}</p>
                   </div>
-                  {!a.resolved && <Button size="sm" variant="outline" onClick={() => resolveAlert(a.id)}>Resolve</Button>}
+                  {!a.resolved && <Button size="sm" variant="outline" onClick={() => resolveAlert(a.id)}>{t("adminSec.alerts.resolve")}</Button>}
                 </div>
               ))}
             </CardContent>
@@ -184,12 +187,12 @@ function AdminSecurity() {
 
         {tab === "devices" && (
           <Card>
-            <CardHeader><CardTitle>Trusted devices</CardTitle></CardHeader>
+            <CardHeader><CardTitle>{t("adminSec.devices.title")}</CardTitle></CardHeader>
             <CardContent>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead className="border-b border-border text-left text-xs uppercase text-muted-foreground">
-                    <tr><th className="py-2">Label</th><th>User</th><th>Country</th><th>Last seen</th><th>Trusted</th></tr>
+                    <tr><th className="py-2">{t("adminSec.devices.label")}</th><th>{t("adminSec.logs.user")}</th><th>{t("adminSec.devices.country")}</th><th>{t("adminSec.devices.lastSeen")}</th><th>{t("adminSec.devices.trusted")}</th></tr>
                   </thead>
                   <tbody className="divide-y divide-border">
                     {devices.map((d) => (
@@ -198,10 +201,10 @@ function AdminSecurity() {
                         <td className="font-mono text-xs">{d.user_id.slice(0, 8)}</td>
                         <td className="text-xs">{d.country || "—"}</td>
                         <td className="text-xs text-muted-foreground">{new Date(d.last_seen_at).toLocaleString()}</td>
-                        <td>{d.trusted ? <Badge variant="outline" className="border-emerald-500/40 text-emerald-700">trusted</Badge> : <Badge variant="outline">pending</Badge>}</td>
+                        <td>{d.trusted ? <Badge variant="outline" className="border-emerald-500/40 text-emerald-700">{t("adminSec.devices.trustedBadge")}</Badge> : <Badge variant="outline">{t("adminSec.devices.pending")}</Badge>}</td>
                       </tr>
                     ))}
-                    {devices.length === 0 && <tr><td colSpan={5} className="py-8 text-center text-muted-foreground">No devices.</td></tr>}
+                    {devices.length === 0 && <tr><td colSpan={5} className="py-8 text-center text-muted-foreground">{t("adminSec.devices.empty")}</td></tr>}
                   </tbody>
                 </table>
               </div>
@@ -211,12 +214,12 @@ function AdminSecurity() {
 
         {tab === "risk" && (
           <Card>
-            <CardHeader><CardTitle>Risk scores</CardTitle></CardHeader>
+            <CardHeader><CardTitle>{t("adminSec.risk.title")}</CardTitle></CardHeader>
             <CardContent>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead className="border-b border-border text-left text-xs uppercase text-muted-foreground">
-                    <tr><th className="py-2">User</th><th>Risk</th><th>Sessions</th><th>Sensitive</th><th>Country</th></tr>
+                    <tr><th className="py-2">{t("adminSec.logs.user")}</th><th>{t("adminSec.risk.risk")}</th><th>{t("adminSec.risk.sessions")}</th><th>{t("adminSec.risk.sensitive")}</th><th>{t("adminSec.devices.country")}</th></tr>
                   </thead>
                   <tbody className="divide-y divide-border">
                     {behavior.map((b) => (
@@ -235,7 +238,7 @@ function AdminSecurity() {
                         <td className="text-xs">{b.last_country || "—"}</td>
                       </tr>
                     ))}
-                    {behavior.length === 0 && <tr><td colSpan={5} className="py-8 text-center text-muted-foreground">No data.</td></tr>}
+                    {behavior.length === 0 && <tr><td colSpan={5} className="py-8 text-center text-muted-foreground">{t("adminSec.risk.empty")}</td></tr>}
                   </tbody>
                 </table>
               </div>

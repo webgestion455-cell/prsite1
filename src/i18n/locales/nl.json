@@ -838,7 +838,10 @@
     "passwordUpdated": "Wachtwoord bijgewerkt",
     "back": "Terug",
     "accessAdmin": "Admin-dashboard openen",
-    "goBack": "Terug"
+    "goBack": "Terug",
+    "languageSection": "Taal",
+    "languageDesc": "Kies de taal van de interface. Uw keuze wordt opgeslagen en gesynchroniseerd met uw account.",
+    "languageSaved": "Taal bijgewerkt"
   },
   "loanDetail": {
     "metaTitle": "Leningdetails — BNP PARIBASAS",
@@ -956,6 +959,295 @@
       "contact": "Ons team is bereikbaar op +39 350 036 6867 of via de contactpagina.",
       "thanks": "Graag gedaan! Stel gerust andere vragen.",
       "default": "Een BNP PARIBAS-adviseur neemt spoedig contact op. U kunt ons ook bereiken via de contactpagina."
+    }
+  },
+  "legal": {
+    "badge": "Juridisch",
+    "lastUpdated": "Laatst bijgewerkt",
+    "home": "Home",
+    "privacy": {
+      "title": "Privacybeleid",
+      "subtitle": "Uw privacy is essentieel voor ons bankvertrouwen.",
+      "sections": [
+        {
+          "h": "1. Verzamelde gegevens",
+          "p": "Identiteit, contact, financiële, technische en gedragsdata."
+        },
+        {
+          "h": "2. Doeleinden",
+          "p": "Account, kredietbeoordeling, fraude- en witwasbestrijding, wettelijke plichten."
+        },
+        {
+          "h": "3. Rechtsgrond (AVG)",
+          "p": "Uitvoering contract, gerechtvaardigd belang, wettelijke plicht, toestemming."
+        },
+        {
+          "h": "4. Delen",
+          "p": "Alleen met gecontroleerde verwerkers, toezichthouders en justitie."
+        },
+        {
+          "h": "5. Bewaring",
+          "p": "Accountdata: looptijd + 10 jaar (Wwft). Beveiligingslogs: 24 maanden."
+        },
+        {
+          "h": "6. Uw rechten",
+          "p": "Inzage, rectificatie, verwijdering, beperking, overdraagbaarheid, bezwaar. <a href=\"mailto:support_bnpparibas@nowelio.com\">privacy@bnpparibas.com</a>."
+        },
+        {
+          "h": "7. Beveiliging",
+          "p": "TLS, encryptie at rest, fingerprint, anomaliedetectie, MFA, 24/7-response."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Algemene voorwaarden",
+      "subtitle": "Door BNP PARIBAS te gebruiken accepteert u deze voorwaarden.",
+      "sections": [
+        {
+          "h": "1. Voorwaarden",
+          "p": "Minimaal 18 jaar, ingezetene van een toegestaan land."
+        },
+        {
+          "h": "2. Account",
+          "p": "Juiste gegevens, vertrouwelijke inloggegevens."
+        },
+        {
+          "h": "3. Aanvaardbaar gebruik",
+          "p": "Geen fraude, witwassen, terrorismefinanciering, marktmisbruik."
+        },
+        {
+          "h": "4. Tarieven",
+          "p": "Vermeld vóór elke verrichting. Wijzigingen met 30 dagen voorafgaande kennisgeving."
+        },
+        {
+          "h": "5. Aansprakelijkheid",
+          "p": "Directe schade bij grove nalatigheid; geen indirecte schade."
+        },
+        {
+          "h": "6. Opschorting",
+          "p": "Onmiddellijke opschorting bij fraude- of AML-vermoeden."
+        },
+        {
+          "h": "7. Toepasselijk recht",
+          "p": "Frans recht, onder voorbehoud van dwingend consumentenrecht."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookiebeleid",
+      "sections": [
+        {
+          "h": "Wat we gebruiken",
+          "list": [
+            "<strong>Strikt noodzakelijk</strong> — authenticatie, sessie, beveiliging.",
+            "<strong>Functioneel</strong> — taal, thema.",
+            "<strong>Beveiliging</strong> — fingerprint tegen fraude.",
+            "<strong>Analytics</strong> — geaggregeerd, alleen met toestemming."
+          ]
+        },
+        {
+          "h": "Beheer",
+          "p": "U kunt cookies wissen via uw browser. Zonder noodzakelijke cookies kunt u niet inloggen."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Wettelijke vermeldingen",
+      "sections": [
+        {
+          "h": "Uitgever",
+          "p": "BNP PARIBAS — SAS met kapitaal van 1.000.000 EUR — zetel: 1 Centenary Square, Birmingham, B1 1HQ, Verenigd Koninkrijk."
+        },
+        {
+          "h": "Verantwoordelijk",
+          "p": "BNP PARIBAS Compliance."
+        },
+        {
+          "h": "Hosting",
+          "p": "Cloudflare Workers — 101 Townsend St, San Francisco, CA 94107, USA."
+        },
+        {
+          "h": "Contact",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Intellectueel eigendom",
+          "p": "Alle merken, logo's en content blijven eigendom van BNP PARIBAS."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "AML / KYC-beleid",
+      "sections": [
+        {
+          "h": "Inzet",
+          "p": "Geen tolerantie voor witwassen, terrorismefinanciering en sanctie-ontduiking."
+        },
+        {
+          "h": "Cliëntonderzoek",
+          "p": "Identiteit, adres, bron van middelen, doorlopende monitoring."
+        },
+        {
+          "h": "Verscherpt onderzoek",
+          "p": "PEP, hoogrisicolanden, complexe transacties."
+        },
+        {
+          "h": "Sanctiescreening",
+          "p": "Realtime tegen EU-, UN-, OFAC-, UK-lijsten."
+        },
+        {
+          "h": "Meldingen",
+          "p": "Meldingen aan de FIU. Tipping-off verboden."
+        },
+        {
+          "h": "Training",
+          "p": "Jaarlijkse AML/KYC-training; onafhankelijke MLRO."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Financiële privacy en veiligheid",
+      "sections": [
+        {
+          "h": "Bescherming",
+          "p": "TLS 1.3, AES-256, HSM, gescheiden klantgelden."
+        },
+        {
+          "h": "Authenticatie",
+          "p": "SCA PSD2: wachtwoord + apparaat + OTP."
+        },
+        {
+          "h": "Fraudemonitoring",
+          "p": "24/7 anomaliedetectie, geo-velocity, gedragsscoring."
+        },
+        {
+          "h": "Geheimhouding",
+          "p": "Bankgeheim. Data alleen aan u, toezichthouders of bij geldig bevel."
+        },
+        {
+          "h": "Uw rol",
+          "p": "Bescherm uw gegevens, registreer vertrouwde apparaten, activeer meldingen."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Krediet- en leningsvoorwaarden",
+      "subtitle": "Lenen kost geld; controleer uw aflossingscapaciteit.",
+      "sections": [
+        {
+          "h": "1. Voorwaarden",
+          "p": "Geverifieerde identiteit, stabiel inkomen, geen actieve achterstand."
+        },
+        {
+          "h": "2. Bedrag en duur",
+          "p": "Van 1.000 EUR tot 500.000 EUR, 12 tot 120 maanden."
+        },
+        {
+          "h": "3. Rente / JKP",
+          "p": "Vast tarief in uw aanbod."
+        },
+        {
+          "h": "4. Uitbetaling",
+          "p": "Na tekening en verificatie. > 50.000 EUR gefaseerd (63 % / 88 % / 100 %)."
+        },
+        {
+          "h": "5. Aflossing",
+          "p": "Maandelijkse incasso. Vervroegde aflossing toegestaan."
+        },
+        {
+          "h": "6. Verzuim",
+          "p": "Rente, kosten en eventuele opzegging en gerechtelijke invordering."
+        },
+        {
+          "h": "7. Herroepingsrecht",
+          "p": "14 kalenderdagen na tekening."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Aflossings- en verzuimbeleid",
+      "sections": [
+        {
+          "h": "Aflossingsschema",
+          "p": "Maandelijkse incasso vanaf uw IBAN op de afgesproken datum."
+        },
+        {
+          "h": "Vervroegde aflossing",
+          "p": "Altijd toegestaan; vergoeding binnen wettelijke grenzen."
+        },
+        {
+          "h": "Te late betaling",
+          "list": [
+            "Dag 1–7: herinnering zonder kosten.",
+            "Dag 8–30: kosten + wettelijke rente.",
+            "Vanaf dag 31: ingebrekestelling."
+          ]
+        },
+        {
+          "h": "Invordering",
+          "p": "Wij geven de voorkeur aan een minnelijke regeling."
+        },
+        {
+          "h": "Hardheid",
+          "p": "Neem direct contact op: uitstel of herstructurering mogelijk."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Beveiliging · Admin",
+    "unauthorized": "Niet bevoegd",
+    "adminLink": "Admin",
+    "center": "Beveiligingscentrum",
+    "ok": "ok",
+    "fail": "mislukt",
+    "user": "gebruiker",
+    "kpi": {
+      "totalEvents": "Totaal events",
+      "devicesTracked": "Apparaten gevolgd",
+      "openAlerts": "Open waarschuwingen",
+      "highRisk": "Risicogebruikers"
+    },
+    "tab": {
+      "logs": "Logboeken",
+      "alerts": "Waarschuwingen",
+      "devices": "Apparaten",
+      "risk": "Risico"
+    },
+    "logs": {
+      "title": "Beveiligingslogboek",
+      "searchPh": "Zoek gebruiker, IP, land…",
+      "action": "Actie",
+      "allActions": "Alle acties",
+      "when": "Wanneer",
+      "user": "Gebruiker",
+      "ipCountry": "IP / Land",
+      "device": "Apparaat",
+      "status": "Status",
+      "empty": "Geen logs."
+    },
+    "alerts": {
+      "title": "Beveiligingswaarschuwingen",
+      "empty": "Geen waarschuwingen.",
+      "resolved": "opgelost",
+      "resolve": "Oplossen"
+    },
+    "devices": {
+      "title": "Vertrouwde apparaten",
+      "label": "Label",
+      "country": "Land",
+      "lastSeen": "Laatst gezien",
+      "trusted": "Vertrouwd",
+      "trustedBadge": "vertrouwd",
+      "pending": "in afwachting",
+      "empty": "Geen apparaten."
+    },
+    "risk": {
+      "title": "Risicoscores",
+      "risk": "Risico",
+      "sessions": "Sessies",
+      "sensitive": "Gevoelig",
+      "empty": "Geen data."
     }
   }
 }

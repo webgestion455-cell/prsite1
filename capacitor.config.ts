@@ -6,7 +6,7 @@ const config: CapacitorConfig = {
   webDir: 'dist',
 
   server: {
-    url: 'https://bkparibas.myinvest-capital.com/',
+    url: 'https://apply.myinvest-capital.com/',
     cleartext: false
   },
 

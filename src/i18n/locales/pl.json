@@ -1,57 +1,57 @@
 {
   "common": {
-    "loading": "Loading…",
-    "save": "Save",
-    "cancel": "Cancel",
-    "close": "Close",
-    "back": "Back",
-    "open": "Open",
-    "search": "Search",
-    "actions": "Actions",
-    "yes": "Yes",
-    "no": "No",
-    "all": "All",
-    "none": "None",
-    "language": "Language",
-    "submit": "Submit",
-    "send": "Send",
-    "confirm": "Confirm",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "download": "Download",
-    "upload": "Upload",
-    "next": "Next",
-    "previous": "Previous",
-    "from": "From",
-    "to": "To",
-    "amount": "Amount",
-    "date": "Date",
+    "loading": "Ładowanie…",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "close": "Zamknij",
+    "back": "Wstecz",
+    "open": "Otwórz",
+    "search": "Szukaj",
+    "actions": "Akcje",
+    "yes": "Tak",
+    "no": "Nie",
+    "all": "Wszystkie",
+    "none": "Brak",
+    "language": "Język",
+    "submit": "Wyślij",
+    "send": "Wyślij",
+    "confirm": "Potwierdź",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "view": "Zobacz",
+    "download": "Pobierz",
+    "upload": "Prześlij",
+    "next": "Dalej",
+    "previous": "Wstecz",
+    "from": "Od",
+    "to": "Do",
+    "amount": "Kwota",
+    "date": "Data",
     "status": "Status",
-    "details": "Details",
-    "optional": "optional",
-    "required": "required",
-    "refresh": "Refresh",
-    "viewAll": "View all",
-    "new": "New",
-    "saving": "Saving…",
-    "sending": "Sending…",
-    "updating": "Updating…",
-    "loadError": "Loading error",
-    "sessionExpired": "Session expired due to inactivity",
-    "notFound": "Page not found",
-    "notFoundDesc": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to home"
+    "details": "Szczegóły",
+    "optional": "opcjonalne",
+    "required": "wymagane",
+    "refresh": "Odśwież",
+    "viewAll": "Zobacz wszystkie",
+    "new": "Nowy",
+    "saving": "Zapisywanie…",
+    "sending": "Wysyłanie…",
+    "updating": "Aktualizacja…",
+    "loadError": "Błąd ładowania",
+    "sessionExpired": "Sesja wygasła",
+    "notFound": "Nie znaleziono strony",
+    "notFoundDesc": "Szukana strona nie istnieje.",
+    "backHome": "Wróć do strony głównej"
   },
   "header": {
-    "myLoans": "My loans",
-    "newLoan": "Apply for a loan",
-    "dashboard": "Dashboard",
+    "myLoans": "Moje kredyty",
+    "newLoan": "Wnioskuj o kredyt",
+    "dashboard": "Panel",
     "admin": "Admin",
-    "settings": "Settings",
-    "signOut": "Sign out",
-    "signIn": "Sign in",
-    "contact": "Contact",
+    "settings": "Ustawienia",
+    "signOut": "Wyloguj",
+    "signIn": "Zaloguj",
+    "contact": "Kontakt",
     "menu": "Menu"
   },
   "notifications": {
@@ -838,7 +838,10 @@
     "passwordUpdated": "Password updated",
     "back": "Back",
     "accessAdmin": "Open admin dashboard",
-    "goBack": "Back"
+    "goBack": "Back",
+    "languageSection": "Język",
+    "languageDesc": "Wybierz język interfejsu. Wybór zostaje zapisany i zsynchronizowany z kontem.",
+    "languageSaved": "Język zaktualizowany"
   },
   "loanDetail": {
     "metaTitle": "Loan details — BNP PARIBAS",
@@ -956,6 +959,295 @@
       "contact": "Our team is reachable at +39 350 036 6867 or via the Contact page.",
       "thanks": "You're welcome! Feel free to ask anything else.",
       "default": "An BNP PARIBAS adviser will get back to you shortly. You can also reach us via the Contact page."
+    }
+  },
+  "legal": {
+    "badge": "Prawne",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "home": "Strona główna",
+    "privacy": {
+      "title": "Polityka prywatności",
+      "subtitle": "Państwa prywatność jest fundamentem zaufania bankowego.",
+      "sections": [
+        {
+          "h": "1. Zbierane dane",
+          "p": "Tożsamość, kontakt, dane finansowe, techniczne i behawioralne."
+        },
+        {
+          "h": "2. Cele",
+          "p": "Prowadzenie rachunku, ocena kredytu, przeciwdziałanie oszustwom i praniu pieniędzy."
+        },
+        {
+          "h": "3. Podstawa prawna (RODO)",
+          "p": "Umowa, prawnie uzasadniony interes, obowiązek prawny, zgoda."
+        },
+        {
+          "h": "4. Udostępnianie",
+          "p": "Tylko zweryfikowanym podmiotom i organom."
+        },
+        {
+          "h": "5. Przechowywanie",
+          "p": "Konto: relacja + 10 lat. Logi: 24 miesiące."
+        },
+        {
+          "h": "6. Państwa prawa",
+          "p": "Dostęp, sprostowanie, usunięcie, ograniczenie, przeniesienie, sprzeciw."
+        },
+        {
+          "h": "7. Bezpieczeństwo",
+          "p": "Szyfrowanie, fingerprint, wykrywanie anomalii, MFA, reakcja 24/7."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Warunki korzystania",
+      "subtitle": "Korzystając z BNP PARIBAS akceptują Państwo warunki.",
+      "sections": [
+        {
+          "h": "1. Wymagania",
+          "p": "Minimum 18 lat, rezydent kraju uprawnionego."
+        },
+        {
+          "h": "2. Konto",
+          "p": "Prawdziwe informacje i poufne dane logowania."
+        },
+        {
+          "h": "3. Dopuszczalne użycie",
+          "p": "Bez oszustw, prania pieniędzy, finansowania terroryzmu."
+        },
+        {
+          "h": "4. Opłaty",
+          "p": "Wyświetlane przed operacją; zmiany z 30-dniowym wyprzedzeniem."
+        },
+        {
+          "h": "5. Odpowiedzialność",
+          "p": "Szkody bezpośrednie w razie rażącego niedbalstwa."
+        },
+        {
+          "h": "6. Zawieszenie",
+          "p": "Natychmiastowe przy podejrzeniu oszustwa lub AML."
+        },
+        {
+          "h": "7. Prawo właściwe",
+          "p": "Prawo francuskie z ochroną konsumenta."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Polityka cookies",
+      "sections": [
+        {
+          "h": "Co używamy",
+          "list": [
+            "<strong>Niezbędne</strong>",
+            "<strong>Funkcjonalne</strong>",
+            "<strong>Bezpieczeństwa</strong>",
+            "<strong>Analityczne</strong> — tylko za zgodą."
+          ]
+        },
+        {
+          "h": "Zarządzanie",
+          "p": "Mogą Państwo usunąć cookies w przeglądarce."
+        }
+      ]
+    },
+    "mentions": {
+      "title": "Informacje prawne",
+      "sections": [
+        {
+          "h": "Wydawca",
+          "p": "BNP PARIBAS — SAS z kapitałem 1 000 000 EUR — siedziba: 1 Centenary Square, Birmingham, Wielka Brytania."
+        },
+        {
+          "h": "Odpowiedzialny",
+          "p": "Compliance BNP PARIBAS."
+        },
+        {
+          "h": "Hosting",
+          "p": "Cloudflare Workers — San Francisco, USA."
+        },
+        {
+          "h": "Kontakt",
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
+        },
+        {
+          "h": "Własność intelektualna",
+          "p": "Znaki i treści należą do BNP PARIBAS."
+        }
+      ]
+    },
+    "amlKyc": {
+      "title": "Polityka AML / KYC",
+      "sections": [
+        {
+          "h": "Zobowiązanie",
+          "p": "Zero tolerancji dla prania pieniędzy i finansowania terroryzmu."
+        },
+        {
+          "h": "Należyta staranność",
+          "p": "Weryfikacja tożsamości, adresu, źródła środków."
+        },
+        {
+          "h": "Wzmocniona",
+          "p": "PEP, państwa wysokiego ryzyka."
+        },
+        {
+          "h": "Sankcje",
+          "p": "Skanowanie wobec list UE, ONZ, OFAC, UK."
+        },
+        {
+          "h": "Zgłoszenia",
+          "p": "Do właściwej FIU; zakaz tipping-off."
+        },
+        {
+          "h": "Szkolenia",
+          "p": "Co roku; niezależny MLRO."
+        }
+      ]
+    },
+    "finPriv": {
+      "title": "Prywatność i bezpieczeństwo finansowe",
+      "sections": [
+        {
+          "h": "Ochrona",
+          "p": "TLS 1.3, AES-256, HSM, segregacja środków klienta."
+        },
+        {
+          "h": "Uwierzytelnianie",
+          "p": "SCA PSD2: hasło + urządzenie + OTP."
+        },
+        {
+          "h": "Monitorowanie",
+          "p": "Wykrywanie anomalii 24/7."
+        },
+        {
+          "h": "Poufność",
+          "p": "Tajemnica bankowa."
+        },
+        {
+          "h": "Państwa rola",
+          "p": "Chronić dane logowania, rejestrować zaufane urządzenia."
+        }
+      ]
+    },
+    "loanTerms": {
+      "title": "Warunki kredytu",
+      "subtitle": "Kredyt zobowiązuje; sprawdź zdolność spłaty.",
+      "sections": [
+        {
+          "h": "1. Wymagania",
+          "p": "Zweryfikowana tożsamość, stałe dochody."
+        },
+        {
+          "h": "2. Kwoty i okres",
+          "p": "Od 1 000 EUR do 500 000 EUR, 12–120 miesięcy."
+        },
+        {
+          "h": "3. Oprocentowanie / RRSO",
+          "p": "Stałe oprocentowanie w ofercie."
+        },
+        {
+          "h": "4. Wypłata",
+          "p": "Po podpisie i weryfikacji."
+        },
+        {
+          "h": "5. Spłata",
+          "p": "Miesięczne polecenie zapłaty."
+        },
+        {
+          "h": "6. Zaległość",
+          "p": "Odsetki, opłaty, możliwe wypowiedzenie."
+        },
+        {
+          "h": "7. Odstąpienie",
+          "p": "14 dni od podpisu."
+        }
+      ]
+    },
+    "repayment": {
+      "title": "Polityka spłat",
+      "sections": [
+        {
+          "h": "Harmonogram",
+          "p": "Raty miesięczne w uzgodnionym dniu."
+        },
+        {
+          "h": "Wcześniejsza spłata",
+          "p": "Zawsze dozwolona."
+        },
+        {
+          "h": "Opóźnienia",
+          "list": [
+            "Dzień 1–7: przypomnienie.",
+            "Dzień 8–30: opłaty + odsetki.",
+            "Od 31 dnia: wezwanie."
+          ]
+        },
+        {
+          "h": "Windykacja",
+          "p": "Preferujemy rozwiązania polubowne."
+        },
+        {
+          "h": "Trudności",
+          "p": "Skontaktuj się: możliwe odroczenie."
+        }
+      ]
+    }
+  },
+  "adminSec": {
+    "metaTitle": "Bezpieczeństwo · Admin",
+    "unauthorized": "Brak uprawnień",
+    "adminLink": "Admin",
+    "center": "Centrum bezpieczeństwa",
+    "ok": "ok",
+    "fail": "błąd",
+    "user": "użytkownik",
+    "kpi": {
+      "totalEvents": "Suma zdarzeń",
+      "devicesTracked": "Śledzone urządzenia",
+      "openAlerts": "Otwarte alerty",
+      "highRisk": "Użytkownicy wysokiego ryzyka"
+    },
+    "tab": {
+      "logs": "Logi",
+      "alerts": "Alerty",
+      "devices": "Urządzenia",
+      "risk": "Ryzyko"
+    },
+    "logs": {
+      "title": "Logi bezpieczeństwa",
+      "searchPh": "Szukaj użytkownika, IP, kraju…",
+      "action": "Akcja",
+      "allActions": "Wszystkie",
+      "when": "Kiedy",
+      "user": "Użytkownik",
+      "ipCountry": "IP / Kraj",
+      "device": "Urządzenie",
+      "status": "Status",
+      "empty": "Brak logów."
+    },
+    "alerts": {
+      "title": "Alerty bezpieczeństwa",
+      "empty": "Brak alertów.",
+      "resolved": "rozwiązany",
+      "resolve": "Rozwiąż"
+    },
+    "devices": {
+      "title": "Zaufane urządzenia",
+      "label": "Etykieta",
+      "country": "Kraj",
+      "lastSeen": "Ostatnio widziane",
+      "trusted": "Zaufanie",
+      "trustedBadge": "zaufane",
+      "pending": "oczekujące",
+      "empty": "Brak urządzeń."
+    },
+    "risk": {
+      "title": "Wyniki ryzyka",
+      "risk": "Ryzyko",
+      "sessions": "Sesje",
+      "sensitive": "Wrażliwe",
+      "empty": "Brak danych."
     }
   }
 }
