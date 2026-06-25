@@ -1249,5 +1249,18 @@
       "sensitive": "Gevoelig",
       "empty": "Geen data."
     }
+  },
+  "footer": {
+    "legal": "Juridisch",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "cookies": "Cookies",
+    "mentions": "Wettelijke vermeldingen",
+    "banking": "Bankzaken",
+    "loanTerms": "Leningsvoorwaarden",
+    "repayment": "Terugbetaling & wanbetaling",
+    "aml": "AML / KYC",
+    "finPriv": "Financiële privacy",
+    "contact": "Contact"
   }
 }

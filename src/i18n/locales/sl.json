@@ -1249,5 +1249,18 @@
       "sensitive": "Občutljivo",
       "empty": "Ni podatkov."
     }
+  },
+  "footer": {
+    "legal": "Pravno",
+    "privacy": "Zasebnost",
+    "terms": "Pogoji",
+    "cookies": "Piškotki",
+    "mentions": "Pravno obvestilo",
+    "banking": "Bančništvo",
+    "loanTerms": "Pogoji posojila",
+    "repayment": "Odplačilo in zamuda",
+    "aml": "AML / KYC",
+    "finPriv": "Finančna zasebnost",
+    "contact": "Stik"
   }
 }

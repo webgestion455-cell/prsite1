@@ -1249,5 +1249,18 @@
       "sensitive": "Sensibili",
       "empty": "Nessun dato."
     }
+  },
+  "footer": {
+    "legal": "Legale",
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "cookies": "Cookie",
+    "mentions": "Note legali",
+    "banking": "Bancario",
+    "loanTerms": "Condizioni del prestito",
+    "repayment": "Rimborso e insolvenza",
+    "aml": "AML / KYC",
+    "finPriv": "Privacy finanziaria",
+    "contact": "Contatti"
   }
 }

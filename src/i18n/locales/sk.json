@@ -1249,5 +1249,18 @@
       "sensitive": "Citlivé",
       "empty": "Žiadne údaje."
     }
+  },
+  "footer": {
+    "legal": "Právne",
+    "privacy": "Súkromie",
+    "terms": "Podmienky",
+    "cookies": "Cookies",
+    "mentions": "Právne upozornenie",
+    "banking": "Bankovníctvo",
+    "loanTerms": "Podmienky úveru",
+    "repayment": "Splácanie a omeškanie",
+    "aml": "AML / KYC",
+    "finPriv": "Finančné súkromie",
+    "contact": "Kontakt"
   }
 }
