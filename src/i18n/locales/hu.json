@@ -910,7 +910,8 @@
     "home": "Kezdőlap",
     "transfers": "Átutalások",
     "request": "Kérelem",
-    "primary": "Fő navigáció"
+    "primary": "Fő navigáció",
+    "support": "Támogatás"
   },
   "mobileHome": {
     "title": "Üdvözöljük a BNP PARIBAS-nál",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Pénzügyi adatvédelem",
     "contact": "Kapcsolat"
+  },
+  "chat": {
+    "loading": "Betöltés",
+    "notFound": "Oldal nem található",
+    "notFoundDesc": "Ez az oldal nem létezik.",
+    "backHome": "Vissza a főoldalra",
+    "assistant": "asszisztens",
+    "typing": "gépel",
+    "today": "Ma",
+    "yesterday": "Tegnap",
+    "pageTitle": "Élő támogatás",
+    "pageDesc": "Csevegjen csapatunkkal vagy Annával, virtuális asszisztensünkkel.",
+    "closed": "Beszélgetés lezárva",
+    "closeTicket": "Beszélgetés bezárása",
+    "close": "Bezár",
+    "compose": {
+      "placeholder": "Írjon üzenetet…"
+    },
+    "rt": {
+      "bold": "Félkövér",
+      "italic": "Dőlt",
+      "link": "Link",
+      "linkPrompt": "Adja meg az URL-t (https://...)"
+    },
+    "handoff": {
+      "question": "Szeretne tanácsadóval beszélni?",
+      "yes": "Igen, beszélek tanácsadóval",
+      "no": "Nem, köszönöm",
+      "pending": "Kérését feldolgozzuk, tanácsadó 1-2 percen belül csatlakozik…"
+    },
+    "agent": {
+      "joined": "csatlakozott a beszélgetéshez",
+      "joinedYou": "Csatlakozott a beszélgetéshez",
+      "notAssigned": "Nincs kijelölt ügynök",
+      "join": "Csatlakozás"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Tanácsadó online",
+      "open": "Nyitva",
+      "waiting_agent": "Ügynökre vár",
+      "assigned": "Folyamatban",
+      "closed": "Lezárva"
+    },
+    "admin": {
+      "empty": "Nincs beszélgetés.",
+      "selectHint": "Válasszon beszélgetést a bal oldalon."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Biztonságos ügyfélszolgálat",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Jelentkezzen be a csevegéshez",
+      "desc": "Be kell jelentkeznie a támogatás használatához.",
+      "cta": "Bejelentkezés"
+    },
+    "nav": "Támogatás"
   }
 }

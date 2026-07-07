@@ -16,6 +16,7 @@ import { Route as NotificationsRouteImport } from './routes/notifications'
 import { Route as MobileHomeRouteImport } from './routes/mobile-home'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ChatRouteImport } from './routes/chat'
 import { Route as AuthPendingRouteImport } from './routes/auth-pending'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
@@ -37,10 +38,13 @@ import { Route as AdminVerifyRouteImport } from './routes/admin.verify'
 import { Route as AdminSecurityRouteImport } from './routes/admin.security'
 import { Route as AdminNotificationsRouteImport } from './routes/admin.notifications'
 import { Route as AdminLoansRouteImport } from './routes/admin.loans'
+import { Route as AdminChatRouteImport } from './routes/admin.chat'
 import { Route as AdminClientsIndexRouteImport } from './routes/admin.clients.index'
+import { Route as AdminChatIndexRouteImport } from './routes/admin.chat.index'
 import { Route as TransfersTransferIdReceiptRouteImport } from './routes/transfers.$transferId.receipt'
 import { Route as AdminTransfersNewRouteImport } from './routes/admin.transfers.new'
 import { Route as AdminClientsUserIdRouteImport } from './routes/admin.clients.$userId'
+import { Route as AdminChatConversationIdRouteImport } from './routes/admin.chat.$conversationId'
 
 const TransfersRoute = TransfersRouteImport.update({
   id: '/transfers',
@@ -75,6 +79,11 @@ const DashboardRoute = DashboardRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChatRoute = ChatRouteImport.update({
+  id: '/chat',
+  path: '/chat',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthPendingRoute = AuthPendingRouteImport.update({
@@ -182,10 +191,20 @@ const AdminLoansRoute = AdminLoansRouteImport.update({
   path: '/admin/loans',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminChatRoute = AdminChatRouteImport.update({
+  id: '/admin/chat',
+  path: '/admin/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminClientsIndexRoute = AdminClientsIndexRouteImport.update({
   id: '/admin/clients/',
   path: '/admin/clients/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const AdminChatIndexRoute = AdminChatIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminChatRoute,
 } as any)
 const TransfersTransferIdReceiptRoute =
   TransfersTransferIdReceiptRouteImport.update({
@@ -203,11 +222,17 @@ const AdminClientsUserIdRoute = AdminClientsUserIdRouteImport.update({
   path: '/admin/clients/$userId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminChatConversationIdRoute = AdminChatConversationIdRouteImport.update({
+  id: '/$conversationId',
+  path: '/$conversationId',
+  getParentRoute: () => AdminChatRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRouteWithChildren
   '/auth-pending': typeof AuthPendingRoute
+  '/chat': typeof ChatRoute
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/mobile-home': typeof MobileHomeRoute
@@ -215,6 +240,7 @@ export interface FileRoutesByFullPath {
   '/reset-password': typeof ResetPasswordRoute
   '/settings': typeof SettingsRoute
   '/transfers': typeof TransfersRouteWithChildren
+  '/admin/chat': typeof AdminChatRouteWithChildren
   '/admin/loans': typeof AdminLoansRoute
   '/admin/notifications': typeof AdminNotificationsRoute
   '/admin/security': typeof AdminSecurityRoute
@@ -233,15 +259,18 @@ export interface FileRoutesByFullPath {
   '/transfers/$transferId': typeof TransfersTransferIdRouteWithChildren
   '/admin/': typeof AdminIndexRoute
   '/transfers/': typeof TransfersIndexRoute
+  '/admin/chat/$conversationId': typeof AdminChatConversationIdRoute
   '/admin/clients/$userId': typeof AdminClientsUserIdRoute
   '/admin/transfers/new': typeof AdminTransfersNewRoute
   '/transfers/$transferId/receipt': typeof TransfersTransferIdReceiptRoute
+  '/admin/chat/': typeof AdminChatIndexRoute
   '/admin/clients/': typeof AdminClientsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRouteWithChildren
   '/auth-pending': typeof AuthPendingRoute
+  '/chat': typeof ChatRoute
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/mobile-home': typeof MobileHomeRoute
@@ -266,9 +295,11 @@ export interface FileRoutesByTo {
   '/transfers/$transferId': typeof TransfersTransferIdRouteWithChildren
   '/admin': typeof AdminIndexRoute
   '/transfers': typeof TransfersIndexRoute
+  '/admin/chat/$conversationId': typeof AdminChatConversationIdRoute
   '/admin/clients/$userId': typeof AdminClientsUserIdRoute
   '/admin/transfers/new': typeof AdminTransfersNewRoute
   '/transfers/$transferId/receipt': typeof TransfersTransferIdReceiptRoute
+  '/admin/chat': typeof AdminChatIndexRoute
   '/admin/clients': typeof AdminClientsIndexRoute
 }
 export interface FileRoutesById {
@@ -276,6 +307,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/auth': typeof AuthRouteWithChildren
   '/auth-pending': typeof AuthPendingRoute
+  '/chat': typeof ChatRoute
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/mobile-home': typeof MobileHomeRoute
@@ -283,6 +315,7 @@ export interface FileRoutesById {
   '/reset-password': typeof ResetPasswordRoute
   '/settings': typeof SettingsRoute
   '/transfers': typeof TransfersRouteWithChildren
+  '/admin/chat': typeof AdminChatRouteWithChildren
   '/admin/loans': typeof AdminLoansRoute
   '/admin/notifications': typeof AdminNotificationsRoute
   '/admin/security': typeof AdminSecurityRoute
@@ -301,9 +334,11 @@ export interface FileRoutesById {
   '/transfers/$transferId': typeof TransfersTransferIdRouteWithChildren
   '/admin/': typeof AdminIndexRoute
   '/transfers/': typeof TransfersIndexRoute
+  '/admin/chat/$conversationId': typeof AdminChatConversationIdRoute
   '/admin/clients/$userId': typeof AdminClientsUserIdRoute
   '/admin/transfers/new': typeof AdminTransfersNewRoute
   '/transfers/$transferId/receipt': typeof TransfersTransferIdReceiptRoute
+  '/admin/chat/': typeof AdminChatIndexRoute
   '/admin/clients/': typeof AdminClientsIndexRoute
 }
 export interface FileRouteTypes {
@@ -312,6 +347,7 @@ export interface FileRouteTypes {
     | '/'
     | '/auth'
     | '/auth-pending'
+    | '/chat'
     | '/contact'
     | '/dashboard'
     | '/mobile-home'
@@ -319,6 +355,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/settings'
     | '/transfers'
+    | '/admin/chat'
     | '/admin/loans'
     | '/admin/notifications'
     | '/admin/security'
@@ -337,15 +374,18 @@ export interface FileRouteTypes {
     | '/transfers/$transferId'
     | '/admin/'
     | '/transfers/'
+    | '/admin/chat/$conversationId'
     | '/admin/clients/$userId'
     | '/admin/transfers/new'
     | '/transfers/$transferId/receipt'
+    | '/admin/chat/'
     | '/admin/clients/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/auth'
     | '/auth-pending'
+    | '/chat'
     | '/contact'
     | '/dashboard'
     | '/mobile-home'
@@ -370,15 +410,18 @@ export interface FileRouteTypes {
     | '/transfers/$transferId'
     | '/admin'
     | '/transfers'
+    | '/admin/chat/$conversationId'
     | '/admin/clients/$userId'
     | '/admin/transfers/new'
     | '/transfers/$transferId/receipt'
+    | '/admin/chat'
     | '/admin/clients'
   id:
     | '__root__'
     | '/'
     | '/auth'
     | '/auth-pending'
+    | '/chat'
     | '/contact'
     | '/dashboard'
     | '/mobile-home'
@@ -386,6 +429,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/settings'
     | '/transfers'
+    | '/admin/chat'
     | '/admin/loans'
     | '/admin/notifications'
     | '/admin/security'
@@ -404,9 +448,11 @@ export interface FileRouteTypes {
     | '/transfers/$transferId'
     | '/admin/'
     | '/transfers/'
+    | '/admin/chat/$conversationId'
     | '/admin/clients/$userId'
     | '/admin/transfers/new'
     | '/transfers/$transferId/receipt'
+    | '/admin/chat/'
     | '/admin/clients/'
   fileRoutesById: FileRoutesById
 }
@@ -414,6 +460,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthRoute: typeof AuthRouteWithChildren
   AuthPendingRoute: typeof AuthPendingRoute
+  ChatRoute: typeof ChatRoute
   ContactRoute: typeof ContactRoute
   DashboardRoute: typeof DashboardRoute
   MobileHomeRoute: typeof MobileHomeRoute
@@ -421,6 +468,7 @@ export interface RootRouteChildren {
   ResetPasswordRoute: typeof ResetPasswordRoute
   SettingsRoute: typeof SettingsRoute
   TransfersRoute: typeof TransfersRouteWithChildren
+  AdminChatRoute: typeof AdminChatRouteWithChildren
   AdminLoansRoute: typeof AdminLoansRoute
   AdminNotificationsRoute: typeof AdminNotificationsRoute
   AdminSecurityRoute: typeof AdminSecurityRoute
@@ -490,6 +538,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/chat': {
+      id: '/chat'
+      path: '/chat'
+      fullPath: '/chat'
+      preLoaderRoute: typeof ChatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth-pending': {
@@ -639,12 +694,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminLoansRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/chat': {
+      id: '/admin/chat'
+      path: '/admin/chat'
+      fullPath: '/admin/chat'
+      preLoaderRoute: typeof AdminChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/clients/': {
       id: '/admin/clients/'
       path: '/admin/clients'
       fullPath: '/admin/clients/'
       preLoaderRoute: typeof AdminClientsIndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/admin/chat/': {
+      id: '/admin/chat/'
+      path: '/'
+      fullPath: '/admin/chat/'
+      preLoaderRoute: typeof AdminChatIndexRouteImport
+      parentRoute: typeof AdminChatRoute
     }
     '/transfers/$transferId/receipt': {
       id: '/transfers/$transferId/receipt'
@@ -666,6 +735,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/admin/clients/$userId'
       preLoaderRoute: typeof AdminClientsUserIdRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/admin/chat/$conversationId': {
+      id: '/admin/chat/$conversationId'
+      path: '/$conversationId'
+      fullPath: '/admin/chat/$conversationId'
+      preLoaderRoute: typeof AdminChatConversationIdRouteImport
+      parentRoute: typeof AdminChatRoute
     }
   }
 }
@@ -705,10 +781,25 @@ const TransfersRouteWithChildren = TransfersRoute._addFileChildren(
   TransfersRouteChildren,
 )
 
+interface AdminChatRouteChildren {
+  AdminChatConversationIdRoute: typeof AdminChatConversationIdRoute
+  AdminChatIndexRoute: typeof AdminChatIndexRoute
+}
+
+const AdminChatRouteChildren: AdminChatRouteChildren = {
+  AdminChatConversationIdRoute: AdminChatConversationIdRoute,
+  AdminChatIndexRoute: AdminChatIndexRoute,
+}
+
+const AdminChatRouteWithChildren = AdminChatRoute._addFileChildren(
+  AdminChatRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthRoute: AuthRouteWithChildren,
   AuthPendingRoute: AuthPendingRoute,
+  ChatRoute: ChatRoute,
   ContactRoute: ContactRoute,
   DashboardRoute: DashboardRoute,
   MobileHomeRoute: MobileHomeRoute,
@@ -716,6 +807,7 @@ const rootRouteChildren: RootRouteChildren = {
   ResetPasswordRoute: ResetPasswordRoute,
   SettingsRoute: SettingsRoute,
   TransfersRoute: TransfersRouteWithChildren,
+  AdminChatRoute: AdminChatRouteWithChildren,
   AdminLoansRoute: AdminLoansRoute,
   AdminNotificationsRoute: AdminNotificationsRoute,
   AdminSecurityRoute: AdminSecurityRoute,

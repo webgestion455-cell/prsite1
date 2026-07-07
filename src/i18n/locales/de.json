@@ -910,7 +910,8 @@
     "home": "Start",
     "transfers": "Überweisungen",
     "request": "Antrag",
-    "primary": "Hauptnavigation"
+    "primary": "Hauptnavigation",
+    "support": "Support"
   },
   "mobileHome": {
     "title": "Willkommen bei BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "GwG / KYC",
     "finPriv": "Finanzielle Privatsphäre",
     "contact": "Kontakt"
+  },
+  "chat": {
+    "loading": "Lädt",
+    "notFound": "Seite nicht gefunden",
+    "notFoundDesc": "Diese Seite existiert nicht.",
+    "backHome": "Zurück zur Startseite",
+    "assistant": "Assistentin",
+    "typing": "schreibt",
+    "today": "Heute",
+    "yesterday": "Gestern",
+    "pageTitle": "Live-Support",
+    "pageDesc": "Chatten Sie mit unserem Team oder unserer virtuellen Assistentin Anna.",
+    "closed": "Gespräch geschlossen",
+    "closeTicket": "Gespräch schließen",
+    "close": "Schließen",
+    "compose": {
+      "placeholder": "Nachricht schreiben…"
+    },
+    "rt": {
+      "bold": "Fett",
+      "italic": "Kursiv",
+      "link": "Link",
+      "linkPrompt": "URL eingeben (https://...)"
+    },
+    "handoff": {
+      "question": "Möchten Sie mit einem Berater sprechen?",
+      "yes": "Ja, mit einem Berater sprechen",
+      "no": "Nein, danke",
+      "pending": "Ihre Anfrage wird bearbeitet, ein Berater wird in 1-2 Minuten zu Ihnen kommen…"
+    },
+    "agent": {
+      "joined": "ist dem Gespräch beigetreten",
+      "joinedYou": "Sie sind dem Gespräch beigetreten",
+      "notAssigned": "Kein Agent zugewiesen",
+      "join": "Beitreten"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Berater online",
+      "open": "Offen",
+      "waiting_agent": "Wartet auf Agent",
+      "assigned": "In Bearbeitung",
+      "closed": "Geschlossen"
+    },
+    "admin": {
+      "empty": "Keine Gespräche.",
+      "selectHint": "Wählen Sie links ein Gespräch aus."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Sicherer Kundenservice",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Anmelden zum Chatten",
+      "desc": "Sie müssen angemeldet sein, um den Support zu nutzen.",
+      "cta": "Anmelden"
+    },
+    "nav": "Support"
   }
 }

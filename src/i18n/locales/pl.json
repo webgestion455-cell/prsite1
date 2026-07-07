@@ -910,7 +910,8 @@
     "home": "Strona główna",
     "transfers": "Przelewy",
     "request": "Żądanie",
-    "primary": "Nawigacja główna"
+    "primary": "Nawigacja główna",
+    "support": "Wsparcie"
   },
   "mobileHome": {
     "title": "Witamy w BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Prywatność finansowa",
     "contact": "Kontakt"
+  },
+  "chat": {
+    "loading": "Ładowanie",
+    "notFound": "Nie znaleziono strony",
+    "notFoundDesc": "Ta strona nie istnieje.",
+    "backHome": "Powrót do strony głównej",
+    "assistant": "asystentka",
+    "typing": "pisze",
+    "today": "Dzisiaj",
+    "yesterday": "Wczoraj",
+    "pageTitle": "Wsparcie na żywo",
+    "pageDesc": "Rozmawiaj z naszym zespołem lub Anną, naszą wirtualną asystentką.",
+    "closed": "Rozmowa zamknięta",
+    "closeTicket": "Zamknij rozmowę",
+    "close": "Zamknij",
+    "compose": {
+      "placeholder": "Wpisz wiadomość…"
+    },
+    "rt": {
+      "bold": "Pogrubienie",
+      "italic": "Kursywa",
+      "link": "Link",
+      "linkPrompt": "Wprowadź URL (https://...)"
+    },
+    "handoff": {
+      "question": "Czy chcesz porozmawiać z doradcą?",
+      "yes": "Tak, rozmawiaj z doradcą",
+      "no": "Nie, dziękuję",
+      "pending": "Twoje zgłoszenie jest przetwarzane, doradca dołączy za 1-2 minuty…"
+    },
+    "agent": {
+      "joined": "dołączył do rozmowy",
+      "joinedYou": "Dołączyłeś do rozmowy",
+      "notAssigned": "Brak przypisanego agenta",
+      "join": "Dołącz"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Doradca online",
+      "open": "Otwarte",
+      "waiting_agent": "Oczekuje na agenta",
+      "assigned": "W toku",
+      "closed": "Zamknięte"
+    },
+    "admin": {
+      "empty": "Brak rozmów.",
+      "selectHint": "Wybierz rozmowę po lewej."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Bezpieczna obsługa klienta",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Zaloguj się, aby rozmawiać",
+      "desc": "Musisz być zalogowany, aby uzyskać wsparcie.",
+      "cta": "Zaloguj się"
+    },
+    "nav": "Wsparcie"
   }
 }

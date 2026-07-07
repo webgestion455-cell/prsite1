@@ -910,7 +910,8 @@
     "home": "Home",
     "transfers": "Bonifici",
     "request": "Richiesta",
-    "primary": "Navigazione principale"
+    "primary": "Navigazione principale",
+    "support": "Supporto"
   },
   "mobileHome": {
     "title": "Benvenuto in BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Privacy finanziaria",
     "contact": "Contatti"
+  },
+  "chat": {
+    "loading": "Caricamento",
+    "notFound": "Pagina non trovata",
+    "notFoundDesc": "Questa pagina non esiste.",
+    "backHome": "Torna alla home",
+    "assistant": "assistente",
+    "typing": "sta scrivendo",
+    "today": "Oggi",
+    "yesterday": "Ieri",
+    "pageTitle": "Supporto in tempo reale",
+    "pageDesc": "Chatta con il nostro team o con Anna, la nostra assistente virtuale.",
+    "closed": "Conversazione chiusa",
+    "closeTicket": "Chiudi conversazione",
+    "close": "Chiudi",
+    "compose": {
+      "placeholder": "Scrivi il tuo messaggio…"
+    },
+    "rt": {
+      "bold": "Grassetto",
+      "italic": "Corsivo",
+      "link": "Link",
+      "linkPrompt": "Inserisci URL (https://...)"
+    },
+    "handoff": {
+      "question": "Vuoi parlare con un consulente?",
+      "yes": "Sì, parlare con un consulente",
+      "no": "No, grazie",
+      "pending": "La tua richiesta è in elaborazione, un consulente ti raggiungerà in 1-2 minuti…"
+    },
+    "agent": {
+      "joined": "si è unito alla conversazione",
+      "joinedYou": "Ti sei unito alla conversazione",
+      "notAssigned": "Nessun agente assegnato",
+      "join": "Unisciti"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Consulente online",
+      "open": "Aperto",
+      "waiting_agent": "In attesa di agente",
+      "assigned": "In corso",
+      "closed": "Chiuso"
+    },
+    "admin": {
+      "empty": "Nessuna conversazione.",
+      "selectHint": "Seleziona una conversazione a sinistra."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Servizio clienti sicuro",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Accedi per chattare",
+      "desc": "Devi accedere per usare il supporto.",
+      "cta": "Accedi"
+    },
+    "nav": "Supporto"
   }
 }

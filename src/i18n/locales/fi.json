@@ -910,7 +910,8 @@
     "home": "Etusivu",
     "transfers": "Siirrot",
     "request": "Pyyntö",
-    "primary": "Päänavigointi"
+    "primary": "Päänavigointi",
+    "support": "Tuki"
   },
   "mobileHome": {
     "title": "Tervetuloa BNP PARIBAS -palveluun",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Taloudellinen yksityisyys",
     "contact": "Yhteystiedot"
+  },
+  "chat": {
+    "loading": "Ladataan",
+    "notFound": "Sivua ei löydy",
+    "notFoundDesc": "Tätä sivua ei ole.",
+    "backHome": "Takaisin etusivulle",
+    "assistant": "avustaja",
+    "typing": "kirjoittaa",
+    "today": "Tänään",
+    "yesterday": "Eilen",
+    "pageTitle": "Live-tuki",
+    "pageDesc": "Keskustele tiimimme tai virtuaaliavustajamme Annan kanssa.",
+    "closed": "Keskustelu suljettu",
+    "closeTicket": "Sulje keskustelu",
+    "close": "Sulje",
+    "compose": {
+      "placeholder": "Kirjoita viesti…"
+    },
+    "rt": {
+      "bold": "Lihavoitu",
+      "italic": "Kursivoitu",
+      "link": "Linkki",
+      "linkPrompt": "Anna URL (https://...)"
+    },
+    "handoff": {
+      "question": "Haluatko puhua neuvojan kanssa?",
+      "yes": "Kyllä, puhu neuvojalle",
+      "no": "Ei kiitos",
+      "pending": "Pyyntöäsi käsitellään, neuvoja liittyy 1-2 minuutissa…"
+    },
+    "agent": {
+      "joined": "liittyi keskusteluun",
+      "joinedYou": "Liityit keskusteluun",
+      "notAssigned": "Ei nimettyä agenttia",
+      "join": "Liity"
+    },
+    "status": {
+      "online": "Verkossa",
+      "agent": "Neuvoja verkossa",
+      "open": "Avoin",
+      "waiting_agent": "Odottaa agenttia",
+      "assigned": "Käynnissä",
+      "closed": "Suljettu"
+    },
+    "admin": {
+      "empty": "Ei keskusteluja.",
+      "selectHint": "Valitse keskustelu vasemmalta."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Turvallinen asiakaspalvelu",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Kirjaudu keskustellaksesi",
+      "desc": "Sinun on kirjauduttava tukea varten.",
+      "cta": "Kirjaudu"
+    },
+    "nav": "Tuki"
   }
 }

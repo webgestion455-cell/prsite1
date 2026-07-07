@@ -910,7 +910,8 @@
     "home": "Acasă",
     "transfers": "Transferuri",
     "request": "Cerere",
-    "primary": "Navigație principală"
+    "primary": "Navigație principală",
+    "support": "Suport"
   },
   "mobileHome": {
     "title": "Bine ați venit la BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Confidențialitate financiară",
     "contact": "Contact"
+  },
+  "chat": {
+    "loading": "Se încarcă",
+    "notFound": "Pagină negăsită",
+    "notFoundDesc": "Această pagină nu există.",
+    "backHome": "Înapoi la început",
+    "assistant": "asistentă",
+    "typing": "scrie",
+    "today": "Astăzi",
+    "yesterday": "Ieri",
+    "pageTitle": "Suport live",
+    "pageDesc": "Discutați cu echipa noastră sau cu Anna, asistenta virtuală.",
+    "closed": "Conversație închisă",
+    "closeTicket": "Închide conversația",
+    "close": "Închide",
+    "compose": {
+      "placeholder": "Scrieți mesajul…"
+    },
+    "rt": {
+      "bold": "Aldin",
+      "italic": "Cursiv",
+      "link": "Link",
+      "linkPrompt": "Introduceți URL (https://...)"
+    },
+    "handoff": {
+      "question": "Doriți să vorbiți cu un consilier?",
+      "yes": "Da, vorbește cu un consilier",
+      "no": "Nu, mulțumesc",
+      "pending": "Cererea dvs. este în procesare, un consilier vi se alătură în 1-2 minute…"
+    },
+    "agent": {
+      "joined": "s-a alăturat conversației",
+      "joinedYou": "V-ați alăturat conversației",
+      "notAssigned": "Niciun agent atribuit",
+      "join": "Alăturați-vă"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Consilier online",
+      "open": "Deschis",
+      "waiting_agent": "Așteaptă agent",
+      "assigned": "În curs",
+      "closed": "Închis"
+    },
+    "admin": {
+      "empty": "Nicio conversație.",
+      "selectHint": "Selectați o conversație în stânga."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Serviciu clienți securizat",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Autentificați-vă pentru chat",
+      "desc": "Trebuie să fiți autentificat pentru suport.",
+      "cta": "Autentificare"
+    },
+    "nav": "Suport"
   }
 }

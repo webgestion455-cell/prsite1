@@ -910,7 +910,8 @@
     "home": "Domov",
     "transfers": "Prevody",
     "request": "Žiadosť",
-    "primary": "Hlavná navigácia"
+    "primary": "Hlavná navigácia",
+    "support": "Podpora"
   },
   "mobileHome": {
     "title": "Vitajte v BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Finančné súkromie",
     "contact": "Kontakt"
+  },
+  "chat": {
+    "loading": "Načítava",
+    "notFound": "Stránka nenájdená",
+    "notFoundDesc": "Táto stránka neexistuje.",
+    "backHome": "Späť domov",
+    "assistant": "asistentka",
+    "typing": "píše",
+    "today": "Dnes",
+    "yesterday": "Včera",
+    "pageTitle": "Živá podpora",
+    "pageDesc": "Chatujte s naším tímom alebo s Annou, našou virtuálnou asistentkou.",
+    "closed": "Konverzácia zatvorená",
+    "closeTicket": "Zatvoriť konverzáciu",
+    "close": "Zatvoriť",
+    "compose": {
+      "placeholder": "Napíšte správu…"
+    },
+    "rt": {
+      "bold": "Tučné",
+      "italic": "Kurzíva",
+      "link": "Odkaz",
+      "linkPrompt": "Zadajte URL (https://...)"
+    },
+    "handoff": {
+      "question": "Chcete hovoriť s poradcom?",
+      "yes": "Áno, hovoriť s poradcom",
+      "no": "Nie, ďakujem",
+      "pending": "Vaša požiadavka sa spracúva, poradca sa pripojí za 1-2 minúty…"
+    },
+    "agent": {
+      "joined": "sa pripojil ku konverzácii",
+      "joinedYou": "Pripojili ste sa ku konverzácii",
+      "notAssigned": "Žiadny priradený agent",
+      "join": "Pripojiť sa"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Poradca online",
+      "open": "Otvorené",
+      "waiting_agent": "Čaká na agenta",
+      "assigned": "Prebieha",
+      "closed": "Zatvorené"
+    },
+    "admin": {
+      "empty": "Žiadne konverzácie.",
+      "selectHint": "Vyberte konverzáciu vľavo."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Bezpečný zákaznícky servis",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Prihláste sa na chat",
+      "desc": "Na použitie podpory musíte byť prihlásený.",
+      "cta": "Prihlásiť sa"
+    },
+    "nav": "Podpora"
   }
 }

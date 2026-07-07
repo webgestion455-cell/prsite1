@@ -910,7 +910,8 @@
     "home": "Domov",
     "transfers": "Nakazila",
     "request": "Zahteva",
-    "primary": "Glavna navigacija"
+    "primary": "Glavna navigacija",
+    "support": "Podpora"
   },
   "mobileHome": {
     "title": "Dobrodošli pri BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Finančna zasebnost",
     "contact": "Stik"
+  },
+  "chat": {
+    "loading": "Nalaganje",
+    "notFound": "Stran ni najdena",
+    "notFoundDesc": "Ta stran ne obstaja.",
+    "backHome": "Nazaj na domov",
+    "assistant": "asistentka",
+    "typing": "tipka",
+    "today": "Danes",
+    "yesterday": "Včeraj",
+    "pageTitle": "Podpora v živo",
+    "pageDesc": "Klepetajte z našo ekipo ali Anno, našo virtualno pomočnico.",
+    "closed": "Pogovor zaprt",
+    "closeTicket": "Zapri pogovor",
+    "close": "Zapri",
+    "compose": {
+      "placeholder": "Vnesite sporočilo…"
+    },
+    "rt": {
+      "bold": "Krepko",
+      "italic": "Ležeče",
+      "link": "Povezava",
+      "linkPrompt": "Vnesite URL (https://...)"
+    },
+    "handoff": {
+      "question": "Ali želite govoriti s svetovalcem?",
+      "yes": "Da, govoriti s svetovalcem",
+      "no": "Ne, hvala",
+      "pending": "Vaša zahteva se obdeluje, svetovalec se pridruži v 1-2 minutah…"
+    },
+    "agent": {
+      "joined": "se je pridružil pogovoru",
+      "joinedYou": "Pridružili ste se pogovoru",
+      "notAssigned": "Ni dodeljenega agenta",
+      "join": "Pridruži se"
+    },
+    "status": {
+      "online": "Na spletu",
+      "agent": "Svetovalec na spletu",
+      "open": "Odprto",
+      "waiting_agent": "Čaka na agenta",
+      "assigned": "V teku",
+      "closed": "Zaprto"
+    },
+    "admin": {
+      "empty": "Ni pogovorov.",
+      "selectHint": "Izberite pogovor na levi."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Varna storitev za stranke",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Prijavite se za klepet",
+      "desc": "Za dostop do podpore morate biti prijavljeni.",
+      "cta": "Prijava"
+    },
+    "nav": "Podpora"
   }
 }

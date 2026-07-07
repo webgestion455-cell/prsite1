@@ -910,7 +910,8 @@
     "home": "Inicio",
     "transfers": "Transferencias",
     "request": "Solicitud",
-    "primary": "Navegación principal"
+    "primary": "Navegación principal",
+    "support": "Soporte"
   },
   "mobileHome": {
     "title": "Bienvenido a BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Privacidad financiera",
     "contact": "Contacto"
+  },
+  "chat": {
+    "loading": "Cargando",
+    "notFound": "Página no encontrada",
+    "notFoundDesc": "Esta página no existe.",
+    "backHome": "Volver al inicio",
+    "assistant": "asistente",
+    "typing": "está escribiendo",
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "pageTitle": "Soporte en directo",
+    "pageDesc": "Chatea con nuestro equipo o con Anna, nuestra asistente virtual.",
+    "closed": "Conversación cerrada",
+    "closeTicket": "Cerrar conversación",
+    "close": "Cerrar",
+    "compose": {
+      "placeholder": "Escribe tu mensaje…"
+    },
+    "rt": {
+      "bold": "Negrita",
+      "italic": "Cursiva",
+      "link": "Enlace",
+      "linkPrompt": "Introduce la URL (https://...)"
+    },
+    "handoff": {
+      "question": "¿Desea hablar con un asesor?",
+      "yes": "Sí, hablar con un asesor",
+      "no": "No, gracias",
+      "pending": "Su solicitud está siendo procesada, un asesor se unirá en 1-2 minutos…"
+    },
+    "agent": {
+      "joined": "se unió a la conversación",
+      "joinedYou": "Te uniste a la conversación",
+      "notAssigned": "Ningún agente asignado",
+      "join": "Unirse"
+    },
+    "status": {
+      "online": "En línea",
+      "agent": "Asesor en línea",
+      "open": "Abierto",
+      "waiting_agent": "Esperando agente",
+      "assigned": "En curso",
+      "closed": "Cerrado"
+    },
+    "admin": {
+      "empty": "Sin conversaciones.",
+      "selectHint": "Selecciona una conversación a la izquierda."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Servicio al cliente seguro",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Inicia sesión para chatear",
+      "desc": "Debes iniciar sesión para acceder al soporte.",
+      "cta": "Iniciar sesión"
+    },
+    "nav": "Soporte"
   }
 }

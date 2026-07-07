@@ -910,7 +910,8 @@
     "home": "Početna",
     "transfers": "Transferi",
     "request": "Zahtjev",
-    "primary": "Glavna navigacija"
+    "primary": "Glavna navigacija",
+    "support": "Podrška"
   },
   "mobileHome": {
     "title": "Dobrodošli u BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Financijska privatnost",
     "contact": "Kontakt"
+  },
+  "chat": {
+    "loading": "Učitavanje",
+    "notFound": "Stranica nije pronađena",
+    "notFoundDesc": "Ova stranica ne postoji.",
+    "backHome": "Natrag na početnu",
+    "assistant": "asistentica",
+    "typing": "piše",
+    "today": "Danas",
+    "yesterday": "Jučer",
+    "pageTitle": "Podrška uživo",
+    "pageDesc": "Razgovarajte s našim timom ili Annom, našom virtualnom asistenticom.",
+    "closed": "Razgovor zatvoren",
+    "closeTicket": "Zatvori razgovor",
+    "close": "Zatvori",
+    "compose": {
+      "placeholder": "Upišite poruku…"
+    },
+    "rt": {
+      "bold": "Podebljano",
+      "italic": "Kurziv",
+      "link": "Poveznica",
+      "linkPrompt": "Unesite URL (https://...)"
+    },
+    "handoff": {
+      "question": "Želite li razgovarati sa savjetnikom?",
+      "yes": "Da, razgovaraj sa savjetnikom",
+      "no": "Ne, hvala",
+      "pending": "Vaš zahtjev se obrađuje, savjetnik će vam se pridružiti za 1-2 minute…"
+    },
+    "agent": {
+      "joined": "pridružio se razgovoru",
+      "joinedYou": "Pridružili ste se razgovoru",
+      "notAssigned": "Nema dodijeljenog agenta",
+      "join": "Pridruži se"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Savjetnik online",
+      "open": "Otvoreno",
+      "waiting_agent": "Čeka agenta",
+      "assigned": "U tijeku",
+      "closed": "Zatvoreno"
+    },
+    "admin": {
+      "empty": "Nema razgovora.",
+      "selectHint": "Odaberite razgovor s lijeve strane."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Sigurna korisnička služba",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Prijavite se za chat",
+      "desc": "Morate biti prijavljeni za podršku.",
+      "cta": "Prijava"
+    },
+    "nav": "Podrška"
   }
 }

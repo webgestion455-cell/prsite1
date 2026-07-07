@@ -910,7 +910,8 @@
     "home": "Home",
     "transfers": "Overschrijvingen",
     "request": "Aanvraag",
-    "primary": "Hoofdnavigatie"
+    "primary": "Hoofdnavigatie",
+    "support": "Support"
   },
   "mobileHome": {
     "title": "Welkom bij BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Financiële privacy",
     "contact": "Contact"
+  },
+  "chat": {
+    "loading": "Laden",
+    "notFound": "Pagina niet gevonden",
+    "notFoundDesc": "Deze pagina bestaat niet.",
+    "backHome": "Terug naar home",
+    "assistant": "assistent",
+    "typing": "typt",
+    "today": "Vandaag",
+    "yesterday": "Gisteren",
+    "pageTitle": "Live ondersteuning",
+    "pageDesc": "Chat met ons team of met Anna, onze virtuele assistent.",
+    "closed": "Gesprek gesloten",
+    "closeTicket": "Gesprek sluiten",
+    "close": "Sluiten",
+    "compose": {
+      "placeholder": "Typ je bericht…"
+    },
+    "rt": {
+      "bold": "Vet",
+      "italic": "Cursief",
+      "link": "Link",
+      "linkPrompt": "Voer URL in (https://...)"
+    },
+    "handoff": {
+      "question": "Wilt u met een adviseur spreken?",
+      "yes": "Ja, met adviseur spreken",
+      "no": "Nee, bedankt",
+      "pending": "Uw verzoek wordt verwerkt, een adviseur komt binnen 1-2 minuten…"
+    },
+    "agent": {
+      "joined": "heeft zich bij het gesprek gevoegd",
+      "joinedYou": "Je bent bij het gesprek gekomen",
+      "notAssigned": "Geen agent toegewezen",
+      "join": "Deelnemen"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Adviseur online",
+      "open": "Open",
+      "waiting_agent": "Wachten op agent",
+      "assigned": "Bezig",
+      "closed": "Gesloten"
+    },
+    "admin": {
+      "empty": "Geen gesprekken.",
+      "selectHint": "Selecteer een gesprek links."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Veilige klantenservice",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Log in om te chatten",
+      "desc": "Je moet ingelogd zijn om support te gebruiken.",
+      "cta": "Inloggen"
+    },
+    "nav": "Support"
   }
 }

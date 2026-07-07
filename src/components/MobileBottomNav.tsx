@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { ArrowLeftRight, FilePlus2, Home, Mail, Settings as SettingsIcon, ShieldCheck } from "lucide-react";
+import { ArrowLeftRight, FilePlus2, Home, MessageCircle, Settings as SettingsIcon, ShieldCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "@/lib/auth-context";
 
@@ -13,13 +13,14 @@ export function MobileBottomNav() {
   const items = isAdminArea && role === "admin"
     ? [
         { to: "/admin" as const, label: t("header.admin"), icon: ShieldCheck },
+        { to: "/admin/chat" as const, label: t("chat.nav"), icon: MessageCircle },
         { to: "/settings" as const, label: t("header.settings"), icon: SettingsIcon },
       ]
     : [
         { to: "/dashboard" as const, label: t("nav.home"), icon: Home },
         { to: "/transfers" as const, label: t("nav.transfers"), icon: ArrowLeftRight },
         { to: "/loans/new" as const, label: t("nav.request"), icon: FilePlus2 },
-        { to: "/contact" as const, label: t("header.contact"), icon: Mail },
+        { to: "/chat" as const, label: t("chat.nav"), icon: MessageCircle },
         { to: "/settings" as const, label: t("header.settings"), icon: SettingsIcon },
       ];
 

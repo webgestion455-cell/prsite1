@@ -910,7 +910,8 @@
     "home": "Home",
     "transfers": "Transfers",
     "request": "Request",
-    "primary": "Main navigation"
+    "primary": "Main navigation",
+    "support": "Support"
   },
   "mobileHome": {
     "title": "Welcome to BNP PARIBAS",
@@ -1262,5 +1263,63 @@
     "aml": "AML / KYC",
     "finPriv": "Financial privacy",
     "contact": "Contact"
+  },
+  "chat": {
+    "loading": "Loading",
+    "notFound": "Page not found",
+    "notFoundDesc": "This page does not exist.",
+    "backHome": "Back to home",
+    "assistant": "assistant",
+    "typing": "is typing",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "pageTitle": "Live support",
+    "pageDesc": "Chat with our team or with Anna, our virtual assistant.",
+    "closed": "Conversation closed",
+    "closeTicket": "Close conversation",
+    "close": "Close",
+    "compose": {
+      "placeholder": "Type your message…"
+    },
+    "rt": {
+      "bold": "Bold",
+      "italic": "Italic",
+      "link": "Link",
+      "linkPrompt": "Enter URL (https://...)"
+    },
+    "handoff": {
+      "question": "Would you like to speak with an advisor?",
+      "yes": "Yes, speak to an advisor",
+      "no": "No, thanks",
+      "pending": "Your request is being processed, an advisor will join you in 1-2 minutes…"
+    },
+    "agent": {
+      "joined": "joined the conversation",
+      "joinedYou": "You joined the conversation",
+      "notAssigned": "No agent assigned",
+      "join": "Join"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Advisor online",
+      "open": "Open",
+      "waiting_agent": "Waiting for agent",
+      "assigned": "In progress",
+      "closed": "Closed"
+    },
+    "admin": {
+      "empty": "No conversations.",
+      "selectHint": "Select a conversation on the left."
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Secure customer service",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Log in to chat",
+      "desc": "You must be logged in to access support.",
+      "cta": "Log in"
+    },
+    "nav": "Support"
   }
 }
