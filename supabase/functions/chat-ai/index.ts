@@ -1,6 +1,6 @@
 /// <reference lib="deno.ns" />
 // -------------------------------------------------------------------------
-// BNP PARIBAS — Assistant IA (Lovable AI Gateway, google/gemini-2.5-flash)
+// // BNP PARIBAS — Assistant IA (Google Gemini 2.5 Flash)
 // - Connaissance du site (services, URLs publiques uniquement)
 // - Refus strict des sujets sensibles (routes admin, structure interne…)
 // - Détecte l'intent "parler à un humain" et renvoie handoff:true
@@ -8,9 +8,8 @@
 // -------------------------------------------------------------------------
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
-const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY")!;
-const GATEWAY_URL = "https://ai.gateway.lovable.dev/v1/chat/completions";
-const MODEL = "google/gemini-2.5-flash";
+const GEMINI_API_KEY = Deno.env.get("GEMINI_API_KEY")!;
+const GEMINI_URL ="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -139,14 +138,30 @@ serve(async (req) => {
       { role: "user", content: trimmed },
     ];
 
-    const r = await fetch(GATEWAY_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${LOVABLE_API_KEY}`,
+    const r = await fetch(`${GEMINI_URL}?key=${GEMINI_API_KEY}`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    contents: [
+      {
+        role: "user",
+        parts: [
+          {
+            text: messages
+              .map((m) => `${m.role}: ${m.content}`)
+              .join("\n\n"),
+          },
+        ],
       },
-      body: JSON.stringify({ model: MODEL, messages, temperature: 0.4 }),
-    });
+    ],
+    generationConfig: {
+      temperature: 0.4,
+      maxOutputTokens: 2048,
+    },
+  }),
+});
 
     if (r.status === 429) return json({ error: "rate_limited" }, 429);
     if (r.status === 402) return json({ error: "credits_exhausted" }, 402);
@@ -157,7 +172,10 @@ serve(async (req) => {
     }
 
     const data = await r.json();
-    const raw = String(data?.choices?.[0]?.message?.content ?? "").trim();
+
+    const raw = String(
+        data?.candidates?.[0]?.content?.parts?.[0]?.text ?? ""
+             ).trim();
     const html = sanitizeHtml(raw || "<p>Désolé, je n'ai pas compris. Reformulez votre question ?</p>");
 
     return json({ html, handoff, blocked: false });
