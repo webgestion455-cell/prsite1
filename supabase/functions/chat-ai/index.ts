@@ -108,7 +108,12 @@ function sanitizeHtml(html: string): string {
 }
 
 serve(async (req) => {
-  if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
+  if (req.method === "OPTIONS") {
+  return new Response("ok", {
+    status: 200,
+    headers: CORS,
+  });
+}
   try {
     const { message, history = [], lang = "fr" } = await req.json();
     if (typeof message !== "string" || message.trim().length === 0) {
