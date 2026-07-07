@@ -121,6 +121,8 @@ function RootComponent() {
     "/mobile-home",
   ].includes(location.pathname);
 
+  const hideLiveChat = hideLayout || location.pathname.startsWith("/dashboard") || location.pathname.startsWith("/admin");
+
   useEffect(() => {
   if (Capacitor.isNativePlatform()) {
 
@@ -167,7 +169,7 @@ function RootComponent() {
           {!hideLayout && <MobileBottomNav />}
         </div>
 
-        {!hideLayout && <LiveChat />}
+        {!hideLiveChat && <LiveChat />}
         <Toaster richColors closeButton />
       </AuthProvider>
     </ThemeProvider>
