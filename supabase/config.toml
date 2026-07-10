@@ -17,3 +17,15 @@ enabled = true
 verify_jwt = true
 import_map = "./functions/chat-handoff/deno.json"
 entrypoint = "./functions/chat-handoff/index.ts"
+
+[functions.chat-guest-start]
+enabled = true
+verify_jwt = false
+import_map = "./functions/chat-guest-start/deno.json"
+entrypoint = "./functions/chat-guest-start/index.ts"
+
+[functions.chat-guest-post]
+enabled = true
+verify_jwt = false
+import_map = "./functions/chat-guest-post/deno.json"
+entrypoint = "./functions/chat-guest-post/index.ts"

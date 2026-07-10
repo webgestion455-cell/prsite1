@@ -81,6 +81,7 @@ export async function ensureConversation(userId: string): Promise<ChatConversati
 interface ChatWindowProps {
   conversationId: string;
   mode: "client" | "agent";
+  guestMode?: boolean;
   onClose?: () => void;
   onCloseTicket?: () => void;
   className?: string;
@@ -90,6 +91,7 @@ interface ChatWindowProps {
 export function ChatWindow({
   conversationId,
   mode,
+  guestMode = false,
   onClose,
   onCloseTicket,
   className,
@@ -173,14 +175,27 @@ export function ChatWindow({
   // Envoi message
   const sendMessage = useCallback(
     async (html: string, format: "html" | "text" = "html") => {
-      if (!user || !conversationId) return;
+      if (!conversationId) return;
       const cleaned = sanitizeHtml(html).trim();
       if (!cleaned || cleaned === "<p></p>") return;
       setSending(true);
       try {
+        // GUEST : passe par edge function (RLS refuse l'insert direct)
+        if (guestMode) {
+          const plain = cleaned.replace(/<[^>]+>/g, " ").trim();
+          setAiTyping(true);
+          const { error } = await supabase.functions.invoke("chat-guest-post", {
+            body: { conversationId, message: plain, lang: i18n.language },
+          });
+          setAiTyping(false);
+          if (error) throw error;
+          return;
+        }
+
+        if (!user) return;
         const senderName =
           mode === "agent"
-            ? (profile?.full_name ?? "Agent")
+            ? (profile?.full_name ?? "Conseiller BNP")
             : (profile?.full_name ?? user.email ?? "Client");
         const { error } = await (supabase as any).from("chat_messages").insert({
           conversation_id: conversationId,
@@ -193,7 +208,7 @@ export function ChatWindow({
         });
         if (error) throw error;
 
-        // Si client : demander à l'IA (sauf si un agent a rejoint)
+        // Si client authentifié : demander à l'IA (sauf si un agent a rejoint)
         if (mode === "client" && conv?.status !== "assigned") {
           setAiTyping(true);
           try {
@@ -233,7 +248,7 @@ export function ChatWindow({
         setSending(false);
       }
     },
-    [user, conversationId, mode, profile, conv?.status, msgs, i18n.language],
+    [user, conversationId, mode, guestMode, profile, conv?.status, msgs, i18n.language],
   );
 
   // Handoff : oui → edge function

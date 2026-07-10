@@ -1309,7 +1309,17 @@
     },
     "admin": {
       "empty": "No conversations.",
-      "selectHint": "Select a conversation on the left."
+      "selectHint": "Select a conversation on the left.",
+      "folders": "Client folders",
+      "tickets": "Tickets",
+      "searchPlaceholder": "Search client, ticket, email…",
+      "filter": {
+        "all": "All",
+        "waiting": "Waiting",
+        "mine": "Assigned to me",
+        "closed": "Closed",
+        "guests": "Visitors"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Secure customer service",
@@ -1320,6 +1330,46 @@
       "desc": "You must be logged in to access support.",
       "cta": "Log in"
     },
-    "nav": "Support"
+    "nav": "Support",
+    "guest": {
+      "subtitle": "Visitor support",
+      "intro": "Fill in this form and a BNP PARIBAS advisor will reply shortly. You will get a ticket number.",
+      "name": "Full name *",
+      "email": "Email *",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "country": "Country",
+      "subject": "Subject",
+      "message": "Your message *",
+      "submit": "Open my ticket",
+      "privacy": "Your data is processed confidentially (GDPR).",
+      "created": "Ticket #{{ticket}} created!",
+      "errors": {
+        "required": "Name, email and message are required.",
+        "fail": "Send failed, retry."
+      }
+    },
+    "ticket": "Ticket",
+    "archived": "Archived",
+    "open": "Open"
+  },
+  "adminDash": {
+    "title": "Dashboard — BNP PARIBAS",
+    "overview": "Overview",
+    "clients": "Clients",
+    "loans": "Loans",
+    "transfers": "Transfers",
+    "chat": "Live Chat",
+    "security": "Security",
+    "notifications": "Notifications",
+    "kpis": {
+      "clients": "Active clients",
+      "loansPending": "Loans pending",
+      "transfersBlocked": "Blocked transfers",
+      "ticketsOpen": "Open tickets",
+      "newToday": "New today"
+    },
+    "recentActivity": "Recent activity",
+    "quickActions": "Quick actions"
   }
 }
