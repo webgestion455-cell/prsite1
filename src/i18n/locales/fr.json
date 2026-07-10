@@ -1309,17 +1309,7 @@
     },
     "admin": {
       "empty": "Aucune conversation.",
-      "selectHint": "Sélectionnez une conversation à gauche.",
-      "folders": "Dossiers clients",
-      "tickets": "Tickets",
-      "searchPlaceholder": "Rechercher un client, ticket, email…",
-      "filter": {
-        "all": "Tous",
-        "waiting": "En attente",
-        "mine": "Assignés à moi",
-        "closed": "Fermés",
-        "guests": "Visiteurs"
-      }
+      "selectHint": "Sélectionnez une conversation à gauche."
     },
     "banner": {
       "top": "BNP PARIBAS — Service client sécurisé",
@@ -1330,46 +1320,6 @@
       "desc": "Vous devez être connecté(e) pour accéder à l'assistance.",
       "cta": "Se connecter"
     },
-    "nav": "Assistance",
-    "guest": {
-      "subtitle": "Assistance visiteurs",
-      "intro": "Remplissez ce formulaire, un conseiller BNP PARIBAS vous répondra rapidement. Vous obtiendrez un numéro de ticket.",
-      "name": "Nom complet *",
-      "email": "Email *",
-      "phone": "Téléphone",
-      "whatsapp": "WhatsApp",
-      "country": "Pays de résidence",
-      "subject": "Sujet",
-      "message": "Votre message *",
-      "submit": "Ouvrir mon ticket",
-      "privacy": "Vos données sont traitées confidentiellement (RGPD).",
-      "created": "Ticket #{{ticket}} créé !",
-      "errors": {
-        "required": "Nom, email et message obligatoires.",
-        "fail": "Envoi échoué, réessayez."
-      }
-    },
-    "ticket": "Ticket",
-    "archived": "Archivés",
-    "open": "Ouverts"
-  },
-  "adminDash": {
-    "title": "Tableau de bord — BNP PARIBAS",
-    "overview": "Vue d'ensemble",
-    "clients": "Clients",
-    "loans": "Prêts",
-    "transfers": "Virements",
-    "chat": "Live Chat",
-    "security": "Sécurité",
-    "notifications": "Notifications",
-    "kpis": {
-      "clients": "Clients actifs",
-      "loansPending": "Prêts en attente",
-      "transfersBlocked": "Virements bloqués",
-      "ticketsOpen": "Tickets ouverts",
-      "newToday": "Nouveaux aujourd'hui"
-    },
-    "recentActivity": "Activité récente",
-    "quickActions": "Actions rapides"
+    "nav": "Assistance"
   }
 }
