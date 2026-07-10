@@ -269,7 +269,7 @@ function SettingsPage() {
             await i18n.changeLanguage(val);
             try {
               if (user) {
-                await supabase.from("profiles").update({ language: val }).eq("user_id", user.id);
+                await (supabase as any).from("profiles").update({ language: val }).eq("user_id", user.id);
               }
             } catch { /* ignore */ }
             toast.success(t("settings.languageSaved"));

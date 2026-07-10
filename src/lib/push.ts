@@ -29,6 +29,13 @@ export async function subscribeToPush(userId: string): Promise<boolean> {
   if (!VAPID_PUBLIC_KEY) return false;
   if (typeof window === "undefined" || !("Notification" in window) || !("serviceWorker" in navigator)) return false;
   if (Notification.permission === "denied") return false;
+
+  // Ensure the current session actually matches the userId — avoids the
+  // 403 Forbidden upsert observed when the RLS check auth.uid() = user_id
+  // runs while the client has no valid session (or a stale one).
+  const { data: authData } = await supabase.auth.getUser();
+  if (!authData?.user || authData.user.id !== userId) return false;
+
   if (Notification.permission !== "granted") {
     const p = await Notification.requestPermission();
     if (p !== "granted") return false;
@@ -48,7 +55,8 @@ export async function subscribeToPush(userId: string): Promise<boolean> {
   }
   const json = sub.toJSON() as { endpoint?: string; keys?: { p256dh?: string; auth?: string } };
   if (!json.endpoint || !json.keys?.p256dh || !json.keys?.auth) return false;
-  await (supabase as any).from("push_subscriptions").upsert(
+
+  const { error } = await (supabase as any).from("push_subscriptions").upsert(
     {
       user_id: userId,
       endpoint: json.endpoint,
@@ -58,5 +66,11 @@ export async function subscribeToPush(userId: string): Promise<boolean> {
     },
     { onConflict: "endpoint" },
   );
+  if (error) {
+    // Swallow — a missing RLS grant should never crash the notification bell.
+    // Log softly so it's visible in dev tools.
+    console.warn("[push] upsert failed:", error.message);
+    return false;
+  }
   return true;
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { Bell, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -27,6 +27,8 @@ export function NotificationBell() {
   const [open, setOpen] = useState(false);
   const dateLocale = LOCALES[i18n.resolvedLanguage ?? "fr"] ?? fr;
 
+  const channelRef = useRef<ReturnType<typeof supabase.channel> | null>(null);
+
   useEffect(() => {
     if (!user) return;
     void ensureBrowserPermission().then((p) => {
@@ -34,19 +36,23 @@ export function NotificationBell() {
     });
     void load();
 
-    const channel = supabase
-      .channel(`notif-${user.id}`)
+    // Unique per-mount channel name to avoid re-subscribing the same channel
+    // after React StrictMode double-invokes the effect (which caused
+    // "cannot add postgres_changes callbacks ... after subscribe()").
+    const channelName = `notif-${user.id}-${Math.random().toString(36).slice(2, 8)}`;
+    const channel = supabase.channel(channelName);
+    channelRef.current = channel;
+
+    channel
       .on(
         "postgres_changes",
         { event: "INSERT", schema: "public", table: "notifications", filter: `user_id=eq.${user.id}` },
         (payload) => {
           const n = payload.new as AppNotification;
           setItems((prev) => {
-            // évite les doublons si le INSERT initial est déjà dans la liste
             if (prev.some((p) => p.id === n.id)) return prev;
             return [n, ...prev].slice(0, 50);
           });
-          // Son + notification système
           playNotificationSound();
           showBrowserNotification(n);
         },
@@ -62,7 +68,9 @@ export function NotificationBell() {
       .subscribe();
 
     return () => {
-      void supabase.removeChannel(channel);
+      const ch = channelRef.current;
+      channelRef.current = null;
+      if (ch) void supabase.removeChannel(ch);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.id]);

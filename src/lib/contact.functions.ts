@@ -65,7 +65,7 @@ export const submitContactMessage = createServerFn({ method: "POST" })
 });
         emailSent = res.ok;
         if (emailSent && row?.id) {
-          await supabaseAdmin.from("contact_messages").update({ sent_email: true }).eq("id", row.id);
+          await (supabaseAdmin as any).from("contact_messages").update({ sent_email: true }).eq("id", row.id);
         }
       } catch {
         /* silent — message is still persisted */

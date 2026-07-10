@@ -1,6 +1,9 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Session, User } from "@supabase/supabase-js";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase as _sb } from "@/integrations/supabase/client";
+// Types widening — new tables (security_alerts, profiles.language, ...) live in a
+// migration that regenerates supabase/types.ts; cast until then.
+const supabase: any = _sb;
 import i18n from "i18next";
 
 type Role = "admin" | "user";
@@ -32,8 +35,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   // IMPORTANT: CAPTURE SUBSCRIPTION
   const {
     data: { subscription },
-  } = supabase.auth.onAuthStateChange((_event, newSession) => {
+  } = supabase.auth.onAuthStateChange((_event: string, newSession: Session | null) => {
     if (!active) return;
+
 
     setSession(newSession);
     setUser(newSession?.user ?? null);
@@ -64,7 +68,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   // CHECK SESSION INITIALE
   supabase.auth
     .getSession()
-    .then(({ data: { session: existing } }) => {
+    .then(({ data: { session: existing } }: { data: { session: Session | null } }) => {
       if (!active) return;
 
       setSession(existing);
@@ -110,7 +114,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       .select("role")
       .eq("user_id", userId);
     if (data && data.length > 0) {
-      const isAdmin = data.some((r) => r.role === "admin");
+      const isAdmin = data.some((r: { role: string }) => r.role === "admin");
       setRole(isAdmin ? "admin" : "user");
     } else {
       setRole("user");

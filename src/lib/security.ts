@@ -2,7 +2,9 @@
 // Device fingerprinting (no external dep), event logging, behavior tracking,
 // risk-score evaluation. Server enforcement uses RLS + has_role.
 
-import { supabase } from "@/integrations/supabase/client";
+import { supabase as _sb } from "@/integrations/supabase/client";
+// Table type widening: local supabase types are regenerated post-migration; cast for now.
+const supabase: any = _sb;
 
 const FP_KEY = "bn.dev.fp";
 const SESSION_START_KEY = "bnpparibas.sec.session_start";
