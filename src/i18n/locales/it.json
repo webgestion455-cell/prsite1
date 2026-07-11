@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "tu@esempio.it",
     "back": "Indietro",
     "phoneTitle": "Servizio clienti",
-    "address": "103 avenue des Champs-Élysées",
-    "addressCity": "75008 Parigi, Francia",
+    "address": "16 boulevard des Italiens",
+    "addressCity": "75009 Parigi, Francia",
     "sending": "Invio…",
     "successQueued": "Il messaggio è stato registrato. Ti risponderemo a breve."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Definisci le commissioni e l'indirizzo di pagamento per fase, convalida la ricevuta, poi invia il codice.",
     "gatedTitle": "Configurazione bloccata",
     "gatedDesc": "La configurazione delle fasi di bonifico diventa disponibile dopo l'accettazione del prestito.",
-    "address": "Indirizzo di pagamento",
+    "address": "16 boulevard des Italiens",
     "saved": "Configurazione salvata",
     "invalidFee": "Commissioni non valide",
     "codeSent": "Codice generato e inviato",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Editore",
-          "p": "BNP PARIBAS — SAS con capitale di 1.000.000 EUR — sede: 1 Centenary Square, Birmingham, B1 1HQ, Regno Unito."
+          "p": "BNP PARIBAS — SAS con capitale di 1.000.000 EUR — sede: 16 boulevard des Italiens, 75009 Paris, France"
         },
         {
           "h": "Direttore",

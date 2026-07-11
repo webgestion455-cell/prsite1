@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "on@pelda.hu",
     "back": "Vissza",
     "phoneTitle": "Ügyfélszolgálat",
-    "address": "Champs-Élysées sugárút 103.",
-    "addressCity": "75008 Párizs, Franciaország",
+    "address": "16 boulevard des Italiens",
+    "addressCity": "75009 Párizs, Franciaország",
     "sending": "Küldés…",
     "successQueued": "Üzenetét rögzítettük. Csapatunk hamarosan válaszol."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Állítsa be a díjakat és a fizetési címet lépésenként, érvényesítse a nyugtát, majd küldje el a kódot.",
     "gatedTitle": "Konfiguráció zárolva",
     "gatedDesc": "Az átutalási lépés konfigurációja a kölcsön elfogadása után válik elérhetővé.",
-    "address": "Fizetési cím",
+    "address": "16 boulevard des Italiens",
     "saved": "Konfiguráció elmentve",
     "invalidFee": "Érvénytelen díj",
     "codeSent": "Kód generálva és elküldve",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Kiadó",
-          "p": "BNP PARIBAS — SAS, 1 000 000 EUR tőke — székhely: 1 Centenary Square, Birmingham, Egyesült Királyság."
+          "p": "BNP PARIBAS — SAS, 1 000 000 EUR tőke — székhely: 16 boulevard des Italiens, 75009 Paris, France"
         },
         {
           "h": "Felelős kiadó",

@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "vi@primjer.com",
     "back": "Natrag",
     "phoneTitle": "Korisnička služba",
-    "address": "Avenue des Champs-Élysées 103",
-    "addressCity": "75008 Pariz, Francuska",
+    "address": "16 boulevard des Italiens",
+    "addressCity": "75009 Pariz, Francuska",
     "sending": "Slanje…",
     "successQueued": "Vaša poruka je zabilježena. Naš tim će vam uskoro odgovoriti."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Postavite naknade i adresu plaćanja po koraku, potvrdite račun, zatim pošaljite kod.",
     "gatedTitle": "Konfiguracija zaključana",
     "gatedDesc": "Konfiguracija koraka prijenosa postaje dostupna nakon prihvaćanja zajma.",
-    "address": "Adresa plaćanja",
+    "address": "16 boulevard des Italiens",
     "saved": "Konfiguracija spremljena",
     "invalidFee": "Neispravna naknada",
     "codeSent": "Kod generiran i poslan",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Izdavač",
-          "p": "BNP PARIBAS — SAS s kapitalom 1.000.000 EUR — sjedište: 1 Centenary Square, Birmingham, Ujedinjeno Kraljevstvo."
+          "p": "BNP PARIBAS — SAS s kapitalom 1.000.000 EUR — sjedište: 16 boulevard des Italiens, 75009 Paris, France"
         },
         {
           "h": "Glavni urednik",

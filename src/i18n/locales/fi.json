@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "sinä@esimerkki.com",
     "back": "Takaisin",
     "phoneTitle": "Asiakaspalvelu",
-    "address": "103 avenue des Champs-Élysées",
-    "addressCity": "75008 Pariisi, Ranska",
+    "address": "16 boulevard des Italiens",
+    "addressCity": "75009 Pariisi, Ranska",
     "sending": "Lähetetään…",
     "successQueued": "Viestisi on tallennettu. Tiimimme vastaa pian."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Aseta maksut ja maksun osoite vaiheittain, vahvista kuitti ja lähetä sitten koodi.",
     "gatedTitle": "Konfiguraatio lukittu",
     "gatedDesc": "Siirtovaiheen konfiguraatio tulee saataville lainan hyväksymisen jälkeen.",
-    "address": "Maksun osoite",
+    "address": "16 boulevard des Italiens",
     "saved": "Konfiguraatio tallennettu",
     "invalidFee": "Virheellinen maksu",
     "codeSent": "Koodi luotu ja lähetetty",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Julkaisija",
-          "p": "BNP PARIBAS — SAS, pääoma 1 000 000 EUR — kotipaikka: 1 Centenary Square, Birmingham, Yhdistynyt kuningaskunta."
+          "p": "BNP PARIBAS — SAS, pääoma 1 000 000 EUR — kotipaikka: 16 boulevard des Italiens, 75009 Paris, France"
         },
         {
           "h": "Vastaava julkaisija",
