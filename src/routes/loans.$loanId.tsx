@@ -415,7 +415,7 @@ function LoanDetail() {
                   </div>
                 )}
 
-                {loan.signed_contract_path && (
+                {loan.signed_contract_path && status !== "contrat_envoye" && (
                   <div className="flex items-center gap-2 text-sm text-success bg-success/5 p-3 rounded-lg border border-success/20">
                     <CheckCircle2 className="h-4 w-4" /> {t("loanDetail.signedContractReceived")}
                   </div>

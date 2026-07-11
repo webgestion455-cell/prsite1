@@ -190,7 +190,7 @@
     "success": "Kérelem elküldve!",
     "requiredDocs": "Szükséges dokumentumok az áttekintéshez",
     "requiredDocsHint": "Töltsön fel olvasható PDF, JPG vagy PNG fájlokat a jóváhagyás felgyorsítása érdekében.",
-    "doc1": "Érvényes személyazonosító okmány (mindkét oldal)",
+    "doc1": "Érvényes személyazonosító okmány vagy vezetői engedély (mindkét oldal) — vagy útlevél (csak elülső oldal)",
     "doc2": "Friss lakcímigazolás",
     "doc3": "Utolsó három fizetési szelvény vagy jövedelemigazolás",
     "doc4": "Legutóbbi bankszámlakivonat vagy IBAN a kérelmező nevére",
@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "on@pelda.hu",
     "back": "Vissza",
     "phoneTitle": "Ügyfélszolgálat",
-    "address": "16 boulevard des Italiens",
-    "addressCity": "75009 Párizs, Franciaország",
+    "address": "Champs-Élysées sugárút 103.",
+    "addressCity": "75008 Párizs, Franciaország",
     "sending": "Küldés…",
     "successQueued": "Üzenetét rögzítettük. Csapatunk hamarosan válaszol."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Állítsa be a díjakat és a fizetési címet lépésenként, érvényesítse a nyugtát, majd küldje el a kódot.",
     "gatedTitle": "Konfiguráció zárolva",
     "gatedDesc": "Az átutalási lépés konfigurációja a kölcsön elfogadása után válik elérhetővé.",
-    "address": "16 boulevard des Italiens",
+    "address": "Fizetési cím",
     "saved": "Konfiguráció elmentve",
     "invalidFee": "Érvénytelen díj",
     "codeSent": "Kód generálva és elküldve",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Kiadó",
-          "p": "BNP PARIBAS — SAS, 1 000 000 EUR tőke — székhely: 16 boulevard des Italiens, 75009 Paris, France"
+          "p": "BNP PARIBAS — SAS, 1 000 000 EUR tőke — székhely: 1 Centenary Square, Birmingham, Egyesült Királyság."
         },
         {
           "h": "Felelős kiadó",

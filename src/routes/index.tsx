@@ -366,7 +366,7 @@ function Landing() {
             <ul className="mt-6 space-y-3 text-sm">
               <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-accent" /><a href="mailto:support_bnpparibas@nowelio.com" className="hover:text-accent">support@bnpparibas.com</a></li>
               <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-accent" /><a href="tel:++393500366867" className="hover:text-accent">+39 350 036 6867</a></li>
-              <li className="flex items-center gap-3"><MapPin className="h-4 w-4 text-accent" />1 Centenary Square,Birmingham, B1 1HQ, Royaume-Uni</li>
+              <li className="flex items-center gap-3"><MapPin className="h-4 w-4 text-accent" />16 Boulevard des Italiens, 75009 Paris, France</li>
             </ul>
             <Button asChild className="mt-6 w-full">
               <Link to="/contact">{t("contactSection.cta", "Open contact form")}</Link>

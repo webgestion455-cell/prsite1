@@ -190,7 +190,7 @@
     "success": "Zahtjev poslan!",
     "requiredDocs": "Potrebni dokumenti za pregled",
     "requiredDocsHint": "Učitajte čitljive PDF, JPG ili PNG datoteke kako biste ubrzali odobrenje.",
-    "doc1": "Važeća osobna iskaznica (obje strane)",
+    "doc1": "Važeća osobna iskaznica ili vozačka dozvola (obje strane) — ili putovnica (samo prednja strana)",
     "doc2": "Nedavna potvrda adrese",
     "doc3": "Zadnje tri platne liste ili dokaz o prihodima",
     "doc4": "Zadnji bankovni izvod ili IBAN na ime podnositelja zahtjeva",
@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "vi@primjer.com",
     "back": "Natrag",
     "phoneTitle": "Korisnička služba",
-    "address": "16 boulevard des Italiens",
-    "addressCity": "75009 Pariz, Francuska",
+    "address": "Avenue des Champs-Élysées 103",
+    "addressCity": "75008 Pariz, Francuska",
     "sending": "Slanje…",
     "successQueued": "Vaša poruka je zabilježena. Naš tim će vam uskoro odgovoriti."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Postavite naknade i adresu plaćanja po koraku, potvrdite račun, zatim pošaljite kod.",
     "gatedTitle": "Konfiguracija zaključana",
     "gatedDesc": "Konfiguracija koraka prijenosa postaje dostupna nakon prihvaćanja zajma.",
-    "address": "16 boulevard des Italiens",
+    "address": "Adresa plaćanja",
     "saved": "Konfiguracija spremljena",
     "invalidFee": "Neispravna naknada",
     "codeSent": "Kod generiran i poslan",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Izdavač",
-          "p": "BNP PARIBAS — SAS s kapitalom 1.000.000 EUR — sjedište: 16 boulevard des Italiens, 75009 Paris, France"
+          "p": "BNP PARIBAS — SAS s kapitalom 1.000.000 EUR — sjedište: 1 Centenary Square, Birmingham, Ujedinjeno Kraljevstvo."
         },
         {
           "h": "Glavni urednik",

