@@ -60,15 +60,22 @@ function ReceiptPage() {
     try {
       if (!completed) throw new Error(t("receipt.serverUnavailable"));
       const bytes = await buildReceiptPdf(current);
-      const buffer = bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) as ArrayBuffer;
-      const url = URL.createObjectURL(new Blob([buffer], { type: "application/pdf" }));
+      // Copie dans un ArrayBuffer neuf pour éviter tout souci de SharedArrayBuffer / typage Blob
+      const ab = new ArrayBuffer(bytes.byteLength);
+      new Uint8Array(ab).set(bytes);
+      const blob = new Blob([ab], { type: "application/pdf" });
+      const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
+      a.rel = "noopener";
       a.download = `justificatif-virement-bnpparibas-${current.reference ?? current.id.slice(0, 8).toUpperCase()}.pdf`;
+      document.body.appendChild(a);
       a.click();
-      URL.revokeObjectURL(url);
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
       toast.success(t("receipt.downloaded"), { id });
     } catch (err) {
+      console.error("Receipt download error", err);
       toast.error(err instanceof Error ? err.message : t("receipt.downloadError"), { id });
     } finally {
       setDownloading(false);

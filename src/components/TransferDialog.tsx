@@ -261,11 +261,19 @@ export function TransferDialog({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  {eligibleLoans.map((l) => (
-                    <SelectItem key={l.id} value={l.id}>
-                      {formatCurrency(Number(l.amount))} · {l.id.slice(0, 8)}
-                    </SelectItem>
-                  ))}
+                  {eligibleLoans.map((l) => {
+                    const rem = Number(l.amount) - Number(l.disbursed_amount ?? 0);
+                    return (
+                      <SelectItem key={l.id} value={l.id}>
+                        {t("transfer.loanOption", {
+                          defaultValue: "Prêt {{ref}} — Disponible {{remaining}} / {{total}}",
+                          ref: l.id.slice(0, 8).toUpperCase(),
+                          remaining: formatCurrency(rem),
+                          total: formatCurrency(Number(l.amount)),
+                        })}
+                      </SelectItem>
+                    );
+                  })}
                 </SelectContent>
               </Select>
             </div>

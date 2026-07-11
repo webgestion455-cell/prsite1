@@ -1,10 +1,14 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
-import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
+import { PDFDocument, rgb } from "pdf-lib";
+import fontkit from "@pdf-lib/fontkit";
 import { Buffer } from "node:buffer";
 import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
-const SUPPORTED = ["fr", "en", "de", "es", "it", "nl", "sl", "bg", "sk"] as const;
+const SUPPORTED = [
+  "fr", "en", "de", "es", "it", "nl", "sl", "bg", "sk",
+  "el", "fi", "ro", "pl", "hr", "hu",
+] as const;
 type Lang = (typeof SUPPORTED)[number];
 
 const inputSchema = z.object({
@@ -16,7 +20,27 @@ const inputSchema = z.object({
 const LOCALE_MAP: Record<Lang, string> = {
   fr: "fr-FR", en: "en-GB", de: "de-DE", es: "es-ES", it: "it-IT",
   nl: "nl-NL", sl: "sl-SI", bg: "bg-BG", sk: "sk-SK",
+  el: "el-GR", fi: "fi-FI", ro: "ro-RO", pl: "pl-PL", hr: "hr-HR", hu: "hu-HU",
 };
+
+// Noto Sans covers Latin, Latin Extended, Cyrillic, Greek — perfect for all our locales.
+const NOTO_REGULAR_URL = "https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/hinted/ttf/NotoSans/NotoSans-Regular.ttf";
+const NOTO_BOLD_URL = "https://cdn.jsdelivr.net/gh/googlefonts/noto-fonts@main/hinted/ttf/NotoSans/NotoSans-Bold.ttf";
+let notoRegularCache: Uint8Array | null = null;
+let notoBoldCache: Uint8Array | null = null;
+async function loadNotoFonts() {
+  if (!notoRegularCache) {
+    const r = await fetch(NOTO_REGULAR_URL);
+    if (!r.ok) throw new Error("Font download failed");
+    notoRegularCache = new Uint8Array(await r.arrayBuffer());
+  }
+  if (!notoBoldCache) {
+    const r = await fetch(NOTO_BOLD_URL);
+    if (!r.ok) throw new Error("Font download failed");
+    notoBoldCache = new Uint8Array(await r.arrayBuffer());
+  }
+  return { regular: notoRegularCache, bold: notoBoldCache };
+}
 
 type PdfDict = {
   subtitle: string; docTitle: string; docHint: string; title: string;
@@ -336,6 +360,204 @@ const PDF_DICT: Record<Lang, PdfDict> = {
     loanNotFound: "Úver nenájdený", unauthorized: "Neoprávnený prístup k tejto zmluve",
     smallTitle: "Online úver",
   },
+  el: {
+    subtitle: "Διαδικτυακή πίστωση — Επίσημο συμβόλαιο",
+    docTitle: "Σύμβαση δανείου — BNP PARIBAS",
+    docHint: "Συμβατικό έγγραφο — φυλάξτε το προσεκτικά",
+    title: "Σύμβαση προσωπικού δανείου",
+    partiesTitle: "1. Συμβαλλόμενοι", lender: "Δανειστής", borrower: "Δανειολήπτης",
+    conditionsTitle: "2. Όροι δανείου",
+    amountLabel: "ΠΟΣΟ ΔΑΝΕΙΟΥ", durationLabel: "ΔΙΑΡΚΕΙΑ", rateLabel: "ΣΤΑΘΕΡΟ ΣΕΠΕ",
+    months: "μήνες", monthly: "Μηνιαία δόση", perMonth: "/ μήνα",
+    interestCost: "Συνολικό κόστος τόκων", totalDue: "Συνολικό οφειλόμενο ποσό",
+    purpose: "Σκοπός δανείου", notSpecified: "Δεν προσδιορίζεται",
+    engagementsTitle: "3. Δεσμεύσεις",
+    clauses: [
+      "Ο δανειολήπτης αναλαμβάνει να επιστρέψει το δανεισθέν κεφάλαιο προσαυξημένο με τους τόκους,",
+      "σύμφωνα με τις μηνιαίες δόσεις που ορίζονται παραπάνω. Το δάνειο είναι σταθερό και μηνιαία αποσβεστέο.",
+      "",
+      "Κάθε καθυστέρηση πληρωμής άνω των 30 ημερών μπορεί να επιφέρει άμεση απαιτητότητα του",
+      "υπολοίπου κεφαλαίου, των δεδουλευμένων τόκων και των σχετικών εξόδων.",
+      "",
+      "Ο δανειολήπτης διαθέτει νόμιμη προθεσμία υπαναχώρησης 14 ημερολογιακών ημερών από την υπογραφή.",
+    ],
+    signatureTitle: "4. Αποδοχή και υπογραφή",
+    lenderSig: "Υπογραφή δανειστή", lenderName: "BNP PARIBAS SAS",
+    borrowerSig: "Υπογραφή δανειολήπτη",
+    signMention: "Πριν από την υπογραφή αναγράψτε «Ανεγνώσθη και εγκρίθηκε»",
+    signedElectronically: "Υπεγράφη ηλεκτρονικά", certificate: "Πιστοποιητικό",
+    certificatePrefix: "BNP PARIBAS-eSign-",
+    refPrefix: "Αρ.", issuedOn: "Εκδόθηκε στις", page: "Σελίδα 1 / 1",
+    footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
+    sessionExpired: "Η συνεδρία έληξε. Παρακαλώ συνδεθείτε ξανά.",
+    loanNotFound: "Το δάνειο δεν βρέθηκε", unauthorized: "Μη εξουσιοδοτημένη πρόσβαση",
+    smallTitle: "Διαδικτυακή πίστωση",
+  },
+  fi: {
+    subtitle: "Verkkoluotto — Virallinen sopimus",
+    docTitle: "Lainasopimus — BNP PARIBAS",
+    docHint: "Sopimusasiakirja — säilytä huolellisesti",
+    title: "Henkilökohtainen lainasopimus",
+    partiesTitle: "1. Osapuolet", lender: "Lainanantaja", borrower: "Lainanottaja",
+    conditionsTitle: "2. Lainan ehdot",
+    amountLabel: "LAINAN MÄÄRÄ", durationLabel: "KESTO", rateLabel: "KIINTEÄ TODELL. VUOSIKORKO",
+    months: "kuukautta", monthly: "Kuukausierä", perMonth: "/ kk",
+    interestCost: "Korkojen kokonaiskustannus", totalDue: "Kokonaismaksettava määrä",
+    purpose: "Lainan käyttötarkoitus", notSpecified: "Ei määritelty",
+    engagementsTitle: "3. Sitoumukset",
+    clauses: [
+      "Lainanottaja sitoutuu maksamaan lainapääoman korkoineen takaisin edellä määriteltyjen",
+      "kuukausierien mukaisesti. Laina on kiinteä ja kuukausittain lyhennettävä.",
+      "",
+      "Yli 30 päivän maksuviivästys voi johtaa jäljellä olevan pääoman, kertyneiden korkojen ja",
+      "niihin liittyvien kulujen välittömään erääntymiseen.",
+      "",
+      "Lainanottajalla on lakisääteinen 14 kalenteripäivän peruuttamisoikeus sopimuksen allekirjoituksesta.",
+    ],
+    signatureTitle: "4. Hyväksyntä ja allekirjoitus",
+    lenderSig: "Lainanantajan allekirjoitus", lenderName: "BNP PARIBAS SAS",
+    borrowerSig: "Lainanottajan allekirjoitus",
+    signMention: "Kirjoita allekirjoituksen eteen \"Luettu ja hyväksytty\"",
+    signedElectronically: "Sähköisesti allekirjoitettu", certificate: "Sertifikaatti",
+    certificatePrefix: "BNP PARIBAS-eSign-",
+    refPrefix: "Viite", issuedOn: "Annettu", page: "Sivu 1 / 1",
+    footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
+    sessionExpired: "Istunto vanhentui. Kirjaudu uudelleen.",
+    loanNotFound: "Lainaa ei löydy", unauthorized: "Luvaton pääsy tähän sopimukseen",
+    smallTitle: "Verkkoluotto",
+  },
+  ro: {
+    subtitle: "Credit online — Contract oficial",
+    docTitle: "Contract de împrumut — BNP PARIBAS",
+    docHint: "Document contractual — a se păstra cu grijă",
+    title: "Contract de împrumut personal",
+    partiesTitle: "1. Părți", lender: "Împrumutător", borrower: "Împrumutat",
+    conditionsTitle: "2. Condițiile împrumutului",
+    amountLabel: "SUMA ÎMPRUMUTULUI", durationLabel: "DURATĂ", rateLabel: "DAE FIXĂ",
+    months: "luni", monthly: "Rată lunară", perMonth: "/ lună",
+    interestCost: "Costul total al dobânzii", totalDue: "Suma totală datorată",
+    purpose: "Scopul împrumutului", notSpecified: "Nespecificat",
+    engagementsTitle: "3. Angajamente",
+    clauses: [
+      "Împrumutatul se angajează să ramburseze capitalul împrumutat majorat cu dobânzile conform",
+      "ratelor lunare definite mai sus. Împrumutul este fix și amortizabil lunar.",
+      "",
+      "Orice întârziere de plată de peste 30 de zile poate atrage exigibilitatea imediată a",
+      "capitalului rămas, a dobânzilor scadente și a cheltuielilor aferente.",
+      "",
+      "Împrumutatul beneficiază de un termen legal de retragere de 14 zile calendaristice de la semnare.",
+    ],
+    signatureTitle: "4. Acceptare și semnătură",
+    lenderSig: "Semnătura împrumutătorului", lenderName: "BNP PARIBAS SAS",
+    borrowerSig: "Semnătura împrumutatului",
+    signMention: "Precedați semnătura de mențiunea „Citit și aprobat\"",
+    signedElectronically: "Semnat electronic", certificate: "Certificat",
+    certificatePrefix: "BNP PARIBAS-eSign-",
+    refPrefix: "Ref.", issuedOn: "Emis la", page: "Pagina 1 / 1",
+    footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
+    sessionExpired: "Sesiunea a expirat. Vă rugăm să vă autentificați din nou.",
+    loanNotFound: "Împrumut negăsit", unauthorized: "Acces neautorizat la acest contract",
+    smallTitle: "Credit online",
+  },
+  pl: {
+    subtitle: "Kredyt online — Umowa oficjalna",
+    docTitle: "Umowa pożyczki — BNP PARIBAS",
+    docHint: "Dokument umowny — proszę starannie zachować",
+    title: "Umowa pożyczki osobistej",
+    partiesTitle: "1. Strony", lender: "Pożyczkodawca", borrower: "Pożyczkobiorca",
+    conditionsTitle: "2. Warunki pożyczki",
+    amountLabel: "KWOTA POŻYCZKI", durationLabel: "OKRES", rateLabel: "STAŁE RRSO",
+    months: "miesięcy", monthly: "Rata miesięczna", perMonth: "/ mies.",
+    interestCost: "Całkowity koszt odsetek", totalDue: "Łączna kwota do spłaty",
+    purpose: "Cel pożyczki", notSpecified: "Nieokreślony",
+    engagementsTitle: "3. Zobowiązania",
+    clauses: [
+      "Pożyczkobiorca zobowiązuje się spłacić pożyczony kapitał wraz z odsetkami zgodnie z",
+      "miesięcznymi ratami określonymi powyżej. Pożyczka jest stała i miesięcznie amortyzowana.",
+      "",
+      "Każde opóźnienie płatności przekraczające 30 dni może skutkować natychmiastową wymagalnością",
+      "pozostałego kapitału, naliczonych odsetek i związanych opłat.",
+      "",
+      "Pożyczkobiorca ma ustawowe prawo odstąpienia w terminie 14 dni kalendarzowych od podpisu umowy.",
+    ],
+    signatureTitle: "4. Akceptacja i podpis",
+    lenderSig: "Podpis pożyczkodawcy", lenderName: "BNP PARIBAS SAS",
+    borrowerSig: "Podpis pożyczkobiorcy",
+    signMention: "Przed podpisem umieść adnotację „Przeczytano i zatwierdzono\"",
+    signedElectronically: "Podpisano elektronicznie", certificate: "Certyfikat",
+    certificatePrefix: "BNP PARIBAS-eSign-",
+    refPrefix: "Nr", issuedOn: "Wydano dnia", page: "Strona 1 / 1",
+    footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
+    sessionExpired: "Sesja wygasła. Zaloguj się ponownie.",
+    loanNotFound: "Nie znaleziono pożyczki", unauthorized: "Nieautoryzowany dostęp do umowy",
+    smallTitle: "Kredyt online",
+  },
+  hr: {
+    subtitle: "Online kredit — Službeni ugovor",
+    docTitle: "Ugovor o zajmu — BNP PARIBAS",
+    docHint: "Ugovorni dokument — pažljivo sačuvajte",
+    title: "Ugovor o osobnom zajmu",
+    partiesTitle: "1. Ugovorne strane", lender: "Zajmodavac", borrower: "Zajmoprimac",
+    conditionsTitle: "2. Uvjeti zajma",
+    amountLabel: "IZNOS ZAJMA", durationLabel: "TRAJANJE", rateLabel: "FIKSNI EKS",
+    months: "mjeseci", monthly: "Mjesečni obrok", perMonth: "/ mjesec",
+    interestCost: "Ukupni trošak kamata", totalDue: "Ukupni dugovani iznos",
+    purpose: "Svrha zajma", notSpecified: "Nije navedeno",
+    engagementsTitle: "3. Obveze",
+    clauses: [
+      "Zajmoprimac se obvezuje vratiti posuđeni kapital uvećan za kamate prema gore navedenim",
+      "mjesečnim obrocima. Zajam je fiksan i mjesečno amortiziran.",
+      "",
+      "Svako kašnjenje plaćanja duže od 30 dana može uzrokovati trenutačnu dospjelost preostalog",
+      "kapitala, dospjelih kamata i povezanih troškova.",
+      "",
+      "Zajmoprimac ima zakonski rok za odustajanje od 14 kalendarskih dana od potpisa ugovora.",
+    ],
+    signatureTitle: "4. Prihvat i potpis",
+    lenderSig: "Potpis zajmodavca", lenderName: "BNP PARIBAS SAS",
+    borrowerSig: "Potpis zajmoprimca",
+    signMention: "Prije potpisa navedite „Pročitano i odobreno\"",
+    signedElectronically: "Elektronički potpisano", certificate: "Certifikat",
+    certificatePrefix: "BNP PARIBAS-eSign-",
+    refPrefix: "Ref.", issuedOn: "Izdano dana", page: "Stranica 1 / 1",
+    footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
+    sessionExpired: "Sesija je istekla. Prijavite se ponovno.",
+    loanNotFound: "Zajam nije pronađen", unauthorized: "Neovlašten pristup ovom ugovoru",
+    smallTitle: "Online kredit",
+  },
+  hu: {
+    subtitle: "Online hitel — Hivatalos szerződés",
+    docTitle: "Kölcsönszerződés — BNP PARIBAS",
+    docHint: "Szerződéses dokumentum — gondosan őrizze meg",
+    title: "Személyi kölcsönszerződés",
+    partiesTitle: "1. Felek", lender: "Hitelező", borrower: "Kölcsönfelvevő",
+    conditionsTitle: "2. Kölcsön feltételei",
+    amountLabel: "KÖLCSÖN ÖSSZEGE", durationLabel: "FUTAMIDŐ", rateLabel: "FIX THM",
+    months: "hónap", monthly: "Havi törlesztés", perMonth: "/ hó",
+    interestCost: "Teljes kamatköltség", totalDue: "Fizetendő teljes összeg",
+    purpose: "Kölcsön célja", notSpecified: "Nincs megadva",
+    engagementsTitle: "3. Kötelezettségek",
+    clauses: [
+      "A kölcsönfelvevő vállalja, hogy a kölcsönadott tőkét a kamatokkal növelten a fent",
+      "meghatározott havi törlesztések szerint visszafizeti. A kölcsön fix és havi amortizációjú.",
+      "",
+      "A 30 napot meghaladó fizetési késedelem a fennmaradó tőke, a felhalmozott kamatok és a",
+      "kapcsolódó díjak azonnali esedékességét vonhatja maga után.",
+      "",
+      "A kölcsönfelvevőt a szerződés aláírásától számított 14 naptári nap törvényes elállási jog illeti meg.",
+    ],
+    signatureTitle: "4. Elfogadás és aláírás",
+    lenderSig: "Hitelező aláírása", lenderName: "BNP PARIBAS SAS",
+    borrowerSig: "Kölcsönfelvevő aláírása",
+    signMention: "Az aláírás elé írja: „Elolvastam és jóváhagytam\"",
+    signedElectronically: "Elektronikusan aláírva", certificate: "Tanúsítvány",
+    certificatePrefix: "BNP PARIBAS-eSign-",
+    refPrefix: "Hiv.", issuedOn: "Kiállítva", page: "Oldal 1 / 1",
+    footer: "BNP PARIBAS SAS · contact@lendly.app · Demo MVP",
+    sessionExpired: "A munkamenet lejárt. Kérjük, jelentkezzen be újra.",
+    loanNotFound: "Kölcsön nem található", unauthorized: "Jogosulatlan hozzáférés a szerződéshez",
+    smallTitle: "Online hitel",
+  },
 };
 
 function pickLang(loc: string | undefined): Lang {
@@ -344,18 +566,14 @@ function pickLang(loc: string | undefined): Lang {
   return (SUPPORTED as readonly string[]).includes(short) ? (short as Lang) : "fr";
 }
 
-// Helvetica (WinAnsi) cannot encode chars like narrow nbsp + non-Latin scripts (Cyrillic).
-// Strip narrow spaces/quotes; replace non-WinAnsi chars with "?" so PDF still renders.
+// Noto Sans embedded via fontkit → supports Latin, Cyrillic, Greek, CE diacritics natively.
+// Only normalize awkward whitespace and typographic quotes; keep all real characters.
 function sanitize(s: string): string {
-  const cleaned = s
-    .replace(/\u202F/g, " ")
-    .replace(/\u00A0/g, " ")
-    .replace(/\u2009/g, " ")
+  return s
+    .replace(/[\u202F\u00A0\u2009]/g, " ")
     .replace(/[\u2018\u2019]/g, "'")
     .replace(/[\u201C\u201D\u201E]/g, '"')
-    .replace(/\u2013|\u2014/g, "-");
-  // WinAnsi covers up to U+00FF + a few extras. Drop anything else to keep PDF safe.
-  return cleaned.replace(/[^\x00-\xFF\u20AC\u0152\u0153\u0160\u0161\u0178\u017D\u017E\u0192]/g, "?");
+    .replace(/[\u2013\u2014]/g, "-");
 }
 
 function eur(n: number, lang: Lang) {
@@ -406,14 +624,16 @@ export const generateContractPdf = createServerFn({ method: "POST" })
 
     // Build PDF
     const pdf = await PDFDocument.create();
+    pdf.registerFontkit(fontkit);
     pdf.setTitle(`${T.docTitle} — ${loan.id.slice(0, 8)}`);
     pdf.setAuthor("BNP PARIBAS");
     pdf.setCreator("BNP PARIBAS");
     pdf.setProducer("BNP PARIBAS Contract Generator");
     pdf.setCreationDate(new Date());
 
-    const helv = await pdf.embedFont(StandardFonts.Helvetica);
-    const helvBold = await pdf.embedFont(StandardFonts.HelveticaBold);
+    const fonts = await loadNotoFonts();
+    const helv = await pdf.embedFont(fonts.regular, { subset: true });
+    const helvBold = await pdf.embedFont(fonts.bold, { subset: true });
 
     const page = pdf.addPage([595.28, 841.89]);
     const originalDrawText = page.drawText.bind(page);
