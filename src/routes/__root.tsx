@@ -116,10 +116,11 @@ function RootComponent() {
   const location = useLocation();
   const router = useRouter();
 
-  const hideLayout = [
-    "/auth",
-    "/mobile-home",
-  ].includes(location.pathname);
+  const pathname = location.pathname;
+  const hideLayout =
+    ["/auth", "/mobile-home"].includes(pathname) ||
+    pathname.startsWith("/admin") ||
+    pathname.startsWith("/auth/");
 
   useEffect(() => {
   if (Capacitor.isNativePlatform()) {
