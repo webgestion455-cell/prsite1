@@ -316,62 +316,115 @@ function AdminDashboard() {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 12);
 
+  const acceptanceRate = stats.total > 0 ? Math.round((stats.accepted / stats.total) * 100) : 0;
+
   return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl pb-28 lg:pb-10">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
-        <div>
-          <h1 className="text-3xl font-serif text-primary">Tableau de bord Admin</h1>
-          <p className="text-muted-foreground mt-1">Vue d'ensemble de l'activité BNP PARIBAS.</p>
-        </div>
-        <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-2 text-xs text-muted-foreground">
-          <LockKeyhole className="h-4 w-4 text-success" /> 2FA active · auto-logout 15min
+    <div className="mx-auto w-full max-w-7xl px-3 sm:px-5 lg:px-8 py-5 sm:py-7 pb-28 lg:pb-10 space-y-6">
+      {/* HERO / HEADER */}
+      <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-border/60 bg-gradient-to-br from-[#00915A] via-[#007a4d] to-[#004d30] text-white shadow-xl">
+        <div className="absolute inset-0 opacity-30 pointer-events-none [background-image:radial-gradient(circle_at_20%_10%,white_0,transparent_35%),radial-gradient(circle_at_90%_100%,white_0,transparent_40%)]" />
+        <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/5 blur-3xl pointer-events-none" />
+        <div className="relative px-4 sm:px-8 py-6 sm:py-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div className="min-w-0">
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest">
+              <LockKeyhole className="h-3 w-3" /> 2FA active · Session 15 min
+            </div>
+            <h1 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-serif font-medium leading-tight">
+              Bonjour, <span className="italic font-normal">{selectedLoan ? "" : ""}</span>Administrateur.
+            </h1>
+            <p className="mt-1 text-sm sm:text-base text-white/80 max-w-xl">
+              Suivi en temps réel de l'activité BNP PARIBAS — prêts, virements et clients.
+            </p>
+          </div>
+
+          {/* Quick counters */}
+          <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:min-w-[420px]">
+            <div className="rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/15 px-3 py-2.5">
+              <p className="text-[10px] uppercase tracking-wider text-white/70 font-semibold">Taux d'acceptation</p>
+              <p className="mt-1 text-lg sm:text-2xl font-bold tabular-nums">{acceptanceRate}%</p>
+            </div>
+            <div className="rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/15 px-3 py-2.5">
+              <p className="text-[10px] uppercase tracking-wider text-white/70 font-semibold">Virements ouverts</p>
+              <p className="mt-1 text-lg sm:text-2xl font-bold tabular-nums">{pendingWithdrawals.length}</p>
+            </div>
+            <div className="rounded-xl sm:rounded-2xl bg-white/10 backdrop-blur border border-white/15 px-3 py-2.5">
+              <p className="text-[10px] uppercase tracking-wider text-white/70 font-semibold">Contrats signés</p>
+              <p className="mt-1 text-lg sm:text-2xl font-bold tabular-nums">{contractSignedCount}</p>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* KPIs */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        {kpis.map((kpi) => (
-          <Link
-            key={kpi.title}
-            to="/admin/loans"
-            search={kpi.status === "all" ? {} : { status: kpi.status as string }}
-            className="block"
-          >
-            <Card className={cn("border-t-4 hover-elevate transition-all cursor-pointer", kpi.border)}>
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground mb-1">{kpi.title}</p>
-                    <p className="text-3xl font-bold">{kpi.value}</p>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        {kpis.map((kpi) => {
+          const Icon = kpi.icon;
+          return (
+            <Link
+              key={kpi.title}
+              to="/admin/loans"
+              search={kpi.status === "all" ? {} : { status: kpi.status as string }}
+              className="group block"
+            >
+              <div className="relative overflow-hidden rounded-2xl border border-border/60 bg-card/80 backdrop-blur p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-[#00915A]/40 hover:-translate-y-0.5 transition-all">
+                <div className={cn("absolute top-0 left-0 right-0 h-1", {
+                  "bg-info": kpi.status === "all",
+                  "bg-warning": kpi.status === "en_attente",
+                  "bg-success": kpi.status === "accepte",
+                  "bg-destructive": kpi.status === "refuse",
+                })} />
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <p className="text-[11px] sm:text-xs font-semibold text-muted-foreground uppercase tracking-wider truncate">{kpi.title}</p>
+                    <p className="mt-1.5 text-2xl sm:text-3xl font-bold tabular-nums">{kpi.value}</p>
                   </div>
-                  <kpi.icon className={cn("h-8 w-8 opacity-30", kpi.color)} />
+                  <div className={cn(
+                    "h-9 w-9 sm:h-10 sm:w-10 shrink-0 grid place-items-center rounded-xl",
+                    kpi.status === "all" && "bg-info/10 text-info",
+                    kpi.status === "en_attente" && "bg-warning/10 text-warning",
+                    kpi.status === "accepte" && "bg-success/10 text-success",
+                    kpi.status === "refuse" && "bg-destructive/10 text-destructive",
+                  )}>
+                    <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
+                  </div>
                 </div>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
+              </div>
+            </Link>
+          );
+        })}
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 mb-8">
-        <div className="md:col-span-2 space-y-8">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5" />
+      <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
+        <div className="md:col-span-2 space-y-4 sm:space-y-6">
+          <Card className="border-border/60 shadow-sm">
+            <CardHeader className="pb-3">
+              <CardTitle className="flex items-center gap-2 text-base">
+                <div className="h-8 w-8 rounded-lg bg-primary/10 text-primary grid place-items-center">
+                  <TrendingUp className="h-4 w-4" />
+                </div>
                 Volumes financiers
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid sm:grid-cols-3 gap-6">
-                {amounts.map((amt) => (
-                  <div key={amt.title} className="p-4 bg-muted/30 rounded-xl border border-border">
-                    <p className="text-sm font-medium text-muted-foreground mb-2">{amt.title}</p>
-                    <p className="text-xl font-bold text-foreground tabular-nums">{amt.value}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+                {amounts.map((amt, i) => (
+                  <div
+                    key={amt.title}
+                    className={cn(
+                      "relative overflow-hidden p-4 rounded-xl border border-border/60",
+                      i === 0 && "bg-gradient-to-br from-info/10 to-transparent",
+                      i === 1 && "bg-gradient-to-br from-success/10 to-transparent",
+                      i === 2 && "bg-gradient-to-br from-accent/10 to-transparent",
+                    )}
+                  >
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2">{amt.title}</p>
+                    <p className="text-xl sm:text-2xl font-bold text-foreground tabular-nums break-all">{amt.value}</p>
                   </div>
                 ))}
               </div>
             </CardContent>
           </Card>
+
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between">
