@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { ArrowLeft, Upload, X, FileCheck2, ShieldCheck } from "lucide-react";
 import { Honeypot } from "@/components/Honeypot";
+import { AddressAutocomplete } from "@/components/AddressAutocomplete";
 import i18n from "@/i18n";
 
 export const Route = createFileRoute("/loans/new")({
@@ -32,6 +33,7 @@ function NewLoan() {
   const schema = z.object({
     fullName: z.string().trim().min(2).max(100),
     email: z.string().trim().email().max(255),
+    address: z.string().trim().min(5, t("loanForm.addressRequired")).max(255),
     amount: z.number().min(500, t("loanForm.amountMin")).max(100000, t("loanForm.amountMax")),
     duration_months: z.number().int().min(3).max(120),
     monthly_income: z.number().min(0).max(1000000),
@@ -80,6 +82,7 @@ function NewLoan() {
     const parsed = schema.safeParse({
       fullName: fd.get("fullName"),
       email: fd.get("email"),
+      address: fd.get("address"),
       amount: Number(fd.get("amount")),
       duration_months: Number(fd.get("duration_months")),
       monthly_income: Number(fd.get("monthly_income")),
@@ -103,11 +106,12 @@ function NewLoan() {
         user_id: user.id,
         full_name: parsed.data.fullName,
         email: parsed.data.email,
+        address: parsed.data.address,
         amount: parsed.data.amount,
         duration_months: parsed.data.duration_months,
         monthly_income: parsed.data.monthly_income,
         purpose: parsed.data.purpose ?? null,
-      })
+      } as any)
       .select()
       .single();
 
@@ -204,6 +208,10 @@ function NewLoan() {
             <Input id="email" name="email" type="email" className="h-11" required defaultValue={user.email ?? ""} />
           </div>
         </div>
+
+        <AddressAutocomplete name="address" required label={t("loanForm.address")} />
+
+
 
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="space-y-2">
