@@ -1313,7 +1313,17 @@
     },
     "admin": {
       "empty": "Keine Gespräche.",
-      "selectHint": "Wählen Sie links ein Gespräch aus."
+      "selectHint": "Wählen Sie links ein Gespräch aus.",
+      "folders": "Kundendateien",
+      "tickets": "Tickets",
+      "searchPlaceholder": "Nach einem Kunden, Ticket, E-Mail suchen …",
+      "filter": {
+        "all": "Alle",
+        "waiting": "In der Warteschleife",
+        "mine": "Mir zugewiesen",
+        "closed": "Geschlossen",
+        "guests": "Besucher"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Sicherer Kundenservice",
@@ -1324,6 +1334,46 @@
       "desc": "Sie müssen angemeldet sein, um den Support zu nutzen.",
       "cta": "Anmelden"
     },
-    "nav": "Support"
+    "nav": "Support",
+    "guest": {
+      "subtitle": "Besucherunterstützung",
+      "intro": "Füllen Sie dieses Formular aus. Ein BNP PARIBAS-Berater wird Ihnen schnell antworten. Sie erhalten eine Ticketnummer.",
+      "name": "Vollständiger Name *",
+      "email": "E-Mail *",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Aufenthaltsland",
+      "subject": "Thema",
+      "message": "Ihre Nachricht *",
+      "submit": "Öffne mein Ticket",
+      "privacy": "Ihre Daten werden vertraulich behandelt (DSGVO).",
+      "created": "Ticket #{{ticket}} erstellt!",
+      "errors": {
+        "required": "Name, E-Mail und Nachricht erforderlich.",
+        "fail": "Das Senden ist fehlgeschlagen. Versuchen Sie es erneut."
+      }
+    },
+    "ticket": "Ticket",
+    "archived": "Archiv",
+    "open": "Offen"
+  },
+  "adminDash": {
+    "title": "Dashboard – BNP PARIBAS",
+    "overview": "Überblick",
+    "clients": "Kunden",
+    "loans": "Kredite",
+    "transfers": "Überweisungen",
+    "chat": "Live-Chat",
+    "security": "Sicherheit",
+    "notifications": "Benachrichtigungen",
+    "kpis": {
+      "clients": "Aktive Kunden",
+      "loansPending": "Ausstehende Kredite",
+      "transfersBlocked": "Überweisungen blockiert",
+      "ticketsOpen": "Offene Tickets",
+      "newToday": "Heute neu"
+    },
+    "recentActivity": "Aktuelle Aktivität",
+    "quickActions": "Schnelle Aktionen"
   }
 }

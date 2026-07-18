@@ -55,17 +55,30 @@ export function AddressAutocomplete({ name, id, defaultValue = "", required, lab
       setLoading(true);
       try {
         const lang = (i18n.language || "fr").split("-")[0];
-        const url = `https://nominatim.openstreetmap.org/search?format=json&addressdetails=0&limit=6&accept-language=${lang}&q=${encodeURIComponent(q)}`;
+        // Photon (Komoot) — geocoder public gratuit basé sur OSM, CORS activé, sans clé API.
+        const url = `https://photon.komoot.io/api/?q=${encodeURIComponent(q)}&limit=6&lang=${lang}`;
         const res = await fetch(url, { headers: { Accept: "application/json" } });
         if (!res.ok) throw new Error("network");
-        const data = (await res.json()) as Suggestion[];
-        setSuggestions(data);
+        const json = (await res.json()) as { features?: Array<{ properties: Record<string, string>; geometry?: { coordinates: [number, number] } }> };
+        const feats = json.features ?? [];
+        const list: Suggestion[] = feats.map((f, i) => {
+          const p = f.properties || {};
+          const parts = [
+            [p.housenumber, p.street].filter(Boolean).join(" "),
+            [p.postcode, p.city || p.town || p.village].filter(Boolean).join(" "),
+            p.state,
+            p.country,
+          ].filter(Boolean);
+          const display = parts.join(", ") || p.name || "";
+          return { display_name: display, place_id: i };
+        }).filter((s) => s.display_name);
+        setSuggestions(list);
       } catch {
         setSuggestions([]);
       } finally {
         setLoading(false);
       }
-    }, 350);
+    }, 300);
   }
 
   function pick(s: Suggestion) {

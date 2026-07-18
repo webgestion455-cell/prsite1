@@ -1313,7 +1313,17 @@
     },
     "admin": {
       "empty": "Sin conversaciones.",
-      "selectHint": "Selecciona una conversación a la izquierda."
+      "selectHint": "Selecciona una conversación a la izquierda.",
+      "folders": "Archivos de clientes",
+      "tickets": "Entradas",
+      "searchPlaceholder": "Búsqueda de cliente, ticket, email…",
+      "filter": {
+        "all": "Todo",
+        "waiting": "En espera",
+        "mine": "Asignado a mi",
+        "closed": "Cerrado",
+        "guests": "Visitantes"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Servicio al cliente seguro",
@@ -1324,6 +1334,46 @@
       "desc": "Debes iniciar sesión para acceder al soporte.",
       "cta": "Iniciar sesión"
     },
-    "nav": "Soporte"
+    "nav": "Soporte",
+    "guest": {
+      "subtitle": "Asistencia al visitante",
+      "intro": "Complete este formulario, un asesor de BNP PARIBAS le responderá rápidamente. Obtendrá un número de billete.",
+      "name": "Nombre completo *",
+      "email": "Correo electrónico *",
+      "phone": "Teléfono",
+      "whatsapp": "WhatsApp",
+      "country": "País de residencia",
+      "subject": "Sujeto",
+      "message": "Tu mensaje *",
+      "submit": "abrir mi billete",
+      "privacy": "Tus datos se tratan de forma confidencial (GDPR).",
+      "created": "¡Boleto #{{ticket}} creado!",
+      "errors": {
+        "required": "Nombre, correo electrónico y mensaje requerido.",
+        "fail": "El envío falló, inténtalo de nuevo."
+      }
+    },
+    "ticket": "Boleto",
+    "archived": "Archivo",
+    "open": "Abierto"
+  },
+  "adminDash": {
+    "title": "Panel de control — BNP PARIBAS",
+    "overview": "Descripción general",
+    "clients": "Clientes",
+    "loans": "Préstamos",
+    "transfers": "Transferencias",
+    "chat": "Chat en vivo",
+    "security": "Seguridad",
+    "notifications": "Notificaciones",
+    "kpis": {
+      "clients": "Clientes activos",
+      "loansPending": "Préstamos pendientes",
+      "transfersBlocked": "Transferencias bloqueadas",
+      "ticketsOpen": "Entradas abiertas",
+      "newToday": "Nuevo hoy"
+    },
+    "recentActivity": "Actividad reciente",
+    "quickActions": "Acciones rápidas"
   }
 }

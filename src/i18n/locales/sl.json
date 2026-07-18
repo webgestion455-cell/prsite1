@@ -1313,7 +1313,17 @@
     },
     "admin": {
       "empty": "Ni pogovorov.",
-      "selectHint": "Izberite pogovor na levi."
+      "selectHint": "Izberite pogovor na levi.",
+      "folders": "Datoteke strank",
+      "tickets": "Vstopnice",
+      "searchPlaceholder": "Poiščite stranko, vstopnico, e-pošto ...",
+      "filter": {
+        "all": "Vse",
+        "waiting": "Na čakanju",
+        "mine": "Dodeljeno meni",
+        "closed": "Zaprto",
+        "guests": "Obiskovalci"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Varna storitev za stranke",
@@ -1324,6 +1334,46 @@
       "desc": "Za dostop do podpore morate biti prijavljeni.",
       "cta": "Prijava"
     },
-    "nav": "Podpora"
+    "nav": "Podpora",
+    "guest": {
+      "subtitle": "Pomoč obiskovalcem",
+      "intro": "Izpolnite ta obrazec, svetovalec BNP PARIBAS se bo hitro odzval. Dobili boste številko vstopnice.",
+      "name": "Polno ime *",
+      "email": "E-pošta *",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Država prebivališča",
+      "subject": "Predmet",
+      "message": "Vaše sporočilo *",
+      "submit": "Odpri mojo vozovnico",
+      "privacy": "Vaše podatke obravnavamo zaupno (GDPR).",
+      "created": "Vstopnica #{{ticket}} ustvarjena!",
+      "errors": {
+        "required": "Zahtevani so ime, e-pošta in sporočilo.",
+        "fail": "Pošiljanje ni uspelo, poskusite znova."
+      }
+    },
+    "ticket": "Vstopnica",
+    "archived": "Arhivi",
+    "open": "Odpri"
+  },
+  "adminDash": {
+    "title": "Armaturna plošča — BNP PARIBAS",
+    "overview": "Pregled",
+    "clients": "Stranke",
+    "loans": "Posojila",
+    "transfers": "Prestopi",
+    "chat": "Klepet v živo",
+    "security": "Varnost",
+    "notifications": "Obvestila",
+    "kpis": {
+      "clients": "Aktivne stranke",
+      "loansPending": "Posojila v teku",
+      "transfersBlocked": "Prenosi so blokirani",
+      "ticketsOpen": "Odprte vstopnice",
+      "newToday": "Novo danes"
+    },
+    "recentActivity": "Nedavna dejavnost",
+    "quickActions": "Hitra dejanja"
   }
 }

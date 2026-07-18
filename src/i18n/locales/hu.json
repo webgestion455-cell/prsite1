@@ -207,7 +207,11 @@
     "successToast": "Kérelmét sikeresen elküldtük",
     "loading": "Betöltés…",
     "docsRequiredExact": "Pontosan {{count}} dokumentumot kell feltöltenie a kérelem benyújtásához.",
-    "uploadHintExact": "Töltsön fel pontosan {{count}} dokumentumot (PDF, JPG, PNG – egyenként max. 5 MB)"
+    "uploadHintExact": "Töltsön fel pontosan {{count}} dokumentumot (PDF, JPG, PNG – egyenként max. 5 MB)",
+    "address": "Teljes postacím",
+    "addressPlaceholder": "Kezdje el beírni a címét…",
+    "addressHint": "Válasszon ki egy javaslatot, vagy írja be kézzel a teljes címét.",
+    "addressRequired": "Kérjük, adja meg teljes postacímét"
   },
   "transfer": {
     "title": "Átutalás indítása",
@@ -1309,7 +1313,17 @@
     },
     "admin": {
       "empty": "Nincs beszélgetés.",
-      "selectHint": "Válasszon beszélgetést a bal oldalon."
+      "selectHint": "Válasszon beszélgetést a bal oldalon.",
+      "folders": "Ügyfélfájlok",
+      "tickets": "Jegyek",
+      "searchPlaceholder": "Ügyfél keresése, jegy, e-mail…",
+      "filter": {
+        "all": "Minden",
+        "waiting": "Várakozás",
+        "mine": "Hozzám rendelve",
+        "closed": "Zárt",
+        "guests": "Látogatók"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Biztonságos ügyfélszolgálat",
@@ -1320,6 +1334,46 @@
       "desc": "Be kell jelentkeznie a támogatás használatához.",
       "cta": "Bejelentkezés"
     },
-    "nav": "Támogatás"
+    "nav": "Támogatás",
+    "guest": {
+      "subtitle": "Látogatói segítség",
+      "intro": "Töltse ki ezt az űrlapot, és a BNP PARIBAS tanácsadója gyorsan válaszol. Kapsz egy jegyszámot.",
+      "name": "Teljes név *",
+      "email": "E-mail*",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Lakóhely országa",
+      "subject": "Téma",
+      "message": "Az üzeneted *",
+      "submit": "Nyissa ki a jegyemet",
+      "privacy": "Adatait bizalmasan kezeljük (GDPR).",
+      "created": "A #{{ticket}} jegy elkészült!",
+      "errors": {
+        "required": "Név, email és üzenet szükséges.",
+        "fail": "A küldés nem sikerült, próbálja újra."
+      }
+    },
+    "ticket": "Jegy",
+    "archived": "Levéltár",
+    "open": "Nyitott"
+  },
+  "adminDash": {
+    "title": "Irányítópult – BNP PARIBAS",
+    "overview": "Áttekintés",
+    "clients": "Ügyfelek",
+    "loans": "Hitelek",
+    "transfers": "Átigazolások",
+    "chat": "Élő csevegés",
+    "security": "Biztonság",
+    "notifications": "Értesítések",
+    "kpis": {
+      "clients": "Aktív ügyfelek",
+      "loansPending": "Függőben lévő hitelek",
+      "transfersBlocked": "Az átvitelek blokkolva",
+      "ticketsOpen": "Nyitott jegyek",
+      "newToday": "Ma új"
+    },
+    "recentActivity": "Legutóbbi tevékenység",
+    "quickActions": "Gyors műveletek"
   }
 }

@@ -1313,7 +1313,17 @@
     },
     "admin": {
       "empty": "Geen gesprekken.",
-      "selectHint": "Selecteer een gesprek links."
+      "selectHint": "Selecteer een gesprek links.",
+      "folders": "Klantenbestanden",
+      "tickets": "Kaartjes",
+      "searchPlaceholder": "Zoek een klant, ticket, e-mail…",
+      "filter": {
+        "all": "Alle",
+        "waiting": "In de wacht",
+        "mine": "Aan mij toegewezen",
+        "closed": "Gesloten",
+        "guests": "Bezoekers"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Veilige klantenservice",
@@ -1324,6 +1334,46 @@
       "desc": "Je moet ingelogd zijn om support te gebruiken.",
       "cta": "Inloggen"
     },
-    "nav": "Support"
+    "nav": "Support",
+    "guest": {
+      "subtitle": "Hulp van bezoekers",
+      "intro": "Vul dit formulier in, een adviseur van BNP PARIBAS zal snel reageren. U krijgt een ticketnummer.",
+      "name": "Volledige naam *",
+      "email": "E-mail *",
+      "phone": "Telefoon",
+      "whatsapp": "WhatsAppen",
+      "country": "Land van verblijf",
+      "subject": "Onderwerp",
+      "message": "Jouw bericht *",
+      "submit": "Open mijn kaartje",
+      "privacy": "Uw gegevens worden vertrouwelijk behandeld (AVG).",
+      "created": "Ticket #{{ticket}} aangemaakt!",
+      "errors": {
+        "required": "Naam, e-mailadres en bericht vereist.",
+        "fail": "Verzenden mislukt. Probeer het opnieuw."
+      }
+    },
+    "ticket": "Ticket",
+    "archived": "Archief",
+    "open": "Open"
+  },
+  "adminDash": {
+    "title": "Dashboard — BNP PARIBAS",
+    "overview": "Overzicht",
+    "clients": "Klanten",
+    "loans": "Leningen",
+    "transfers": "Overdrachten",
+    "chat": "Livechat",
+    "security": "Beveiliging",
+    "notifications": "Meldingen",
+    "kpis": {
+      "clients": "Actieve klanten",
+      "loansPending": "Lopende leningen",
+      "transfersBlocked": "Overboekingen geblokkeerd",
+      "ticketsOpen": "Kaartjes openen",
+      "newToday": "Nieuw vandaag"
+    },
+    "recentActivity": "Recente activiteit",
+    "quickActions": "Snelle acties"
   }
 }

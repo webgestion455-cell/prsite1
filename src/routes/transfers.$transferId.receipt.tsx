@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import { formatCurrency, formatDateTime } from "@/lib/loan-helpers";
 import { isCompletedTransfer } from "@/lib/transfer-state";
+import { generateReceiptPdf } from "@/lib/receipt-pdf.functions";
 import i18n from "@/i18n";
 import { toast } from "sonner";
 
@@ -58,9 +59,26 @@ function ReceiptPage() {
     setDownloading(true);
     const id = toast.loading(t("receipt.generating"));
     try {
-      if (!completed) throw new Error(t("receipt.serverUnavailable"));
-      const bytes = await buildReceiptPdf(current);
-      // Copie dans un ArrayBuffer neuf pour éviter tout souci de SharedArrayBuffer / typage Blob
+      // Try server-generated PDF first (identical path to contract, always reliable)
+      let bytes: Uint8Array | null = null;
+      let filename = `justificatif-virement-bnpparibas-${current.reference ?? current.id.slice(0, 8).toUpperCase()}.pdf`;
+      try {
+        const { data: sess } = await supabase.auth.getSession();
+        const token = sess.session?.access_token;
+        if (token) {
+          const res = await generateReceiptPdf({ data: { transferId: current.id, accessToken: token } });
+          const bin = atob(res.base64);
+          const arr = new Uint8Array(bin.length);
+          for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+          bytes = arr;
+          if (res.filename) filename = res.filename;
+        }
+      } catch (serverErr) {
+        console.warn("Server receipt failed, falling back to client PDF", serverErr);
+      }
+      if (!bytes) {
+        bytes = await buildReceiptPdf(current);
+      }
       const ab = new ArrayBuffer(bytes.byteLength);
       new Uint8Array(ab).set(bytes);
       const blob = new Blob([ab], { type: "application/pdf" });
@@ -68,7 +86,7 @@ function ReceiptPage() {
       const a = document.createElement("a");
       a.href = url;
       a.rel = "noopener";
-      a.download = `justificatif-virement-bnpparibas-${current.reference ?? current.id.slice(0, 8).toUpperCase()}.pdf`;
+      a.download = filename;
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -96,7 +114,7 @@ function ReceiptPage() {
           <Button variant="ghost" size="sm" onClick={() => navigate({ to: "/transfers/$transferId", params: { transferId } })}>
             <ArrowLeft className="mr-2 h-4 w-4" /> {t("common.back")}
           </Button>
-          <Button onClick={downloadPdf} disabled={downloading || !completed} className="shadow-glow">
+          <Button onClick={downloadPdf} disabled={downloading} className="shadow-glow">
             <Download className="mr-2 h-4 w-4" /> {downloading ? t("receipt.generating") : t("receipt.download")}
           </Button>
         </div>

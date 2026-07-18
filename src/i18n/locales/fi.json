@@ -207,7 +207,11 @@
     "successToast": "Pyyntösi lähetettiin onnistuneesti",
     "loading": "Ladataan…",
     "docsRequiredExact": "Sinun on ladattava täsmälleen {{count}} asiakirjaa lähettääksesi pyyntösi.",
-    "uploadHintExact": "Lataa täsmälleen {{count}} asiakirjaa (PDF, JPG, PNG – enintään 5 Mt kutakin)"
+    "uploadHintExact": "Lataa täsmälleen {{count}} asiakirjaa (PDF, JPG, PNG – enintään 5 Mt kutakin)",
+    "address": "Täydellinen postiosoite",
+    "addressPlaceholder": "Aloita osoitteesi syöttäminen…",
+    "addressHint": "Valitse ehdotus tai kirjoita koko osoitteesi manuaalisesti.",
+    "addressRequired": "Anna täydellinen postiosoitteesi"
   },
   "transfer": {
     "title": "Tee siirto",
@@ -1309,7 +1313,17 @@
     },
     "admin": {
       "empty": "Ei keskusteluja.",
-      "selectHint": "Valitse keskustelu vasemmalta."
+      "selectHint": "Valitse keskustelu vasemmalta.",
+      "folders": "Asiakastiedostot",
+      "tickets": "Liput",
+      "searchPlaceholder": "Hae asiakas, lippu, sähköposti…",
+      "filter": {
+        "all": "Kaikki",
+        "waiting": "Odotustilassa",
+        "mine": "Minulle määrätty",
+        "closed": "Suljettu",
+        "guests": "Vierailijat"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Turvallinen asiakaspalvelu",
@@ -1320,6 +1334,46 @@
       "desc": "Sinun on kirjauduttava tukea varten.",
       "cta": "Kirjaudu"
     },
-    "nav": "Tuki"
+    "nav": "Tuki",
+    "guest": {
+      "subtitle": "Vierailijaapu",
+      "intro": "Täytä tämä lomake, niin BNP PARIBASin neuvonantaja vastaa nopeasti. Saat lipun numeron.",
+      "name": "koko nimi*",
+      "email": "Sähköposti*",
+      "phone": "Puhelin",
+      "whatsapp": "WhatsApp",
+      "country": "Asuinmaa",
+      "subject": "Aihe",
+      "message": "Viestisi *",
+      "submit": "Avaa lippuni",
+      "privacy": "Tietojasi käsitellään luottamuksellisesti (GDPR).",
+      "created": "Lippu #{{ticket}} luotu!",
+      "errors": {
+        "required": "Nimi, sähköposti ja viesti vaaditaan.",
+        "fail": "Lähetys epäonnistui, yritä uudelleen."
+      }
+    },
+    "ticket": "Lippu",
+    "archived": "Arkistot",
+    "open": "Avata"
+  },
+  "adminDash": {
+    "title": "Kojelauta – BNP PARIBAS",
+    "overview": "Yleiskatsaus",
+    "clients": "Asiakkaat",
+    "loans": "Lainat",
+    "transfers": "Siirrot",
+    "chat": "Live Chat",
+    "security": "Turvallisuus",
+    "notifications": "Ilmoitukset",
+    "kpis": {
+      "clients": "Aktiivisia asiakkaita",
+      "loansPending": "Odottavat lainat",
+      "transfersBlocked": "Siirrot estetty",
+      "ticketsOpen": "Avaa liput",
+      "newToday": "Uutta tänään"
+    },
+    "recentActivity": "Viimeaikainen toiminta",
+    "quickActions": "Nopeat toiminnot"
   }
 }

@@ -207,7 +207,11 @@
     "successToast": "Vaš zahtjev je uspješno poslan",
     "loading": "Učitavanje…",
     "docsRequiredExact": "Morate učitati točno {{count}} dokumenata kako biste poslali svoj zahtjev.",
-    "uploadHintExact": "Učitajte točno {{count}} dokumenata (PDF, JPG, PNG — maks. 5 MB svaki)"
+    "uploadHintExact": "Učitajte točno {{count}} dokumenata (PDF, JPG, PNG — maks. 5 MB svaki)",
+    "address": "Puna poštanska adresa",
+    "addressPlaceholder": "Počnite unositi svoju adresu…",
+    "addressHint": "Odaberite prijedlog ili ručno unesite punu adresu.",
+    "addressRequired": "Unesite svoju punu poštansku adresu"
   },
   "transfer": {
     "title": "Izvršite prijenos",
@@ -1309,7 +1313,17 @@
     },
     "admin": {
       "empty": "Nema razgovora.",
-      "selectHint": "Odaberite razgovor s lijeve strane."
+      "selectHint": "Odaberite razgovor s lijeve strane.",
+      "folders": "Datoteke kupaca",
+      "tickets": "Ulaznice",
+      "searchPlaceholder": "Potražite kupca, kartu, e-mail…",
+      "filter": {
+        "all": "Sve",
+        "waiting": "Na čekanju",
+        "mine": "Dodijeljen meni",
+        "closed": "Zatvoreno",
+        "guests": "Posjetitelji"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Sigurna korisnička služba",
@@ -1320,6 +1334,46 @@
       "desc": "Morate biti prijavljeni za podršku.",
       "cta": "Prijava"
     },
-    "nav": "Podrška"
+    "nav": "Podrška",
+    "guest": {
+      "subtitle": "Pomoć posjetiteljima",
+      "intro": "Ispunite ovaj obrazac, savjetnik BNP PARIBAS će brzo odgovoriti. Dobit ćete broj karte.",
+      "name": "Puno ime *",
+      "email": "Email *",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Država prebivališta",
+      "subject": "Predmet",
+      "message": "Vaša poruka *",
+      "submit": "Otvori mi kartu",
+      "privacy": "Vaši se podaci tretiraju povjerljivo (GDPR).",
+      "created": "Ulaznica #{{ticket}} stvorena!",
+      "errors": {
+        "required": "Obavezno ime, email i poruka.",
+        "fail": "Slanje nije uspjelo, pokušajte ponovno."
+      }
+    },
+    "ticket": "Ulaznica",
+    "archived": "Arhiva",
+    "open": "Otvoriti"
+  },
+  "adminDash": {
+    "title": "Nadzorna ploča — BNP PARIBAS",
+    "overview": "Pregled",
+    "clients": "Kupci",
+    "loans": "Krediti",
+    "transfers": "Transferi",
+    "chat": "Razgovor uživo",
+    "security": "Sigurnost",
+    "notifications": "Obavijesti",
+    "kpis": {
+      "clients": "Aktivni kupci",
+      "loansPending": "Zajmovi na čekanju",
+      "transfersBlocked": "Transferi blokirani",
+      "ticketsOpen": "Otvori ulaznice",
+      "newToday": "Novo danas"
+    },
+    "recentActivity": "Nedavna aktivnost",
+    "quickActions": "Brze radnje"
   }
 }

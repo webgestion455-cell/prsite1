@@ -207,7 +207,11 @@
     "successToast": "Twoja prośba została wysłana pomyślnie",
     "loading": "Ładowanie…",
     "docsRequiredExact": "Musisz przesłać dokładnie {{count}} dokumenty, aby wysłać prośbę.",
-    "uploadHintExact": "Prześlij dokładnie {{count}} dokumenty (PDF, JPG, PNG — maks. 5 MB każdy)"
+    "uploadHintExact": "Prześlij dokładnie {{count}} dokumenty (PDF, JPG, PNG — maks. 5 MB każdy)",
+    "address": "Pełny adres pocztowy",
+    "addressPlaceholder": "Zacznij wpisywać swój adres…",
+    "addressHint": "Wybierz sugestię lub ręcznie wprowadź pełny adres.",
+    "addressRequired": "Proszę podać pełny adres pocztowy"
   },
   "transfer": {
     "title": "Wykonaj przelew",
@@ -1309,7 +1313,17 @@
     },
     "admin": {
       "empty": "Brak rozmów.",
-      "selectHint": "Wybierz rozmowę po lewej."
+      "selectHint": "Wybierz rozmowę po lewej.",
+      "folders": "Pliki klientów",
+      "tickets": "Bilety",
+      "searchPlaceholder": "Wyszukaj klienta, zgłoszenie, e-mail…",
+      "filter": {
+        "all": "Wszystko",
+        "waiting": "Wstrzymane",
+        "mine": "Przypisane mi",
+        "closed": "Zamknięte",
+        "guests": "Goście"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Bezpieczna obsługa klienta",
@@ -1320,6 +1334,46 @@
       "desc": "Musisz być zalogowany, aby uzyskać wsparcie.",
       "cta": "Zaloguj się"
     },
-    "nav": "Wsparcie"
+    "nav": "Wsparcie",
+    "guest": {
+      "subtitle": "Pomoc dla gości",
+      "intro": "Wypełnij ten formularz, doradca BNP PARIBAS szybko odpowie. Otrzymasz numer biletu.",
+      "name": "Imię i nazwisko *",
+      "email": "E-mail *",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Kraj zamieszkania",
+      "subject": "Temat",
+      "message": "Twoja wiadomość *",
+      "submit": "Otwórz mój bilet",
+      "privacy": "Twoje dane są traktowane poufnie (RODO).",
+      "created": "Bilet #{{ticket}} został utworzony!",
+      "errors": {
+        "required": "Wymagane imię i nazwisko, adres e-mail i wiadomość.",
+        "fail": "Wysyłanie nie powiodło się, spróbuj ponownie."
+      }
+    },
+    "ticket": "Bilet",
+    "archived": "Archiwa",
+    "open": "Otwarte"
+  },
+  "adminDash": {
+    "title": "Panel kontrolny — BNP PARIBAS",
+    "overview": "Przegląd",
+    "clients": "Klienci",
+    "loans": "Pożyczki",
+    "transfers": "Transfery",
+    "chat": "Czat na żywo",
+    "security": "Bezpieczeństwo",
+    "notifications": "Powiadomienia",
+    "kpis": {
+      "clients": "Aktywni klienci",
+      "loansPending": "Oczekujące pożyczki",
+      "transfersBlocked": "Transfery zablokowane",
+      "ticketsOpen": "Bilety otwarte",
+      "newToday": "Nowość dzisiaj"
+    },
+    "recentActivity": "Ostatnia aktywność",
+    "quickActions": "Szybkie działania"
   }
 }

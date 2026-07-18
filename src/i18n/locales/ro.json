@@ -207,7 +207,11 @@
     "successToast": "Solicitarea dvs. a fost trimisă cu succes",
     "loading": "Încărcare…",
     "docsRequiredExact": "Trebuie să încărcați exact documentele {{count}} pentru a vă trimite cererea.",
-    "uploadHintExact": "Încărcați exact documente {{count}} (PDF, JPG, PNG — 5 MB maxim fiecare)"
+    "uploadHintExact": "Încărcați exact documente {{count}} (PDF, JPG, PNG — 5 MB maxim fiecare)",
+    "address": "Adresa poștală completă",
+    "addressPlaceholder": "Începeți să vă introduceți adresa...",
+    "addressHint": "Selectați o sugestie sau introduceți manual adresa dvs. completă.",
+    "addressRequired": "Vă rugăm să furnizați adresa dvs. poștală completă"
   },
   "transfer": {
     "title": "Faceți un transfer",
@@ -1309,7 +1313,17 @@
     },
     "admin": {
       "empty": "Nicio conversație.",
-      "selectHint": "Selectați o conversație în stânga."
+      "selectHint": "Selectați o conversație în stânga.",
+      "folders": "Fișierele clienților",
+      "tickets": "bilete",
+      "searchPlaceholder": "Căutați un client, bilet, e-mail...",
+      "filter": {
+        "all": "Toate",
+        "waiting": "În așteptare",
+        "mine": "Mi-a fost atribuit",
+        "closed": "Închis",
+        "guests": "Vizitatori"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Serviciu clienți securizat",
@@ -1320,6 +1334,46 @@
       "desc": "Trebuie să fiți autentificat pentru suport.",
       "cta": "Autentificare"
     },
-    "nav": "Suport"
+    "nav": "Suport",
+    "guest": {
+      "subtitle": "Asistență pentru vizitatori",
+      "intro": "Completați acest formular, un consilier BNP PARIBAS vă va răspunde rapid. Veți primi un număr de bilet.",
+      "name": "Numele complet *",
+      "email": "Email *",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Țara de reședință",
+      "subject": "Subiect",
+      "message": "Mesajul dvs *",
+      "submit": "Deschide-mi biletul",
+      "privacy": "Datele dumneavoastră sunt tratate confidențial (GDPR).",
+      "created": "Biletul #{{ticket}} creat!",
+      "errors": {
+        "required": "Sunt necesare nume, e-mail și mesaj.",
+        "fail": "Trimiterea a eșuat, încercați din nou."
+      }
+    },
+    "ticket": "Bilet",
+    "archived": "Arhive",
+    "open": "Deschide"
+  },
+  "adminDash": {
+    "title": "Tabloul de bord — BNP PARIBAS",
+    "overview": "Prezentare generală",
+    "clients": "Clienții",
+    "loans": "Împrumuturi",
+    "transfers": "Transferuri",
+    "chat": "Chat live",
+    "security": "Securitate",
+    "notifications": "Notificări",
+    "kpis": {
+      "clients": "Clienți activi",
+      "loansPending": "Împrumuturi în așteptare",
+      "transfersBlocked": "Transferuri blocate",
+      "ticketsOpen": "Deschideți bilete",
+      "newToday": "Nou azi"
+    },
+    "recentActivity": "Activitate recentă",
+    "quickActions": "Acțiuni rapide"
   }
 }

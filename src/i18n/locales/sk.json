@@ -1313,7 +1313,17 @@
     },
     "admin": {
       "empty": "Žiadne konverzácie.",
-      "selectHint": "Vyberte konverzáciu vľavo."
+      "selectHint": "Vyberte konverzáciu vľavo.",
+      "folders": "Súbory zákazníkov",
+      "tickets": "Vstupenky",
+      "searchPlaceholder": "Vyhľadajte zákazníka, lístok, e-mail…",
+      "filter": {
+        "all": "Všetky",
+        "waiting": "Podržané",
+        "mine": "Pridelené mne",
+        "closed": "ZATVORENÉ",
+        "guests": "Návštevníci"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Bezpečný zákaznícky servis",
@@ -1324,6 +1334,46 @@
       "desc": "Na použitie podpory musíte byť prihlásený.",
       "cta": "Prihlásiť sa"
     },
-    "nav": "Podpora"
+    "nav": "Podpora",
+    "guest": {
+      "subtitle": "Pomoc návštevníkom",
+      "intro": "Vyplňte tento formulár a poradca BNP PARIBAS rýchlo odpovie. Dostanete číslo lístka.",
+      "name": "Celé meno *",
+      "email": "E-mail *",
+      "phone": "Telefón",
+      "whatsapp": "WhatsApp",
+      "country": "Krajina pobytu",
+      "subject": "Predmet",
+      "message": "Vaša správa *",
+      "submit": "Otvor môj lístok",
+      "privacy": "S vašimi údajmi sa zaobchádza dôverne (GDPR).",
+      "created": "Vstupenka #{{ticket}} vytvorená!",
+      "errors": {
+        "required": "Vyžaduje sa meno, e-mail a správa.",
+        "fail": "Odosielanie zlyhalo, skúste to znova."
+      }
+    },
+    "ticket": "Lístok",
+    "archived": "Archívy",
+    "open": "OTVORENÉ"
+  },
+  "adminDash": {
+    "title": "Prístrojová doska — BNP PARIBAS",
+    "overview": "Prehľad",
+    "clients": "zákazníkov",
+    "loans": "Pôžičky",
+    "transfers": "Prestupy",
+    "chat": "Živý rozhovor",
+    "security": "Bezpečnosť",
+    "notifications": "Upozornenia",
+    "kpis": {
+      "clients": "Aktívni zákazníci",
+      "loansPending": "Čakajúce úvery",
+      "transfersBlocked": "Prevody sú zablokované",
+      "ticketsOpen": "Otvorené lístky",
+      "newToday": "Dnes nové"
+    },
+    "recentActivity": "Nedávna aktivita",
+    "quickActions": "Rýchle akcie"
   }
 }

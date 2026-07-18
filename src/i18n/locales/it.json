@@ -1313,7 +1313,17 @@
     },
     "admin": {
       "empty": "Nessuna conversazione.",
-      "selectHint": "Seleziona una conversazione a sinistra."
+      "selectHint": "Seleziona una conversazione a sinistra.",
+      "folders": "File dei clienti",
+      "tickets": "Biglietti",
+      "searchPlaceholder": "Cerca un cliente, un ticket, un'e-mail...",
+      "filter": {
+        "all": "Tutto",
+        "waiting": "In attesa",
+        "mine": "Assegnato a me",
+        "closed": "Chiuso",
+        "guests": "Visitatori"
+      }
     },
     "banner": {
       "top": "BNP PARIBAS — Servizio clienti sicuro",
@@ -1324,6 +1334,46 @@
       "desc": "Devi accedere per usare il supporto.",
       "cta": "Accedi"
     },
-    "nav": "Supporto"
+    "nav": "Supporto",
+    "guest": {
+      "subtitle": "Assistenza ai visitatori",
+      "intro": "Compila questo modulo, un consulente BNP PARIBAS ti risponderà rapidamente. Riceverai un numero di biglietto.",
+      "name": "Nome e cognome *",
+      "email": "E-mail *",
+      "phone": "Telefono",
+      "whatsapp": "Whatsapp",
+      "country": "Paese di residenza",
+      "subject": "Soggetto",
+      "message": "Il tuo messaggio *",
+      "submit": "Apri il mio ticket",
+      "privacy": "I tuoi dati sono trattati in modo confidenziale (GDPR).",
+      "created": "Biglietto n. {{ticket}} creato!",
+      "errors": {
+        "required": "Nome, email e messaggio obbligatori.",
+        "fail": "Invio non riuscito, riprova."
+      }
+    },
+    "ticket": "Biglietto",
+    "archived": "Archivi",
+    "open": "Aprire"
+  },
+  "adminDash": {
+    "title": "Cruscotto — BNP PARIBAS",
+    "overview": "Panoramica",
+    "clients": "Clienti",
+    "loans": "Prestiti",
+    "transfers": "Trasferimenti",
+    "chat": "Chatta dal vivo",
+    "security": "Sicurezza",
+    "notifications": "Notifiche",
+    "kpis": {
+      "clients": "Clienti attivi",
+      "loansPending": "Prestiti in sospeso",
+      "transfersBlocked": "Trasferimenti bloccati",
+      "ticketsOpen": "Biglietti aperti",
+      "newToday": "Nuovo oggi"
+    },
+    "recentActivity": "Attività recente",
+    "quickActions": "Azioni rapide"
   }
 }
