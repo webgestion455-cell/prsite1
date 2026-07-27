@@ -1374,6 +1374,9 @@
       "newToday": "Novo danes"
     },
     "recentActivity": "Nedavna dejavnost",
-    "quickActions": "Hitra dejanja"
+    "quickActions": "Hitra dejanja",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

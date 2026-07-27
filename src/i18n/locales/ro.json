@@ -1374,6 +1374,9 @@
       "newToday": "Nou azi"
     },
     "recentActivity": "Activitate recentă",
-    "quickActions": "Acțiuni rapide"
+    "quickActions": "Acțiuni rapide",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

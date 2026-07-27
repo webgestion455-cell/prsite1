@@ -1374,6 +1374,9 @@
       "newToday": "Ma új"
     },
     "recentActivity": "Legutóbbi tevékenység",
-    "quickActions": "Gyors műveletek"
+    "quickActions": "Gyors műveletek",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

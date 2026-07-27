@@ -1374,6 +1374,9 @@
       "newToday": "Dnes nové"
     },
     "recentActivity": "Nedávna aktivita",
-    "quickActions": "Rýchle akcie"
+    "quickActions": "Rýchle akcie",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

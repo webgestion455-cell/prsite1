@@ -1,5 +1,5 @@
-import { createFileRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
-import { useMemo, useState } from "react";
+import { createFileRoute, Link, Outlet, useLocation, useNavigate } from "@tanstack/react-router";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "@/lib/auth-context";
 import { cn } from "@/lib/utils";
@@ -19,6 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { NotificationBell } from "@/components/NotificationBell";
+import { getAdmin2FAExpiry } from "@/routes/admin.verify";
 
 export const Route = createFileRoute("/admin")({
   component: AdminLayout,
@@ -34,8 +35,39 @@ interface NavItem {
 function AdminLayout() {
   const { t } = useTranslation();
   const { pathname } = useLocation();
-  const { user, profile, signOut } = useAuth() as any;
+  const navigate = useNavigate();
+  const { user, role, loading, profile, signOut } = useAuth() as any;
   const [openMobile, setOpenMobile] = useState(false);
+
+  const isVerifyRoute = pathname === "/admin/verify" || pathname.startsWith("/admin/verify");
+  const twoFAValid = user ? getAdmin2FAExpiry(user.id) > Date.now() : false;
+  const authorized = !loading && !!user && role === "admin" && twoFAValid;
+
+  // Redirect unauthenticated / non-admin / not-2FA to /admin/verify
+  useEffect(() => {
+    if (loading) return;
+    if (isVerifyRoute) return;
+    if (!authorized) {
+      navigate({ to: "/admin/verify", replace: true });
+    }
+  }, [loading, authorized, isVerifyRoute, navigate]);
+
+  // Verify page renders standalone — no sidebar/topbar leak
+  if (isVerifyRoute) {
+    return (
+      <div className="min-h-screen bg-muted/20">
+        <Outlet />
+      </div>
+    );
+  }
+
+  if (loading || !authorized) {
+    return (
+      <div className="min-h-screen grid place-items-center bg-muted/20 text-sm text-muted-foreground">
+        {t("common.loading")}
+      </div>
+    );
+  }
 
   const nav: NavItem[] = useMemo(
     () => [
@@ -46,6 +78,9 @@ function AdminLayout() {
       { to: "/admin/chat", labelKey: "adminDash.chat", icon: MessageCircle, match: (p) => p.startsWith("/admin/chat") },
       { to: "/admin/notifications", labelKey: "adminDash.notifications", icon: Bell, match: (p) => p.startsWith("/admin/notifications") },
       { to: "/admin/security", labelKey: "adminDash.security", icon: ShieldCheck, match: (p) => p.startsWith("/admin/security") },
+      { to: "/admin/staff", labelKey: "adminDash.staff", icon: Users, match: (p) => p.startsWith("/admin/staff") },
+      { to: "/admin/roles", labelKey: "adminDash.roles", icon: ShieldCheck, match: (p) => p.startsWith("/admin/roles") },
+      { to: "/admin/logs", labelKey: "adminDash.logs", icon: LayoutDashboard, match: (p) => p.startsWith("/admin/logs") },
     ],
     [],
   );

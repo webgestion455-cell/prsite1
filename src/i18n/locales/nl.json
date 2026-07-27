@@ -1374,6 +1374,9 @@
       "newToday": "Nieuw vandaag"
     },
     "recentActivity": "Recente activiteit",
-    "quickActions": "Snelle acties"
+    "quickActions": "Snelle acties",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

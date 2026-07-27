@@ -1374,6 +1374,9 @@
       "newToday": "Ново днес"
     },
     "recentActivity": "Скорошна дейност",
-    "quickActions": "Бързи действия"
+    "quickActions": "Бързи действия",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

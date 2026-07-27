@@ -1374,6 +1374,9 @@
       "newToday": "Novo danas"
     },
     "recentActivity": "Nedavna aktivnost",
-    "quickActions": "Brze radnje"
+    "quickActions": "Brze radnje",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

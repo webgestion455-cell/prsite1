@@ -1374,6 +1374,9 @@
       "newToday": "Νέο σήμερα"
     },
     "recentActivity": "Πρόσφατη δραστηριότητα",
-    "quickActions": "Γρήγορες Ενέργειες"
+    "quickActions": "Γρήγορες Ενέργειες",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

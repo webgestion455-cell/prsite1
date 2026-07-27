@@ -1374,6 +1374,9 @@
       "newToday": "Uutta tänään"
     },
     "recentActivity": "Viimeaikainen toiminta",
-    "quickActions": "Nopeat toiminnot"
+    "quickActions": "Nopeat toiminnot",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }
