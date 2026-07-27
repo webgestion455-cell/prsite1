@@ -19,7 +19,7 @@ import { notifyUser } from "@/lib/notifications";
 import { cn } from "@/lib/utils";
 import { AdminUnlockCodes } from "@/components/AdminUnlockCodes";
 
-const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
+
 
 export const Route = createFileRoute("/admin/")({
   component: AdminDashboard,
@@ -101,7 +101,7 @@ function AdminDashboard() {
     }
     // Attendre la résolution du rôle pour éviter une redirection prématurée
     if (role === null) return;
-    if (user.email !== ADMIN_EMAIL || role !== "admin") {
+    if (role !== "admin") {
       toast.error("Accès réservé à l'administrateur");
       navigate({ to: "/dashboard", replace: true });
       return;
@@ -114,7 +114,7 @@ function AdminDashboard() {
   }, [user, role, authLoading, navigate]);
 
   useEffect(() => {
-    if (role === "admin" && user?.email === ADMIN_EMAIL) {
+    if (role === "admin" && !!user) {
       const expiry = getAdmin2FAExpiry(user.id);
       if (expiry > Date.now()) void load();
     }
@@ -254,7 +254,7 @@ function AdminDashboard() {
     void load();
   }
 
-  if (authLoading || role !== "admin" || user?.email !== ADMIN_EMAIL) {
+  if (authLoading || role !== "admin") {
     return <div className="flex items-center justify-center h-96 text-muted-foreground">Vérification...</div>;
   }
 

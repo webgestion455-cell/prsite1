@@ -12,7 +12,6 @@ import { formatCurrency, formatDate } from "@/lib/loan-helpers";
 import { ArrowLeft, Search, Users, Eye, ShieldOff, ShieldCheck } from "lucide-react";
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 
-const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 
 export const Route = createFileRoute("/admin/clients/")({
   component: AdminClientsPage,
@@ -40,7 +39,7 @@ function AdminClientsPage() {
 
   useEffect(() => {
     if (authLoading) return;
-    if (!user || user.email !== ADMIN_EMAIL || role !== "admin") {
+    if (!user || role !== "admin") {
       navigate({ to: "/admin/verify", replace: true });
     }
   }, [user, role, authLoading, navigate]);

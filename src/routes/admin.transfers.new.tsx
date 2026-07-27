@@ -16,7 +16,6 @@ import { toast } from "sonner";
 import { formatCurrency } from "@/lib/loan-helpers";
 import { notifyUser } from "@/lib/notifications";
 
-const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 
 const searchSchema = z.object({ userId: z.string().optional(), loanId: z.string().optional() });
 
@@ -60,7 +59,7 @@ function AdminNewTransfer() {
 
   useEffect(() => {
     if (authLoading) return;
-    if (!user || user.email !== ADMIN_EMAIL || role !== "admin") {
+    if (!user || role !== "admin") {
       navigate({ to: "/admin/verify", replace: true });
     }
   }, [user, role, authLoading, navigate]);

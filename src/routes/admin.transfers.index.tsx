@@ -24,7 +24,6 @@ import { formatCurrency, formatDateTime } from "@/lib/loan-helpers";
 import { notifyUser } from "@/lib/notifications";
 import { cn } from "@/lib/utils";
 
-const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 
 export const Route = createFileRoute("/admin/transfers/")({
   component: AdminTransfersQueue,
@@ -68,7 +67,7 @@ function AdminTransfersQueue() {
 
   useEffect(() => {
     if (authLoading) return;
-    if (!user || user.email !== ADMIN_EMAIL || role !== "admin") {
+    if (!user || role !== "admin") {
       navigate({ to: "/admin/verify", replace: true });
     } else {
       void load();

@@ -14,7 +14,6 @@ import { formatCurrency, formatDate, STATUS_LABELS, type LoanStatus } from "@/li
 import { ArrowLeft, FileText, Search, Eye, Inbox } from "lucide-react";
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty";
 
-const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 
 const searchSchema = z.object({
   status: z.string().optional(),
@@ -51,7 +50,7 @@ function AdminLoansPage() {
 
   useEffect(() => {
     if (authLoading) return;
-    if (!user || user.email !== ADMIN_EMAIL || role !== "admin") {
+    if (!user || role !== "admin") {
       navigate({ to: "/admin/verify", replace: true });
     }
   }, [user, role, authLoading, navigate]);

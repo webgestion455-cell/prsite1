@@ -18,7 +18,6 @@ import {
 import { toast } from "sonner";
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty";
 
-const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 
 export const Route = createFileRoute("/admin/clients/$userId")({
   component: AdminClientDetail,
@@ -72,7 +71,7 @@ function AdminClientDetail() {
 
   useEffect(() => {
     if (authLoading) return;
-    if (!user || user.email !== ADMIN_EMAIL || role !== "admin") {
+    if (!user || role !== "admin") {
       navigate({ to: "/admin/verify", replace: true });
     }
   }, [user, role, authLoading, navigate]);

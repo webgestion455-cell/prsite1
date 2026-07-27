@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TransfersRouteImport } from './routes/transfers'
+import { Route as StaffInviteRouteImport } from './routes/staff-invite'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as NotificationsRouteImport } from './routes/notifications'
@@ -37,6 +38,7 @@ import { Route as LegalAmlKycRouteImport } from './routes/legal.aml-kyc'
 import { Route as AuthCallbackRouteImport } from './routes/auth/callback'
 import { Route as AdminVerifyRouteImport } from './routes/admin.verify'
 import { Route as AdminStaffRouteImport } from './routes/admin.staff'
+import { Route as AdminSettingsRouteImport } from './routes/admin.settings'
 import { Route as AdminSecurityRouteImport } from './routes/admin.security'
 import { Route as AdminRolesRouteImport } from './routes/admin.roles'
 import { Route as AdminNotificationsRouteImport } from './routes/admin.notifications'
@@ -54,6 +56,11 @@ import { Route as AdminChatConversationIdRouteImport } from './routes/admin.chat
 const TransfersRoute = TransfersRouteImport.update({
   id: '/transfers',
   path: '/transfers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StaffInviteRoute = StaffInviteRouteImport.update({
+  id: '/staff-invite',
+  path: '/staff-invite',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsRoute = SettingsRouteImport.update({
@@ -191,6 +198,11 @@ const AdminStaffRoute = AdminStaffRouteImport.update({
   path: '/staff',
   getParentRoute: () => AdminRoute,
 } as any)
+const AdminSettingsRoute = AdminSettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => AdminRoute,
+} as any)
 const AdminSecurityRoute = AdminSecurityRouteImport.update({
   id: '/security',
   path: '/security',
@@ -270,6 +282,7 @@ export interface FileRoutesByFullPath {
   '/notifications': typeof NotificationsRoute
   '/reset-password': typeof ResetPasswordRoute
   '/settings': typeof SettingsRoute
+  '/staff-invite': typeof StaffInviteRoute
   '/transfers': typeof TransfersRouteWithChildren
   '/admin/chat': typeof AdminChatRouteWithChildren
   '/admin/loans': typeof AdminLoansRoute
@@ -277,6 +290,7 @@ export interface FileRoutesByFullPath {
   '/admin/notifications': typeof AdminNotificationsRoute
   '/admin/roles': typeof AdminRolesRoute
   '/admin/security': typeof AdminSecurityRoute
+  '/admin/settings': typeof AdminSettingsRoute
   '/admin/staff': typeof AdminStaffRoute
   '/admin/verify': typeof AdminVerifyRoute
   '/auth/callback': typeof AuthCallbackRoute
@@ -312,11 +326,13 @@ export interface FileRoutesByTo {
   '/notifications': typeof NotificationsRoute
   '/reset-password': typeof ResetPasswordRoute
   '/settings': typeof SettingsRoute
+  '/staff-invite': typeof StaffInviteRoute
   '/admin/loans': typeof AdminLoansRoute
   '/admin/logs': typeof AdminLogsRoute
   '/admin/notifications': typeof AdminNotificationsRoute
   '/admin/roles': typeof AdminRolesRoute
   '/admin/security': typeof AdminSecurityRoute
+  '/admin/settings': typeof AdminSettingsRoute
   '/admin/staff': typeof AdminStaffRoute
   '/admin/verify': typeof AdminVerifyRoute
   '/auth/callback': typeof AuthCallbackRoute
@@ -354,6 +370,7 @@ export interface FileRoutesById {
   '/notifications': typeof NotificationsRoute
   '/reset-password': typeof ResetPasswordRoute
   '/settings': typeof SettingsRoute
+  '/staff-invite': typeof StaffInviteRoute
   '/transfers': typeof TransfersRouteWithChildren
   '/admin/chat': typeof AdminChatRouteWithChildren
   '/admin/loans': typeof AdminLoansRoute
@@ -361,6 +378,7 @@ export interface FileRoutesById {
   '/admin/notifications': typeof AdminNotificationsRoute
   '/admin/roles': typeof AdminRolesRoute
   '/admin/security': typeof AdminSecurityRoute
+  '/admin/settings': typeof AdminSettingsRoute
   '/admin/staff': typeof AdminStaffRoute
   '/admin/verify': typeof AdminVerifyRoute
   '/auth/callback': typeof AuthCallbackRoute
@@ -399,6 +417,7 @@ export interface FileRouteTypes {
     | '/notifications'
     | '/reset-password'
     | '/settings'
+    | '/staff-invite'
     | '/transfers'
     | '/admin/chat'
     | '/admin/loans'
@@ -406,6 +425,7 @@ export interface FileRouteTypes {
     | '/admin/notifications'
     | '/admin/roles'
     | '/admin/security'
+    | '/admin/settings'
     | '/admin/staff'
     | '/admin/verify'
     | '/auth/callback'
@@ -441,11 +461,13 @@ export interface FileRouteTypes {
     | '/notifications'
     | '/reset-password'
     | '/settings'
+    | '/staff-invite'
     | '/admin/loans'
     | '/admin/logs'
     | '/admin/notifications'
     | '/admin/roles'
     | '/admin/security'
+    | '/admin/settings'
     | '/admin/staff'
     | '/admin/verify'
     | '/auth/callback'
@@ -482,6 +504,7 @@ export interface FileRouteTypes {
     | '/notifications'
     | '/reset-password'
     | '/settings'
+    | '/staff-invite'
     | '/transfers'
     | '/admin/chat'
     | '/admin/loans'
@@ -489,6 +512,7 @@ export interface FileRouteTypes {
     | '/admin/notifications'
     | '/admin/roles'
     | '/admin/security'
+    | '/admin/settings'
     | '/admin/staff'
     | '/admin/verify'
     | '/auth/callback'
@@ -526,6 +550,7 @@ export interface RootRouteChildren {
   NotificationsRoute: typeof NotificationsRoute
   ResetPasswordRoute: typeof ResetPasswordRoute
   SettingsRoute: typeof SettingsRoute
+  StaffInviteRoute: typeof StaffInviteRoute
   TransfersRoute: typeof TransfersRouteWithChildren
   LegalAmlKycRoute: typeof LegalAmlKycRoute
   LegalCookiesRoute: typeof LegalCookiesRoute
@@ -546,6 +571,13 @@ declare module '@tanstack/react-router' {
       path: '/transfers'
       fullPath: '/transfers'
       preLoaderRoute: typeof TransfersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/staff-invite': {
+      id: '/staff-invite'
+      path: '/staff-invite'
+      fullPath: '/staff-invite'
+      preLoaderRoute: typeof StaffInviteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings': {
@@ -737,6 +769,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminStaffRouteImport
       parentRoute: typeof AdminRoute
     }
+    '/admin/settings': {
+      id: '/admin/settings'
+      path: '/settings'
+      fullPath: '/admin/settings'
+      preLoaderRoute: typeof AdminSettingsRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/admin/security': {
       id: '/admin/security'
       path: '/security'
@@ -852,6 +891,7 @@ interface AdminRouteChildren {
   AdminNotificationsRoute: typeof AdminNotificationsRoute
   AdminRolesRoute: typeof AdminRolesRoute
   AdminSecurityRoute: typeof AdminSecurityRoute
+  AdminSettingsRoute: typeof AdminSettingsRoute
   AdminStaffRoute: typeof AdminStaffRoute
   AdminVerifyRoute: typeof AdminVerifyRoute
   AdminIndexRoute: typeof AdminIndexRoute
@@ -868,6 +908,7 @@ const AdminRouteChildren: AdminRouteChildren = {
   AdminNotificationsRoute: AdminNotificationsRoute,
   AdminRolesRoute: AdminRolesRoute,
   AdminSecurityRoute: AdminSecurityRoute,
+  AdminSettingsRoute: AdminSettingsRoute,
   AdminStaffRoute: AdminStaffRoute,
   AdminVerifyRoute: AdminVerifyRoute,
   AdminIndexRoute: AdminIndexRoute,
@@ -926,6 +967,7 @@ const rootRouteChildren: RootRouteChildren = {
   NotificationsRoute: NotificationsRoute,
   ResetPasswordRoute: ResetPasswordRoute,
   SettingsRoute: SettingsRoute,
+  StaffInviteRoute: StaffInviteRoute,
   TransfersRoute: TransfersRouteWithChildren,
   LegalAmlKycRoute: LegalAmlKycRoute,
   LegalCookiesRoute: LegalCookiesRoute,
