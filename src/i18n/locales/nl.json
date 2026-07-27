@@ -136,7 +136,7 @@
     "viewLoan": "Bekijk dossier",
     "needHelp": "Hulp nodig?",
     "contactSupport": "Klantenservice contacteren",
-    "metaTitle": "Mijn dashboard — DGFP BANK",
+    "metaTitle": "Mijn dashboard — BNP PARIBASAS",
     "sessionExpired": "Sessie verlopen door inactiviteit",
     "loadError": "Laadfout",
     "welcomeNamed": "Welkom, {{name}}",
@@ -178,6 +178,10 @@
     "subtitle": "Vul het formulier in en voeg je documenten toe.",
     "fullName": "Volledige naam",
     "email": "E-mail",
+    "address": "Volledig postadres",
+    "addressPlaceholder": "Begin met het typen van uw adres…",
+    "addressHint": "Kies een suggestie of typ uw volledige adres handmatig.",
+    "addressRequired": "Vermeld uw volledige postadres",
     "amount": "Gewenst bedrag (€)",
     "duration": "Looptijd (maanden)",
     "monthlyIncome": "Netto maandinkomen (€)",
@@ -190,7 +194,7 @@
     "success": "Aanvraag verzonden!",
     "requiredDocs": "Vereiste documenten voor beoordeling",
     "requiredDocsHint": "Upload leesbare bestanden in PDF-, JPG- of PNG-formaat om de validatie te versnellen.",
-    "doc1": "Geldig identiteitsbewijs voor- en achterzijde",
+    "doc1": "Geldig identiteitsbewijs of rijbewijs (voor- en achterzijde) — of paspoort (alleen voorzijde)",
     "doc2": "Recent bewijs van adres",
     "doc3": "Laatste drie loonstroken of inkomstenbewijzen",
     "doc4": "Laatste bankafschrift of IBAN op naam van de aanvrager",
@@ -273,8 +277,8 @@
       "appointment": "Afspraakverzoek",
       "other": "Anders"
     },
-    "metaTitle": "Contact — DGFP BANK klantenservice",
-    "metaDesc": "Neem contact op met de klantenservice van DGFP BANK voor vragen over uw rekening, leningen of overschrijvingen.",
+    "metaTitle": "Contact — BNP PARIBAS klantenservice",
+    "metaDesc": "Neem contact op met de klantenservice van BNP PARIBAS voor vragen over uw rekening, leningen of overschrijvingen.",
     "nameRequired": "Naam verplicht",
     "emailInvalid": "Ongeldig e-mailadres",
     "messageTooShort": "Bericht te kort (minimaal 10 tekens)",
@@ -500,7 +504,7 @@
     "stepNotReached": "Stap nog niet bereikt"
   },
   "transfersPage": {
-    "metaTitle": "Mijn overboekingen — DGFP BANK",
+    "metaTitle": "Mijn overboekingen — BNP PARIBAS",
     "eyebrow": "Overboekingen ruimte",
     "title": "Mijn overboekingen",
     "subtitle": "Tracking van SEPA-overboekingen, compliance-stappen en bewijzen.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK — Directe online leningen",
+    "metaTitle": "BNP PARIBAS — Directe online leningen",
     "metaDesc": "Financier je projecten met vertrouwen. Snelle persoonlijke leningen van € 1.000 tot € 50.000. Beslissing in 24u, fondsen binnen 72u.",
     "badge": "Beslissing binnen 24 uur",
     "heroTitleA": "Financier je projecten",
     "heroTitleB": "met vertrouwen.",
-    "heroDesc": "DGFP BANK behoort tot de beste generatie Europese banken die snelle, transparante en veilige persoonlijke leningen aanbieden.",
+    "heroDesc": "BNP PARIBAS behoort tot de beste generatie Europese banken die snelle, transparante en veilige persoonlijke leningen aanbieden.",
     "ctaPrimary": "Lening aanvragen",
     "ctaSecondary": "Ik heb al een account",
     "trust1": "Versleutelde gegevens",
@@ -558,7 +562,7 @@
       "s3t": "Onderteken je contract",
       "s3d": "Zodra goedgekeurd door ons team, onderteken je contract veilig elektronisch.",
       "s4t": "Ontvang je fondsen",
-      "s4d": "Zodra de wettelijke termijn is verstreken, zijn de fondsen beschikbaar in je DGFP BANK portefeuille, klaar om op te nemen."
+      "s4d": "Zodra de wettelijke termijn is verstreken, zijn de fondsen beschikbaar in je BNP PARIBAS portefeuille, klaar om op te nemen."
     },
     "partners": {
       "eyebrow": "Onze partnerbanken",
@@ -651,9 +655,9 @@
     "blockedTitle": "Compliance-verificatie vereist",
     "blockedDesc": "Om deze stap af te ronden, betaal de compliance-kosten hieronder en voer de ontvangen code in.",
     "configTitle": "Configuratie bezig",
-    "configDesc": "Een DGFP BANK-adviseur bereidt de compliance-betaling voor. Je ontvangt binnenkort instructies.",
+    "configDesc": "Een BNP PARIBAS-adviseur bereidt de compliance-betaling voor. Je ontvangt binnenkort instructies.",
     "fee": "Te betalen compliance-kosten",
-    "bankOrder": "DGFP BANKgegevens",
+    "bankOrder": "BNP PARIBASgegevens",
     "accountHolder": "Houder",
     "reason": "Reden van de overboeking",
     "receiptLabel": "Betalingsbewijs",
@@ -683,9 +687,9 @@
     "subtitle": "Volg de voortgang en valideer elk niveau in alle veiligheid."
   },
   "transferDetail": {
-    "metaTitle": "Overboekingsdetails — DGFP BANK",
+    "metaTitle": "Overboekingsdetails — BNP PARIBAS",
     "backAll": "Alle overboekingen",
-    "header": "DGFP BANK · Overboekingsopdracht",
+    "header": "BNP PARIBAS · Overboekingsopdracht",
     "amount": "Bedrag",
     "beneficiary": "Begunstigde",
     "bank": "Bank",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Deze overboeking is geweigerd",
-      "desc": "De fondsen zijn automatisch teruggestort op je DGFP BANKPARIBAS-rekening.",
+      "desc": "De fondsen zijn automatisch teruggestort op je BNP PARIBASPARIBAS-rekening.",
       "reason": "Reden"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "Bankbewijs beschikbaar",
-      "desc": "Download de officiële DGFP BANK-samenvatting van deze overboekingsopdracht.",
+      "desc": "Download de officiële BNP PARIBAS-samenvatting van deze overboekingsopdracht.",
       "download": "Download het bewijs"
     }
   },
   "receipt": {
-    "metaTitle": "Overboekingsbewijs — DGFP BANK",
+    "metaTitle": "Overboekingsbewijs — BNP PARIBAS",
     "download": "Download de PDF",
     "subBrand": "Together we thrive",
     "documentLabel": "Officieel document",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Referentie",
     "issuedAt": "Datum van uitgifte",
-    "footerSecurity": "Document gegenereerd door de beveiligde DGFP BANK-systemen.",
+    "footerSecurity": "Document gegenereerd door de beveiligde BNP PARIBAS-systemen.",
     "footerLegal": "Dit bewijs geldt als bewijs van de banktransactie en kan worden voorgelegd aan elke bevoegde autoriteit.",
     "generating": "PDF genereren…",
     "downloaded": "Bewijs succesvol gedownload",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Referentie",
     "serverExecutedAt": "Uitvoeringsdatum",
-    "serverSecurity": "Document gegenereerd door de beveiligde systemen van DGFP BANK.",
+    "serverSecurity": "Document gegenereerd door de beveiligde systemen van BNP PARIBAS.",
     "serverLegal": "Dit bewijs dient als bewijs van de bankverrichting en kan aan elke bevoegde autoriteit worden voorgelegd."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Instellingen — DGFP BANK",
+    "metaTitle": "Instellingen — BNP PARIBAS",
     "title": "Instellingen",
     "subtitleDesktop": "Beheer uw persoonlijke gegevens en beveiliging",
     "subtitleMobile": "Beheer uw account en beveiliging",
@@ -844,7 +848,7 @@
     "languageSaved": "Taal bijgewerkt"
   },
   "loanDetail": {
-    "metaTitle": "Leningdetails — DGFP BANKAS",
+    "metaTitle": "Leningdetails — BNP PARIBASAS",
     "downloadImpossible": "Download niet beschikbaar",
     "contractGenerating": "PDF-contract genereren…",
     "sessionExpired": "Sessie verlopen. Log opnieuw in.",
@@ -910,10 +914,11 @@
     "home": "Home",
     "transfers": "Overschrijvingen",
     "request": "Aanvraag",
-    "primary": "Hoofdnavigatie"
+    "primary": "Hoofdnavigatie",
+    "support": "Support"
   },
   "mobileHome": {
-    "title": "Welkom bij DGFP BANK",
+    "title": "Welkom bij BNP PARIBAS",
     "subtitle": "Uw bank, in uw zak.",
     "description": "Beheer uw leningen, overschrijvingen en rekeningen veilig, waar u ook bent.",
     "cta": "Beginnen",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Chat openen",
     "close": "Sluiten",
-    "title": "DGFP BANK-adviseur",
+    "title": "BNP PARIBAS-adviseur",
     "online": "Online",
     "placeholder": "Typ uw bericht…",
     "greeting": "Hallo 👋! Hoe kan ik u helpen?",
@@ -956,9 +961,9 @@
       "loan": "Voor een lening klikt u op \"Nieuwe lening\" in uw dashboard. Beslissing binnen 24 u, geld binnen 72 u.",
       "password": "U kunt uw wachtwoord opnieuw instellen via \"Wachtwoord vergeten?\".",
       "transfer": "Uw overboekingen vindt u in de sectie \"Overboekingen\".",
-      "contact": "Ons team is bereikbaar op +44 7537 103065 of via de contactpagina.",
+      "contact": "Ons team is bereikbaar op +39 350 036 6867 of via de contactpagina.",
       "thanks": "Graag gedaan! Stel gerust andere vragen.",
-      "default": "Een DGFP BANK-adviseur neemt spoedig contact op. U kunt ons ook bereiken via de contactpagina."
+      "default": "Een BNP PARIBAS-adviseur neemt spoedig contact op. U kunt ons ook bereiken via de contactpagina."
     }
   },
   "legal": {
@@ -991,7 +996,7 @@
         },
         {
           "h": "6. Uw rechten",
-          "p": "Inzage, rectificatie, verwijdering, beperking, overdraagbaarheid, bezwaar. <a href=\"mailto:support@dgfp.zenvoriax.com\">privacy@bnpparibas.com</a>."
+          "p": "Inzage, rectificatie, verwijdering, beperking, overdraagbaarheid, bezwaar. <a href=\"mailto:support_bnpparibas@nowelio.com\">privacy@bnpparibas.com</a>."
         },
         {
           "h": "7. Beveiliging",
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Algemene voorwaarden",
-      "subtitle": "Door DGFP BANK te gebruiken accepteert u deze voorwaarden.",
+      "subtitle": "Door BNP PARIBAS te gebruiken accepteert u deze voorwaarden.",
       "sections": [
         {
           "h": "1. Voorwaarden",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Uitgever",
-          "p": "DGFP BANK — SAS met kapitaal van 1.000.000 EUR — zetel: 1 Centenary Square, Birmingham, B1 1HQ, Verenigd Koninkrijk."
+          "p": "BNP PARIBAS — SAS met kapitaal van 1.000.000 EUR — zetel: 1 Centenary Square, Birmingham, B1 1HQ, Verenigd Koninkrijk."
         },
         {
           "h": "Verantwoordelijk",
-          "p": "DGFP BANK Compliance."
+          "p": "BNP PARIBAS Compliance."
         },
         {
           "h": "Hosting",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Contact",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Intellectueel eigendom",
-          "p": "Alle merken, logo's en content blijven eigendom van DGFP BANK."
+          "p": "Alle merken, logo's en content blijven eigendom van BNP PARIBAS."
         }
       ]
     },
@@ -1262,5 +1267,116 @@
     "aml": "AML / KYC",
     "finPriv": "Financiële privacy",
     "contact": "Contact"
+  },
+  "chat": {
+    "loading": "Laden",
+    "notFound": "Pagina niet gevonden",
+    "notFoundDesc": "Deze pagina bestaat niet.",
+    "backHome": "Terug naar home",
+    "assistant": "assistent",
+    "typing": "typt",
+    "today": "Vandaag",
+    "yesterday": "Gisteren",
+    "pageTitle": "Live ondersteuning",
+    "pageDesc": "Chat met ons team of met Anna, onze virtuele assistent.",
+    "closed": "Gesprek gesloten",
+    "closeTicket": "Gesprek sluiten",
+    "close": "Sluiten",
+    "compose": {
+      "placeholder": "Typ je bericht…"
+    },
+    "rt": {
+      "bold": "Vet",
+      "italic": "Cursief",
+      "link": "Link",
+      "linkPrompt": "Voer URL in (https://...)"
+    },
+    "handoff": {
+      "question": "Wilt u met een adviseur spreken?",
+      "yes": "Ja, met adviseur spreken",
+      "no": "Nee, bedankt",
+      "pending": "Uw verzoek wordt verwerkt, een adviseur komt binnen 1-2 minuten…"
+    },
+    "agent": {
+      "joined": "heeft zich bij het gesprek gevoegd",
+      "joinedYou": "Je bent bij het gesprek gekomen",
+      "notAssigned": "Geen agent toegewezen",
+      "join": "Deelnemen"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Adviseur online",
+      "open": "Open",
+      "waiting_agent": "Wachten op agent",
+      "assigned": "Bezig",
+      "closed": "Gesloten"
+    },
+    "admin": {
+      "empty": "Geen gesprekken.",
+      "selectHint": "Selecteer een gesprek links.",
+      "folders": "Klantenbestanden",
+      "tickets": "Kaartjes",
+      "searchPlaceholder": "Zoek een klant, ticket, e-mail…",
+      "filter": {
+        "all": "Alle",
+        "waiting": "In de wacht",
+        "mine": "Aan mij toegewezen",
+        "closed": "Gesloten",
+        "guests": "Bezoekers"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Veilige klantenservice",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Log in om te chatten",
+      "desc": "Je moet ingelogd zijn om support te gebruiken.",
+      "cta": "Inloggen"
+    },
+    "nav": "Support",
+    "guest": {
+      "subtitle": "Hulp van bezoekers",
+      "intro": "Vul dit formulier in, een adviseur van BNP PARIBAS zal snel reageren. U krijgt een ticketnummer.",
+      "name": "Volledige naam *",
+      "email": "E-mail *",
+      "phone": "Telefoon",
+      "whatsapp": "WhatsAppen",
+      "country": "Land van verblijf",
+      "subject": "Onderwerp",
+      "message": "Jouw bericht *",
+      "submit": "Open mijn kaartje",
+      "privacy": "Uw gegevens worden vertrouwelijk behandeld (AVG).",
+      "created": "Ticket #{{ticket}} aangemaakt!",
+      "errors": {
+        "required": "Naam, e-mailadres en bericht vereist.",
+        "fail": "Verzenden mislukt. Probeer het opnieuw."
+      }
+    },
+    "ticket": "Ticket",
+    "archived": "Archief",
+    "open": "Open"
+  },
+  "adminDash": {
+    "title": "Dashboard — BNP PARIBAS",
+    "overview": "Overzicht",
+    "clients": "Klanten",
+    "loans": "Leningen",
+    "transfers": "Overdrachten",
+    "chat": "Livechat",
+    "security": "Beveiliging",
+    "notifications": "Meldingen",
+    "kpis": {
+      "clients": "Actieve klanten",
+      "loansPending": "Lopende leningen",
+      "transfersBlocked": "Overboekingen geblokkeerd",
+      "ticketsOpen": "Kaartjes openen",
+      "newToday": "Nieuw vandaag"
+    },
+    "recentActivity": "Recente activiteit",
+    "quickActions": "Snelle acties",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

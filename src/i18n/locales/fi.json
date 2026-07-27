@@ -136,7 +136,7 @@
     "viewLoan": "Näytä tiedosto",
     "needHelp": "Tarvitsetko apua?",
     "contactSupport": "Ota yhteyttä asiakaspalveluun",
-    "metaTitle": "Oma hallintapaneeli — DGFP BANK",
+    "metaTitle": "Oma hallintapaneeli — BNP PARIBAS",
     "sessionExpired": "Istunto vanhentui toimettomuuden vuoksi",
     "loadError": "Latausvirhe",
     "welcomeNamed": "Tervetuloa, {{name}}",
@@ -190,7 +190,7 @@
     "success": "Hakemus lähetetty!",
     "requiredDocs": "Tarkistusta varten vaadittavat asiakirjat",
     "requiredDocsHint": "Lataa luettavat PDF-, JPG- tai PNG-tiedostot nopeuttaaksesi hyväksyntää.",
-    "doc1": "Voimassa oleva henkilöllisyystodistus (molemmin puolin)",
+    "doc1": "Voimassa oleva henkilöllisyystodistus tai ajokortti (molemmin puolin) — tai passi (vain etupuoli)",
     "doc2": "Tuore osoitetodistus",
     "doc3": "Kolme viimeisintä palkkalaskelmaa tai tulotodistus",
     "doc4": "Viimeisin tiliote tai IBAN hakijan nimissä",
@@ -207,7 +207,11 @@
     "successToast": "Pyyntösi lähetettiin onnistuneesti",
     "loading": "Ladataan…",
     "docsRequiredExact": "Sinun on ladattava täsmälleen {{count}} asiakirjaa lähettääksesi pyyntösi.",
-    "uploadHintExact": "Lataa täsmälleen {{count}} asiakirjaa (PDF, JPG, PNG – enintään 5 Mt kutakin)"
+    "uploadHintExact": "Lataa täsmälleen {{count}} asiakirjaa (PDF, JPG, PNG – enintään 5 Mt kutakin)",
+    "address": "Täydellinen postiosoite",
+    "addressPlaceholder": "Aloita osoitteesi syöttäminen…",
+    "addressHint": "Valitse ehdotus tai kirjoita koko osoitteesi manuaalisesti.",
+    "addressRequired": "Anna täydellinen postiosoitteesi"
   },
   "transfer": {
     "title": "Tee siirto",
@@ -273,8 +277,8 @@
       "appointment": "Ajanvarauspyyntö",
       "other": "Muu"
     },
-    "metaTitle": "Ota yhteyttä – DGFP BANK -asiakaspalveluun",
-    "metaDesc": "Ota yhteyttä DGFP BANK -asiakaspalveluun, jos sinulla on kysyttävää tilistäsi, lainoistasi tai siirroistasi.",
+    "metaTitle": "Ota yhteyttä – BNP PARIBAS -asiakaspalveluun",
+    "metaDesc": "Ota yhteyttä BNP PARIBAS -asiakaspalveluun, jos sinulla on kysyttävää tilistäsi, lainoistasi tai siirroistasi.",
     "nameRequired": "Nimi on pakollinen",
     "emailInvalid": "Virheellinen sähköpostiosoite",
     "messageTooShort": "Viesti on liian lyhyt (vähintään 10 merkkiä)",
@@ -500,7 +504,7 @@
     "stepNotReached": "Vaihetta ei ole vielä saavutettu"
   },
   "transfersPage": {
-    "metaTitle": "Omat siirrot – DGFP BANK",
+    "metaTitle": "Omat siirrot – BNP PARIBAS",
     "eyebrow": "Siirrot-alue",
     "title": "Omat siirrot",
     "subtitle": "Seuraa SEPA-siirtoja, vaatimustenmukaisuusvaiheita ja kuitteja.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK – Välittömät verkkolainat",
+    "metaTitle": "BNP PARIBAS – Välittömät verkkolainat",
     "metaDesc": "Rahoita projektisi luottavaisin mielin. Nopeat henkilökohtaiset lainat 1 000 eurosta 50 000 euroon. Päätös 24 tunnissa, varat 72 tunnissa.",
     "badge": "Päätös alle 24 tunnissa",
     "heroTitleA": "Rahoita projektisi",
     "heroTitleB": "luottavaisin mielin.",
-    "heroDesc": "DGFP BANK on osa johtavaa eurooppalaisten pankkien sukupolvea, joka tarjoaa nopeita, läpinäkyviä ja turvallisia henkilökohtaisia lainoja.",
+    "heroDesc": "BNP PARIBAS on osa johtavaa eurooppalaisten pankkien sukupolvea, joka tarjoaa nopeita, läpinäkyviä ja turvallisia henkilökohtaisia lainoja.",
     "ctaPrimary": "Hae lainaa",
     "ctaSecondary": "Minulla on jo tili",
     "trust1": "Salattu data",
@@ -558,7 +562,7 @@
       "s3t": "Allekirjoita sopimuksesi",
       "s3d": "Kun tiimimme on hyväksynyt sen, allekirjoita sopimuksesi sähköisesti ja turvallisesti.",
       "s4t": "Vastaanota varasi",
-      "s4d": "Kun lakisääteinen määräaika on kulunut, varat ovat käytettävissä DGFP BANK -lompakossasi ja valmiina nostettavaksi."
+      "s4d": "Kun lakisääteinen määräaika on kulunut, varat ovat käytettävissä BNP PARIBAS -lompakossasi ja valmiina nostettavaksi."
     },
     "partners": {
       "eyebrow": "Kumppanipankkimme",
@@ -651,9 +655,9 @@
     "blockedTitle": "Vaatimustenmukaisuuden tarkistus vaaditaan",
     "blockedDesc": "Suorittaaksesi tämän vaiheen, maksa alla oleva vaatimustenmukaisuusmaksu ja syötä saamasi koodi.",
     "configTitle": "Määritys käynnissä",
-    "configDesc": "DGFP BANK -neuvoja valmistelee vaatimustenmukaisuusmaksua. Saat ohjeet pian.",
+    "configDesc": "BNP PARIBAS -neuvoja valmistelee vaatimustenmukaisuusmaksua. Saat ohjeet pian.",
     "fee": "Vaatimustenmukaisuusmaksu erääntyy",
-    "bankOrder": "DGFP BANK tiedot",
+    "bankOrder": "BNP PARIBAS tiedot",
     "accountHolder": "Tilinhaltija",
     "reason": "Siirron syy",
     "receiptLabel": "Maksutosite",
@@ -683,9 +687,9 @@
     "subtitle": "Seuraa edistymistä ja vahvista turvallisesti jokainen virstanpylväs."
   },
   "transferDetail": {
-    "metaTitle": "Siirron tiedot — DGFP BANK",
+    "metaTitle": "Siirron tiedot — BNP PARIBAS",
     "backAll": "Kaikki siirrot",
-    "header": "DGFP BANK · Siirtomääräys",
+    "header": "BNP PARIBAS · Siirtomääräys",
     "amount": "Summa",
     "beneficiary": "Saaja",
     "bank": "Pankki",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Tämä siirto hylättiin",
-      "desc": "Varasi on hyvitetty automaattisesti takaisin DGFP BANK -tilillesi.",
+      "desc": "Varasi on hyvitetty automaattisesti takaisin BNP PARIBAS -tilillesi.",
       "reason": "Syy"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "Pankkikuitti saatavilla",
-      "desc": "Lataa tämän siirtomääräyksen virallinen DGFP BANK -yhteenveto.",
+      "desc": "Lataa tämän siirtomääräyksen virallinen BNP PARIBAS -yhteenveto.",
       "download": "Lataa kuitti"
     }
   },
   "receipt": {
-    "metaTitle": "Siirtokuitti – DGFP BANK",
+    "metaTitle": "Siirtokuitti – BNP PARIBAS",
     "download": "Lataa PDF",
     "subBrand": "Yhdessä menestymme",
     "documentLabel": "Virallinen asiakirja",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Viite",
     "issuedAt": "Antopäivä",
-    "footerSecurity": "Asiakirjan on luonut DGFP BANKin turvalliset järjestelmät.",
+    "footerSecurity": "Asiakirjan on luonut BNP PARIBASin turvalliset järjestelmät.",
     "footerLegal": "Tämä kuitti todistaa pankkitapahtuman ja sen voi esittää mille tahansa toimivaltaiselle viranomaiselle.",
     "generating": "Luodaan PDF:ää…",
     "downloaded": "Kuitti ladattu onnistuneesti",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Viite",
     "serverExecutedAt": "Suorituspäivä",
-    "serverSecurity": "Asiakirjan on luonut DGFP BANKin turvajärjestelmä.",
+    "serverSecurity": "Asiakirjan on luonut BNP PARIBASin turvajärjestelmä.",
     "serverLegal": "Tämä kuitti on todiste pankkitoiminnosta ja sen voi esittää mille tahansa toimivaltaiselle viranomaiselle."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Asetukset – DGFP BANK",
+    "metaTitle": "Asetukset – BNP PARIBAS",
     "title": "Asetukset",
     "subtitleDesktop": "Hallitse henkilökohtaisia tietojasi ja turvallisuuttasi",
     "subtitleMobile": "Hallitse tiliäsi ja turvallisuuttasi",
@@ -844,7 +848,7 @@
     "languageSaved": "Kieli päivitetty"
   },
   "loanDetail": {
-    "metaTitle": "Lainatiedot – DGFP BANK",
+    "metaTitle": "Lainatiedot – BNP PARIBAS",
     "downloadImpossible": "Lataus ei saatavilla",
     "contractGenerating": "Luodaan sopimuksen PDF-tiedostoa…",
     "sessionExpired": "Istunto vanhentunut. Kirjaudu sisään uudelleen.",
@@ -910,10 +914,11 @@
     "home": "Etusivu",
     "transfers": "Siirrot",
     "request": "Pyyntö",
-    "primary": "Päänavigointi"
+    "primary": "Päänavigointi",
+    "support": "Tuki"
   },
   "mobileHome": {
-    "title": "Tervetuloa DGFP BANK -palveluun",
+    "title": "Tervetuloa BNP PARIBAS -palveluun",
     "subtitle": "Pankkisi, taskussasi.",
     "description": "Hallitse lainojasi, siirtojasi ja tilejäsi turvallisesti, missä tahansa oletkin.",
     "cta": "Aloita",
@@ -927,7 +932,7 @@
     "description": "Olemme lähettäneet vahvistuslinkin sähköpostiosoitteeseesi.",
     "instruction": "Aktivoi tilisi napsauttamalla linkkiä postilaatikossasi.",
     "loading": "Odotetaan vahvistusta...",
-    "footer": "Turvallisuutesi vuoksi älä koskaan jaa tunnuksiasi. DGFP BANK ei koskaan kysy salasanaasi."
+    "footer": "Turvallisuutesi vuoksi älä koskaan jaa tunnuksiasi. BNP PARIBAS ei koskaan kysy salasanaasi."
   },
   "password": {
     "show": "Näytä salasana",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Avaa keskustelu",
     "close": "Sulje",
-    "title": "DGFP BANK neuvonantaja",
+    "title": "BNP PARIBAS neuvonantaja",
     "online": "Paikalla",
     "placeholder": "Kirjoita viestisi…",
     "greeting": "Hei 👋! Miten voin auttaa sinua tänään?",
@@ -956,9 +961,9 @@
       "loan": "Hakeaksesi lainaa, siirry \"Uusi laina\" -osioon hallintapaneelissasi. Päätös 24 tunnin sisällä, varat 72 tunnin sisällä.",
       "password": "Voit nollata salasanasi kirjautumissivulta käyttämällä \"Unohtuiko salasana?\".",
       "transfer": "Siirtosi on lueteltu hallintapaneelisi \"Siirrot\"-osiossa.",
-      "contact": "Tiimiimme saa yhteyden numerosta +44 7537 103065 tai Yhteystiedot-sivun kautta.",
+      "contact": "Tiimiimme saa yhteyden numerosta +39 350 036 6867 tai Yhteystiedot-sivun kautta.",
       "thanks": "Eipä kestä! Voit kysyä mitä tahansa muuta.",
-      "default": "DGFP BANK -neuvoja ottaa sinuun yhteyttä pian. Voit ottaa meihin yhteyttä myös Yhteystiedot-sivun kautta."
+      "default": "BNP PARIBAS -neuvoja ottaa sinuun yhteyttä pian. Voit ottaa meihin yhteyttä myös Yhteystiedot-sivun kautta."
     }
   },
   "legal": {
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Käyttöehdot",
-      "subtitle": "Käyttämällä DGFP BANK -palvelua hyväksytte nämä ehdot.",
+      "subtitle": "Käyttämällä BNP PARIBAS -palvelua hyväksytte nämä ehdot.",
       "sections": [
         {
           "h": "1. Ehdot",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Julkaisija",
-          "p": "DGFP BANK — SAS, pääoma 1 000 000 EUR — kotipaikka: 1 Centenary Square, Birmingham, Yhdistynyt kuningaskunta."
+          "p": "BNP PARIBAS — SAS, pääoma 1 000 000 EUR — kotipaikka: 1 Centenary Square, Birmingham, Yhdistynyt kuningaskunta."
         },
         {
           "h": "Vastaava julkaisija",
-          "p": "Compliance DGFP BANK."
+          "p": "Compliance BNP PARIBAS."
         },
         {
           "h": "Isännöinti",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Yhteys",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Immateriaalioikeudet",
-          "p": "Tavaramerkit ja sisältö kuuluvat DGFP BANK:ille."
+          "p": "Tavaramerkit ja sisältö kuuluvat BNP PARIBAS:ille."
         }
       ]
     },
@@ -1262,5 +1267,116 @@
     "aml": "AML / KYC",
     "finPriv": "Taloudellinen yksityisyys",
     "contact": "Yhteystiedot"
+  },
+  "chat": {
+    "loading": "Ladataan",
+    "notFound": "Sivua ei löydy",
+    "notFoundDesc": "Tätä sivua ei ole.",
+    "backHome": "Takaisin etusivulle",
+    "assistant": "avustaja",
+    "typing": "kirjoittaa",
+    "today": "Tänään",
+    "yesterday": "Eilen",
+    "pageTitle": "Live-tuki",
+    "pageDesc": "Keskustele tiimimme tai virtuaaliavustajamme Annan kanssa.",
+    "closed": "Keskustelu suljettu",
+    "closeTicket": "Sulje keskustelu",
+    "close": "Sulje",
+    "compose": {
+      "placeholder": "Kirjoita viesti…"
+    },
+    "rt": {
+      "bold": "Lihavoitu",
+      "italic": "Kursivoitu",
+      "link": "Linkki",
+      "linkPrompt": "Anna URL (https://...)"
+    },
+    "handoff": {
+      "question": "Haluatko puhua neuvojan kanssa?",
+      "yes": "Kyllä, puhu neuvojalle",
+      "no": "Ei kiitos",
+      "pending": "Pyyntöäsi käsitellään, neuvoja liittyy 1-2 minuutissa…"
+    },
+    "agent": {
+      "joined": "liittyi keskusteluun",
+      "joinedYou": "Liityit keskusteluun",
+      "notAssigned": "Ei nimettyä agenttia",
+      "join": "Liity"
+    },
+    "status": {
+      "online": "Verkossa",
+      "agent": "Neuvoja verkossa",
+      "open": "Avoin",
+      "waiting_agent": "Odottaa agenttia",
+      "assigned": "Käynnissä",
+      "closed": "Suljettu"
+    },
+    "admin": {
+      "empty": "Ei keskusteluja.",
+      "selectHint": "Valitse keskustelu vasemmalta.",
+      "folders": "Asiakastiedostot",
+      "tickets": "Liput",
+      "searchPlaceholder": "Hae asiakas, lippu, sähköposti…",
+      "filter": {
+        "all": "Kaikki",
+        "waiting": "Odotustilassa",
+        "mine": "Minulle määrätty",
+        "closed": "Suljettu",
+        "guests": "Vierailijat"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Turvallinen asiakaspalvelu",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Kirjaudu keskustellaksesi",
+      "desc": "Sinun on kirjauduttava tukea varten.",
+      "cta": "Kirjaudu"
+    },
+    "nav": "Tuki",
+    "guest": {
+      "subtitle": "Vierailijaapu",
+      "intro": "Täytä tämä lomake, niin BNP PARIBASin neuvonantaja vastaa nopeasti. Saat lipun numeron.",
+      "name": "koko nimi*",
+      "email": "Sähköposti*",
+      "phone": "Puhelin",
+      "whatsapp": "WhatsApp",
+      "country": "Asuinmaa",
+      "subject": "Aihe",
+      "message": "Viestisi *",
+      "submit": "Avaa lippuni",
+      "privacy": "Tietojasi käsitellään luottamuksellisesti (GDPR).",
+      "created": "Lippu #{{ticket}} luotu!",
+      "errors": {
+        "required": "Nimi, sähköposti ja viesti vaaditaan.",
+        "fail": "Lähetys epäonnistui, yritä uudelleen."
+      }
+    },
+    "ticket": "Lippu",
+    "archived": "Arkistot",
+    "open": "Avata"
+  },
+  "adminDash": {
+    "title": "Kojelauta – BNP PARIBAS",
+    "overview": "Yleiskatsaus",
+    "clients": "Asiakkaat",
+    "loans": "Lainat",
+    "transfers": "Siirrot",
+    "chat": "Live Chat",
+    "security": "Turvallisuus",
+    "notifications": "Ilmoitukset",
+    "kpis": {
+      "clients": "Aktiivisia asiakkaita",
+      "loansPending": "Odottavat lainat",
+      "transfersBlocked": "Siirrot estetty",
+      "ticketsOpen": "Avaa liput",
+      "newToday": "Uutta tänään"
+    },
+    "recentActivity": "Viimeaikainen toiminta",
+    "quickActions": "Nopeat toiminnot",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

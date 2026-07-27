@@ -136,7 +136,7 @@
     "viewLoan": "Visualizza il dossier",
     "needHelp": "Hai bisogno di aiuto?",
     "contactSupport": "Contatta il servizio clienti",
-    "metaTitle": "Il mio pannello — DGFP BANK",
+    "metaTitle": "Il mio pannello — BNP PARIBAS",
     "sessionExpired": "Sessione scaduta per inattività",
     "loadError": "Errore di caricamento",
     "welcomeNamed": "Benvenuto, {{name}}",
@@ -178,6 +178,10 @@
     "subtitle": "Compila il modulo e allega i tuoi documenti.",
     "fullName": "Nome completo",
     "email": "Email",
+    "address": "Indirizzo postale completo",
+    "addressPlaceholder": "Inizia a digitare il tuo indirizzo…",
+    "addressHint": "Scegli un suggerimento oppure inserisci manualmente il tuo indirizzo completo.",
+    "addressRequired": "Indica il tuo indirizzo postale completo",
     "amount": "Importo richiesto (€)",
     "duration": "Durata (mesi)",
     "monthlyIncome": "Reddito mensile netto (€)",
@@ -190,7 +194,7 @@
     "success": "Richiesta inviata!",
     "requiredDocs": "Documenti richiesti per la valutazione",
     "requiredDocsHint": "Carica file leggibili in formato PDF, JPG o PNG per velocizzare la convalida.",
-    "doc1": "Documento d'identità valido fronte-retro",
+    "doc1": "Documento d'identità o patente di guida valido (fronte-retro) — o passaporto (solo fronte)",
     "doc2": "Recente prova di residenza",
     "doc3": "Ultime tre buste paga o giustificativi di reddito",
     "doc4": "Ultimo estratto conto o IBAN intestato al richiedente",
@@ -273,8 +277,8 @@
       "appointment": "Richiesta di appuntamento",
       "other": "Altro"
     },
-    "metaTitle": "Contatti — Servizio clienti DGFP BANK",
-    "metaDesc": "Contatta il servizio clienti DGFP BANK per qualsiasi domanda sul tuo conto, prestiti o bonifici.",
+    "metaTitle": "Contatti — Servizio clienti BNP PARIBAS",
+    "metaDesc": "Contatta il servizio clienti BNP PARIBAS per qualsiasi domanda sul tuo conto, prestiti o bonifici.",
     "nameRequired": "Nome richiesto",
     "emailInvalid": "Email non valida",
     "messageTooShort": "Messaggio troppo breve (minimo 10 caratteri)",
@@ -500,7 +504,7 @@
     "stepNotReached": "Fase non ancora raggiunta"
   },
   "transfersPage": {
-    "metaTitle": "I miei bonifici — DGFP BANK",
+    "metaTitle": "I miei bonifici — BNP PARIBAS",
     "eyebrow": "Spazio bonifici",
     "title": "I miei bonifici",
     "subtitle": "Monitoraggio dei bonifici SEPA, fasi di compliance e ricevute.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK — Prestiti online istantanei",
+    "metaTitle": "BNP PARIBAS — Prestiti online istantanei",
     "metaDesc": "Finanzia i tuoi progetti con fiducia. Prestiti personali rapidi da 1.000 € a 50.000 €. Decisione in 24h, fondi in 72h.",
     "badge": "Decisione in meno di 24 ore",
     "heroTitleA": "Finanzia i tuoi progetti",
     "heroTitleB": "con fiducia.",
-    "heroDesc": "DGFP BANK fa parte della migliore generazione di banche europee che offrono prestiti personali rapidi, trasparenti e sicuri.",
+    "heroDesc": "BNP PARIBAS fa parte della migliore generazione di banche europee che offrono prestiti personali rapidi, trasparenti e sicuri.",
     "ctaPrimary": "Richiedi un prestito",
     "ctaSecondary": "Ho già un account",
     "trust1": "Dati crittografati",
@@ -558,7 +562,7 @@
       "s3t": "Firma il tuo contratto",
       "s3d": "Una volta accettato dal nostro team, firma il tuo contratto elettronicamente in tutta sicurezza.",
       "s4t": "Ricevi i tuoi fondi",
-      "s4d": "Una volta trascorso il termine legale, i fondi sono disponibili nel tuo portafoglio DGFP BANK, pronti per essere prelevati."
+      "s4d": "Una volta trascorso il termine legale, i fondi sono disponibili nel tuo portafoglio BNP PARIBAS, pronti per essere prelevati."
     },
     "partners": {
       "eyebrow": "Le nostre banche partner",
@@ -651,9 +655,9 @@
     "blockedTitle": "Verifica di conformità richiesta",
     "blockedDesc": "Per finalizzare questa fase, paga le commissioni di conformità qui sotto e inserisci il codice ricevuto.",
     "configTitle": "Configurazione in corso",
-    "configDesc": "Un consulente DGFP BANKPARIBAS sta preparando il pagamento di conformità. Riceverai le istruzioni a breve.",
+    "configDesc": "Un consulente BNP PARIBASPARIBAS sta preparando il pagamento di conformità. Riceverai le istruzioni a breve.",
     "fee": "Commissioni di conformità da pagare",
-    "bankOrder": "Coordinate bancarie DGFP BANKPARIBAS",
+    "bankOrder": "Coordinate bancarie BNP PARIBASPARIBAS",
     "accountHolder": "Titolare",
     "reason": "Causale del bonifico",
     "receiptLabel": "Ricevuta di pagamento",
@@ -683,9 +687,9 @@
     "subtitle": "Segui l'avanzamento e convalida ogni livello in tutta sicurezza."
   },
   "transferDetail": {
-    "metaTitle": "Dettaglio del bonifico — DGFP BANK",
+    "metaTitle": "Dettaglio del bonifico — BNP PARIBAS",
     "backAll": "Tutti i bonifici",
-    "header": "DGFP BANK · Ordine di bonifico",
+    "header": "BNP PARIBAS · Ordine di bonifico",
     "amount": "Importo",
     "beneficiary": "Beneficiario",
     "bank": "Banca",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Questo bonifico è stato rifiutato",
-      "desc": "I fondi sono stati automaticamente riaccreditati sul tuo conto DGFP BANK.",
+      "desc": "I fondi sono stati automaticamente riaccreditati sul tuo conto BNP PARIBAS.",
       "reason": "Motivo"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "Ricevuta bancaria disponibile",
-      "desc": "Scarica il riepilogo ufficiale DGFP BANK di questo ordine di bonifico.",
+      "desc": "Scarica il riepilogo ufficiale BNP PARIBAS di questo ordine di bonifico.",
       "download": "Scarica la ricevuta"
     }
   },
   "receipt": {
-    "metaTitle": "Ricevuta di bonifico — DGFP BANK",
+    "metaTitle": "Ricevuta di bonifico — BNP PARIBAS",
     "download": "Scarica il PDF",
     "subBrand": "Together we thrive",
     "documentLabel": "Documento ufficiale",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Riferimento",
     "issuedAt": "Data di emissione",
-    "footerSecurity": "Documento generato dai sistemi sicuri DGFP BANK.",
+    "footerSecurity": "Documento generato dai sistemi sicuri BNP PARIBAS.",
     "footerLegal": "Questa ricevuta fa fede dell'operazione bancaria e può essere presentata a qualsiasi autorità competente.",
     "generating": "Generazione del PDF…",
     "downloaded": "Ricevuta scaricata con successo",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Riferimento",
     "serverExecutedAt": "Data di esecuzione",
-    "serverSecurity": "Documento generato dai sistemi sicuri di DGFP BANK",
+    "serverSecurity": "Documento generato dai sistemi sicuri di BNP PARIBAS.",
     "serverLegal": "Questa ricevuta fa fede dell'operazione bancaria e può essere presentata a qualsiasi autorità competente."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Impostazioni — DGFP BANK",
+    "metaTitle": "Impostazioni — BNP PARIBAS",
     "title": "Impostazioni",
     "subtitleDesktop": "Gestisci le tue informazioni personali e la sicurezza",
     "subtitleMobile": "Gestisci il tuo account e la sicurezza",
@@ -844,7 +848,7 @@
     "languageSaved": "Lingua aggiornata"
   },
   "loanDetail": {
-    "metaTitle": "Dettagli del prestito — DGFP BANK",
+    "metaTitle": "Dettagli del prestito — BNP PARIBAS",
     "downloadImpossible": "Download non disponibile",
     "contractGenerating": "Generazione contratto PDF…",
     "sessionExpired": "Sessione scaduta. Effettua nuovamente l'accesso.",
@@ -910,10 +914,11 @@
     "home": "Home",
     "transfers": "Bonifici",
     "request": "Richiesta",
-    "primary": "Navigazione principale"
+    "primary": "Navigazione principale",
+    "support": "Supporto"
   },
   "mobileHome": {
-    "title": "Benvenuto in DGFP BANK",
+    "title": "Benvenuto in BNP PARIBAS",
     "subtitle": "La tua banca, in tasca.",
     "description": "Gestisci i tuoi prestiti, bonifici e conti in totale sicurezza, ovunque tu sia.",
     "cta": "Inizia",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Apri chat",
     "close": "Chiudi",
-    "title": "Consulente DGFP BANK",
+    "title": "Consulente BNP PARIBAS",
     "online": "Online",
     "placeholder": "Scrivi il tuo messaggio…",
     "greeting": "Ciao 👋! Come posso aiutarti?",
@@ -956,9 +961,9 @@
       "loan": "Per richiedere un prestito, vai su «Nuovo prestito» dalla dashboard. Decisione entro 24 h, fondi entro 72 h.",
       "password": "Puoi reimpostare la password dalla pagina di accesso tramite «Password dimenticata?».",
       "transfer": "I tuoi bonifici sono nella sezione «Bonifici» della dashboard.",
-      "contact": "Il team è raggiungibile al +44 7537 103065 o tramite la pagina Contatti.",
+      "contact": "Il team è raggiungibile al +39 350 036 6867 o tramite la pagina Contatti.",
       "thanks": "Prego! Chiedi pure altre informazioni.",
-      "default": "Un consulente DGFP BANK ti risponderà a breve. Puoi anche contattarci tramite la pagina Contatti."
+      "default": "Un consulente BNP PARIBAS ti risponderà a breve. Puoi anche contattarci tramite la pagina Contatti."
     }
   },
   "legal": {
@@ -991,7 +996,7 @@
         },
         {
           "h": "6. I vostri diritti",
-          "p": "Accesso, rettifica, cancellazione, limitazione, portabilità, opposizione. <a href=\"mailto:support@dgfp.zenvoriax.com\">privacy@bnpparibas.com</a>."
+          "p": "Accesso, rettifica, cancellazione, limitazione, portabilità, opposizione. <a href=\"mailto:support_bnpparibas@nowelio.com\">privacy@bnpparibas.com</a>."
         },
         {
           "h": "7. Sicurezza",
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Condizioni di servizio",
-      "subtitle": "Utilizzando DGFP BANK accettate le presenti condizioni.",
+      "subtitle": "Utilizzando BNP PARIBAS accettate le presenti condizioni.",
       "sections": [
         {
           "h": "1. Requisiti",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Editore",
-          "p": "DGFP BANK — SAS con capitale di 1.000.000 EUR — sede: 1 Centenary Square, Birmingham, B1 1HQ, Regno Unito."
+          "p": "BNP PARIBAS — SAS con capitale di 1.000.000 EUR — sede: 1 Centenary Square, Birmingham, B1 1HQ, Regno Unito."
         },
         {
           "h": "Direttore",
-          "p": "Compliance DGFP BANK."
+          "p": "Compliance BNP PARIBAS."
         },
         {
           "h": "Hosting",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Contatto",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Proprietà intellettuale",
-          "p": "Marchi, loghi e contenuti sono di DGFP BANK o dei licenzianti."
+          "p": "Marchi, loghi e contenuti sono di BNP PARIBAS o dei licenzianti."
         }
       ]
     },
@@ -1262,5 +1267,116 @@
     "aml": "AML / KYC",
     "finPriv": "Privacy finanziaria",
     "contact": "Contatti"
+  },
+  "chat": {
+    "loading": "Caricamento",
+    "notFound": "Pagina non trovata",
+    "notFoundDesc": "Questa pagina non esiste.",
+    "backHome": "Torna alla home",
+    "assistant": "assistente",
+    "typing": "sta scrivendo",
+    "today": "Oggi",
+    "yesterday": "Ieri",
+    "pageTitle": "Supporto in tempo reale",
+    "pageDesc": "Chatta con il nostro team o con Anna, la nostra assistente virtuale.",
+    "closed": "Conversazione chiusa",
+    "closeTicket": "Chiudi conversazione",
+    "close": "Chiudi",
+    "compose": {
+      "placeholder": "Scrivi il tuo messaggio…"
+    },
+    "rt": {
+      "bold": "Grassetto",
+      "italic": "Corsivo",
+      "link": "Link",
+      "linkPrompt": "Inserisci URL (https://...)"
+    },
+    "handoff": {
+      "question": "Vuoi parlare con un consulente?",
+      "yes": "Sì, parlare con un consulente",
+      "no": "No, grazie",
+      "pending": "La tua richiesta è in elaborazione, un consulente ti raggiungerà in 1-2 minuti…"
+    },
+    "agent": {
+      "joined": "si è unito alla conversazione",
+      "joinedYou": "Ti sei unito alla conversazione",
+      "notAssigned": "Nessun agente assegnato",
+      "join": "Unisciti"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Consulente online",
+      "open": "Aperto",
+      "waiting_agent": "In attesa di agente",
+      "assigned": "In corso",
+      "closed": "Chiuso"
+    },
+    "admin": {
+      "empty": "Nessuna conversazione.",
+      "selectHint": "Seleziona una conversazione a sinistra.",
+      "folders": "File dei clienti",
+      "tickets": "Biglietti",
+      "searchPlaceholder": "Cerca un cliente, un ticket, un'e-mail...",
+      "filter": {
+        "all": "Tutto",
+        "waiting": "In attesa",
+        "mine": "Assegnato a me",
+        "closed": "Chiuso",
+        "guests": "Visitatori"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Servizio clienti sicuro",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Accedi per chattare",
+      "desc": "Devi accedere per usare il supporto.",
+      "cta": "Accedi"
+    },
+    "nav": "Supporto",
+    "guest": {
+      "subtitle": "Assistenza ai visitatori",
+      "intro": "Compila questo modulo, un consulente BNP PARIBAS ti risponderà rapidamente. Riceverai un numero di biglietto.",
+      "name": "Nome e cognome *",
+      "email": "E-mail *",
+      "phone": "Telefono",
+      "whatsapp": "Whatsapp",
+      "country": "Paese di residenza",
+      "subject": "Soggetto",
+      "message": "Il tuo messaggio *",
+      "submit": "Apri il mio ticket",
+      "privacy": "I tuoi dati sono trattati in modo confidenziale (GDPR).",
+      "created": "Biglietto n. {{ticket}} creato!",
+      "errors": {
+        "required": "Nome, email e messaggio obbligatori.",
+        "fail": "Invio non riuscito, riprova."
+      }
+    },
+    "ticket": "Biglietto",
+    "archived": "Archivi",
+    "open": "Aprire"
+  },
+  "adminDash": {
+    "title": "Cruscotto — BNP PARIBAS",
+    "overview": "Panoramica",
+    "clients": "Clienti",
+    "loans": "Prestiti",
+    "transfers": "Trasferimenti",
+    "chat": "Chatta dal vivo",
+    "security": "Sicurezza",
+    "notifications": "Notifiche",
+    "kpis": {
+      "clients": "Clienti attivi",
+      "loansPending": "Prestiti in sospeso",
+      "transfersBlocked": "Trasferimenti bloccati",
+      "ticketsOpen": "Biglietti aperti",
+      "newToday": "Nuovo oggi"
+    },
+    "recentActivity": "Attività recente",
+    "quickActions": "Azioni rapide",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

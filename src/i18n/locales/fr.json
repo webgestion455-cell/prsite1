@@ -136,7 +136,7 @@
     "viewLoan": "Voir le dossier",
     "needHelp": "Besoin d'aide ?",
     "contactSupport": "Contacter le service client",
-    "metaTitle": "Mon tableau de bord — DGFP BANK",
+    "metaTitle": "Mon tableau de bord — BNP PARIBAS",
     "sessionExpired": "Session expirée pour inactivité",
     "loadError": "Erreur de chargement",
     "welcomeNamed": "Bienvenue, {{name}}",
@@ -178,6 +178,10 @@
     "subtitle": "Remplissez le formulaire et joignez vos justificatifs.",
     "fullName": "Nom complet",
     "email": "Email",
+    "address": "Adresse postale complète",
+    "addressPlaceholder": "Commencez à saisir votre adresse…",
+    "addressHint": "Sélectionnez une suggestion ou saisissez manuellement votre adresse complète.",
+    "addressRequired": "Veuillez indiquer votre adresse postale complète",
     "amount": "Montant souhaité (€)",
     "duration": "Durée (mois)",
     "monthlyIncome": "Revenus mensuels nets (€)",
@@ -190,7 +194,7 @@
     "success": "Demande envoyée !",
     "requiredDocs": "Pièces requises pour l'étude",
     "requiredDocsHint": "Déposez des fichiers lisibles au format PDF, JPG ou PNG afin d'accélérer la validation.",
-    "doc1": "Pièce d'identité valide recto-verso",
+    "doc1": "Pièce d'identité ou permis de conduire valide (recto-verso), ou passeport (recto seul)",
     "doc2": "Justificatif de domicile récent",
     "doc3": "Trois derniers bulletins de salaire ou justificatifs de revenus",
     "doc4": "Dernier relevé bancaire ou RIB au nom du demandeur",
@@ -273,8 +277,8 @@
       "appointment": "Demande de rendez-vous",
       "other": "Autre"
     },
-    "metaTitle": "Contact — Service client DGFP BANK",
-    "metaDesc": "Contactez le service client DGFP BANK pour toute question sur votre compte, vos prêts ou vos virements.",
+    "metaTitle": "Contact — Service client BNP PARIBAS",
+    "metaDesc": "Contactez le service client BNP PARIBAS pour toute question sur votre compte, vos prêts ou vos virements.",
     "nameRequired": "Nom requis",
     "emailInvalid": "Email invalide",
     "messageTooShort": "Message trop court (10 caractères min)",
@@ -500,7 +504,7 @@
     "stepNotReached": "Étape non encore atteinte"
   },
   "transfersPage": {
-    "metaTitle": "Mes virements — DGFP BANK",
+    "metaTitle": "Mes virements — BNP PARIBAS",
     "eyebrow": "Espace virements",
     "title": "Mes virements",
     "subtitle": "Suivi des virements SEPA, étapes de conformité et justificatifs.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK — Prêts en ligne instantanés",
+    "metaTitle": "BNP PARIBAS — Prêts en ligne instantanés",
     "metaDesc": "Financez vos projets avec confiance. Prêts personnels rapides de 1 000 € à 50 000 €. Décision en 24h, fonds sous 72h.",
     "badge": "Décision en moins de 24 heures",
     "heroTitleA": "Financer vos projets",
     "heroTitleB": "avec confiance.",
-    "heroDesc": "DGFP BANK fait partie de la meilleure génération des banques européennes offrant des prêts personnels rapides, transparents et sécurisés.",
+    "heroDesc": "BNP PARIBAS fait partie de la meilleure génération des banques européennes offrant des prêts personnels rapides, transparents et sécurisés.",
     "ctaPrimary": "Demander un prêt",
     "ctaSecondary": "J'ai déjà un compte",
     "trust1": "Données chiffrées",
@@ -558,7 +562,7 @@
       "s3t": "Signez votre contrat",
       "s3d": "Dès acceptation par notre équipe, signez votre contrat électroniquement en toute sécurité.",
       "s4t": "Recevez vos fonds",
-      "s4d": "Une fois le délai légal passé, les fonds sont disponibles dans votre portefeuille DGFP BANK, prêts à être retirés."
+      "s4d": "Une fois le délai légal passé, les fonds sont disponibles dans votre portefeuille BNP PARIBAS, prêts à être retirés."
     },
     "partners": {
       "eyebrow": "Nos banques partenaires",
@@ -651,9 +655,9 @@
     "blockedTitle": "Vérification de conformité requise",
     "blockedDesc": "Pour finaliser cette étape, veuillez régler les frais de conformité ci-dessous puis saisir le code reçu.",
     "configTitle": "Configuration en cours",
-    "configDesc": "Un conseiller DGFP BANK prépare le paiement de conformité. Vous recevrez les instructions sous peu.",
+    "configDesc": "Un conseiller BNP PARIBAS prépare le paiement de conformité. Vous recevrez les instructions sous peu.",
     "fee": "Frais de conformité à régler",
-    "bankOrder": "Coordonnées bancaires DGFP BANK",
+    "bankOrder": "Coordonnées bancaires BNP PARIBAS",
     "accountHolder": "Titulaire",
     "reason": "Motif du virement",
     "receiptLabel": "Justificatif de paiement",
@@ -683,9 +687,9 @@
     "subtitle": "Suivez la progression et validez chaque palier en toute sécurité."
   },
   "transferDetail": {
-    "metaTitle": "Détail du virement — DGFP BANK",
+    "metaTitle": "Détail du virement — BNP PARIBAS",
     "backAll": "Tous les virements",
-    "header": "DGFP BANK · Ordre de virement",
+    "header": "BNP PARIBAS · Ordre de virement",
     "amount": "Montant",
     "beneficiary": "Bénéficiaire",
     "bank": "Banque",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Ce virement a été rejeté",
-      "desc": "Les fonds ont été automatiquement recrédités sur votre compte DGFP BANK.",
+      "desc": "Les fonds ont été automatiquement recrédités sur votre compte BNP PARIBAS.",
       "reason": "Motif"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "Justificatif bancaire disponible",
-      "desc": "Téléchargez le récapitulatif officiel DGFP BANK de cet ordre de virement.",
+      "desc": "Téléchargez le récapitulatif officiel BNP PARIBAS de cet ordre de virement.",
       "download": "Télécharger le justificatif"
     }
   },
   "receipt": {
-    "metaTitle": "Justificatif de virement — DGFP BANK",
+    "metaTitle": "Justificatif de virement — BNP PARIBAS",
     "download": "Télécharger le PDF",
     "subBrand": "Together we thrive",
     "documentLabel": "Document officiel",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Référence",
     "issuedAt": "Date d'émission",
-    "footerSecurity": "Document généré par les systèmes sécurisés DGFP BANK.",
+    "footerSecurity": "Document généré par les systèmes sécurisés BNP PARIBAS.",
     "footerLegal": "Ce justificatif fait foi de l'opération bancaire et peut être présenté à toute autorité compétente.",
     "generating": "Génération du PDF…",
     "downloaded": "Justificatif téléchargé avec succès",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Référence",
     "serverExecutedAt": "Date d’exécution",
-    "serverSecurity": "Document généré par les systèmes sécurisés DGFP BANK.",
+    "serverSecurity": "Document généré par les systèmes sécurisés BNP PARIBAS.",
     "serverLegal": "Ce justificatif fait foi de l’opération bancaire et peut être présenté à toute autorité compétente."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Paramètres — DGFP BANK",
+    "metaTitle": "Paramètres — BNP PARIBAS",
     "title": "Paramètres",
     "subtitleDesktop": "Gérez vos informations personnelles et votre sécurité",
     "subtitleMobile": "Gérez votre compte et votre sécurité",
@@ -844,7 +848,7 @@
     "languageSaved": "Langue mise à jour"
   },
   "loanDetail": {
-    "metaTitle": "Détails du prêt — DGFP BANK",
+    "metaTitle": "Détails du prêt — BNP PARIBAS",
     "downloadImpossible": "Téléchargement impossible",
     "contractGenerating": "Génération du contrat PDF…",
     "sessionExpired": "Session expirée. Veuillez vous reconnecter.",
@@ -910,10 +914,11 @@
     "home": "Accueil",
     "transfers": "Virements",
     "request": "Demande",
-    "primary": "Navigation principale"
+    "primary": "Navigation principale",
+    "support": "Assistance"
   },
   "mobileHome": {
-    "title": "Bienvenue chez DGFP BANK",
+    "title": "Bienvenue chez BNP PARIBAS",
     "subtitle": "Votre banque, dans votre poche.",
     "description": "Gérez vos prêts, virements et comptes en toute sécurité, où que vous soyez.",
     "cta": "Démarrer",
@@ -927,7 +932,7 @@
     "description": "Nous avons envoyé un lien de confirmation à votre adresse email.",
     "instruction": "Cliquez sur le lien dans votre boîte mail pour activer votre compte.",
     "loading": "En attente de confirmation...",
-    "footer": "Pour votre sécurité, ne partagez jamais vos identifiants. DGFP BANK ne vous demandera jamais votre mot de passe."
+    "footer": "Pour votre sécurité, ne partagez jamais vos identifiants. BNP PARIBAS ne vous demandera jamais votre mot de passe."
   },
   "password": {
     "show": "Afficher le mot de passe",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Ouvrir le chat",
     "close": "Fermer",
-    "title": "Conseiller DGFP BANK",
+    "title": "Conseiller BNP PARIBAS",
     "online": "En ligne",
     "placeholder": "Écrivez votre message…",
     "greeting": "Bonjour 👋 ! Comment puis-je vous aider aujourd'hui ?",
@@ -956,9 +961,9 @@
       "loan": "Pour une demande de prêt, allez dans « Nouveau prêt » depuis votre tableau de bord. Décision sous 24 h, fonds disponibles sous 72 h.",
       "password": "Vous pouvez réinitialiser votre mot de passe depuis la page de connexion via « Mot de passe oublié ? ».",
       "transfer": "Vos virements sont visibles dans la section « Virements » de votre tableau de bord.",
-      "contact": "Notre équipe est joignable au +44 7537 103065 ou via la page Contact.",
+      "contact": "Notre équipe est joignable au +39 350 036 6867 ou via la page Contact.",
       "thanks": "Avec plaisir ! N'hésitez pas si vous avez d'autres questions.",
-      "default": "Un conseiller DGFP BANK reviendra vers vous très rapidement. Vous pouvez aussi nous contacter via la page Contact."
+      "default": "Un conseiller BNP PARIBAS reviendra vers vous très rapidement. Vous pouvez aussi nous contacter via la page Contact."
     }
   },
   "legal": {
@@ -991,7 +996,7 @@
         },
         {
           "h": "6. Vos droits",
-          "p": "Accès, rectification, suppression, limitation, portabilité et opposition. Contact <a href=\"mailto:support@dgfp.zenvoriax.com\">privacy@bnpparibas.com</a>. Vous pouvez saisir l'autorité de protection des données de votre pays."
+          "p": "Accès, rectification, suppression, limitation, portabilité et opposition. Contact <a href=\"mailto:support_bnpparibas@nowelio.com\">privacy@bnpparibas.com</a>. Vous pouvez saisir l'autorité de protection des données de votre pays."
         },
         {
           "h": "7. Sécurité",
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Conditions générales d'utilisation",
-      "subtitle": "En utilisant DGFP BANK, vous acceptez les conditions ci-dessous.",
+      "subtitle": "En utilisant BNP PARIBAS, vous acceptez les conditions ci-dessous.",
       "sections": [
         {
           "h": "1. Éligibilité",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Éditeur",
-          "p": "DGFP BANK — SAS au capital de 1 000 000 EUR — siège social : 1 Centenary Square, Birmingham, B1 1HQ, Royaume-Uni. RCS Birmingham 000 000 000."
+          "p": "BNP PARIBAS — SAS au capital de 1 000 000 EUR — siège social : 1 Centenary Square, Birmingham, B1 1HQ, Royaume-Uni. RCS Birmingham 000 000 000."
         },
         {
           "h": "Directeur de publication",
-          "p": "Service Conformité DGFP BANK."
+          "p": "Service Conformité BNP PARIBAS."
         },
         {
           "h": "Hébergement",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Contact",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Propriété intellectuelle",
-          "p": "Toutes les marques, logos et contenus restent la propriété de DGFP BANK ou de ses concédants. Reproduction interdite sans autorisation écrite."
+          "p": "Toutes les marques, logos et contenus restent la propriété de BNP PARIBAS ou de ses concédants. Reproduction interdite sans autorisation écrite."
         }
       ]
     },
@@ -1081,7 +1086,7 @@
       "sections": [
         {
           "h": "Engagement",
-          "p": "DGFP BANK applique une tolérance zéro contre le blanchiment, le financement du terrorisme et le contournement des sanctions, conformément aux directives UE (AMLD5/6), recommandations GAFI et lois nationales applicables."
+          "p": "BNP PARIBAS applique une tolérance zéro contre le blanchiment, le financement du terrorisme et le contournement des sanctions, conformément aux directives UE (AMLD5/6), recommandations GAFI et lois nationales applicables."
         },
         {
           "h": "Vigilance client",
@@ -1262,5 +1267,116 @@
     "aml": "LCB-FT / KYC",
     "finPriv": "Confidentialité financière",
     "contact": "Contact"
+  },
+  "chat": {
+    "loading": "Chargement",
+    "notFound": "Page introuvable",
+    "notFoundDesc": "Cette page n'existe pas.",
+    "backHome": "Retour à l'accueil",
+    "assistant": "assistant",
+    "typing": "écrit",
+    "today": "Aujourd'hui",
+    "yesterday": "Hier",
+    "pageTitle": "Assistance en direct",
+    "pageDesc": "Discutez avec notre équipe ou notre assistante virtuelle Anna.",
+    "closed": "Conversation fermée",
+    "closeTicket": "Fermer la conversation",
+    "close": "Fermer",
+    "compose": {
+      "placeholder": "Écrivez votre message…"
+    },
+    "rt": {
+      "bold": "Gras",
+      "italic": "Italique",
+      "link": "Lien",
+      "linkPrompt": "Entrez l'URL (https://...)"
+    },
+    "handoff": {
+      "question": "Souhaitez-vous être mis(e) en relation avec un conseiller ?",
+      "yes": "Oui, parler à un conseiller",
+      "no": "Non, merci",
+      "pending": "Votre demande est en cours de traitement, un conseiller vous rejoint dans 1 à 2 minutes…"
+    },
+    "agent": {
+      "joined": "a rejoint la conversation",
+      "joinedYou": "Vous avez rejoint la conversation",
+      "notAssigned": "Aucun agent assigné",
+      "join": "Rejoindre"
+    },
+    "status": {
+      "online": "En ligne",
+      "agent": "Conseiller en ligne",
+      "open": "Ouvert",
+      "waiting_agent": "En attente d'agent",
+      "assigned": "En cours",
+      "closed": "Fermé"
+    },
+    "admin": {
+      "empty": "Aucune conversation.",
+      "selectHint": "Sélectionnez une conversation à gauche.",
+      "folders": "Dossiers clients",
+      "tickets": "Tickets",
+      "searchPlaceholder": "Rechercher un client, ticket, email…",
+      "filter": {
+        "all": "Tous",
+        "waiting": "En attente",
+        "mine": "Assignés à moi",
+        "closed": "Fermés",
+        "guests": "Visiteurs"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Service client sécurisé",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Connectez-vous pour discuter",
+      "desc": "Vous devez être connecté(e) pour accéder à l'assistance.",
+      "cta": "Se connecter"
+    },
+    "nav": "Assistance",
+    "guest": {
+      "subtitle": "Assistance visiteurs",
+      "intro": "Remplissez ce formulaire, un conseiller BNP PARIBAS vous répondra rapidement. Vous obtiendrez un numéro de ticket.",
+      "name": "Nom complet *",
+      "email": "Email *",
+      "phone": "Téléphone",
+      "whatsapp": "WhatsApp",
+      "country": "Pays de résidence",
+      "subject": "Sujet",
+      "message": "Votre message *",
+      "submit": "Ouvrir mon ticket",
+      "privacy": "Vos données sont traitées confidentiellement (RGPD).",
+      "created": "Ticket #{{ticket}} créé !",
+      "errors": {
+        "required": "Nom, email et message obligatoires.",
+        "fail": "Envoi échoué, réessayez."
+      }
+    },
+    "ticket": "Ticket",
+    "archived": "Archivés",
+    "open": "Ouverts"
+  },
+  "adminDash": {
+    "title": "Tableau de bord — BNP PARIBAS",
+    "overview": "Vue d'ensemble",
+    "clients": "Clients",
+    "loans": "Prêts",
+    "transfers": "Virements",
+    "chat": "Live Chat",
+    "security": "Sécurité",
+    "notifications": "Notifications",
+    "kpis": {
+      "clients": "Clients actifs",
+      "loansPending": "Prêts en attente",
+      "transfersBlocked": "Virements bloqués",
+      "ticketsOpen": "Tickets ouverts",
+      "newToday": "Nouveaux aujourd'hui"
+    },
+    "recentActivity": "Activité récente",
+    "quickActions": "Actions rapides",
+    "staff": "Équipe & rôles",
+    "roles": "Permissions",
+    "logs": "Journal d'activité"
   }
 }

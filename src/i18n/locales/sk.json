@@ -136,7 +136,7 @@
     "viewLoan": "Zobraziť spis",
     "needHelp": "Potrebujete pomoc?",
     "contactSupport": "Kontaktovať podporu",
-    "metaTitle": "Môj panel — DGFP BANKAS",
+    "metaTitle": "Môj panel — BNP PARIBASAS",
     "sessionExpired": "Relácia vypršala z dôvodu nečinnosti",
     "loadError": "Chyba pri načítaní",
     "welcomeNamed": "Vitajte, {{name}}",
@@ -178,6 +178,10 @@
     "subtitle": "Vyplňte formulár a priložte doklady.",
     "fullName": "Celé meno",
     "email": "E-mail",
+    "address": "Úplná poštová adresa",
+    "addressPlaceholder": "Začnite písať svoju adresu…",
+    "addressHint": "Vyberte návrh alebo zadajte celú adresu ručne.",
+    "addressRequired": "Uveďte prosím svoju úplnú poštovú adresu",
     "amount": "Požadovaná suma (€)",
     "duration": "Doba (mesiace)",
     "monthlyIncome": "Mesačný čistý príjem (€)",
@@ -190,7 +194,7 @@
     "success": "Žiadosť odoslaná!",
     "requiredDocs": "Doklady potrebné na posúdenie",
     "requiredDocsHint": "Nahrajte čitateľné PDF, JPG alebo PNG súbory pre rýchlejšie schválenie.",
-    "doc1": "Platný doklad totožnosti (obe strany)",
+    "doc1": "Platný doklad totožnosti alebo vodičský preukaz (obe strany) — alebo cestovný pas (iba predná strana)",
     "doc2": "Aktuálne potvrdenie o adrese",
     "doc3": "Posledné tri výplatné pásky alebo potvrdenie o príjme",
     "doc4": "Posledný bankový výpis alebo IBAN na meno žiadateľa",
@@ -273,8 +277,8 @@
       "appointment": "Žiadosť o stretnutie",
       "other": "Iné"
     },
-    "metaTitle": "Kontakt — Zákaznícky servis DGFP BANK",
-    "metaDesc": "Kontaktujte zákaznícky servis DGFP BANK pre otázky o vašom účte, úveroch alebo prevodoch.",
+    "metaTitle": "Kontakt — Zákaznícky servis BNP PARIBAS",
+    "metaDesc": "Kontaktujte zákaznícky servis BNP PARIBAS pre otázky o vašom účte, úveroch alebo prevodoch.",
     "nameRequired": "Meno je povinné",
     "emailInvalid": "Neplatný e-mail",
     "messageTooShort": "Správa je príliš krátka (minimálne 10 znakov)",
@@ -500,7 +504,7 @@
     "stepNotReached": "Etapa ešte nedosiahnutá"
   },
   "transfersPage": {
-    "metaTitle": "Moje prevody — DGFP BANK",
+    "metaTitle": "Moje prevody — BNP PARIBAS",
     "eyebrow": "Zóna prevodov",
     "title": "Moje prevody",
     "subtitle": "Sledovanie SEPA prevodov, krokov súladu a potvrdeniek.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK — Okamžité online pôžičky",
+    "metaTitle": "BNP PARIBAS — Okamžité online pôžičky",
     "metaDesc": "Financujte svoje projekty s dôverou. Rýchle osobné pôžičky od 1 000 € do 50 000 €. Rozhodnutie do 24h, prostriedky do 72h.",
     "badge": "Rozhodnutie do 24 hodín",
     "heroTitleA": "Financujte svoje projekty",
     "heroTitleB": "s dôverou.",
-    "heroDesc": "DGFP BANK patrí k najlepšej generácii európskych bánk ponúkajúcich rýchle, transparentné a bezpečné osobné pôžičky.",
+    "heroDesc": "BNP PARIBAS patrí k najlepšej generácii európskych bánk ponúkajúcich rýchle, transparentné a bezpečné osobné pôžičky.",
     "ctaPrimary": "Požiadať o pôžičku",
     "ctaSecondary": "Už mám účet",
     "trust1": "Šifrované údaje",
@@ -558,7 +562,7 @@
       "s3t": "Podpíšte zmluvu",
       "s3d": "Po schválení naším tímom podpíšte zmluvu elektronicky a bezpečne.",
       "s4t": "Prijmite prostriedky",
-      "s4d": "Po uplynutí zákonnej lehoty sú prostriedky dostupné vo vašej peňaženke DGFP BANK, pripravené na výber."
+      "s4d": "Po uplynutí zákonnej lehoty sú prostriedky dostupné vo vašej peňaženke BNP PARIBAS, pripravené na výber."
     },
     "partners": {
       "eyebrow": "Naše partnerské banky",
@@ -651,9 +655,9 @@
     "blockedTitle": "Vyžaduje sa kontrola súladu",
     "blockedDesc": "Na dokončenie tohto kroku uhradte nižšie uvedený poplatok za súlad a zadajte prijatý kód.",
     "configTitle": "Konfigurácia prebieha",
-    "configDesc": "Poradca DGFP BANKPARIBAS pripravuje platbu za súlad. Pokyny dostanete čoskoro.",
+    "configDesc": "Poradca BNP PARIBASPARIBAS pripravuje platbu za súlad. Pokyny dostanete čoskoro.",
     "fee": "Splatný poplatok za súlad",
-    "bankOrder": "Bankové údaje DGFP BANK",
+    "bankOrder": "Bankové údaje BNP PARIBAS",
     "accountHolder": "Majiteľ účtu",
     "reason": "Dôvod prevodu",
     "receiptLabel": "Doklad o platbe",
@@ -683,9 +687,9 @@
     "subtitle": "Sledujte postup a bezpečne potvrďte každý míľnik."
   },
   "transferDetail": {
-    "metaTitle": "Detail prevodu — DGFP BANK",
+    "metaTitle": "Detail prevodu — BNP PARIBAS",
     "backAll": "Všetky prevody",
-    "header": "DGFP BANK · Príkaz na prevod",
+    "header": "BNP PARIBAS · Príkaz na prevod",
     "amount": "Suma",
     "beneficiary": "Príjemca",
     "bank": "Banka",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Tento prevod bol zamietnutý",
-      "desc": "Prostriedky boli automaticky pripísané späť na váš účet DGFP BANK.",
+      "desc": "Prostriedky boli automaticky pripísané späť na váš účet BNP PARIBAS.",
       "reason": "Dôvod"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "Bankový doklad dostupný",
-      "desc": "Stiahnite si oficiálne zhrnutie DGFP BANK k tomuto príkazu na prevod.",
+      "desc": "Stiahnite si oficiálne zhrnutie BNP PARIBAS k tomuto príkazu na prevod.",
       "download": "Stiahnuť doklad"
     }
   },
   "receipt": {
-    "metaTitle": "Doklad o prevode — DGFP BANK",
+    "metaTitle": "Doklad o prevode — BNP PARIBAS",
     "download": "Stiahnuť PDF",
     "subBrand": "Together we thrive",
     "documentLabel": "Oficiálny dokument",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Referencia",
     "issuedAt": "Dátum vydania",
-    "footerSecurity": "Dokument vygenerovaný zabezpečenými systémami DGFP BANK.",
+    "footerSecurity": "Dokument vygenerovaný zabezpečenými systémami BNP PARIBAS.",
     "footerLegal": "Tento doklad potvrdzuje bankovú operáciu a môže byť predložený príslušnému orgánu.",
     "generating": "Generuje sa PDF…",
     "downloaded": "Doklad úspešne stiahnutý",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Referencia",
     "serverExecutedAt": "Dátum vykonania",
-    "serverSecurity": "Dokument vygenerovaný zabezpečenými systémami DGFP BANK.",
+    "serverSecurity": "Dokument vygenerovaný zabezpečenými systémami BNP PARIBAS.",
     "serverLegal": "Tento doklad slúži ako potvrdenie bankovej operácie a možno ho predložiť ktorémukoľvek príslušnému orgánu."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Nastavenia — DGFP BANK",
+    "metaTitle": "Nastavenia — BNP PARIBAS",
     "title": "Nastavenia",
     "subtitleDesktop": "Spravujte svoje osobné údaje a bezpečnosť",
     "subtitleMobile": "Spravujte svoj účet a bezpečnosť",
@@ -844,7 +848,7 @@
     "languageSaved": "Jazyk aktualizovaný"
   },
   "loanDetail": {
-    "metaTitle": "Detail pôžičky — DGFP BANK",
+    "metaTitle": "Detail pôžičky — BNP PARIBAS",
     "downloadImpossible": "Stiahnutie nie je dostupné",
     "contractGenerating": "Generuje sa PDF zmluva…",
     "sessionExpired": "Relácia vypršala. Prihláste sa znova.",
@@ -910,10 +914,11 @@
     "home": "Domov",
     "transfers": "Prevody",
     "request": "Žiadosť",
-    "primary": "Hlavná navigácia"
+    "primary": "Hlavná navigácia",
+    "support": "Podpora"
   },
   "mobileHome": {
-    "title": "Vitajte v DGFP BANK",
+    "title": "Vitajte v BNP PARIBAS",
     "subtitle": "Vaša banka, vo vašom vrecku.",
     "description": "Spravujte svoje úvery, prevody a účty bezpečne, kdekoľvek ste.",
     "cta": "Začať",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Otvoriť chat",
     "close": "Zavrieť",
-    "title": "DGFP BANK poradca",
+    "title": "BNP PARIBAS poradca",
     "online": "Online",
     "placeholder": "Napíšte správu…",
     "greeting": "Dobrý deň 👋! Ako vám môžem pomôcť?",
@@ -956,9 +961,9 @@
       "loan": "Pre žiadosť o úver vyberte „Nový úver\" na nástenke. Rozhodnutie do 24 h, prostriedky do 72 h.",
       "password": "Heslo môžete obnoviť na prihlasovacej stránke cez „Zabudli ste heslo?\".",
       "transfer": "Vaše prevody nájdete v sekcii „Prevody\" na nástenke.",
-      "contact": "Tím je dostupný na +44 7537 103065 alebo cez stránku Kontakt.",
+      "contact": "Tím je dostupný na +39 350 036 6867 alebo cez stránku Kontakt.",
       "thanks": "Rado sa stalo! Pokojne sa pýtajte ďalej.",
-      "default": "Poradca DGFP BANK sa vám čoskoro ozve. Kontaktovať nás môžete aj cez stránku Kontakt."
+      "default": "Poradca BNP PARIBAS sa vám čoskoro ozve. Kontaktovať nás môžete aj cez stránku Kontakt."
     }
   },
   "legal": {
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Obchodné podmienky",
-      "subtitle": "Používaním DGFP BANK súhlasíte s týmito podmienkami.",
+      "subtitle": "Používaním BNP PARIBAS súhlasíte s týmito podmienkami.",
       "sections": [
         {
           "h": "1. Podmienky",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Vydavateľ",
-          "p": "DGFP BANK — SAS, kapitál 1 000 000 EUR — sídlo: 1 Centenary Square, Birmingham, Spojené kráľovstvo."
+          "p": "BNP PARIBAS — SAS, kapitál 1 000 000 EUR — sídlo: 1 Centenary Square, Birmingham, Spojené kráľovstvo."
         },
         {
           "h": "Riaditeľ",
-          "p": "Compliance DGFP BANK."
+          "p": "Compliance BNP PARIBAS."
         },
         {
           "h": "Hosting",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Kontakt",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Duševné vlastníctvo",
-          "p": "Značky a obsah patria DGFP BANK."
+          "p": "Značky a obsah patria BNP PARIBAS."
         }
       ]
     },
@@ -1262,5 +1267,116 @@
     "aml": "AML / KYC",
     "finPriv": "Finančné súkromie",
     "contact": "Kontakt"
+  },
+  "chat": {
+    "loading": "Načítava",
+    "notFound": "Stránka nenájdená",
+    "notFoundDesc": "Táto stránka neexistuje.",
+    "backHome": "Späť domov",
+    "assistant": "asistentka",
+    "typing": "píše",
+    "today": "Dnes",
+    "yesterday": "Včera",
+    "pageTitle": "Živá podpora",
+    "pageDesc": "Chatujte s naším tímom alebo s Annou, našou virtuálnou asistentkou.",
+    "closed": "Konverzácia zatvorená",
+    "closeTicket": "Zatvoriť konverzáciu",
+    "close": "Zatvoriť",
+    "compose": {
+      "placeholder": "Napíšte správu…"
+    },
+    "rt": {
+      "bold": "Tučné",
+      "italic": "Kurzíva",
+      "link": "Odkaz",
+      "linkPrompt": "Zadajte URL (https://...)"
+    },
+    "handoff": {
+      "question": "Chcete hovoriť s poradcom?",
+      "yes": "Áno, hovoriť s poradcom",
+      "no": "Nie, ďakujem",
+      "pending": "Vaša požiadavka sa spracúva, poradca sa pripojí za 1-2 minúty…"
+    },
+    "agent": {
+      "joined": "sa pripojil ku konverzácii",
+      "joinedYou": "Pripojili ste sa ku konverzácii",
+      "notAssigned": "Žiadny priradený agent",
+      "join": "Pripojiť sa"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Poradca online",
+      "open": "Otvorené",
+      "waiting_agent": "Čaká na agenta",
+      "assigned": "Prebieha",
+      "closed": "Zatvorené"
+    },
+    "admin": {
+      "empty": "Žiadne konverzácie.",
+      "selectHint": "Vyberte konverzáciu vľavo.",
+      "folders": "Súbory zákazníkov",
+      "tickets": "Vstupenky",
+      "searchPlaceholder": "Vyhľadajte zákazníka, lístok, e-mail…",
+      "filter": {
+        "all": "Všetky",
+        "waiting": "Podržané",
+        "mine": "Pridelené mne",
+        "closed": "ZATVORENÉ",
+        "guests": "Návštevníci"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Bezpečný zákaznícky servis",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Prihláste sa na chat",
+      "desc": "Na použitie podpory musíte byť prihlásený.",
+      "cta": "Prihlásiť sa"
+    },
+    "nav": "Podpora",
+    "guest": {
+      "subtitle": "Pomoc návštevníkom",
+      "intro": "Vyplňte tento formulár a poradca BNP PARIBAS rýchlo odpovie. Dostanete číslo lístka.",
+      "name": "Celé meno *",
+      "email": "E-mail *",
+      "phone": "Telefón",
+      "whatsapp": "WhatsApp",
+      "country": "Krajina pobytu",
+      "subject": "Predmet",
+      "message": "Vaša správa *",
+      "submit": "Otvor môj lístok",
+      "privacy": "S vašimi údajmi sa zaobchádza dôverne (GDPR).",
+      "created": "Vstupenka #{{ticket}} vytvorená!",
+      "errors": {
+        "required": "Vyžaduje sa meno, e-mail a správa.",
+        "fail": "Odosielanie zlyhalo, skúste to znova."
+      }
+    },
+    "ticket": "Lístok",
+    "archived": "Archívy",
+    "open": "OTVORENÉ"
+  },
+  "adminDash": {
+    "title": "Prístrojová doska — BNP PARIBAS",
+    "overview": "Prehľad",
+    "clients": "zákazníkov",
+    "loans": "Pôžičky",
+    "transfers": "Prestupy",
+    "chat": "Živý rozhovor",
+    "security": "Bezpečnosť",
+    "notifications": "Upozornenia",
+    "kpis": {
+      "clients": "Aktívni zákazníci",
+      "loansPending": "Čakajúce úvery",
+      "transfersBlocked": "Prevody sú zablokované",
+      "ticketsOpen": "Otvorené lístky",
+      "newToday": "Dnes nové"
+    },
+    "recentActivity": "Nedávna aktivita",
+    "quickActions": "Rýchle akcie",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

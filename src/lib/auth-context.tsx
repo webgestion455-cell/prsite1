@@ -1,7 +1,12 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Session, User } from "@supabase/supabase-js";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase as _sb } from "@/integrations/supabase/client";
+// Types widening — new tables (security_alerts, profiles.language, ...) live in a
+// migration that regenerates supabase/types.ts; cast until then.
+const supabase: any = _sb;
 import i18n from "i18next";
+
+import type { StaffRole } from "@/lib/permissions";
 
 type Role = "admin" | "user";
 
@@ -9,11 +14,22 @@ interface AuthContextValue {
   user: User | null;
   session: Session | null;
   role: Role | null;
+  /** Rôle métier réel : super_admin | admin | agent | null (client) */
+  staffRole: StaffRole | null;
+  /** Tous les rôles bruts affectés à l'utilisateur */
+  roles: string[];
+  /** Clés de permissions effectives */
+  permissions: string[];
+  isStaff: boolean;
+  isSuperAdmin: boolean;
+  hasPermission: (key: string) => boolean;
   loading: boolean;
   signUp: (email: string, password: string, fullName: string, phone: string, lang: string) => Promise<{ error: Error | null }>;
   signIn: (email: string, password: string) => Promise<{ error: Error | null }>;
   signOut: () => Promise<void>;
 }
+
+const STAFF_PRIORITY: StaffRole[] = ["super_admin", "admin", "agent"];
 
 const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 
@@ -21,6 +37,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [role, setRole] = useState<Role | null>(null);
+  const [roles, setRoles] = useState<string[]>([]);
+  const [permissions, setPermissions] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -32,8 +50,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   // IMPORTANT: CAPTURE SUBSCRIPTION
   const {
     data: { subscription },
-  } = supabase.auth.onAuthStateChange((_event, newSession) => {
+  } = supabase.auth.onAuthStateChange((_event: string, newSession: Session | null) => {
     if (!active) return;
+
 
     setSession(newSession);
     setUser(newSession?.user ?? null);
@@ -64,7 +83,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   // CHECK SESSION INITIALE
   supabase.auth
     .getSession()
-    .then(({ data: { session: existing } }) => {
+    .then(({ data: { session: existing } }: { data: { session: Session | null } }) => {
       if (!active) return;
 
       setSession(existing);
@@ -109,12 +128,23 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       .from("user_roles")
       .select("role")
       .eq("user_id", userId);
-    if (data && data.length > 0) {
-      const isAdmin = data.some((r) => r.role === "admin");
-      setRole(isAdmin ? "admin" : "user");
+    const list: string[] = (data ?? []).map((r: { role: string }) => r.role);
+    setRoles(list);
+    const staff = list.some((r) => r === "admin" || r === "super_admin" || r === "agent");
+    setRole(staff ? "admin" : "user");
+
+    if (staff) {
+      const { data: perms } = await supabase.rpc("my_permissions");
+      const keys = Array.isArray(perms)
+        ? (perms as Array<{ permission_key: string } | string>).map((p) =>
+            typeof p === "string" ? p : p.permission_key,
+          )
+        : [];
+      setPermissions(list.includes("super_admin") && keys.length === 0 ? ["*"] : keys);
     } else {
-      setRole("user");
+      setPermissions([]);
     }
+
     // Synchronise la langue préférée du profil avec i18n
     try {
       const { data: prof } = await supabase
@@ -204,8 +234,29 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await supabase.auth.signOut();
   }
 
+  const staffRole = (STAFF_PRIORITY.find((r) => roles.includes(r)) ?? null) as StaffRole | null;
+  const isSuperAdmin = roles.includes("super_admin");
+  const isStaff = staffRole !== null;
+  const hasPermission = (key: string) => isSuperAdmin || permissions.includes("*") || permissions.includes(key);
+
   return (
-    <AuthContext.Provider value={{ user, session, role, loading, signUp, signIn, signOut }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        session,
+        role,
+        staffRole,
+        roles,
+        permissions,
+        isStaff,
+        isSuperAdmin,
+        hasPermission,
+        loading,
+        signUp,
+        signIn,
+        signOut,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

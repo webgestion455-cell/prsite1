@@ -136,7 +136,7 @@
     "viewLoan": "Pregledaj datoteku",
     "needHelp": "Trebate pomoć?",
     "contactSupport": "Kontaktirajte korisničku podršku",
-    "metaTitle": "Moja nadzorna ploča — DGFP BANK",
+    "metaTitle": "Moja nadzorna ploča — BNP PARIBAS",
     "sessionExpired": "Sesija je istekla zbog neaktivnosti",
     "loadError": "Pogreška pri učitavanju",
     "welcomeNamed": "Dobrodošli, {{name}}",
@@ -190,7 +190,7 @@
     "success": "Zahtjev poslan!",
     "requiredDocs": "Potrebni dokumenti za pregled",
     "requiredDocsHint": "Učitajte čitljive PDF, JPG ili PNG datoteke kako biste ubrzali odobrenje.",
-    "doc1": "Važeća osobna iskaznica (obje strane)",
+    "doc1": "Važeća osobna iskaznica ili vozačka dozvola (obje strane) — ili putovnica (samo prednja strana)",
     "doc2": "Nedavna potvrda adrese",
     "doc3": "Zadnje tri platne liste ili dokaz o prihodima",
     "doc4": "Zadnji bankovni izvod ili IBAN na ime podnositelja zahtjeva",
@@ -207,7 +207,11 @@
     "successToast": "Vaš zahtjev je uspješno poslan",
     "loading": "Učitavanje…",
     "docsRequiredExact": "Morate učitati točno {{count}} dokumenata kako biste poslali svoj zahtjev.",
-    "uploadHintExact": "Učitajte točno {{count}} dokumenata (PDF, JPG, PNG — maks. 5 MB svaki)"
+    "uploadHintExact": "Učitajte točno {{count}} dokumenata (PDF, JPG, PNG — maks. 5 MB svaki)",
+    "address": "Puna poštanska adresa",
+    "addressPlaceholder": "Počnite unositi svoju adresu…",
+    "addressHint": "Odaberite prijedlog ili ručno unesite punu adresu.",
+    "addressRequired": "Unesite svoju punu poštansku adresu"
   },
   "transfer": {
     "title": "Izvršite prijenos",
@@ -273,8 +277,8 @@
       "appointment": "Zahtjev za sastanak",
       "other": "Ostalo"
     },
-    "metaTitle": "Kontakt — korisnička služba DGFP BANK",
-    "metaDesc": "Kontaktirajte korisničku službu DGFP BANK za pitanja o vašem računu, kreditima ili prijenosima.",
+    "metaTitle": "Kontakt — korisnička služba BNP PARIBAS",
+    "metaDesc": "Kontaktirajte korisničku službu BNP PARIBAS za pitanja o vašem računu, kreditima ili prijenosima.",
     "nameRequired": "Ime je obavezno",
     "emailInvalid": "Nevažeća e-pošta",
     "messageTooShort": "Poruka prekratka (najmanje 10 znakova)",
@@ -500,7 +504,7 @@
     "stepNotReached": "Korak još nije dosegnut"
   },
   "transfersPage": {
-    "metaTitle": "Moji prijenosi — DGFP BANK",
+    "metaTitle": "Moji prijenosi — BNP PARIBAS",
     "eyebrow": "Područje prijenosa",
     "title": "Moji prijenosi",
     "subtitle": "Pratite SEPA prijenose, korake usklađenosti i potvrde.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK — Trenutni online krediti",
+    "metaTitle": "BNP PARIBAS — Trenutni online krediti",
     "metaDesc": "Financirajte svoje projekte s povjerenjem. Brzi osobni krediti od 1.000 € do 50.000 €. Odluka u 24h, sredstva unutar 72h.",
     "badge": "Odluka u manje od 24 sata",
     "heroTitleA": "Financirajte svoje projekte",
     "heroTitleB": "s povjerenjem.",
-    "heroDesc": "DGFP BANK je dio vodeće generacije europskih banaka koje nude brze, transparentne i sigurne osobne kredite.",
+    "heroDesc": "BNP PARIBAS je dio vodeće generacije europskih banaka koje nude brze, transparentne i sigurne osobne kredite.",
     "ctaPrimary": "Podnesite zahtjev za kredit",
     "ctaSecondary": "Već imam račun",
     "trust1": "Šifrirani podaci",
@@ -558,7 +562,7 @@
       "s3t": "Potpišite svoj ugovor",
       "s3d": "Nakon što ga naš tim odobri, elektronički i sigurno potpišite svoj ugovor.",
       "s4t": "Primite svoja sredstva",
-      "s4d": "Nakon isteka zakonskog roka, sredstva su dostupna u vašem DGFP BANK novčaniku, spremna za podizanje."
+      "s4d": "Nakon isteka zakonskog roka, sredstva su dostupna u vašem BNP PARIBAS novčaniku, spremna za podizanje."
     },
     "partners": {
       "eyebrow": "Naše partnerske banke",
@@ -651,9 +655,9 @@
     "blockedTitle": "Potrebna provjera usklađenosti",
     "blockedDesc": "Da biste dovršili ovaj korak, molimo platite naknadu za usklađenost u nastavku i unesite kod koji primite.",
     "configTitle": "Konfiguracija u tijeku",
-    "configDesc": "Savjetnik DGFP BANK-a priprema plaćanje usklađenosti. Uskoro ćete dobiti upute.",
+    "configDesc": "Savjetnik BNP PARIBAS-a priprema plaćanje usklađenosti. Uskoro ćete dobiti upute.",
     "fee": "Naknada za usklađenost dospjela",
-    "bankOrder": "Podaci o DGFP BANK-u",
+    "bankOrder": "Podaci o BNP PARIBAS-u",
     "accountHolder": "Vlasnik računa",
     "reason": "Razlog prijenosa",
     "receiptLabel": "Dokaz o uplati",
@@ -683,9 +687,9 @@
     "subtitle": "Pratite napredak i sigurno potvrdite svaku prekretnicu."
   },
   "transferDetail": {
-    "metaTitle": "Detalji prijenosa — DGFP BANK",
+    "metaTitle": "Detalji prijenosa — BNP PARIBAS",
     "backAll": "Svi prijenosi",
-    "header": "DGFP BANK · Nalog za prijenos",
+    "header": "BNP PARIBAS · Nalog za prijenos",
     "amount": "Iznos",
     "beneficiary": "Primatelj",
     "bank": "Banka",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Ovaj prijenos je odbijen",
-      "desc": "Sredstva su automatski vraćena na vaš DGFP BANK račun.",
+      "desc": "Sredstva su automatski vraćena na vaš BNP PARIBAS račun.",
       "reason": "Razlog"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "Bankovni račun dostupan",
-      "desc": "Preuzmite službeni sažetak ovog naloga za prijenos od DGFP BANK.",
+      "desc": "Preuzmite službeni sažetak ovog naloga za prijenos od BNP PARIBAS.",
       "download": "Preuzmi potvrdu"
     }
   },
   "receipt": {
-    "metaTitle": "Potvrda o prijenosu — DGFP BANK",
+    "metaTitle": "Potvrda o prijenosu — BNP PARIBAS",
     "download": "Preuzmi PDF",
     "subBrand": "Zajedno napredujemo",
     "documentLabel": "Službeni dokument",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Referenca",
     "issuedAt": "Datum izdavanja",
-    "footerSecurity": "Dokument generiran sigurnim sustavima DGFP BANK.",
+    "footerSecurity": "Dokument generiran sigurnim sustavima BNP PARIBAS.",
     "footerLegal": "Ova potvrda ovjerava bankovnu operaciju i može se predočiti bilo kojem nadležnom tijelu.",
     "generating": "Generiranje PDF-a…",
     "downloaded": "Potvrda uspješno preuzeta",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Referenca",
     "serverExecutedAt": "Datum izvršenja",
-    "serverSecurity": "Dokument generiran sigurnim sustavima DGFP BANK.",
+    "serverSecurity": "Dokument generiran sigurnim sustavima BNP PARIBAS.",
     "serverLegal": "Ova potvrda je dokaz bankovne operacije i može se predočiti bilo kojem nadležnom tijelu."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Postavke — DGFP BANK",
+    "metaTitle": "Postavke — BNP PARIBAS",
     "title": "Postavke",
     "subtitleDesktop": "Upravljajte svojim osobnim podacima i sigurnošću",
     "subtitleMobile": "Upravljajte svojim računom i sigurnošću",
@@ -844,7 +848,7 @@
     "languageSaved": "Jezik je ažuriran"
   },
   "loanDetail": {
-    "metaTitle": "Detalji zajma — DGFP BANK",
+    "metaTitle": "Detalji zajma — BNP PARIBAS",
     "downloadImpossible": "Preuzimanje nedostupno",
     "contractGenerating": "Generiranje PDF-a ugovora…",
     "sessionExpired": "Sesija je istekla. Molimo prijavite se ponovno.",
@@ -910,10 +914,11 @@
     "home": "Početna",
     "transfers": "Transferi",
     "request": "Zahtjev",
-    "primary": "Glavna navigacija"
+    "primary": "Glavna navigacija",
+    "support": "Podrška"
   },
   "mobileHome": {
-    "title": "Dobrodošli u DGFP BANK",
+    "title": "Dobrodošli u BNP PARIBAS",
     "subtitle": "Vaša banka, u vašem džepu.",
     "description": "Upravljajte svojim kreditima, transferima i računima sigurno, gdje god se nalazili.",
     "cta": "Započnite",
@@ -927,7 +932,7 @@
     "description": "Poslali smo poveznicu za potvrdu na vašu e-adresu.",
     "instruction": "Kliknite na poveznicu u pristigloj pošti kako biste aktivirali svoj račun.",
     "loading": "Čekanje potvrde...",
-    "footer": "Radi vaše sigurnosti, nikada ne dijelite svoje vjerodajnice. DGFP BANK nikada neće tražiti vašu lozinku."
+    "footer": "Radi vaše sigurnosti, nikada ne dijelite svoje vjerodajnice. BNP PARIBAS nikada neće tražiti vašu lozinku."
   },
   "password": {
     "show": "Prikaži lozinku",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Otvori chat",
     "close": "Zatvori",
-    "title": "DGFP BANK savjetnik",
+    "title": "BNP PARIBAS savjetnik",
     "online": "Online",
     "placeholder": "Napišite svoju poruku…",
     "greeting": "Pozdrav 👋! Kako vam danas mogu pomoći?",
@@ -956,9 +961,9 @@
       "loan": "Zahtjev za kredit podnesite putem opcije \"Novi kredit\" na svojoj nadzornoj ploči. Odluka u roku od 24 sata, sredstva u roku od 72 sata.",
       "password": "Lozinku možete poništiti na stranici za prijavu koristeći opciju \"Zaboravljena lozinka?\".",
       "transfer": "Vaši prijenosi navedeni su u odjeljku \"Prijenosi\" na vašoj nadzornoj ploči.",
-      "contact": "Naš tim je dostupan na +44 7537 103065 ili putem stranice Kontakt.",
+      "contact": "Naš tim je dostupan na +39 350 036 6867 ili putem stranice Kontakt.",
       "thanks": "Nema na čemu! Slobodno pitajte bilo što drugo.",
-      "default": "Savjetnik DGFP BANK-a javit će vam se uskoro. Možete nas kontaktirati i putem stranice Kontakt."
+      "default": "Savjetnik BNP PARIBAS-a javit će vam se uskoro. Možete nas kontaktirati i putem stranice Kontakt."
     }
   },
   "legal": {
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Uvjeti korištenja",
-      "subtitle": "Korištenjem DGFP BANK prihvaćate uvjete.",
+      "subtitle": "Korištenjem BNP PARIBAS prihvaćate uvjete.",
       "sections": [
         {
           "h": "1. Uvjeti",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Izdavač",
-          "p": "DGFP BANK — SAS s kapitalom 1.000.000 EUR — sjedište: 1 Centenary Square, Birmingham, Ujedinjeno Kraljevstvo."
+          "p": "BNP PARIBAS — SAS s kapitalom 1.000.000 EUR — sjedište: 1 Centenary Square, Birmingham, Ujedinjeno Kraljevstvo."
         },
         {
           "h": "Glavni urednik",
-          "p": "Compliance DGFP BANK."
+          "p": "Compliance BNP PARIBAS."
         },
         {
           "h": "Hosting",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Kontakt",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Intelektualno vlasništvo",
-          "p": "Robni znakovi i sadržaj pripadaju DGFP BANK."
+          "p": "Robni znakovi i sadržaj pripadaju BNP PARIBAS."
         }
       ]
     },
@@ -1262,5 +1267,116 @@
     "aml": "AML / KYC",
     "finPriv": "Financijska privatnost",
     "contact": "Kontakt"
+  },
+  "chat": {
+    "loading": "Učitavanje",
+    "notFound": "Stranica nije pronađena",
+    "notFoundDesc": "Ova stranica ne postoji.",
+    "backHome": "Natrag na početnu",
+    "assistant": "asistentica",
+    "typing": "piše",
+    "today": "Danas",
+    "yesterday": "Jučer",
+    "pageTitle": "Podrška uživo",
+    "pageDesc": "Razgovarajte s našim timom ili Annom, našom virtualnom asistenticom.",
+    "closed": "Razgovor zatvoren",
+    "closeTicket": "Zatvori razgovor",
+    "close": "Zatvori",
+    "compose": {
+      "placeholder": "Upišite poruku…"
+    },
+    "rt": {
+      "bold": "Podebljano",
+      "italic": "Kurziv",
+      "link": "Poveznica",
+      "linkPrompt": "Unesite URL (https://...)"
+    },
+    "handoff": {
+      "question": "Želite li razgovarati sa savjetnikom?",
+      "yes": "Da, razgovaraj sa savjetnikom",
+      "no": "Ne, hvala",
+      "pending": "Vaš zahtjev se obrađuje, savjetnik će vam se pridružiti za 1-2 minute…"
+    },
+    "agent": {
+      "joined": "pridružio se razgovoru",
+      "joinedYou": "Pridružili ste se razgovoru",
+      "notAssigned": "Nema dodijeljenog agenta",
+      "join": "Pridruži se"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Savjetnik online",
+      "open": "Otvoreno",
+      "waiting_agent": "Čeka agenta",
+      "assigned": "U tijeku",
+      "closed": "Zatvoreno"
+    },
+    "admin": {
+      "empty": "Nema razgovora.",
+      "selectHint": "Odaberite razgovor s lijeve strane.",
+      "folders": "Datoteke kupaca",
+      "tickets": "Ulaznice",
+      "searchPlaceholder": "Potražite kupca, kartu, e-mail…",
+      "filter": {
+        "all": "Sve",
+        "waiting": "Na čekanju",
+        "mine": "Dodijeljen meni",
+        "closed": "Zatvoreno",
+        "guests": "Posjetitelji"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Sigurna korisnička služba",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Prijavite se za chat",
+      "desc": "Morate biti prijavljeni za podršku.",
+      "cta": "Prijava"
+    },
+    "nav": "Podrška",
+    "guest": {
+      "subtitle": "Pomoć posjetiteljima",
+      "intro": "Ispunite ovaj obrazac, savjetnik BNP PARIBAS će brzo odgovoriti. Dobit ćete broj karte.",
+      "name": "Puno ime *",
+      "email": "Email *",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Država prebivališta",
+      "subject": "Predmet",
+      "message": "Vaša poruka *",
+      "submit": "Otvori mi kartu",
+      "privacy": "Vaši se podaci tretiraju povjerljivo (GDPR).",
+      "created": "Ulaznica #{{ticket}} stvorena!",
+      "errors": {
+        "required": "Obavezno ime, email i poruka.",
+        "fail": "Slanje nije uspjelo, pokušajte ponovno."
+      }
+    },
+    "ticket": "Ulaznica",
+    "archived": "Arhiva",
+    "open": "Otvoriti"
+  },
+  "adminDash": {
+    "title": "Nadzorna ploča — BNP PARIBAS",
+    "overview": "Pregled",
+    "clients": "Kupci",
+    "loans": "Krediti",
+    "transfers": "Transferi",
+    "chat": "Razgovor uživo",
+    "security": "Sigurnost",
+    "notifications": "Obavijesti",
+    "kpis": {
+      "clients": "Aktivni kupci",
+      "loansPending": "Zajmovi na čekanju",
+      "transfersBlocked": "Transferi blokirani",
+      "ticketsOpen": "Otvori ulaznice",
+      "newToday": "Novo danas"
+    },
+    "recentActivity": "Nedavna aktivnost",
+    "quickActions": "Brze radnje",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

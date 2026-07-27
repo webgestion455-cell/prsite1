@@ -136,7 +136,7 @@
     "viewLoan": "Προβολή αρχείου",
     "needHelp": "Χρειάζεστε βοήθεια;",
     "contactSupport": "Επικοινωνήστε με την εξυπηρέτηση πελατών",
-    "metaTitle": "Ο πίνακας ελέγχου μου — DGFP BANK",
+    "metaTitle": "Ο πίνακας ελέγχου μου — BNP PARIBAS",
     "sessionExpired": "Η συνεδρία έληξε λόγω αδράνειας",
     "loadError": "Σφάλμα φόρτωσης",
     "welcomeNamed": "Καλώς ήρθατε, {{name}}",
@@ -190,7 +190,7 @@
     "success": "Η αίτηση απεστάλη!",
     "requiredDocs": "Απαιτούμενα έγγραφα για έλεγχο",
     "requiredDocsHint": "Ανεβάστε ευανάγνωστα αρχεία PDF, JPG ή PNG για να επιταχύνετε την έγκριση.",
-    "doc1": "Έγκυρη ταυτότητα (και οι δύο όψεις)",
+    "doc1": "Έγκυρη ταυτότητα ή δίπλωμα οδήγησης (και οι δύο όψεις) — ή διαβατήριο (μόνο εμπρόσθια όψη)",
     "doc2": "Πρόσφατη απόδειξη διεύθυνσης",
     "doc3": "Τρεις τελευταίες αποδείξεις μισθοδοσίας ή απόδειξη εισοδήματος",
     "doc4": "Τελευταία κίνηση τραπεζικού λογαριασμού ή IBAN στο όνομα του αιτούντος",
@@ -207,7 +207,11 @@
     "successToast": "Το αίτημά σας απεστάλη επιτυχώς",
     "loading": "Φόρτωση…",
     "docsRequiredExact": "Πρέπει να ανεβάσετε ακριβώς {{count}} έγγραφα για να υποβάλετε το αίτημά σας.",
-    "uploadHintExact": "Ανεβάστε ακριβώς {{count}} έγγραφα (PDF, JPG, PNG — 5 MB μέγιστο το καθένα)"
+    "uploadHintExact": "Ανεβάστε ακριβώς {{count}} έγγραφα (PDF, JPG, PNG — 5 MB μέγιστο το καθένα)",
+    "address": "Πλήρης ταχυδρομική διεύθυνση",
+    "addressPlaceholder": "Ξεκινήστε να εισάγετε τη διεύθυνσή σας…",
+    "addressHint": "Επιλέξτε μια πρόταση ή εισαγάγετε μη αυτόματα την πλήρη διεύθυνσή σας.",
+    "addressRequired": "Δώστε την πλήρη ταχυδρομική σας διεύθυνση"
   },
   "transfer": {
     "title": "Κάντε μια μεταφορά",
@@ -273,8 +277,8 @@
       "appointment": "Αίτημα ραντεβού",
       "other": "Άλλο"
     },
-    "metaTitle": "Επικοινωνία — Εξυπηρέτηση πελατών DGFP BANK",
-    "metaDesc": "Επικοινωνήστε με την εξυπηρέτηση πελατών της DGFP BANK για ερωτήσεις σχετικά με τον λογαριασμό σας, δάνεια ή μεταφορές.",
+    "metaTitle": "Επικοινωνία — Εξυπηρέτηση πελατών BNP PARIBAS",
+    "metaDesc": "Επικοινωνήστε με την εξυπηρέτηση πελατών της BNP PARIBAS για ερωτήσεις σχετικά με τον λογαριασμό σας, δάνεια ή μεταφορές.",
     "nameRequired": "Απαιτείται όνομα",
     "emailInvalid": "Μη έγκυρο email",
     "messageTooShort": "Το μήνυμα είναι πολύ μικρό (ελάχιστο 10 χαρακτήρες)",
@@ -500,7 +504,7 @@
     "stepNotReached": "Το βήμα δεν έχει επιτευχθεί ακόμα"
   },
   "transfersPage": {
-    "metaTitle": "Οι μεταφορές μου — DGFP BANK",
+    "metaTitle": "Οι μεταφορές μου — BNP PARIBAS",
     "eyebrow": "Περιοχή μεταφορών",
     "title": "Οι μεταφορές μου",
     "subtitle": "Παρακολουθήστε τις μεταφορές SEPA, τα βήματα συμμόρφωσης και τις αποδείξεις.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK — Άμεσα online δάνεια",
+    "metaTitle": "BNP PARIBAS — Άμεσα online δάνεια",
     "metaDesc": "Χρηματοδοτήστε τα έργα σας με σιγουριά. Γρήγορα προσωπικά δάνεια από 1.000€ έως 50.000€. Απόφαση εντός 24 ωρών, χρήματα εντός 72 ωρών.",
     "badge": "Απόφαση σε λιγότερο από 24 ώρες",
     "heroTitleA": "Χρηματοδοτήστε τα έργα σας",
     "heroTitleB": "με σιγουριά.",
-    "heroDesc": "Η DGFP BANK αποτελεί μέρος της κορυφαίας γενιάς ευρωπαϊκών τραπεζών που προσφέρουν γρήγορα, διαφανή και ασφαλή προσωπικά δάνεια.",
+    "heroDesc": "Η BNP PARIBAS αποτελεί μέρος της κορυφαίας γενιάς ευρωπαϊκών τραπεζών που προσφέρουν γρήγορα, διαφανή και ασφαλή προσωπικά δάνεια.",
     "ctaPrimary": "Αίτηση για δάνειο",
     "ctaSecondary": "Έχω ήδη λογαριασμό",
     "trust1": "Κρυπτογραφημένα δεδομένα",
@@ -558,7 +562,7 @@
       "s3t": "Υπογράψτε το συμβόλαιό σας",
       "s3d": "Μόλις εγκριθεί από την ομάδα μας, υπογράψτε το συμβόλαιό σας ηλεκτρονικά και με ασφάλεια.",
       "s4t": "Λάβετε τα χρήματά σας",
-      "s4d": "Μόλις περάσει η νόμιμη περίοδος, τα χρήματα είναι διαθέσιμα στο πορτοφόλι σας στην DGFP BANK, έτοιμα για ανάληψη."
+      "s4d": "Μόλις περάσει η νόμιμη περίοδος, τα χρήματα είναι διαθέσιμα στο πορτοφόλι σας στην BNP PARIBAS, έτοιμα για ανάληψη."
     },
     "partners": {
       "eyebrow": "Οι συνεργαζόμενες τράπεζές μας",
@@ -651,9 +655,9 @@
     "blockedTitle": "Απαιτείται επαλήθευση συμμόρφωσης",
     "blockedDesc": "Για να ολοκληρώσετε αυτό το βήμα, παρακαλούμε πληρώστε την προμήθεια συμμόρφωσης παρακάτω και εισαγάγετε τον κωδικό που θα λάβετε.",
     "configTitle": "Διαμόρφωση σε εξέλιξη",
-    "configDesc": "Ένας σύμβουλος της DGFP BANK ετοιμάζει την πληρωμή συμμόρφωσης. Θα λάβετε οδηγίες σύντομα.",
+    "configDesc": "Ένας σύμβουλος της BNP PARIBAS ετοιμάζει την πληρωμή συμμόρφωσης. Θα λάβετε οδηγίες σύντομα.",
     "fee": "Οφειλόμενη προμήθεια συμμόρφωσης",
-    "bankOrder": "Στοιχεία DGFP BANK",
+    "bankOrder": "Στοιχεία BNP PARIBAS",
     "accountHolder": "Κάτοχος λογαριασμού",
     "reason": "Λόγος μεταφοράς",
     "receiptLabel": "Απόδειξη πληρωμής",
@@ -683,9 +687,9 @@
     "subtitle": "Παρακολουθήστε την πρόοδο και επικυρώστε με ασφάλεια κάθε ορόσημο."
   },
   "transferDetail": {
-    "metaTitle": "Λεπτομέρειες μεταφοράς — DGFP BANK",
+    "metaTitle": "Λεπτομέρειες μεταφοράς — BNP PARIBAS",
     "backAll": "Όλες οι μεταφορές",
-    "header": "DGFP BANK · Εντολή μεταφοράς",
+    "header": "BNP PARIBAS · Εντολή μεταφοράς",
     "amount": "Ποσό",
     "beneficiary": "Δικαιούχος",
     "bank": "Τράπεζα",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Αυτή η μεταφορά απορρίφθηκε",
-      "desc": "Τα χρήματα έχουν πιστωθεί αυτόματα στον λογαριασμό σας στην DGFP BANK.",
+      "desc": "Τα χρήματα έχουν πιστωθεί αυτόματα στον λογαριασμό σας στην BNP PARIBAS.",
       "reason": "Λόγος"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "Τραπεζική απόδειξη διαθέσιμη",
-      "desc": "Download the official DGFP BANKPARIBAS summary of this transfer order.",
+      "desc": "Download the official BNP PARIBASPARIBAS summary of this transfer order.",
       "download": "Λήψη απόδειξης"
     }
   },
   "receipt": {
-    "metaTitle": "Απόδειξη μεταφοράς — DGFP BANK",
+    "metaTitle": "Απόδειξη μεταφοράς — BNP PARIBAS",
     "download": "Λήψη PDF",
     "subBrand": "Μαζί ευδοκιμούμε",
     "documentLabel": "Επίσημο έγγραφο",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Αναφορά",
     "issuedAt": "Ημερομηνία έκδοσης",
-    "footerSecurity": "Έγγραφο που δημιουργήθηκε από τα ασφαλή συστήματα της DGFP BANK.",
+    "footerSecurity": "Έγγραφο που δημιουργήθηκε από τα ασφαλή συστήματα της BNP PARIBAS.",
     "footerLegal": "Αυτή η απόδειξη πιστοποιεί την τραπεζική συναλλαγή και μπορεί να προσκομιστεί σε οποιαδήποτε αρμόδια αρχή.",
     "generating": "Δημιουργία PDF…",
     "downloaded": "Η απόδειξη κατέβηκε επιτυχώς",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Αναφορά",
     "serverExecutedAt": "Ημερομηνία εκτέλεσης",
-    "serverSecurity": "Έγγραφο που δημιουργήθηκε από τα ασφαλή συστήματα της DGFP BANK.",
+    "serverSecurity": "Έγγραφο που δημιουργήθηκε από τα ασφαλή συστήματα της BNP PARIBAS.",
     "serverLegal": "Αυτή η απόδειξη αποτελεί απόδειξη της τραπεζικής συναλλαγής και μπορεί να προσκομιστεί σε οποιαδήποτε αρμόδια αρχή."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Ρυθμίσεις — DGFP BANK",
+    "metaTitle": "Ρυθμίσεις — BNP PARIBAS",
     "title": "Ρυθμίσεις",
     "subtitleDesktop": "Διαχειριστείτε τα προσωπικά σας στοιχεία και την ασφάλεια",
     "subtitleMobile": "Διαχειριστείτε τον λογαριασμό σας και την ασφάλεια",
@@ -844,7 +848,7 @@
     "languageSaved": "Η γλώσσα ενημερώθηκε"
   },
   "loanDetail": {
-    "metaTitle": "Λεπτομέρειες δανείου — DGFP BANK",
+    "metaTitle": "Λεπτομέρειες δανείου — BNP PARIBAS",
     "downloadImpossible": "Η λήψη δεν είναι διαθέσιμη",
     "contractGenerating": "Δημιουργία PDF σύμβασης…",
     "sessionExpired": "Η συνεδρία έληξε. Παρακαλώ συνδεθείτε ξανά.",
@@ -910,10 +914,11 @@
     "home": "Αρχική",
     "transfers": "Μεταφορές",
     "request": "Αίτημα",
-    "primary": "Κύρια πλοήγηση"
+    "primary": "Κύρια πλοήγηση",
+    "support": "Υποστήριξη"
   },
   "mobileHome": {
-    "title": "Καλώς ήρθατε στην DGFP BANK",
+    "title": "Καλώς ήρθατε στην BNP PARIBAS",
     "subtitle": "Η τράπεζά σας, στην τσέπη σας.",
     "description": "Διαχειριστείτε τα δάνεια, τις μεταφορές και τους λογαριασμούς σας με ασφάλεια, όπου κι αν βρίσκεστε.",
     "cta": "Ξεκινήστε",
@@ -927,7 +932,7 @@
     "description": "Έχουμε στείλει έναν σύνδεσμο επιβεβαίωσης στη διεύθυνση email σας.",
     "instruction": "Κάντε κλικ στον σύνδεσμο στα εισερχόμενά σας για να ενεργοποιήσετε τον λογαριασμό σας.",
     "loading": "Αναμονή επιβεβαίωσης...",
-    "footer": "Για την ασφάλειά σας, μην κοινοποιείτε ποτέ τα διαπιστευτήριά σας. Η DGFP BANK δεν θα σας ζητήσει ποτέ τον κωδικό πρόσβασής σας."
+    "footer": "Για την ασφάλειά σας, μην κοινοποιείτε ποτέ τα διαπιστευτήριά σας. Η BNP PARIBAS δεν θα σας ζητήσει ποτέ τον κωδικό πρόσβασής σας."
   },
   "password": {
     "show": "Εμφάνιση κωδικού πρόσβασης",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Άνοιγμα συνομιλίας",
     "close": "Close",
-    "title": "DGFP BANK Adviser",
+    "title": "BNP PARIBAS Adviser",
     "online": "Online",
     "placeholder": "Write your message…",
     "greeting": "Hello 👋! How can I help you today?",
@@ -956,9 +961,9 @@
       "loan": "To request a loan, go to \"New loan\" from your dashboard. Decision within 24h, funds within 72h.",
       "password": "You can reset your password from the sign-in page using \"Forgot password?\".",
       "transfer": "Your transfers are listed in the \"Transfers\" section of your dashboard.",
-      "contact": "Our team is reachable at +44 7537 103065 or via the Contact page.",
+      "contact": "Our team is reachable at +39 350 036 6867 or via the Contact page.",
       "thanks": "You're welcome! Feel free to ask anything else.",
-      "default": "An DGFP BANK adviser will get back to you shortly. You can also reach us via the Contact page."
+      "default": "An BNP PARIBAS adviser will get back to you shortly. You can also reach us via the Contact page."
     }
   },
   "legal": {
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Όροι χρήσης",
-      "subtitle": "Χρησιμοποιώντας την DGFP BANK αποδέχεστε τους όρους.",
+      "subtitle": "Χρησιμοποιώντας την BNP PARIBAS αποδέχεστε τους όρους.",
       "sections": [
         {
           "h": "1. Προϋποθέσεις",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Εκδότης",
-          "p": "DGFP BANK — SAS με κεφάλαιο 1.000.000 EUR — έδρα: 1 Centenary Square, Birmingham, Ηνωμένο Βασίλειο."
+          "p": "BNP PARIBAS — SAS με κεφάλαιο 1.000.000 EUR — έδρα: 1 Centenary Square, Birmingham, Ηνωμένο Βασίλειο."
         },
         {
           "h": "Υπεύθυνος έκδοσης",
-          "p": "Compliance DGFP BANK."
+          "p": "Compliance BNP PARIBAS."
         },
         {
           "h": "Φιλοξενία",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Επικοινωνία",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Πνευματική ιδιοκτησία",
-          "p": "Όλα τα εμπορικά σήματα ανήκουν στην DGFP BANK."
+          "p": "Όλα τα εμπορικά σήματα ανήκουν στην BNP PARIBAS."
         }
       ]
     },
@@ -1262,5 +1267,116 @@
     "aml": "AML / KYC",
     "finPriv": "Οικονομικό απόρρητο",
     "contact": "Επικοινωνία"
+  },
+  "chat": {
+    "loading": "Φόρτωση",
+    "notFound": "Η σελίδα δεν βρέθηκε",
+    "notFoundDesc": "Αυτή η σελίδα δεν υπάρχει.",
+    "backHome": "Πίσω στην αρχή",
+    "assistant": "βοηθός",
+    "typing": "πληκτρολογεί",
+    "today": "Σήμερα",
+    "yesterday": "Χθες",
+    "pageTitle": "Ζωντανή υποστήριξη",
+    "pageDesc": "Συνομιλήστε με την ομάδα μας ή με την Anna, τη βοηθό μας.",
+    "closed": "Η συνομιλία έκλεισε",
+    "closeTicket": "Κλείσιμο συνομιλίας",
+    "close": "Κλείσιμο",
+    "compose": {
+      "placeholder": "Γράψτε το μήνυμά σας…"
+    },
+    "rt": {
+      "bold": "Έντονα",
+      "italic": "Πλάγια",
+      "link": "Σύνδεσμος",
+      "linkPrompt": "Εισαγάγετε URL (https://...)"
+    },
+    "handoff": {
+      "question": "Θέλετε να μιλήσετε με σύμβουλο;",
+      "yes": "Ναι, να μιλήσω σε σύμβουλο",
+      "no": "Όχι, ευχαριστώ",
+      "pending": "Το αίτημά σας επεξεργάζεται, ένας σύμβουλος θα συνδεθεί σε 1-2 λεπτά…"
+    },
+    "agent": {
+      "joined": "συνδέθηκε στη συνομιλία",
+      "joinedYou": "Συνδεθήκατε στη συνομιλία",
+      "notAssigned": "Δεν έχει ανατεθεί πράκτορας",
+      "join": "Συμμετοχή"
+    },
+    "status": {
+      "online": "Συνδεδεμένος",
+      "agent": "Σύμβουλος συνδεδεμένος",
+      "open": "Ανοιχτό",
+      "waiting_agent": "Αναμονή πράκτορα",
+      "assigned": "Σε εξέλιξη",
+      "closed": "Κλειστό"
+    },
+    "admin": {
+      "empty": "Καμία συνομιλία.",
+      "selectHint": "Επιλέξτε συνομιλία αριστερά.",
+      "folders": "Αρχεία πελατών",
+      "tickets": "Εισιτήρια",
+      "searchPlaceholder": "Αναζήτηση πελάτη, εισιτήριο, email…",
+      "filter": {
+        "all": "Ολοι",
+        "waiting": "Σε αναμονή",
+        "mine": "Μου ανατέθηκε",
+        "closed": "Κλειστό",
+        "guests": "Επισκέπτες"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Ασφαλής εξυπηρέτηση πελατών",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Συνδεθείτε για συνομιλία",
+      "desc": "Πρέπει να συνδεθείτε για την υποστήριξη.",
+      "cta": "Σύνδεση"
+    },
+    "nav": "Υποστήριξη",
+    "guest": {
+      "subtitle": "Βοήθεια επισκεπτών",
+      "intro": "Συμπληρώστε αυτήν τη φόρμα, ένας σύμβουλος της BNP PARIBAS θα απαντήσει γρήγορα. Θα λάβετε έναν αριθμό εισιτηρίου.",
+      "name": "Πλήρες όνομα *",
+      "email": "email *",
+      "phone": "Τηλέφωνο",
+      "whatsapp": "WhatsApp",
+      "country": "Χώρα διαμονής",
+      "subject": "Θέμα",
+      "message": "Το μήνυμά σας *",
+      "submit": "Άνοιξε το εισιτήριό μου",
+      "privacy": "Τα δεδομένα σας αντιμετωπίζονται εμπιστευτικά (GDPR).",
+      "created": "Το εισιτήριο #{{ticket}} δημιουργήθηκε!",
+      "errors": {
+        "required": "Απαιτείται όνομα, email και μήνυμα.",
+        "fail": "Η αποστολή απέτυχε, δοκιμάστε ξανά."
+      }
+    },
+    "ticket": "Εισιτήριο",
+    "archived": "Αρχεία",
+    "open": "Ανοιχτό"
+  },
+  "adminDash": {
+    "title": "Ταμπλό — BNP PARIBAS",
+    "overview": "Επισκόπηση",
+    "clients": "Πελάτες",
+    "loans": "Δάνεια",
+    "transfers": "Μεταγραφές",
+    "chat": "Ζωντανή συνομιλία",
+    "security": "Ασφάλεια",
+    "notifications": "Ειδοποιήσεις",
+    "kpis": {
+      "clients": "Ενεργοί πελάτες",
+      "loansPending": "Δάνεια σε εκκρεμότητα",
+      "transfersBlocked": "Μπλοκαρίστηκαν οι μεταγραφές",
+      "ticketsOpen": "Ανοιχτά εισιτήρια",
+      "newToday": "Νέο σήμερα"
+    },
+    "recentActivity": "Πρόσφατη δραστηριότητα",
+    "quickActions": "Γρήγορες Ενέργειες",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

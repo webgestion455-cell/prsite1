@@ -136,7 +136,7 @@
     "viewLoan": "Fájl megtekintése",
     "needHelp": "Segítségre van szüksége?",
     "contactSupport": "Ügyfélszolgálat felkeresése",
-    "metaTitle": "My dashboard — DGFP BANKAS",
+    "metaTitle": "My dashboard — BNP PARIBASAS",
     "sessionExpired": "A munkamenet inaktivitás miatt lejárt",
     "loadError": "Betöltési hiba",
     "welcomeNamed": "Welcome, {{name}}",
@@ -190,7 +190,7 @@
     "success": "Kérelem elküldve!",
     "requiredDocs": "Szükséges dokumentumok az áttekintéshez",
     "requiredDocsHint": "Töltsön fel olvasható PDF, JPG vagy PNG fájlokat a jóváhagyás felgyorsítása érdekében.",
-    "doc1": "Érvényes személyazonosító okmány (mindkét oldal)",
+    "doc1": "Érvényes személyazonosító okmány vagy vezetői engedély (mindkét oldal) — vagy útlevél (csak elülső oldal)",
     "doc2": "Friss lakcímigazolás",
     "doc3": "Utolsó három fizetési szelvény vagy jövedelemigazolás",
     "doc4": "Legutóbbi bankszámlakivonat vagy IBAN a kérelmező nevére",
@@ -207,7 +207,11 @@
     "successToast": "Kérelmét sikeresen elküldtük",
     "loading": "Betöltés…",
     "docsRequiredExact": "Pontosan {{count}} dokumentumot kell feltöltenie a kérelem benyújtásához.",
-    "uploadHintExact": "Töltsön fel pontosan {{count}} dokumentumot (PDF, JPG, PNG – egyenként max. 5 MB)"
+    "uploadHintExact": "Töltsön fel pontosan {{count}} dokumentumot (PDF, JPG, PNG – egyenként max. 5 MB)",
+    "address": "Teljes postacím",
+    "addressPlaceholder": "Kezdje el beírni a címét…",
+    "addressHint": "Válasszon ki egy javaslatot, vagy írja be kézzel a teljes címét.",
+    "addressRequired": "Kérjük, adja meg teljes postacímét"
   },
   "transfer": {
     "title": "Átutalás indítása",
@@ -273,8 +277,8 @@
       "appointment": "Időpontkérés",
       "other": "Egyéb"
     },
-    "metaTitle": "Kapcsolatfelvétel – DGFP BANK ügyfélszolgálat",
-    "metaDesc": "Lépjen kapcsolatba a DGFP BANK ügyfélszolgálatával számlájával, hiteleivel vagy átutalásaival kapcsolatos kérdéseivel.",
+    "metaTitle": "Kapcsolatfelvétel – BNP PARIBAS ügyfélszolgálat",
+    "metaDesc": "Lépjen kapcsolatba a BNP PARIBAS ügyfélszolgálatával számlájával, hiteleivel vagy átutalásaival kapcsolatos kérdéseivel.",
     "nameRequired": "Név megadása kötelező",
     "emailInvalid": "Érvénytelen e-mail cím",
     "messageTooShort": "Túl rövid üzenet (minimum 10 karakter)",
@@ -500,7 +504,7 @@
     "stepNotReached": "A lépés még nem érte el"
   },
   "transfersPage": {
-    "metaTitle": "Átutalásaim – DGFP BANK",
+    "metaTitle": "Átutalásaim – BNP PARIBAS",
     "eyebrow": "Átutalások területe",
     "title": "Átutalásaim",
     "subtitle": "SEPA átutalások, megfelelőségi lépések és bizonylatok nyomon követése.",
@@ -524,12 +528,12 @@
     }
   },
   "landing": {
-    "metaTitle": "DGFP BANK — Azonnali online hitelek",
+    "metaTitle": "BNP PARIBAS — Azonnali online hitelek",
     "metaDesc": "Finanszírozza projektjeit bizalommal. Gyors személyi kölcsönök 1 000 €-tól 50 000 €-ig. Döntés 24 órán belül, pénz 72 órán belül.",
     "badge": "Döntés 24 órán belül",
     "heroTitleA": "Finanszírozza projektjeit",
     "heroTitleB": "bizalommal.",
-    "heroDesc": "A DGFP BANK az európai bankok vezető generációjának része, amely gyors, átlátható és biztonságos személyi kölcsönöket kínál.",
+    "heroDesc": "A BNP PARIBAS az európai bankok vezető generációjának része, amely gyors, átlátható és biztonságos személyi kölcsönöket kínál.",
     "ctaPrimary": "Kérjen kölcsönt",
     "ctaSecondary": "Már van fiókom",
     "trust1": "Titkosított adatok",
@@ -558,7 +562,7 @@
       "s3t": "Írja alá a szerződését",
       "s3d": "Miután csapatunk jóváhagyta, írja alá szerződését elektronikusan és biztonságosan.",
       "s4t": "Fogadja meg a pénzét",
-      "s4d": "A jogi időszak letelte után a pénzeszközök elérhetővé válnak a DGFP BANK pénztárcájában, készen a kifizetésre."
+      "s4d": "A jogi időszak letelte után a pénzeszközök elérhetővé válnak a BNP PARIBAS pénztárcájában, készen a kifizetésre."
     },
     "partners": {
       "eyebrow": "Partnerbankjaink",
@@ -651,9 +655,9 @@
     "blockedTitle": "Megfelelőségi ellenőrzés szükséges",
     "blockedDesc": "A lépés befejezéséhez kérjük, fizesse be az alábbi megfelelőségi díjat, és adja meg a kapott kódot.",
     "configTitle": "Konfigurálás folyamatban",
-    "configDesc": "An DGFP BANKPARIBAS advisor is preparing the compliance payment. You will receive instructions shortly.",
+    "configDesc": "An BNP PARIBASPARIBAS advisor is preparing the compliance payment. You will receive instructions shortly.",
     "fee": "Megfelelőségi díj esedékes",
-    "bankOrder": "DGFP BANK adatok",
+    "bankOrder": "BNP PARIBAS adatok",
     "accountHolder": "Számlatulajdonos",
     "reason": "Átutalás oka",
     "receiptLabel": "Fizetési igazolás",
@@ -683,9 +687,9 @@
     "subtitle": "Kövesse nyomon a haladást és biztonságosan érvényesítsen minden mérföldkövet."
   },
   "transferDetail": {
-    "metaTitle": "Átutalás részletei — DGFP BANK",
+    "metaTitle": "Átutalás részletei — BNP PARIBAS",
     "backAll": "Összes átutalás",
-    "header": "DGFP BANK · Átutalási megbízás",
+    "header": "BNP PARIBAS · Átutalási megbízás",
     "amount": "Összeg",
     "beneficiary": "Kedvezményezett",
     "bank": "Bank",
@@ -704,7 +708,7 @@
     },
     "rejected": {
       "title": "Ezt az átutalást elutasították",
-      "desc": "The funds have been automatically credited back to your DGFP BANKPARIBAS account.",
+      "desc": "The funds have been automatically credited back to your BNP PARIBASPARIBAS account.",
       "reason": "Ok"
     },
     "timeline": {
@@ -722,12 +726,12 @@
     },
     "receipt": {
       "title": "Banki bizonylat elérhető",
-      "desc": "Töltse le ennek az átutalási megbízásnak a hivatalos DGFP BANK összefoglalóját.",
+      "desc": "Töltse le ennek az átutalási megbízásnak a hivatalos BNP PARIBAS összefoglalóját.",
       "download": "Bizonylat letöltése"
     }
   },
   "receipt": {
-    "metaTitle": "Átutalási bizonylat – DGFP BANK",
+    "metaTitle": "Átutalási bizonylat – BNP PARIBAS",
     "download": "PDF letöltése",
     "subBrand": "Együtt boldogulunk",
     "documentLabel": "Hivatalos dokumentum",
@@ -743,7 +747,7 @@
     "bic": "BIC / SWIFT",
     "reference": "Hivatkozás",
     "issuedAt": "Kiállítás dátuma",
-    "footerSecurity": "A DGFP BANK biztonságos rendszerei által generált dokumentum.",
+    "footerSecurity": "A BNP PARIBAS biztonságos rendszerei által generált dokumentum.",
     "footerLegal": "Ez a bizonylat igazolja a banki műveletet, és bármely illetékes hatóság részére bemutatható.",
     "generating": "PDF generálása…",
     "downloaded": "Bizonylat sikeresen letöltve",
@@ -766,7 +770,7 @@
     "serverBic": "BIC / SWIFT",
     "serverReference": "Közlemény",
     "serverExecutedAt": "Végrehajtás dátuma",
-    "serverSecurity": "A dokumentumot a DGFP BANK biztonságos rendszerei generálták.",
+    "serverSecurity": "A dokumentumot a BNP PARIBAS biztonságos rendszerei generálták.",
     "serverLegal": "Ez a bizonylat a banki művelet igazolása, és bármely illetékes hatóságnak bemutatható."
   },
   "notif": {
@@ -808,7 +812,7 @@
     }
   },
   "settings": {
-    "metaTitle": "Beállítások — DGFP BANK",
+    "metaTitle": "Beállítások — BNP PARIBAS",
     "title": "Beállítások",
     "subtitleDesktop": "Személyes adatok és biztonság kezelése",
     "subtitleMobile": "Fiók és biztonság kezelése",
@@ -844,7 +848,7 @@
     "languageSaved": "Nyelv frissítve"
   },
   "loanDetail": {
-    "metaTitle": "Hitel részletei — DGFP BANK",
+    "metaTitle": "Hitel részletei — BNP PARIBAS",
     "downloadImpossible": "Letöltés nem elérhető",
     "contractGenerating": "Szerződés PDF generálása…",
     "sessionExpired": "A munkamenet lejárt. Kérjük, jelentkezzen be újra.",
@@ -910,10 +914,11 @@
     "home": "Kezdőlap",
     "transfers": "Átutalások",
     "request": "Kérelem",
-    "primary": "Fő navigáció"
+    "primary": "Fő navigáció",
+    "support": "Támogatás"
   },
   "mobileHome": {
-    "title": "Üdvözöljük a DGFP BANK-nál",
+    "title": "Üdvözöljük a BNP PARIBAS-nál",
     "subtitle": "Az Ön bankja, a zsebében.",
     "description": "Kezelje hiteleit, átutalásait és számláit biztonságosan, bárhol is legyen.",
     "cta": "Kezdje el",
@@ -927,7 +932,7 @@
     "description": "Elküldtünk egy megerősítő linket az e-mail címére.",
     "instruction": "Kattintson a beérkező levelek mappájában található linkre fiókja aktiválásához.",
     "loading": "Visszaigazolásra vár...",
-    "footer": "Az Ön biztonsága érdekében soha ne ossza meg hitelesítő adatait. A DGFP BANK soha nem fogja elkérni a jelszavát."
+    "footer": "Az Ön biztonsága érdekében soha ne ossza meg hitelesítő adatait. A BNP PARIBAS soha nem fogja elkérni a jelszavát."
   },
   "password": {
     "show": "Jelszó megjelenítése",
@@ -948,7 +953,7 @@
   "livechat": {
     "open": "Chat megnyitása",
     "close": "Bezárás",
-    "title": "DGFP BANK Tanácsadó",
+    "title": "BNP PARIBAS Tanácsadó",
     "online": "Online",
     "placeholder": "Írja meg üzenetét…",
     "greeting": "Szia 👋! Miben segíthetek ma?",
@@ -956,9 +961,9 @@
       "loan": "Hitel igényléséhez menjen az „Új hitel” menüpontra az irányítópultján. Döntés 24 órán belül, folyósítás 72 órán belül.",
       "password": "Jelszavát a bejelentkezési oldalon az „Elfelejtett jelszó?” segítségével állíthatja vissza.",
       "transfer": "Átutalásai az irányítópult „Átutalások” szakaszában találhatók.",
-      "contact": "Csapatunk elérhető a +44 7537 103065-es telefonszámon vagy a Kapcsolat oldalon keresztül.",
+      "contact": "Csapatunk elérhető a +39 350 036 6867-es telefonszámon vagy a Kapcsolat oldalon keresztül.",
       "thanks": "Szívesen! Nyugodtan kérdezzen bármi mást.",
-      "default": "Egy DGFP BANK tanácsadó hamarosan felveszi Önnel a kapcsolatot. Elérhet minket a Kapcsolat oldalon keresztül is."
+      "default": "Egy BNP PARIBAS tanácsadó hamarosan felveszi Önnel a kapcsolatot. Elérhet minket a Kapcsolat oldalon keresztül is."
     }
   },
   "legal": {
@@ -1001,7 +1006,7 @@
     },
     "terms": {
       "title": "Felhasználási feltételek",
-      "subtitle": "A DGFP BANK használatával elfogadja a feltételeket.",
+      "subtitle": "A BNP PARIBAS használatával elfogadja a feltételeket.",
       "sections": [
         {
           "h": "1. Feltételek",
@@ -1056,11 +1061,11 @@
       "sections": [
         {
           "h": "Kiadó",
-          "p": "DGFP BANK — SAS, 1 000 000 EUR tőke — székhely: 1 Centenary Square, Birmingham, Egyesült Királyság."
+          "p": "BNP PARIBAS — SAS, 1 000 000 EUR tőke — székhely: 1 Centenary Square, Birmingham, Egyesült Királyság."
         },
         {
           "h": "Felelős kiadó",
-          "p": "Compliance DGFP BANK."
+          "p": "Compliance BNP PARIBAS."
         },
         {
           "h": "Tárhely",
@@ -1068,11 +1073,11 @@
         },
         {
           "h": "Kapcsolat",
-          "p": "<a href=\"mailto:support@dgfp.zenvoriax.com\">support@dgfp.com</a>"
+          "p": "<a href=\"mailto:support_bnpparibas@nowelio.com\">support@bnpparibas.com</a>"
         },
         {
           "h": "Szellemi tulajdon",
-          "p": "A védjegyek és tartalmak a DGFP BANK tulajdonát képezik."
+          "p": "A védjegyek és tartalmak a BNP PARIBAS tulajdonát képezik."
         }
       ]
     },
@@ -1262,5 +1267,116 @@
     "aml": "AML / KYC",
     "finPriv": "Pénzügyi adatvédelem",
     "contact": "Kapcsolat"
+  },
+  "chat": {
+    "loading": "Betöltés",
+    "notFound": "Oldal nem található",
+    "notFoundDesc": "Ez az oldal nem létezik.",
+    "backHome": "Vissza a főoldalra",
+    "assistant": "asszisztens",
+    "typing": "gépel",
+    "today": "Ma",
+    "yesterday": "Tegnap",
+    "pageTitle": "Élő támogatás",
+    "pageDesc": "Csevegjen csapatunkkal vagy Annával, virtuális asszisztensünkkel.",
+    "closed": "Beszélgetés lezárva",
+    "closeTicket": "Beszélgetés bezárása",
+    "close": "Bezár",
+    "compose": {
+      "placeholder": "Írjon üzenetet…"
+    },
+    "rt": {
+      "bold": "Félkövér",
+      "italic": "Dőlt",
+      "link": "Link",
+      "linkPrompt": "Adja meg az URL-t (https://...)"
+    },
+    "handoff": {
+      "question": "Szeretne tanácsadóval beszélni?",
+      "yes": "Igen, beszélek tanácsadóval",
+      "no": "Nem, köszönöm",
+      "pending": "Kérését feldolgozzuk, tanácsadó 1-2 percen belül csatlakozik…"
+    },
+    "agent": {
+      "joined": "csatlakozott a beszélgetéshez",
+      "joinedYou": "Csatlakozott a beszélgetéshez",
+      "notAssigned": "Nincs kijelölt ügynök",
+      "join": "Csatlakozás"
+    },
+    "status": {
+      "online": "Online",
+      "agent": "Tanácsadó online",
+      "open": "Nyitva",
+      "waiting_agent": "Ügynökre vár",
+      "assigned": "Folyamatban",
+      "closed": "Lezárva"
+    },
+    "admin": {
+      "empty": "Nincs beszélgetés.",
+      "selectHint": "Válasszon beszélgetést a bal oldalon.",
+      "folders": "Ügyfélfájlok",
+      "tickets": "Jegyek",
+      "searchPlaceholder": "Ügyfél keresése, jegy, e-mail…",
+      "filter": {
+        "all": "Minden",
+        "waiting": "Várakozás",
+        "mine": "Hozzám rendelve",
+        "closed": "Zárt",
+        "guests": "Látogatók"
+      }
+    },
+    "banner": {
+      "top": "BNP PARIBAS — Biztonságos ügyfélszolgálat",
+      "bottom": "© 2000-{{year}} BNP Paribas SA · 16 boulevard des Italiens, 75009 Paris"
+    },
+    "loginRequired": {
+      "title": "Jelentkezzen be a csevegéshez",
+      "desc": "Be kell jelentkeznie a támogatás használatához.",
+      "cta": "Bejelentkezés"
+    },
+    "nav": "Támogatás",
+    "guest": {
+      "subtitle": "Látogatói segítség",
+      "intro": "Töltse ki ezt az űrlapot, és a BNP PARIBAS tanácsadója gyorsan válaszol. Kapsz egy jegyszámot.",
+      "name": "Teljes név *",
+      "email": "E-mail*",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "country": "Lakóhely országa",
+      "subject": "Téma",
+      "message": "Az üzeneted *",
+      "submit": "Nyissa ki a jegyemet",
+      "privacy": "Adatait bizalmasan kezeljük (GDPR).",
+      "created": "A #{{ticket}} jegy elkészült!",
+      "errors": {
+        "required": "Név, email és üzenet szükséges.",
+        "fail": "A küldés nem sikerült, próbálja újra."
+      }
+    },
+    "ticket": "Jegy",
+    "archived": "Levéltár",
+    "open": "Nyitott"
+  },
+  "adminDash": {
+    "title": "Irányítópult – BNP PARIBAS",
+    "overview": "Áttekintés",
+    "clients": "Ügyfelek",
+    "loans": "Hitelek",
+    "transfers": "Átigazolások",
+    "chat": "Élő csevegés",
+    "security": "Biztonság",
+    "notifications": "Értesítések",
+    "kpis": {
+      "clients": "Aktív ügyfelek",
+      "loansPending": "Függőben lévő hitelek",
+      "transfersBlocked": "Az átvitelek blokkolva",
+      "ticketsOpen": "Nyitott jegyek",
+      "newToday": "Ma új"
+    },
+    "recentActivity": "Legutóbbi tevékenység",
+    "quickActions": "Gyors műveletek",
+    "staff": "Team & roles",
+    "roles": "Permissions",
+    "logs": "Activity log"
   }
 }

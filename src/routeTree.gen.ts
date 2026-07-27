@@ -18,6 +18,7 @@ import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AuthPendingRouteImport } from './routes/auth-pending'
 import { Route as AuthRouteImport } from './routes/auth'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as TransfersIndexRouteImport } from './routes/transfers.index'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
@@ -34,8 +35,11 @@ import { Route as LegalCookiesRouteImport } from './routes/legal.cookies'
 import { Route as LegalAmlKycRouteImport } from './routes/legal.aml-kyc'
 import { Route as AuthCallbackRouteImport } from './routes/auth/callback'
 import { Route as AdminVerifyRouteImport } from './routes/admin.verify'
+import { Route as AdminStaffRouteImport } from './routes/admin.staff'
 import { Route as AdminSecurityRouteImport } from './routes/admin.security'
+import { Route as AdminRolesRouteImport } from './routes/admin.roles'
 import { Route as AdminNotificationsRouteImport } from './routes/admin.notifications'
+import { Route as AdminLogsRouteImport } from './routes/admin.logs'
 import { Route as AdminLoansRouteImport } from './routes/admin.loans'
 import { Route as AdminClientsIndexRouteImport } from './routes/admin.clients.index'
 import { Route as TransfersTransferIdReceiptRouteImport } from './routes/transfers.$transferId.receipt'
@@ -87,6 +91,11 @@ const AuthRoute = AuthRouteImport.update({
   path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -98,9 +107,9 @@ const TransfersIndexRoute = TransfersIndexRouteImport.update({
   getParentRoute: () => TransfersRoute,
 } as any)
 const AdminIndexRoute = AdminIndexRouteImport.update({
-  id: '/admin/',
-  path: '/admin/',
-  getParentRoute: () => rootRouteImport,
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminRoute,
 } as any)
 const TransfersTransferIdRoute = TransfersTransferIdRouteImport.update({
   id: '/$transferId',
@@ -163,29 +172,44 @@ const AuthCallbackRoute = AuthCallbackRouteImport.update({
   getParentRoute: () => AuthRoute,
 } as any)
 const AdminVerifyRoute = AdminVerifyRouteImport.update({
-  id: '/admin/verify',
-  path: '/admin/verify',
-  getParentRoute: () => rootRouteImport,
+  id: '/verify',
+  path: '/verify',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminStaffRoute = AdminStaffRouteImport.update({
+  id: '/staff',
+  path: '/staff',
+  getParentRoute: () => AdminRoute,
 } as any)
 const AdminSecurityRoute = AdminSecurityRouteImport.update({
-  id: '/admin/security',
-  path: '/admin/security',
-  getParentRoute: () => rootRouteImport,
+  id: '/security',
+  path: '/security',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminRolesRoute = AdminRolesRouteImport.update({
+  id: '/roles',
+  path: '/roles',
+  getParentRoute: () => AdminRoute,
 } as any)
 const AdminNotificationsRoute = AdminNotificationsRouteImport.update({
-  id: '/admin/notifications',
-  path: '/admin/notifications',
-  getParentRoute: () => rootRouteImport,
+  id: '/notifications',
+  path: '/notifications',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminLogsRoute = AdminLogsRouteImport.update({
+  id: '/logs',
+  path: '/logs',
+  getParentRoute: () => AdminRoute,
 } as any)
 const AdminLoansRoute = AdminLoansRouteImport.update({
-  id: '/admin/loans',
-  path: '/admin/loans',
-  getParentRoute: () => rootRouteImport,
+  id: '/loans',
+  path: '/loans',
+  getParentRoute: () => AdminRoute,
 } as any)
 const AdminClientsIndexRoute = AdminClientsIndexRouteImport.update({
-  id: '/admin/clients/',
-  path: '/admin/clients/',
-  getParentRoute: () => rootRouteImport,
+  id: '/clients/',
+  path: '/clients/',
+  getParentRoute: () => AdminRoute,
 } as any)
 const TransfersTransferIdReceiptRoute =
   TransfersTransferIdReceiptRouteImport.update({
@@ -194,18 +218,19 @@ const TransfersTransferIdReceiptRoute =
     getParentRoute: () => TransfersTransferIdRoute,
   } as any)
 const AdminTransfersNewRoute = AdminTransfersNewRouteImport.update({
-  id: '/admin/transfers/new',
-  path: '/admin/transfers/new',
-  getParentRoute: () => rootRouteImport,
+  id: '/transfers/new',
+  path: '/transfers/new',
+  getParentRoute: () => AdminRoute,
 } as any)
 const AdminClientsUserIdRoute = AdminClientsUserIdRouteImport.update({
-  id: '/admin/clients/$userId',
-  path: '/admin/clients/$userId',
-  getParentRoute: () => rootRouteImport,
+  id: '/clients/$userId',
+  path: '/clients/$userId',
+  getParentRoute: () => AdminRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRouteWithChildren
   '/auth-pending': typeof AuthPendingRoute
   '/contact': typeof ContactRoute
@@ -216,8 +241,11 @@ export interface FileRoutesByFullPath {
   '/settings': typeof SettingsRoute
   '/transfers': typeof TransfersRouteWithChildren
   '/admin/loans': typeof AdminLoansRoute
+  '/admin/logs': typeof AdminLogsRoute
   '/admin/notifications': typeof AdminNotificationsRoute
+  '/admin/roles': typeof AdminRolesRoute
   '/admin/security': typeof AdminSecurityRoute
+  '/admin/staff': typeof AdminStaffRoute
   '/admin/verify': typeof AdminVerifyRoute
   '/auth/callback': typeof AuthCallbackRoute
   '/legal/aml-kyc': typeof LegalAmlKycRoute
@@ -249,8 +277,11 @@ export interface FileRoutesByTo {
   '/reset-password': typeof ResetPasswordRoute
   '/settings': typeof SettingsRoute
   '/admin/loans': typeof AdminLoansRoute
+  '/admin/logs': typeof AdminLogsRoute
   '/admin/notifications': typeof AdminNotificationsRoute
+  '/admin/roles': typeof AdminRolesRoute
   '/admin/security': typeof AdminSecurityRoute
+  '/admin/staff': typeof AdminStaffRoute
   '/admin/verify': typeof AdminVerifyRoute
   '/auth/callback': typeof AuthCallbackRoute
   '/legal/aml-kyc': typeof LegalAmlKycRoute
@@ -274,6 +305,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRouteWithChildren
   '/auth-pending': typeof AuthPendingRoute
   '/contact': typeof ContactRoute
@@ -284,8 +316,11 @@ export interface FileRoutesById {
   '/settings': typeof SettingsRoute
   '/transfers': typeof TransfersRouteWithChildren
   '/admin/loans': typeof AdminLoansRoute
+  '/admin/logs': typeof AdminLogsRoute
   '/admin/notifications': typeof AdminNotificationsRoute
+  '/admin/roles': typeof AdminRolesRoute
   '/admin/security': typeof AdminSecurityRoute
+  '/admin/staff': typeof AdminStaffRoute
   '/admin/verify': typeof AdminVerifyRoute
   '/auth/callback': typeof AuthCallbackRoute
   '/legal/aml-kyc': typeof LegalAmlKycRoute
@@ -310,6 +345,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/admin'
     | '/auth'
     | '/auth-pending'
     | '/contact'
@@ -320,8 +356,11 @@ export interface FileRouteTypes {
     | '/settings'
     | '/transfers'
     | '/admin/loans'
+    | '/admin/logs'
     | '/admin/notifications'
+    | '/admin/roles'
     | '/admin/security'
+    | '/admin/staff'
     | '/admin/verify'
     | '/auth/callback'
     | '/legal/aml-kyc'
@@ -353,8 +392,11 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/settings'
     | '/admin/loans'
+    | '/admin/logs'
     | '/admin/notifications'
+    | '/admin/roles'
     | '/admin/security'
+    | '/admin/staff'
     | '/admin/verify'
     | '/auth/callback'
     | '/legal/aml-kyc'
@@ -377,6 +419,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/admin'
     | '/auth'
     | '/auth-pending'
     | '/contact'
@@ -387,8 +430,11 @@ export interface FileRouteTypes {
     | '/settings'
     | '/transfers'
     | '/admin/loans'
+    | '/admin/logs'
     | '/admin/notifications'
+    | '/admin/roles'
     | '/admin/security'
+    | '/admin/staff'
     | '/admin/verify'
     | '/auth/callback'
     | '/legal/aml-kyc'
@@ -412,6 +458,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRouteWithChildren
   AuthRoute: typeof AuthRouteWithChildren
   AuthPendingRoute: typeof AuthPendingRoute
   ContactRoute: typeof ContactRoute
@@ -421,10 +468,6 @@ export interface RootRouteChildren {
   ResetPasswordRoute: typeof ResetPasswordRoute
   SettingsRoute: typeof SettingsRoute
   TransfersRoute: typeof TransfersRouteWithChildren
-  AdminLoansRoute: typeof AdminLoansRoute
-  AdminNotificationsRoute: typeof AdminNotificationsRoute
-  AdminSecurityRoute: typeof AdminSecurityRoute
-  AdminVerifyRoute: typeof AdminVerifyRoute
   LegalAmlKycRoute: typeof LegalAmlKycRoute
   LegalCookiesRoute: typeof LegalCookiesRoute
   LegalFinancialPrivacyRoute: typeof LegalFinancialPrivacyRoute
@@ -435,10 +478,6 @@ export interface RootRouteChildren {
   LegalTermsRoute: typeof LegalTermsRoute
   LoansLoanIdRoute: typeof LoansLoanIdRoute
   LoansNewRoute: typeof LoansNewRoute
-  AdminIndexRoute: typeof AdminIndexRoute
-  AdminClientsUserIdRoute: typeof AdminClientsUserIdRoute
-  AdminTransfersNewRoute: typeof AdminTransfersNewRoute
-  AdminClientsIndexRoute: typeof AdminClientsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -506,6 +545,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -522,10 +568,10 @@ declare module '@tanstack/react-router' {
     }
     '/admin/': {
       id: '/admin/'
-      path: '/admin'
+      path: '/'
       fullPath: '/admin/'
       preLoaderRoute: typeof AdminIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/transfers/$transferId': {
       id: '/transfers/$transferId'
@@ -613,38 +659,59 @@ declare module '@tanstack/react-router' {
     }
     '/admin/verify': {
       id: '/admin/verify'
-      path: '/admin/verify'
+      path: '/verify'
       fullPath: '/admin/verify'
       preLoaderRoute: typeof AdminVerifyRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/staff': {
+      id: '/admin/staff'
+      path: '/staff'
+      fullPath: '/admin/staff'
+      preLoaderRoute: typeof AdminStaffRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/admin/security': {
       id: '/admin/security'
-      path: '/admin/security'
+      path: '/security'
       fullPath: '/admin/security'
       preLoaderRoute: typeof AdminSecurityRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/roles': {
+      id: '/admin/roles'
+      path: '/roles'
+      fullPath: '/admin/roles'
+      preLoaderRoute: typeof AdminRolesRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/admin/notifications': {
       id: '/admin/notifications'
-      path: '/admin/notifications'
+      path: '/notifications'
       fullPath: '/admin/notifications'
       preLoaderRoute: typeof AdminNotificationsRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/logs': {
+      id: '/admin/logs'
+      path: '/logs'
+      fullPath: '/admin/logs'
+      preLoaderRoute: typeof AdminLogsRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/admin/loans': {
       id: '/admin/loans'
-      path: '/admin/loans'
+      path: '/loans'
       fullPath: '/admin/loans'
       preLoaderRoute: typeof AdminLoansRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/admin/clients/': {
       id: '/admin/clients/'
-      path: '/admin/clients'
+      path: '/clients'
       fullPath: '/admin/clients/'
       preLoaderRoute: typeof AdminClientsIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/transfers/$transferId/receipt': {
       id: '/transfers/$transferId/receipt'
@@ -655,20 +722,50 @@ declare module '@tanstack/react-router' {
     }
     '/admin/transfers/new': {
       id: '/admin/transfers/new'
-      path: '/admin/transfers/new'
+      path: '/transfers/new'
       fullPath: '/admin/transfers/new'
       preLoaderRoute: typeof AdminTransfersNewRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/admin/clients/$userId': {
       id: '/admin/clients/$userId'
-      path: '/admin/clients/$userId'
+      path: '/clients/$userId'
       fullPath: '/admin/clients/$userId'
       preLoaderRoute: typeof AdminClientsUserIdRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof AdminRoute
     }
   }
 }
+
+interface AdminRouteChildren {
+  AdminLoansRoute: typeof AdminLoansRoute
+  AdminLogsRoute: typeof AdminLogsRoute
+  AdminNotificationsRoute: typeof AdminNotificationsRoute
+  AdminRolesRoute: typeof AdminRolesRoute
+  AdminSecurityRoute: typeof AdminSecurityRoute
+  AdminStaffRoute: typeof AdminStaffRoute
+  AdminVerifyRoute: typeof AdminVerifyRoute
+  AdminIndexRoute: typeof AdminIndexRoute
+  AdminClientsUserIdRoute: typeof AdminClientsUserIdRoute
+  AdminTransfersNewRoute: typeof AdminTransfersNewRoute
+  AdminClientsIndexRoute: typeof AdminClientsIndexRoute
+}
+
+const AdminRouteChildren: AdminRouteChildren = {
+  AdminLoansRoute: AdminLoansRoute,
+  AdminLogsRoute: AdminLogsRoute,
+  AdminNotificationsRoute: AdminNotificationsRoute,
+  AdminRolesRoute: AdminRolesRoute,
+  AdminSecurityRoute: AdminSecurityRoute,
+  AdminStaffRoute: AdminStaffRoute,
+  AdminVerifyRoute: AdminVerifyRoute,
+  AdminIndexRoute: AdminIndexRoute,
+  AdminClientsUserIdRoute: AdminClientsUserIdRoute,
+  AdminTransfersNewRoute: AdminTransfersNewRoute,
+  AdminClientsIndexRoute: AdminClientsIndexRoute,
+}
+
+const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
 
 interface AuthRouteChildren {
   AuthCallbackRoute: typeof AuthCallbackRoute
@@ -707,6 +804,7 @@ const TransfersRouteWithChildren = TransfersRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRouteWithChildren,
   AuthRoute: AuthRouteWithChildren,
   AuthPendingRoute: AuthPendingRoute,
   ContactRoute: ContactRoute,
@@ -716,10 +814,6 @@ const rootRouteChildren: RootRouteChildren = {
   ResetPasswordRoute: ResetPasswordRoute,
   SettingsRoute: SettingsRoute,
   TransfersRoute: TransfersRouteWithChildren,
-  AdminLoansRoute: AdminLoansRoute,
-  AdminNotificationsRoute: AdminNotificationsRoute,
-  AdminSecurityRoute: AdminSecurityRoute,
-  AdminVerifyRoute: AdminVerifyRoute,
   LegalAmlKycRoute: LegalAmlKycRoute,
   LegalCookiesRoute: LegalCookiesRoute,
   LegalFinancialPrivacyRoute: LegalFinancialPrivacyRoute,
@@ -730,10 +824,6 @@ const rootRouteChildren: RootRouteChildren = {
   LegalTermsRoute: LegalTermsRoute,
   LoansLoanIdRoute: LoansLoanIdRoute,
   LoansNewRoute: LoansNewRoute,
-  AdminIndexRoute: AdminIndexRoute,
-  AdminClientsUserIdRoute: AdminClientsUserIdRoute,
-  AdminTransfersNewRoute: AdminTransfersNewRoute,
-  AdminClientsIndexRoute: AdminClientsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
