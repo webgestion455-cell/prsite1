@@ -100,7 +100,7 @@ export async function sendInvitationEmail(to: string, html: string) {
     method: "POST",
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
     body: JSON.stringify({
-      from: "BNP PARIBAS <onboarding@resend.dev>",
+      from: "BNP PARIBAS <support@bnpparibas.myinvest-capital.com>",
       to: [to],
       subject: "Votre accès à l'espace d'administration BNP PARIBAS",
       html,
