@@ -182,7 +182,21 @@
     font-family: var(--font-sans);
     font-feature-settings: "cv11", "ss01", "ss03";
     -webkit-font-smoothing: antialiased;
+    /* Aucun débordement horizontal, du petit Android aux écrans ultra-larges / TV */
+    overflow-x: hidden;
+    max-width: 100%;
   }
+
+  img, svg, video, canvas, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Les longues chaînes (IBAN, e-mails, références) ne cassent jamais la grille */
+  p, span, td, th, li, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: anywhere;
+  }
+
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);

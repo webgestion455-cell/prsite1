@@ -18,6 +18,8 @@ import { useInactivityLogout } from "@/lib/use-inactivity";
 import { notifyUser } from "@/lib/notifications";
 import { cn } from "@/lib/utils";
 import { AdminUnlockCodes } from "@/components/AdminUnlockCodes";
+import { AdminAnalytics } from "@/components/admin/AdminAnalytics";
+
 
 
 
@@ -119,6 +121,28 @@ function AdminDashboard() {
       if (expiry > Date.now()) void load();
     }
   }, [role, user?.email, user?.id]);
+
+  // Temps réel : rafraîchit le pilotage dès qu'un prêt / virement / document change
+  useEffect(() => {
+    if (role !== "admin" || !user) return;
+    let timer: ReturnType<typeof setTimeout> | null = null;
+    const refresh = () => {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => void load(), 400);
+    };
+    const channel = supabase
+      .channel(`admin-overview-${user.id}-${Math.random().toString(36).slice(2)}`)
+      .on("postgres_changes", { event: "*", schema: "public", table: "loans" }, refresh)
+      .on("postgres_changes", { event: "*", schema: "public", table: "withdrawals" }, refresh)
+      .on("postgres_changes", { event: "*", schema: "public", table: "loan_documents" }, refresh)
+      .subscribe();
+    return () => {
+      if (timer) clearTimeout(timer);
+      void supabase.removeChannel(channel);
+    };
+  }, [role, user?.id]);
+
+
 
   async function load() {
     setLoading(true);
@@ -393,6 +417,11 @@ function AdminDashboard() {
           );
         })}
       </div>
+
+      {/* ANALYTICS TEMPS RÉEL */}
+      <AdminAnalytics loans={loans} withdrawals={withdrawals} />
+
+
 
       <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
         <div className="md:col-span-2 space-y-4 sm:space-y-6">

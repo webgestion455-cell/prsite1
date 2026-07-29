@@ -94,7 +94,7 @@ export function invitationEmailHtml(params: { fullName?: string | null; role: st
 }
 
 export async function sendInvitationEmail(to: string, html: string) {
-  const key = process.env.RESEND_API_KEY_ADMIN || process.env.RESEND_API_KEY;
+  const key = process.env.RESEND_API_KEY_CONTACT || process.env.RESEND_API_KEY;
   if (!key) return { sent: false as const, reason: "no_provider" };
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
