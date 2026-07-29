@@ -3,6 +3,8 @@ import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "@/lib/auth-context";
 import { cn } from "@/lib/utils";
+import { getAdmin2FAExpiry } from "@/routes/admin.verify";
+import { roleLabel } from "@/lib/permissions";
 import {
   LayoutDashboard,
   Users,
@@ -15,11 +17,13 @@ import {
   X,
   LogOut,
   Search,
+  UserCog,
+  KeyRound,
+  ScrollText,
+  Settings,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { NotificationBell } from "@/components/NotificationBell";
-import { getAdmin2FAExpiry } from "@/routes/admin.verify";
 
 export const Route = createFileRoute("/admin")({
   component: AdminLayout,
@@ -27,33 +31,66 @@ export const Route = createFileRoute("/admin")({
 
 interface NavItem {
   to: string;
-  labelKey: string;
+  label: string;
   icon: React.ComponentType<{ className?: string }>;
   match: (p: string) => boolean;
+  permission?: string;
 }
 
 function AdminLayout() {
   const { t } = useTranslation();
   const { pathname } = useLocation();
   const navigate = useNavigate();
-  const { user, role, loading, profile, signOut } = useAuth() as any;
+  const { user, isStaff, staffRole, hasPermission, loading, profile, signOut } = useAuth() as any;
   const [openMobile, setOpenMobile] = useState(false);
 
-  const isVerifyRoute = pathname === "/admin/verify" || pathname.startsWith("/admin/verify");
-  const twoFAValid = user ? getAdmin2FAExpiry(user.id) > Date.now() : false;
-  const authorized = !loading && !!user && role === "admin" && twoFAValid;
+  const isVerify = pathname === "/admin/verify" || pathname === "/admin/verify/";
 
-  // Redirect unauthenticated / non-admin / not-2FA to /admin/verify
+  const twofaExpiry = user ? getAdmin2FAExpiry(user.id) : 0;
+  const twofaValid = twofaExpiry > Date.now();
+
+  // ⚠️ Tous les hooks doivent être appelés AVANT tout return conditionnel
+  const nav: NavItem[] = useMemo(() => {
+    const all: NavItem[] = [
+      { to: "/admin", label: t("adminDash.overview"), icon: LayoutDashboard, match: (p) => p === "/admin" || p === "/admin/", permission: "dashboard.view" },
+      { to: "/admin/clients", label: t("adminDash.clients"), icon: Users, match: (p) => p.startsWith("/admin/clients"), permission: "clients.view" },
+      { to: "/admin/loans", label: t("adminDash.loans"), icon: Wallet, match: (p) => p.startsWith("/admin/loans"), permission: "loans.view" },
+      { to: "/admin/transfers", label: t("adminDash.transfers"), icon: ArrowRightLeft, match: (p) => p.startsWith("/admin/transfers"), permission: "transfers.view" },
+      { to: "/admin/chat", label: t("adminDash.chat"), icon: MessageCircle, match: (p) => p.startsWith("/admin/chat"), permission: "chat.view" },
+      { to: "/admin/notifications", label: t("adminDash.notifications"), icon: Bell, match: (p) => p.startsWith("/admin/notifications"), permission: "notifications.send" },
+      { to: "/admin/security", label: t("adminDash.security"), icon: ShieldCheck, match: (p) => p.startsWith("/admin/security"), permission: "security.view" },
+      { to: "/admin/staff", label: "Équipe", icon: UserCog, match: (p) => p.startsWith("/admin/staff"), permission: "staff.view" },
+      { to: "/admin/roles", label: "Permissions", icon: KeyRound, match: (p) => p.startsWith("/admin/roles"), permission: "roles.manage" },
+      { to: "/admin/logs", label: "Journal", icon: ScrollText, match: (p) => p.startsWith("/admin/logs"), permission: "logs.view" },
+      { to: "/admin/settings", label: "Paramètres", icon: Settings, match: (p) => p.startsWith("/admin/settings"), permission: "settings.manage" },
+    ];
+    return all.filter((n) => !n.permission || hasPermission(n.permission));
+  }, [t, hasPermission]);
+
   useEffect(() => {
     if (loading) return;
-    if (isVerifyRoute) return;
-    if (!authorized) {
+    if (!user) {
+      navigate({ to: "/auth", replace: true });
+      return;
+    }
+    if (!isStaff && staffRole !== null) {
+      navigate({ to: "/dashboard", replace: true });
+      return;
+    }
+    if (isStaff && !twofaValid && !isVerify) {
       navigate({ to: "/admin/verify", replace: true });
     }
-  }, [loading, authorized, isVerifyRoute, navigate]);
+  }, [loading, user, isStaff, staffRole, navigate, twofaValid, isVerify]);
 
-  // Verify page renders standalone — no sidebar/topbar leak
-  if (isVerifyRoute) {
+  if (loading || !user || (!isStaff && staffRole !== null) || (!twofaValid && !isVerify)) {
+    return (
+      <div className="min-h-screen grid place-items-center bg-muted/20">
+        <div className="text-sm text-muted-foreground animate-pulse">{t("common.loading")}</div>
+      </div>
+    );
+  }
+
+  if (isVerify) {
     return (
       <div className="min-h-screen bg-muted/20">
         <Outlet />
@@ -61,35 +98,11 @@ function AdminLayout() {
     );
   }
 
-  if (loading || !authorized) {
-    return (
-      <div className="min-h-screen grid place-items-center bg-muted/20 text-sm text-muted-foreground">
-        {t("common.loading")}
-      </div>
-    );
-  }
 
-  const nav: NavItem[] = useMemo(
-    () => [
-      { to: "/admin", labelKey: "adminDash.overview", icon: LayoutDashboard, match: (p) => p === "/admin" || p === "/admin/" },
-      { to: "/admin/clients", labelKey: "adminDash.clients", icon: Users, match: (p) => p.startsWith("/admin/clients") },
-      { to: "/admin/loans", labelKey: "adminDash.loans", icon: Wallet, match: (p) => p.startsWith("/admin/loans") },
-      { to: "/admin/transfers/new", labelKey: "adminDash.transfers", icon: ArrowRightLeft, match: (p) => p.startsWith("/admin/transfers") },
-      { to: "/admin/chat", labelKey: "adminDash.chat", icon: MessageCircle, match: (p) => p.startsWith("/admin/chat") },
-      { to: "/admin/notifications", labelKey: "adminDash.notifications", icon: Bell, match: (p) => p.startsWith("/admin/notifications") },
-      { to: "/admin/security", labelKey: "adminDash.security", icon: ShieldCheck, match: (p) => p.startsWith("/admin/security") },
-      { to: "/admin/staff", labelKey: "adminDash.staff", icon: Users, match: (p) => p.startsWith("/admin/staff") },
-      { to: "/admin/roles", labelKey: "adminDash.roles", icon: ShieldCheck, match: (p) => p.startsWith("/admin/roles") },
-      { to: "/admin/logs", labelKey: "adminDash.logs", icon: LayoutDashboard, match: (p) => p.startsWith("/admin/logs") },
-    ],
-    [],
-  );
-
-  const adminName = profile?.full_name ?? user?.email?.split("@")[0] ?? "Admin";
+  const adminName = profile?.full_name ?? user?.email?.split("@")[0] ?? "Membre";
 
   return (
     <div className="min-h-screen bg-muted/20 flex">
-      {/* SIDEBAR desktop */}
       <aside className="hidden lg:flex w-64 shrink-0 flex-col bg-card border-r border-border sticky top-0 h-screen">
         <div className="px-5 py-5 border-b border-border">
           <div className="flex items-center gap-2">
@@ -110,20 +123,18 @@ function AdminLayout() {
                 to={n.to}
                 className={cn(
                   "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition",
-                  active
-                    ? "bg-[#00915A] text-white font-semibold shadow-sm"
-                    : "text-foreground/80 hover:bg-muted",
+                  active ? "bg-[#00915A] text-white font-semibold shadow-sm" : "text-foreground/80 hover:bg-muted",
                 )}
               >
                 <Icon className="h-4 w-4" />
-                {t(n.labelKey)}
+                {n.label}
               </Link>
             );
           })}
         </nav>
         <div className="p-3 border-t border-border">
           <button
-            onClick={() => signOut?.()}
+            onClick={async () => { await signOut?.(); navigate({ to: "/auth", replace: true }); }}
             className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm hover:bg-muted text-muted-foreground"
           >
             <LogOut className="h-4 w-4" /> Déconnexion
@@ -131,12 +142,11 @@ function AdminLayout() {
         </div>
       </aside>
 
-      {/* MOBILE DRAWER */}
       {openMobile && (
         <div className="lg:hidden fixed inset-0 z-50 flex">
           <div className="w-64 bg-card border-r border-border p-4 space-y-3 overflow-y-auto">
             <div className="flex items-center justify-between">
-              <p className="font-bold">Admin</p>
+              <p className="font-bold">Espace équipe</p>
               <button onClick={() => setOpenMobile(false)}><X className="h-5 w-5" /></button>
             </div>
             {nav.map((n) => {
@@ -148,7 +158,7 @@ function AdminLayout() {
                   onClick={() => setOpenMobile(false)}
                   className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm hover:bg-muted"
                 >
-                  <Icon className="h-4 w-4" /> {t(n.labelKey)}
+                  <Icon className="h-4 w-4" /> {n.label}
                 </Link>
               );
             })}
@@ -157,9 +167,7 @@ function AdminLayout() {
         </div>
       )}
 
-      {/* MAIN */}
       <div className="flex-1 min-w-0 flex flex-col">
-        {/* TOPBAR */}
         <header className="sticky top-0 z-30 bg-card/95 backdrop-blur border-b border-border">
           <div className="flex items-center gap-3 px-4 h-14">
             <button className="lg:hidden" onClick={() => setOpenMobile(true)} aria-label="Menu">
@@ -167,11 +175,7 @@ function AdminLayout() {
             </button>
             <div className="hidden md:flex items-center gap-2 flex-1 max-w-md rounded-lg border border-border bg-muted/40 px-3 py-1.5">
               <Search className="h-4 w-4 text-muted-foreground" />
-              <input
-                type="text"
-                placeholder={t("chat.admin.searchPlaceholder")}
-                className="bg-transparent text-sm outline-none flex-1"
-              />
+              <input type="text" placeholder={t("chat.admin.searchPlaceholder")} className="bg-transparent text-sm outline-none flex-1" />
             </div>
             <div className="flex-1 md:hidden" />
             <div className="flex items-center gap-2">
@@ -182,7 +186,7 @@ function AdminLayout() {
               </div>
               <div className="hidden md:block text-xs leading-tight">
                 <p className="font-semibold">{adminName}</p>
-                <p className="text-muted-foreground">Administrateur</p>
+                <p className="text-muted-foreground">{roleLabel(staffRole)}</p>
               </div>
             </div>
           </div>
