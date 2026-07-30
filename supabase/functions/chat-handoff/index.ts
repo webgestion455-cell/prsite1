@@ -19,7 +19,7 @@ const supabaseAdmin = createClient(
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY_CONTACT");
 const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
-const FROM_EMAIL = "BNP PARIBAS <onboarding@resend.dev>";
+const FROM_EMAIL = "BNP PARIBAS <no-reply@zenvoriax.com>";
 
 serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
