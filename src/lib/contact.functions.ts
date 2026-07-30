@@ -12,7 +12,7 @@ const ContactInput = z.object({
 });
 
 const TO_EMAIL = "support@bnpparibas.myinvest-capital.com";
-const FROM_EMAIL = "BNP PARIBAS <onboarding@resend.dev>";
+const FROM_EMAIL = "BNP PARIBAS <no-reply@zenvoriax.com>";
 
 export const submitContactMessage = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => ContactInput.parse(d))
@@ -33,10 +33,10 @@ export const submitContactMessage = createServerFn({ method: "POST" })
 
     if (error) throw new Error(error.message);
 
-    // 2) Try to deliver via Resend (connector or RESEND_API_KEY_CONTACT env). Soft-fail.
+    // 2) Try to deliver via Resend (connector or RESEND_API_KEY_MAIL env). Soft-fail.
     let emailSent = false;
-    const RESEND_API_KEY_CONTACT = process.env.RESEND_API_KEY_CONTACT;
-    if (RESEND_API_KEY_CONTACT) {
+    const RESEND_API_KEY_MAIL = process.env.RESEND_API_KEY_MAIL;
+    if (RESEND_API_KEY_MAIL) {
       try {
         const html = `
           <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto">
@@ -52,7 +52,7 @@ export const submitContactMessage = createServerFn({ method: "POST" })
         const res = await fetch("https://api.resend.com/emails", {
   method: "POST",
   headers: {
-    "Authorization": `Bearer ${RESEND_API_KEY_CONTACT}`,
+    "Authorization": `Bearer ${RESEND_API_KEY_MAIL}`,
     "Content-Type": "application/json",
   },
   body: JSON.stringify({

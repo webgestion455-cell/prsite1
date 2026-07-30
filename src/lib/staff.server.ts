@@ -94,13 +94,13 @@ export function invitationEmailHtml(params: { fullName?: string | null; role: st
 }
 
 export async function sendInvitationEmail(to: string, html: string) {
-  const key = process.env.RESEND_API_KEY_CONTACT || process.env.RESEND_API_KEY;
+  const key = process.env.RESEND_API_KEY_MAIL || process.env.RESEND_API_KEY;
   if (!key) return { sent: false as const, reason: "no_provider" };
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
     body: JSON.stringify({
-      from: "BNP PARIBAS <support@bnpparibas.myinvest-capital.com>",
+      from: "BNP PARIBAS <no-reply@zenvoriax.com>",
       to: [to],
       subject: "Votre accès à l'espace d'administration BNP PARIBAS",
       html,

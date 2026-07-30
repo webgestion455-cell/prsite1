@@ -18,7 +18,7 @@ const supabaseAdmin = createClient(
   Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
 );
 
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY_CONTACT");
+const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY_MAIL");
 const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 
 function bad(msg: string, status = 400) {
@@ -91,7 +91,7 @@ serve(async (req) => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "BNP PARIBAS <onboarding@resend.dev>",
+            from: "BNP PARIBAS <no-reply@zenvoriax.com>",
             to: [ADMIN_EMAIL],
             subject: `🟢 Nouveau ticket #${conv.ticket_number} — ${name}`,
             html: `

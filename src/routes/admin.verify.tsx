@@ -200,7 +200,7 @@ function AdminVerify() {
               <div className="rounded-xl border border-warning/30 bg-warning/10 p-3 text-xs">
                 <strong>Dev :</strong> code = <code className="font-mono text-base">{devCode}</code>
                 <p className="mt-1 text-[11px] text-muted-foreground">
-                  Configurez RESEND_API_KEY_ADMIN pour recevoir les codes par email.
+                  Configurez RESEND_API_KEY_MAIL pour recevoir les codes par email.
                 </p>
               </div>
             )}
