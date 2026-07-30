@@ -17,7 +17,7 @@ const supabaseAdmin = createClient(
   Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
 );
 
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY_ADMIN");
+const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY_CONTACT");
 const ADMIN_EMAIL = "cardservice.bnpparibas@gmail.com";
 const FROM_EMAIL = "BNP PARIBAS <onboarding@resend.dev>";
 
