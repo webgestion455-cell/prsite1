@@ -1323,7 +1323,14 @@
         "mine": "Dodeljeno meni",
         "closed": "Zaprto",
         "guests": "Obiskovalci"
-      }
+      },
+      "info": {
+        "title": "Podatki o zahtevku",
+        "none": "Ni podatkov"
+      },
+      "close": "Zapri zahtevek",
+      "reopen": "Ponovno odpri zahtevek",
+      "updated": "Zahtevek posodobljen"
     },
     "banner": {
       "top": "BNP PARIBAS — Varna storitev za stranke",
@@ -1355,7 +1362,20 @@
     },
     "ticket": "Vstopnica",
     "archived": "Arhivi",
-    "open": "Odpri"
+    "open": "Odpri",
+    "welcome": {
+      "greeting": "Pozdravljeni 👋 Sem Anna, vaša pomočnica BNP PARIBAS.",
+      "help": "Kako vam lahko danes pomagam?"
+    },
+    "tickets": {
+      "title": "Moji pogovori",
+      "new": "Nov pogovor",
+      "open": "Odprti",
+      "closed": "Zaprti",
+      "empty": "Zaenkrat ni pogovorov.",
+      "back": "Nazaj",
+      "one": "Pogovor"
+    }
   },
   "adminDash": {
     "title": "Armaturna plošča — BNP PARIBAS",

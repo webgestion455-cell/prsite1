@@ -48,11 +48,15 @@ export function LiveChat() {
   useEffect(() => {
     if (!open || !user || conversationId) return;
     setLoading(true);
-    ensureConversation(user.id)
+    ensureConversation(user.id, {
+      greeting: t("chat.welcome.greeting"),
+      help: t("chat.welcome.help"),
+    })
       .then((c) => setConversationId(c.id))
       .catch((e) => console.error("chat init", e))
       .finally(() => setLoading(false));
-  }, [open, user, conversationId]);
+  }, [open, user, conversationId, t]);
+
 
   // Cachée sur mobile pour utilisateurs connectés (dashboard/admin) —
   // ils accèdent via /chat ou /admin/chat
@@ -84,8 +88,9 @@ export function LiveChat() {
         <div
           role="dialog"
           aria-label="Live chat BNP PARIBAS"
-          className="fixed z-40 bottom-36 right-4 sm:bottom-24 sm:right-6 w-[min(400px,calc(100vw-2rem))] h-[620px] max-h-[85vh]"
+          className="fixed z-40 inset-x-2 bottom-2 top-2 sm:inset-auto sm:top-auto sm:bottom-24 sm:right-6 sm:w-[min(400px,calc(100vw-3rem))] sm:h-[620px] sm:max-h-[85vh]"
         >
+
           {chatMode === null ? (
             <GuestForm onCreated={handleGuestCreated} onCancel={() => setOpen(false)} />
           ) : loading ? (
@@ -175,7 +180,7 @@ function GuestForm({
       <div className="flex-1 overflow-y-auto p-4 space-y-3">
         <p className="text-sm text-muted-foreground">{t("chat.guest.intro")}</p>
 
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <Input
             required
             placeholder={t("chat.guest.name")}
@@ -200,13 +205,13 @@ function GuestForm({
             onChange={(e) => set("whatsapp", e.target.value)}
           />
           <Input
-            className="col-span-2"
+            className="sm:col-span-2"
             placeholder={t("chat.guest.country")}
             value={form.country}
             onChange={(e) => set("country", e.target.value)}
           />
           <Input
-            className="col-span-2"
+            className="sm:col-span-2"
             placeholder={t("chat.guest.subject")}
             value={form.subject}
             onChange={(e) => set("subject", e.target.value)}

@@ -83,8 +83,14 @@ export const inviteStaff = createServerFn({ method: "POST" })
     });
     if (error) throw new Error(error.message);
 
-    const link = `${data.origin.replace(/\/$/, "")}/staff-invite?token=${token}`;
-    const mail = await sendInvitationEmail(email, invitationEmailHtml({ fullName: data.fullName, role: data.role, link }));
+    const base = data.origin.replace(/\/$/, "");
+    const link = `${base}/staff-invite?token=${token}`;
+    const declineLink = `${base}/staff-invite?token=${token}&decline=1`;
+    const mail = await sendInvitationEmail(
+      email,
+      invitationEmailHtml({ fullName: data.fullName, role: data.role, link, declineLink }),
+    );
+
     await logActivity(supabase, user, "staff.invited", "staff_invitation", email, { role: data.role, emailSent: mail.sent });
 
     return { ok: true, emailSent: mail.sent, link: mail.sent ? null : link };
@@ -127,7 +133,31 @@ export const setStaffActive = createServerFn({ method: "POST" })
     return { ok: true };
   });
 
+/** Refus d'une invitation depuis l'e-mail (aucun compte n'est créé). */
+export const declineStaffInvite = createServerFn({ method: "POST" })
+  .inputValidator((d: { token: string }) => d)
+  .handler(async ({ data }) => {
+    const supabase = adminClient();
+    const tokenHash = await sha256(data.token);
+    const { data: rows } = await supabase
+      .from("staff_invitations")
+      .select("id, email, accepted_at, revoked_at")
+      .eq("token_hash", tokenHash)
+      .limit(1);
+    const invite = rows?.[0];
+    if (!invite) throw new Error("Invitation introuvable");
+    if (invite.accepted_at) throw new Error("Invitation déjà utilisée");
+    if (!invite.revoked_at) {
+      await supabase
+        .from("staff_invitations")
+        .update({ revoked_at: new Date().toISOString() })
+        .eq("id", invite.id);
+    }
+    return { ok: true, email: invite.email as string };
+  });
+
 export const acceptStaffInvite = createServerFn({ method: "POST" })
+
   .inputValidator((d: { token: string; password: string; fullName: string }) => d)
   .handler(async ({ data }) => {
     if (data.password.length < 10) throw new Error("Le mot de passe doit contenir au moins 10 caractères");

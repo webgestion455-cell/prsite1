@@ -1323,7 +1323,14 @@
         "mine": "Aan mij toegewezen",
         "closed": "Gesloten",
         "guests": "Bezoekers"
-      }
+      },
+      "info": {
+        "title": "Ticketinformatie",
+        "none": "Geen informatie"
+      },
+      "close": "Ticket sluiten",
+      "reopen": "Ticket heropenen",
+      "updated": "Ticket bijgewerkt"
     },
     "banner": {
       "top": "BNP PARIBAS — Veilige klantenservice",
@@ -1355,7 +1362,20 @@
     },
     "ticket": "Ticket",
     "archived": "Archief",
-    "open": "Open"
+    "open": "Open",
+    "welcome": {
+      "greeting": "Hallo 👋 Ik ben Anna, uw BNP PARIBAS-assistente.",
+      "help": "Hoe kan ik u vandaag helpen?"
+    },
+    "tickets": {
+      "title": "Mijn gesprekken",
+      "new": "Nieuw gesprek",
+      "open": "Open",
+      "closed": "Gesloten",
+      "empty": "Nog geen gesprekken.",
+      "back": "Terug",
+      "one": "Gesprek"
+    }
   },
   "adminDash": {
     "title": "Dashboard — BNP PARIBAS",

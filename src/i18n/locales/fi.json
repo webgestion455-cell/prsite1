@@ -1323,7 +1323,14 @@
         "mine": "Minulle määrätty",
         "closed": "Suljettu",
         "guests": "Vierailijat"
-      }
+      },
+      "info": {
+        "title": "Tiketin tiedot",
+        "none": "Ei tietoja"
+      },
+      "close": "Sulje tiketti",
+      "reopen": "Avaa tiketti uudelleen",
+      "updated": "Tiketti päivitetty"
     },
     "banner": {
       "top": "BNP PARIBAS — Turvallinen asiakaspalvelu",
@@ -1355,7 +1362,20 @@
     },
     "ticket": "Lippu",
     "archived": "Arkistot",
-    "open": "Avata"
+    "open": "Avata",
+    "welcome": {
+      "greeting": "Hei 👋 Olen Anna, BNP PARIBAS -avustajanne.",
+      "help": "Miten voin auttaa teitä tänään?"
+    },
+    "tickets": {
+      "title": "Keskusteluni",
+      "new": "Uusi keskustelu",
+      "open": "Avoimet",
+      "closed": "Suljetut",
+      "empty": "Ei vielä keskusteluja.",
+      "back": "Takaisin",
+      "one": "Keskustelu"
+    }
   },
   "adminDash": {
     "title": "Kojelauta – BNP PARIBAS",

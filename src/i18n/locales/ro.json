@@ -1323,7 +1323,14 @@
         "mine": "Mi-a fost atribuit",
         "closed": "Închis",
         "guests": "Vizitatori"
-      }
+      },
+      "info": {
+        "title": "Informații despre tichet",
+        "none": "Nicio informație"
+      },
+      "close": "Închide tichetul",
+      "reopen": "Redeschide tichetul",
+      "updated": "Tichet actualizat"
     },
     "banner": {
       "top": "BNP PARIBAS — Serviciu clienți securizat",
@@ -1355,7 +1362,20 @@
     },
     "ticket": "Bilet",
     "archived": "Arhive",
-    "open": "Deschide"
+    "open": "Deschide",
+    "welcome": {
+      "greeting": "Bună ziua 👋 Sunt Anna, asistenta dumneavoastră BNP PARIBAS.",
+      "help": "Cu ce vă pot ajuta astăzi?"
+    },
+    "tickets": {
+      "title": "Conversațiile mele",
+      "new": "Conversație nouă",
+      "open": "Deschise",
+      "closed": "Închise",
+      "empty": "Nicio conversație deocamdată.",
+      "back": "Înapoi",
+      "one": "Conversație"
+    }
   },
   "adminDash": {
     "title": "Tabloul de bord — BNP PARIBAS",

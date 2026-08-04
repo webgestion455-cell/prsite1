@@ -28,6 +28,14 @@ export interface ChatConversation {
   unread_agent: number;
   created_at: string;
   closed_at: string | null;
+  ticket_number?: string | null;
+  is_guest?: boolean;
+  guest_name?: string | null;
+  guest_email?: string | null;
+  guest_phone?: string | null;
+  guest_whatsapp?: string | null;
+  guest_country?: string | null;
+  priority?: string | null;
 }
 
 export interface ChatMessage {
@@ -43,18 +51,30 @@ export interface ChatMessage {
   meta?: unknown;
 }
 
+/** Texte de bienvenue localisé (utilisé à la création d'une conversation). */
+export interface WelcomeCopy {
+  greeting: string;
+  help: string;
+}
+
 // ------------------ Ensure/find conversation ------------------
-export async function ensureConversation(userId: string): Promise<ChatConversation> {
-  // Cherche une conversation ouverte existante
-  const { data: existing } = await (supabase as any)
-    .from("chat_conversations")
-    .select("*")
-    .eq("user_id", userId)
-    .neq("status", "closed")
-    .order("last_message_at", { ascending: false })
-    .limit(1)
-    .maybeSingle();
-  if (existing) return existing as ChatConversation;
+export async function ensureConversation(
+  userId: string,
+  welcome?: WelcomeCopy,
+  forceNew = false,
+): Promise<ChatConversation> {
+  if (!forceNew) {
+    // Cherche une conversation ouverte existante
+    const { data: existing } = await (supabase as any)
+      .from("chat_conversations")
+      .select("*")
+      .eq("user_id", userId)
+      .neq("status", "closed")
+      .order("last_message_at", { ascending: false })
+      .limit(1)
+      .maybeSingle();
+    if (existing) return existing as ChatConversation;
+  }
 
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const { data: created, error } = await (supabase as any)
@@ -64,18 +84,24 @@ export async function ensureConversation(userId: string): Promise<ChatConversati
     .single();
   if (error) throw error;
 
-  // Message de bienvenue
+  // Message de bienvenue — toujours dans la langue de l'utilisateur
+  const greeting = welcome?.greeting ?? "Hello, I'm Anna.";
+  const help = welcome?.help ?? "";
   await (supabase as any).from("chat_messages").insert({
     conversation_id: (created as any).id,
     sender_type: "bot",
     sender_name: "Anna",
     format: "html",
-    content_html:
-      "<p>Bonjour 👋 Je suis <strong>Anna</strong>, votre assistante BNP PARIBAS.</p><p>Comment puis-je vous aider aujourd'hui ?</p>",
-    content_text: "Bonjour, je suis Anna.",
+    content_html: `<p>${escapeHtml(greeting)}</p>${help ? `<p>${escapeHtml(help)}</p>` : ""}`,
+    content_text: `${greeting} ${help}`.trim(),
   });
   return created as ChatConversation;
 }
+
+function escapeHtml(s: string) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 
 // ------------------ Composant ------------------
 interface ChatWindowProps {
@@ -292,12 +318,16 @@ export function ChatWindow({
     toast.success(t("chat.agent.joinedYou"));
   }, [user, conv, profile, t]);
 
-  // Fermer le ticket
+  // Fermer / rouvrir le ticket (client ET agent)
   const closeTicket = useCallback(async () => {
     if (!conversationId) return;
     await (supabase as any)
       .from("chat_conversations")
-      .update({ status: "closed", closed_at: new Date().toISOString() })
+      .update({
+        status: "closed",
+        closed_at: new Date().toISOString(),
+        ...(user ? { closed_by: user.id } : {}),
+      })
       .eq("id", conversationId);
     await (supabase as any).from("chat_messages").insert({
       conversation_id: conversationId,
@@ -309,7 +339,16 @@ export function ChatWindow({
     });
     toast.success(t("chat.closed"));
     onCloseTicket?.();
-  }, [conversationId, onCloseTicket, t]);
+  }, [conversationId, onCloseTicket, t, user]);
+
+  const reopenTicket = useCallback(async () => {
+    if (!conversationId) return;
+    await (supabase as any)
+      .from("chat_conversations")
+      .update({ status: "open", closed_at: null })
+      .eq("id", conversationId);
+    toast.success(t("chat.admin.updated"));
+  }, [conversationId, t]);
 
   const isClosed = conv?.status === "closed";
   const agentJoined = conv?.status === "assigned" && conv?.assigned_agent_name;
@@ -326,48 +365,67 @@ export function ChatWindow({
   return (
     <div
       className={cn(
-        "flex flex-col h-full bg-background text-foreground border border-border rounded-2xl overflow-hidden shadow-elevated",
+        "flex flex-col h-full min-h-0 min-w-0 bg-background text-foreground border border-border rounded-2xl overflow-hidden shadow-elevated",
         className,
       )}
     >
       {/* Header BNP PARIBAS */}
       {showHeader && (
-        <header className="bg-[#00915A] text-white px-4 py-3 flex items-center gap-3">
-          <BankLogo className="h-8 w-8 shrink-0" />
+        <header className="bg-[#00915A] text-white px-3 sm:px-4 py-2.5 sm:py-3 flex items-center gap-2 sm:gap-3">
+          <BankLogo className="h-7 w-7 sm:h-8 sm:w-8 shrink-0" />
           <div className="min-w-0 flex-1">
-            <div className="flex items-center gap-2">
-              <p className="font-bold tracking-wide truncate">{CHAT_BRAND.bankName}</p>
+            <div className="flex items-center gap-2 min-w-0">
+              <p className="font-bold tracking-wide truncate text-sm sm:text-base">
+                {CHAT_BRAND.bankName}
+              </p>
               {agentJoined ? (
-                <span className="text-[10px] bg-white/20 px-1.5 py-0.5 rounded-full">
+                <span className="hidden sm:inline text-[10px] bg-white/20 px-1.5 py-0.5 rounded-full truncate max-w-[140px]">
                   {conv?.assigned_agent_name}
                 </span>
               ) : null}
             </div>
-            <p className="text-[11px] opacity-90 flex items-center gap-1.5">
-              <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-300 animate-pulse" />
-              {agentJoined ? t("chat.status.agent") : t("chat.status.online")}
-              <span className="opacity-70">· {clock}</span>
+            <p className="text-[11px] opacity-90 flex items-center gap-1.5 truncate">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-300 animate-pulse shrink-0" />
+              <span className="truncate">
+                {agentJoined ? t("chat.status.agent") : t("chat.status.online")}
+              </span>
+              <span className="opacity-70 shrink-0">· {clock}</span>
             </p>
           </div>
-          {mode === "client" && !isClosed && (
+          {conv?.ticket_number && (
+            <span className="hidden md:inline font-mono text-[10px] bg-white/15 px-2 py-1 rounded-md shrink-0">
+              #{conv.ticket_number}
+            </span>
+          )}
+          {!isClosed ? (
             <button
               onClick={closeTicket}
-              className="text-white/80 hover:text-white text-[11px] underline"
-              aria-label={t("chat.closeTicket")}
+              className="shrink-0 rounded-full bg-white/15 hover:bg-white/25 px-2.5 py-1 text-[11px] font-medium transition"
             >
-              {t("chat.closeTicket")}
+              {mode === "agent" ? t("chat.admin.close") : t("chat.closeTicket")}
             </button>
-          )}
+          ) : mode === "agent" ? (
+            <button
+              onClick={reopenTicket}
+              className="shrink-0 rounded-full bg-white/15 hover:bg-white/25 px-2.5 py-1 text-[11px] font-medium transition"
+            >
+              {t("chat.admin.reopen")}
+            </button>
+          ) : null}
           {onClose && (
-            <button onClick={onClose} aria-label={t("chat.close")}>
+            <button onClick={onClose} aria-label={t("chat.close")} className="shrink-0">
               <X className="h-5 w-5" />
             </button>
           )}
         </header>
       )}
 
+      {/* Fiche ticket (agent) — toutes les informations transmises par le visiteur */}
+      {mode === "agent" && conv && <TicketInfo conv={conv} />}
+
       {/* Bandeau signature de tête (branding) */}
       <BrandBanner position="top" />
+
 
       {/* Corps */}
       <div ref={scrollRef} className="flex-1 overflow-y-auto p-3 space-y-3 bg-muted/30">
@@ -448,7 +506,59 @@ export function ChatWindow({
   );
 }
 
+// ------------------ Fiche ticket (côté agent) ------------------
+function TicketInfo({ conv }: { conv: ChatConversation }) {
+  const { t, i18n } = useTranslation();
+  const [open, setOpen] = useState(true);
+
+  const rows: { label: string; value?: string | null }[] = [
+    { label: t("chat.ticket"), value: conv.ticket_number ? `#${conv.ticket_number}` : null },
+    { label: t("chat.guest.subject").replace(" *", ""), value: conv.subject },
+    { label: t("chat.guest.name").replace(" *", ""), value: conv.guest_name },
+    { label: t("chat.guest.email").replace(" *", ""), value: conv.guest_email },
+    { label: t("chat.guest.phone"), value: conv.guest_phone },
+    { label: t("chat.guest.whatsapp"), value: conv.guest_whatsapp },
+    { label: t("chat.guest.country"), value: conv.guest_country },
+    {
+      label: t("common.date"),
+      value: conv.created_at
+        ? new Intl.DateTimeFormat(i18n.language, { dateStyle: "medium", timeStyle: "short" }).format(
+            new Date(conv.created_at),
+          )
+        : null,
+    },
+    { label: t("common.status"), value: t(`chat.status.${conv.status}`) },
+  ].filter((r) => Boolean(r.value));
+
+  return (
+    <div className="border-b border-border bg-muted/40">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="w-full flex items-center justify-between gap-2 px-3 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground"
+      >
+        <span className="truncate">{t("chat.admin.info.title")}</span>
+        <span className="shrink-0">{open ? "−" : "+"}</span>
+      </button>
+      {open && (
+        <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 px-3 pb-3 text-xs">
+          {rows.length === 0 && (
+            <p className="text-muted-foreground">{t("chat.admin.info.none")}</p>
+          )}
+          {rows.map((r) => (
+            <div key={r.label} className="flex min-w-0 items-baseline gap-2">
+              <dt className="shrink-0 text-muted-foreground">{r.label}</dt>
+              <dd className="min-w-0 flex-1 truncate font-medium text-foreground">{r.value}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+    </div>
+  );
+}
+
 // ------------------ Sub-components ------------------
+
 function MessageBubble({ m, mode }: { m: ChatMessage; mode: "client" | "agent" }) {
   const { i18n, t } = useTranslation();
   const isSystem = m.sender_type === "system";

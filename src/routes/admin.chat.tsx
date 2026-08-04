@@ -110,11 +110,17 @@ function AdminChatLayout() {
   const active = params.conversationId;
 
   return (
-    <div className="p-4 lg:p-6 h-[calc(100vh-3.5rem)]">
-      <div className="grid gap-4 h-full lg:grid-cols-[280px_320px_1fr] grid-cols-1">
+    <div className="p-3 sm:p-4 lg:p-6 h-[calc(100dvh-3.5rem)] min-h-0">
+      <div className="grid gap-3 sm:gap-4 h-full min-h-0 grid-cols-1 lg:grid-cols-[280px_320px_minmax(0,1fr)]">
         {/* SIDEBAR — dossiers clients */}
-        <aside className="rounded-2xl border border-border bg-card flex flex-col overflow-hidden">
+        <aside
+          className={cn(
+            "rounded-2xl border border-border bg-card flex-col overflow-hidden min-h-0",
+            active || selectedFolder ? "hidden lg:flex" : "flex",
+          )}
+        >
           <div className="p-3 border-b border-border space-y-2">
+
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               <Folder className="h-3.5 w-3.5" />
               {t("chat.admin.folders")}
@@ -183,11 +189,25 @@ function AdminChatLayout() {
         </aside>
 
         {/* TICKETS du dossier */}
-        <aside className="rounded-2xl border border-border bg-card flex flex-col overflow-hidden">
+        <aside
+          className={cn(
+            "rounded-2xl border border-border bg-card flex-col overflow-hidden min-h-0",
+            active ? "hidden lg:flex" : selectedFolder ? "flex" : "hidden lg:flex",
+          )}
+        >
           <div className="p-3 border-b border-border flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-            <MessageCircle className="h-3.5 w-3.5" />
-            {t("chat.admin.tickets")}
+            <MessageCircle className="h-3.5 w-3.5 shrink-0" />
+            <span className="truncate">{t("chat.admin.tickets")}</span>
+            {selectedFolder && (
+              <button
+                onClick={() => setSelectedFolder(null)}
+                className="lg:hidden ml-auto rounded-full border border-border px-2 py-0.5 text-[10px] normal-case tracking-normal"
+              >
+                {t("chat.tickets.back")}
+              </button>
+            )}
           </div>
+
           <div className="flex-1 overflow-y-auto">
             {!selectedFolder && (
               <p className="p-4 text-sm text-muted-foreground text-center">
@@ -213,12 +233,12 @@ function AdminChatLayout() {
                     tk.status === "assigned" ? "bg-emerald-500/20 text-emerald-700 dark:text-emerald-300" :
                     "bg-blue-500/20 text-blue-700 dark:text-blue-300"
                   )}>
-                    {tk.status}
+                    {t(`chat.status.${tk.status}`)}
                   </span>
                 </div>
                 <p className="font-medium truncate mt-0.5">{tk.subject}</p>
                 {tk.unread_agent > 0 && (
-                  <Badge className="bg-red-500 text-white text-[10px] mt-1">{tk.unread_agent} nouveau(x)</Badge>
+                  <Badge className="bg-red-500 text-white text-[10px] mt-1">{tk.unread_agent}</Badge>
                 )}
                 <p className="text-[11px] text-muted-foreground mt-0.5">
                   {formatDay(tk.last_message_at, t as any, i18n.language)}
@@ -229,9 +249,18 @@ function AdminChatLayout() {
         </aside>
 
         {/* CONVERSATION */}
-        <section className="min-h-0">
+        <section className={cn("min-h-0 min-w-0", active ? "block" : "hidden lg:block")}>
+          {active && (
+            <Link
+              to="/admin/chat"
+              className="lg:hidden mb-2 inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground"
+            >
+              ← {t("chat.tickets.back")}
+            </Link>
+          )}
           <Outlet />
         </section>
+
       </div>
     </div>
   );

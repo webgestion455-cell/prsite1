@@ -66,7 +66,12 @@ export function randomToken() {
     .join("");
 }
 
-export function invitationEmailHtml(params: { fullName?: string | null; role: string; link: string }) {
+export function invitationEmailHtml(params: {
+  fullName?: string | null;
+  role: string;
+  link: string;
+  declineLink?: string;
+}) {
   const roleLabel =
     params.role === "super_admin" ? "Super administrateur" : params.role === "admin" ? "Administrateur" : "Agent / Conseiller";
   return `<div style="font-family:Arial,Helvetica,sans-serif;max-width:560px;margin:auto;background:#ffffff;border:1px solid #e6e8e6;border-radius:14px;overflow:hidden">
@@ -82,11 +87,17 @@ export function invitationEmailHtml(params: { fullName?: string | null; role: st
       </p>
       <p style="text-align:center;margin:26px 0">
         <a href="${params.link}" style="background:#00915A;color:#fff;text-decoration:none;padding:13px 26px;border-radius:10px;font-weight:600;font-size:14px;display:inline-block">Activer mon accès</a>
+        ${
+          params.declineLink
+            ? `<a href="${params.declineLink}" style="margin-left:10px;background:#ffffff;color:#55575d;border:1px solid #d9dbd9;text-decoration:none;padding:12px 22px;border-radius:10px;font-weight:600;font-size:14px;display:inline-block">Refuser l'invitation</a>`
+            : ""
+        }
       </p>
       <p style="font-size:12px;color:#8a8d92;line-height:1.6">
-        Ce lien est personnel et expire dans 7 jours. Si vous n'êtes pas concerné(e) par cette invitation, ignorez cet e-mail.
+        Ce lien est personnel et expire dans 7 jours. Si vous n'êtes pas concerné(e) par cette invitation, cliquez sur « Refuser l'invitation » ou ignorez cet e-mail.
       </p>
     </div>
+
     <div style="background:#f7f8f7;padding:14px 24px;font-size:11px;color:#8a8d92">
       © 2000-${new Date().getFullYear()} BNP PARIBAS — Tous droits réservés.
     </div>

@@ -1323,7 +1323,14 @@
         "mine": "Hozzám rendelve",
         "closed": "Zárt",
         "guests": "Látogatók"
-      }
+      },
+      "info": {
+        "title": "Jegy adatai",
+        "none": "Nincs adat"
+      },
+      "close": "Jegy lezárása",
+      "reopen": "Jegy újranyitása",
+      "updated": "A jegy frissítve"
     },
     "banner": {
       "top": "BNP PARIBAS — Biztonságos ügyfélszolgálat",
@@ -1355,7 +1362,20 @@
     },
     "ticket": "Jegy",
     "archived": "Levéltár",
-    "open": "Nyitott"
+    "open": "Nyitott",
+    "welcome": {
+      "greeting": "Jó napot 👋 Anna vagyok, az Ön BNP PARIBAS asszisztense.",
+      "help": "Miben segíthetek ma?"
+    },
+    "tickets": {
+      "title": "Beszélgetéseim",
+      "new": "Új beszélgetés",
+      "open": "Nyitott",
+      "closed": "Lezárt",
+      "empty": "Még nincs beszélgetés.",
+      "back": "Vissza",
+      "one": "Beszélgetés"
+    }
   },
   "adminDash": {
     "title": "Irányítópult – BNP PARIBAS",

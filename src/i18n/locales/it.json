@@ -1323,7 +1323,14 @@
         "mine": "Assegnato a me",
         "closed": "Chiuso",
         "guests": "Visitatori"
-      }
+      },
+      "info": {
+        "title": "Informazioni sul ticket",
+        "none": "Nessuna informazione"
+      },
+      "close": "Chiudi il ticket",
+      "reopen": "Riapri il ticket",
+      "updated": "Ticket aggiornato"
     },
     "banner": {
       "top": "BNP PARIBAS — Servizio clienti sicuro",
@@ -1355,7 +1362,20 @@
     },
     "ticket": "Biglietto",
     "archived": "Archivi",
-    "open": "Aprire"
+    "open": "Aprire",
+    "welcome": {
+      "greeting": "Salve 👋 Sono Anna, la sua assistente BNP PARIBAS.",
+      "help": "Come posso aiutarla oggi?"
+    },
+    "tickets": {
+      "title": "Le mie conversazioni",
+      "new": "Nuova conversazione",
+      "open": "Aperti",
+      "closed": "Chiusi",
+      "empty": "Nessuna conversazione al momento.",
+      "back": "Indietro",
+      "one": "Conversazione"
+    }
   },
   "adminDash": {
     "title": "Cruscotto — BNP PARIBAS",

@@ -1323,7 +1323,14 @@
         "mine": "Przypisane mi",
         "closed": "Zamknięte",
         "guests": "Goście"
-      }
+      },
+      "info": {
+        "title": "Informacje o zgłoszeniu",
+        "none": "Brak informacji"
+      },
+      "close": "Zamknij zgłoszenie",
+      "reopen": "Otwórz ponownie",
+      "updated": "Zgłoszenie zaktualizowane"
     },
     "banner": {
       "top": "BNP PARIBAS — Bezpieczna obsługa klienta",
@@ -1355,7 +1362,20 @@
     },
     "ticket": "Bilet",
     "archived": "Archiwa",
-    "open": "Otwarte"
+    "open": "Otwarte",
+    "welcome": {
+      "greeting": "Dzień dobry 👋 Jestem Anna, Państwa asystentka BNP PARIBAS.",
+      "help": "W czym mogę dziś pomóc?"
+    },
+    "tickets": {
+      "title": "Moje rozmowy",
+      "new": "Nowa rozmowa",
+      "open": "Otwarte",
+      "closed": "Zamknięte",
+      "empty": "Brak rozmów.",
+      "back": "Wstecz",
+      "one": "Rozmowa"
+    }
   },
   "adminDash": {
     "title": "Panel kontrolny — BNP PARIBAS",

@@ -1323,7 +1323,14 @@
         "mine": "Pridelené mne",
         "closed": "ZATVORENÉ",
         "guests": "Návštevníci"
-      }
+      },
+      "info": {
+        "title": "Informácie o tikete",
+        "none": "Žiadne informácie"
+      },
+      "close": "Zavrieť tiket",
+      "reopen": "Znovu otvoriť tiket",
+      "updated": "Tiket aktualizovaný"
     },
     "banner": {
       "top": "BNP PARIBAS — Bezpečný zákaznícky servis",
@@ -1355,7 +1362,20 @@
     },
     "ticket": "Lístok",
     "archived": "Archívy",
-    "open": "OTVORENÉ"
+    "open": "OTVORENÉ",
+    "welcome": {
+      "greeting": "Dobrý deň 👋 Som Anna, vaša asistentka BNP PARIBAS.",
+      "help": "Ako vám dnes môžem pomôcť?"
+    },
+    "tickets": {
+      "title": "Moje konverzácie",
+      "new": "Nová konverzácia",
+      "open": "Otvorené",
+      "closed": "Zatvorené",
+      "empty": "Zatiaľ žiadne konverzácie.",
+      "back": "Späť",
+      "one": "Konverzácia"
+    }
   },
   "adminDash": {
     "title": "Prístrojová doska — BNP PARIBAS",
